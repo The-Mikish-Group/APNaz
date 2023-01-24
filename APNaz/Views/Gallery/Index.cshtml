@@ -1,0 +1,71 @@
+﻿@{
+    ViewData["Title"] = ViewData["Gallery"];
+}
+
+<!-- Change background color -->
+<style>
+    .heading-width {
+        max-width: 220px;
+    }
+</style>
+   
+<div class="row gx-0 gx-lg-4 align-content-center">
+
+    <!-- Heading Row-->
+    <div Class="col-12 mt-2 mt-lg-3">
+        <div class="my-card bg-gray-darker heading-width border border-1 border-white mx-auto py-2 mb-4">
+            <h3 class="text-center text-white text-nowrap ps-2">Gallery<img class="card-image-size ps-2" src="~/Content/Svg/Cards/Pictures.svg" /></h3>
+        </div>
+    </div>
+</div>
+
+<!-- Content Row-->
+<div class="row gx-0 gx-lg-5">
+
+    <!-- Column One Card -- Pictures -->
+    <div class="col-12 col-lg-6 mb-2">
+        <div class="my-card-body h-100 text-center">
+            <a class="page-button-size btn btn-sm btn-success border border-dark" href="~/Gallery/Pictures01">
+                <h2 class="text-black text-start"><img class="card-image-size pe-2" src="~/Content/Svg/Cards/Pictures.svg" />Pictures</h2>
+                <p class="text-white mb-0 text-center">Pictures we've collected.</p>
+            </a>
+        </div>
+    </div>
+
+
+    <!-- Column Two Card  WebArt-->
+    <div class="col-12 col-lg-6 mb-2">
+        <div class="my-card-body h-100 text-center">
+            <a class="page-button-size btn btn-sm btn-success border border-dark" href="~/Gallery/WebArtSVG">
+                <h2 class="text-black text-start"><img class="card-image-size pe-2" src="~/Content/Svg/Cards/WebArt.svg" />Web Art</h2>
+                <p class="text-white mb-0 text-center">AP Naz Web Artwork.</p>
+            </a>
+        </div>
+    </div>
+
+    <!-- Back Button -->
+    <div class="col-1 ms-2 my-3 group-button-size">
+        <div class="text-center text-white">
+            <a class="btn  bg-red-dark btn-sm group-button-size" href="/">
+                <img class="back-button-image-size pe-1" src="~/Content/Svg/Buttons/Back-White.svg" />
+            </a>
+        </div>
+    </div>
+</div>
+
+<container>
+    <partial name="_Carousel01" />
+</container>
+
+@*<container>
+    <partial name="_Carousel02" />
+</container>*@
+
+<div class="gallery-view-bottom-spacing"></div>
+
+<!-- Background -->
+<script>
+    $("body").css("background-color", "#40996D"); /* bg-green-dark */
+    $("body").css("background-image", "url('../content/pageimages/BackgroundBlurr.webp')");
+</script>
+

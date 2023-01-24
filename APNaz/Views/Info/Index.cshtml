@@ -1,0 +1,306 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<!-- Content Container -->
+<div class="px-lg-4">
+
+	<!-- Content Row - Heading -->
+	<div class="row gx-0 gx-lg-3 align-items-end">
+
+		<!-- Column - Logo and Description -->
+		<div class="col-lg-4 pb-lg-3">
+
+			<!-- AP-Logo -->
+			<partial name="_Logo">
+
+			<!-- Site Description -->
+			<div class="my-card-radius text-white my-md-3 my-lg-0 px-2 px-lg-0 pt-2 pb-1 border-dark bg-gray-darker">
+				<div>
+					<p class="text-white text-center m-0 pt-1 pb-3 px-1 who-are-we-fs">WHO ARE WE?</p>
+					<p class="text-white text-start py-1 px-2 our-congregation-fs">Our congregation is a family, part of the global family of people called Nazarenes, who, in turn, are part of the Body of Christ universal.</p>
+					<p class="text-white text-center m-0 pb-2 px-1 pt-1 we-invite-you-fs">We invite you to worship <br>and learn with us.</p>
+				</div>
+			</div>
+		</div>
+
+		<partial name="_AboutVideo" />
+
+	</div>
+
+	<!-- Row - Cards -->
+	<div class="row gx-0 gx-sm-2 gx-md-3 gx-lg-3 align-content-end">
+
+		<!-- Card Online Worship  (Offsite) -->		
+		<div class="col-12 col-md-6 col-lg-4 px-2 pt-3 pt-lg-0 mb-lg-3 lh-sm">
+
+			<!-- Card -->
+			<div class="my-card border-0 home-card-header-color">
+
+				<!-- Header -->
+				<div class="w-100 py-2 px-3">
+					<h3 class="pb-1">
+						<img class="card-image-size image-light-show" src="/Content/Svg/Cards/Cross-White.svg">
+						<img class="card-image-size image-dark-show" src="/Content/Svg/Cards/Cross-Black.svg">
+						Online Worship
+					</h3>
+					<p class="fw-normal mb-0">Please join us for Worship</p>
+				</div>
+
+				<!-- Footer -->
+				<div class="my-card-footer home-card-footer-color w-100">
+					<p class="card-text card-body-text-fs p-3 py-2 mb-0">Live Stream and previous services.</p>
+
+					<!-- Link -->
+					<div class="text-center pt-0 pb-2">
+						<a class="btn btn-sm btn-primary text-nowrap" href="https://backtothebible.app/library/p/apnazarene" target="_blank">Online Worship</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+        <!-- Column Container - Members Card (Offsite) -->
+        <div class="col-12 col-md-6 col-lg-4 px-2 pt-3 pt-lg-0 mb-lg-3 lh-sm">
+
+            <!-- Card -->
+            <div class="my-card border-0 home-card-header-color">
+
+                <!-- Header -->
+                <div class="w-100 py-2 px-3">
+                    <h3 class="pb-1">
+                        <img class="card-image-size image-light-show" src="/Content/Svg/Cards/Members-White.svg">
+                        <img class="card-image-size image-dark-show" src="/Content/Svg/Cards/Members-Black.svg">
+                        Member Area
+                    </h3>
+                    <p class="fw-normal mb-0">Churchtrac Website</p>
+                </div>
+
+                <!-- Footer -->
+                <div class="my-card-footer home-card-footer-color w-100">
+                    <p class="card-text card-body-text-fs p-3 py-2 mb-0">Connect with us, Directory, Online Giving</p>
+
+                    <!-- Link -->
+                    <div class="text-center pt-0 pb-2">
+                        <a class="btn btn-sm btn-primary text-nowrap" href="https://APNaz.churchtrac.com/" target="_blank">Members</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+		<!-- Column - Calandar Card (OnSite) -->
+		<div class="col-12 col-md-6 col-lg-4 px-2 pt-3 pt-lg-0 mb-lg-3 lh-sm">
+
+			<!-- Card -->
+			<div class="my-card border-0 home-card-header-color">
+
+				<!-- Header -->
+				<div class="w-100 py-2 px-3">
+					<h3 class="pb-1">
+						<img class="card-image-size image-light-show" src="/Content/Svg/Cards/Calendar-White.svg">
+						<img class="card-image-size image-dark-show" src="/Content/Svg/Cards/Calendar-Black.svg">
+						Our Calendar
+					</h3>
+					<p class="fw-normal mb-0">Calendar of Events</p>
+				</div>
+
+				<!-- Footer -->
+				<div class="my-card-footer home-card-footer-color w-100">
+					<p class="card-text card-body-text-fs p-3 py-2 mb-0">Keep up by checking our Calendar.</p>
+
+					<!-- Link -->
+					<div class="text-center pt-0 pb-2">
+						<a class="btn btn-sm btn-primary text-nowrap" href="../Info/Calendar" target="_self">Calendar</a>
+					</div>
+				</div>
+			</div>
+		</div>		
+
+		<!-- Column - Meet Our Staff  (OnSite) -->
+		<div class="col-12 col-md-6 col-lg-4 px-2 pt-3 pt-lg-0 mb-lg-3 lh-sm">
+
+			<!-- Card -->
+			<div class="my-card border-0 home-card-header-color">
+
+				<!-- Header -->
+				<div class="w-100 py-2 px-3">
+					<h3 class="pb-1">
+						<img class="card-image-size image-light-show" src="/Content/Svg/Cards/Staff-White.svg">
+						<img class="card-image-size image-dark-show" src="/Content/Svg/Cards/Staff-Black.svg">
+						Meet Our Staff
+					</h3>
+					<p class="fw-normal mb-0">AP Church of the Nazarene</p>
+				</div>
+
+				<!-- Footer -->
+				<div class="my-card-footer home-card-footer-color w-100">
+					<p class="card-text card-body-text-fs p-3 py-2 mb-0">Our wonderful Staff</p>
+
+					<!-- Link -->
+					<div class="text-center pt-0 pb-2">
+						<a class="btn btn-sm btn-primary text-nowrap" href="../Info/Staff" target="_self">Our Staff</a>
+					</div>
+				</div>
+			</div>
+		</div>        
+
+		<!-- Column - Email Sign-up (OffSite) -->
+		<div class="col-12 col-md-6 col-lg-4 px-2 pt-3 pt-lg-0 mb-lg-3 lh-sm">
+
+			<!-- Card -->
+			<div class="my-card border-0 home-card-header-color">
+
+				<!-- Header -->
+				<div class="w-100 py-2 px-3">
+					<h3 class="pb-1">
+						<img class="card-image-size image-light-show" src="/Content/Svg/Cards/Email-White.svg">
+						<img class="card-image-size image-dark-show" src="/Content/Svg/Cards/Email-Black.svg">
+						Email Sign-up
+					</h3>
+					<p class="fw-normal mb-0">Sign-up for our Emails.</p>
+				</div>
+
+				<!-- Footer -->
+				<div class="my-card-footer home-card-footer-color w-100">
+					<p class="card-text card-body-text-fs p-3 py-2 mb-0">If you have not done so, please sign up.</p>
+
+					<!-- Link -->
+					<div class="text-center pt-0 pb-2">
+						<a class="btn btn-sm btn-primary text-nowrap" href="https://mailchi.mp/5dc417814456/apncsignup" target="_blank">Email Signup</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+        <!-- Column - Desktop Links (OffSite) -->
+        <div class="col-12 col-md-6 col-lg-4 px-2 pt-3 pt-lg-0 mb-lg-3 lh-sm">
+
+            <!-- Card -->
+            <div class="my-card border-0 home-card-header-color">
+
+                <!-- Header -->
+                <div class="w-100 py-2 px-3">
+                    <h3 class="pb-1">
+                        <img class="card-image-size image-light-show" src="/Content/Svg/Cards/Links.svg">
+                        <img class="card-image-size image-dark-show" src="/Content/Svg/Cards/Links.svg">
+                        Desktop links
+                    </h3>
+                    <p class="fw-normal mb-0">Nazarene Connect</p>
+                </div>
+
+                <!-- Footer -->
+                <div class="my-card-footer home-card-footer-color w-100">
+                    <p class="card-text card-body-text-fs p-3 py-2 mb-0">Desktop Version of Nazarene Connect.</p>
+
+                    <!-- Link -->
+                    <div class="text-center pt-0 pb-2">
+                        <a class="btn btn-sm btn-primary text-nowrap" href="https://wlavonparknazarene.gotandem.com/public" target="_blank">Desktop Links</a>
+                    </div>
+                </div>
+            </div>
+        </div>				
+	</div>
+
+	<!-- Row - Cards Hours -->
+	<div class="row gx-0 gx-lg-4 pt-0 py-md-3 py-lg-3 align-content-end">
+
+		<!-- Column - Sunday -->
+		<div class="col-12 col-md-6 col-lg-3 mx-auto mb-lg-4 ps-2 ps-lg-0 lh-lg">
+
+			<!-- Sunday Card -->
+			<div class="my-card-body px-2 px-lg-0 pt-2 pt-lg-0 bg-transparent">
+
+				<!-- Header -->
+				<div class="my-card-header w-100 bg-transparent px-2 px-lg-0 py-2">
+					<h2 class="text-white">Sunday</h2>
+				</div>
+
+				<!-- Body -->
+				<div class="my-card-body text-white font-italic bg-transparent w-100">
+					<p class="text-white italic px-2 px-lg-0 pt-1 mb-0 hours-text-fs">
+						9:30 am - Sunday School for all ages<br>
+						10:45 am - Morning worship<br>
+						6:00 pm - Evening Worship
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Column - Tuesday -->
+		<div class="col-12 col-md-6 col-lg-3 mx-auto mb-lg-4 ps-2 ps-lg-0 lh-lg">
+
+			<!-- Tuesday Card -->
+			<div class="my-card-body px-2 px-lg-0 pt-2 pt-lg-0 bg-transparent">
+
+				<!-- Header -->
+				<div class="my-card-header w-100 bg-transparent px-2 px-lg-0 py-2">
+					<h2 class="text-white">Tuesday*</h2>
+				</div>
+
+				<!-- Body -->
+				<div class="my-card-body text-white bg-transparent w-100">
+					<p class="text-white italic px-2 px-lg-0 pt-1 mb-0 hours-text-fs">
+						11:45 am - NAZ Galz<br>
+						Noon - NAZ Guyz
+					</p>
+				</div>
+
+				<!-- Footer Comments -->
+				<div class="my-card-footer w-100 bg-transparent p-0">
+					<p class="text-white italic px-2 px-lg-0 pt-1 mb-0 hours-text-fs">
+						*(Check the bulletin for location)
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Column - Wednesday -->
+		<div class="col-12 col-md-6 col-lg-3 mx-auto mb-lg-3 ps-2 ps-lg-0 lh-lg">
+
+			<!-- Wednesday Card -->
+			<div class="my-card-body px-2 px-lg-0 pt-2 pt-lg-0 bg-transparent">
+
+				<!-- Header -->
+				<div class="my-card-header w-100 bg-transparent px-2 px-lg-0 py-2">
+					<h2 class="text-white">Wednesday</h2>
+				</div>
+
+				<!-- Body -->
+				<div class="my-card-body text-white bg-transparent w-100">
+					<p class="text-white italic px-2 px-lg-0 pt-1 mb-0 hours-text-fs">
+						3:00 pm - Prayer Meeting at Bonnie's<br>
+						6:00 pm - Prayer, Praise, and Bible Study
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Column - Assistive Hearing -->
+		<div class="col-12 col-md-6 col-lg-3 mb-lg-3 pt-4 ps-2 ps-md-0 ps-lg-0">
+
+			<!-- Assistive Hearing Card -->
+			<div class="assistive-hearing-size ratio p-2">
+				<img src="/content/svg/misc/assistive-hearing-design-2.svg">
+			</div>
+		</div>
+	</div>
+
+	<!-- Row - Bottom Logo -->
+	<div class="row gx-0 gx-lg-4 show-me-at-the-bottom">
+
+		<!-- Column - Logo -->
+		<div class="mx-auto col-12 mt-2 pt-lg-3 pb-lg-4 mb-lg-1 lh-sm">
+
+			<!-- Container - Logo -->
+			<div class="my-card-body h-100">
+				<div class="text-center px-4 pt-3 pb-2">
+					<img class="love-lead-size" src="/content/svg/Misc/Loving-Leading-01.svg">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	$("body").css("background-color", "#40996D"); /* bg-green-dark */
+	$("body").css("background-image", "url('../content/pageimages/BackgroundBlurr.webp')");
+</script>

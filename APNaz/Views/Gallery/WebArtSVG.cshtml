@@ -1,0 +1,475 @@
+﻿@{
+    ViewData["Title"] = "WebArtSVG";
+}
+@{
+    // What Type of Files?
+    string extension = ".svg";
+    string folderLocation = "../content/gallery/webart/svg/";
+    string filename = "";
+    string fileImage = "";
+
+    string bgColor = "";
+    string txtColor = "";
+    string sizeText = "";
+    string size600x600Text = "";
+    
+}
+
+<!-- Override background color -->
+<style>
+    body {
+        background-color: #84CBA0;
+    }
+</style>
+
+<!-- Top Button placed here -->
+<button onclick="topFunction()" id="top-button" title="Go to top">Top</button>
+
+<!-- Start of the WebArt View stuff -->
+<div Class="container px-4 px-lg-5">
+
+    <!-- Heading Row-->
+    <div Class="row gx-4 gx-lg-5 my-3">
+        <h3 class="text-center">
+            <img class="card-image-size" src="~/Content/Svg/Cards/WebArt.svg" />
+            <span class="text-black">WebArt:</span><span class="text-light fs-4"> SVG</span>
+        </h3>
+    </div>
+
+    <!-- Button Row (Active Button manually set to "btn-dark"... could be automated) -->
+    <div class="row gx-1 gx-lg-5">
+
+        <!-- Back Button -->
+        <div class="col-3 mb-2">
+            <div class="h-100 text-center text-white">
+                <a class="btn  bg-red-dark btn-sm group-button-size" href="~/Gallery">
+                    <img class="back-button-image-size" src="~/Content/Svg/Buttons/Back-White.svg" />
+                </a>
+            </div>
+        </div>
+
+        <!-- Group Svg Button -->
+        <div class="col-3 mb-2">
+            <div class="h-100 w-100 text-center">
+                <a class="btn btn-dark btn-sm group-button-size" href="~/Gallery/WebArtSVG">.Svg</a>
+            </div>
+        </div>
+
+        <!-- Group Pgn Button -->
+        <div class="col-3 mb-2">
+            <div class="h-100 w-100 text-center">
+                <a class="btn btn-primary btn-sm group-button-size" href="~/Gallery/WebArtPNG">.Png</a>
+            </div>
+        </div>       
+
+        <!-- Group Zip Button -->
+        <div class="col-3 mb-2">
+            <div class="h-100 w-100 text-center">
+                <a class="btn btn-primary btn-sm group-button-size" href="~/Gallery/WebArtZIP">.Zip</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image List -->
+    <div class="row gx-1 gx-lg-5" id="imagelist">
+
+        @{
+            filename = "AP-Logo-Church-Gray-English-Gray";
+            fileImage = filename + extension;
+            sizeText = size600x600Text;
+            bgColor = "bg-transparent";
+            txtColor = "text-black";
+        }       
+        <div class="col-12 col-md-2 col-lg-4 py-1">
+            <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
+                <p class="pt-2 @txtColor fw-bold">@filename</p>
+                <p class="@txtColor">@sizeText</p>
+                <a href="@folderLocation@fileImage" target="_blank">
+                    <img class="gallery-picture-size img-fluid py-3 px-1" src="@folderLocation@fileImage" alt="@filename">
+                </a>
+            </div>            
+        </div>    
+
+        @{
+            filename = "AP-Logo-Church-Gray-English-White";
+            fileImage = filename + extension;
+            sizeText = size600x600Text;
+            bgColor = "bg-transparent";
+            txtColor = "text-black";
+        }
+        <div class="col-12 col-md-2 col-lg-4 py-1">
+            <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
+                <p class="pt-2 @txtColor fw-bold">@filename</p>
+                <p class="@txtColor">@sizeText</p>
+                <a href="@folderLocation@fileImage" target="_blank">
+                    <img class="gallery-picture-size img-fluid py-3 px-1" src="@folderLocation@fileImage" alt="@filename">
+                </a>
+            </div>
+        </div>
+
+        @{
+            filename = "AP-Logo-Church-Gray-Spanish-Gray";
+            fileImage = filename + extension;
+            sizeText = size600x600Text;
+            bgColor = "bg-transparent";
+            txtColor = "text-black";
+        }
+        <div class="col-12 col-md-2 col-lg-4 py-1">
+            <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
+                <p class="pt-2 @txtColor fw-bold">@filename</p>
+                <p class="@txtColor">@sizeText</p>
+                <a href="@folderLocation@fileImage" target="_blank">
+                    <img class="gallery-picture-size img-fluid py-3 px-1" src="@folderLocation@fileImage" alt="@filename">
+                </a>
+            </div>
+        </div>
+
+        @{
+            filename = "AP-Logo-Church-Gray-Spanish-White";
+            fileImage = filename + extension;
+            sizeText = size600x600Text;
+            bgColor = "bg-transparent";
+            txtColor = "text-black";
+        }
+        <div class="col-12 col-md-2 col-lg-4 py-1">
+            <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
+                <p class="pt-2 @txtColor fw-bold">@filename</p>
+                <p class="@txtColor">@sizeText</p>
+                <a href="@folderLocation@fileImage" target="_blank">
+                    <img class="gallery-picture-size img-fluid py-3 px-1" src="@folderLocation@fileImage" alt="@filename">
+                </a>
+            </div>
+        </div>
+
+        @{
+            filename = "AP-Logo-Church-White-English-Gray";
+            fileImage = filename + extension;
+            sizeText = size600x600Text;
+            bgColor = "bg-transparent";
+            txtColor = "text-black";
+        }
+        <div class="col-12 col-md-2 col-lg-4 py-1">
+            <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
+                <p class="pt-2 @txtColor fw-bold">@filename</p>
+                <p class="@txtColor">@sizeText</p>
+                <a href="@folderLocation@fileImage" target="_blank">
+                    <img class="gallery-picture-size img-fluid py-3 px-1" src="@folderLocation@fileImage" alt="@filename">
+                </a>
+            </div>
+        </div>
+
+        @{
+            filename = "AP-Logo-Church-White-English-White";
+            fileImage = filename + extension;
+            sizeText = size600x600Text;
+            bgColor = "bg-transparent";
+            txtColor = "text-black";
+        }
+        <div class="col-12 col-md-2 col-lg-4 py-1">
+            <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
+                <p class="pt-2 @txtColor fw-bold">@filename</p>
+                <p class="@txtColor">@sizeText</p>
+                <a href="@folderLocation@fileImage" target="_blank">
+                    <img class="gallery-picture-size img-fluid py-3 px-1" src="@folderLocation@fileImage" alt="@filename">
+                </a>
+            </div>
+        </div>
+
+        @{
+            filename = "AP-Logo-Church-White-Spanish-Gray";
+            fileImage = filename + extension;
+            sizeText = size600x600Text;
+            bgColor = "bg-transparent";
+            txtColor = "text-black";
+        }
+        <div class="col-12 col-md-2 col-lg-4 py-1">
+            <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
+                <p class="pt-2 @txtColor fw-bold">@filename</p>
+                <p class="@txtColor">@sizeText</p>
+                <a href="@folderLocation@fileImage" target="_blank">
+                    <img class="gallery-picture-size img-fluid py-3 px-1" src="@folderLocation@fileImage" alt="@filename">
+                </a>
+            </div>
+        </div>
+
+        @{
+            filename = "AP-Logo-Church-White-Spanish-White";
+            fileImage = filename + extension;
+            sizeText = size600x600Text;
+            bgColor = "bg-transparent";
+            txtColor = "text-black";
+        }
+        <div class="col-12 col-md-2 col-lg-4 py-1">
+            <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
+                <p class="pt-2 @txtColor fw-bold">@filename</p>
+                <p class="@txtColor">@sizeText</p>
+                <a href="@folderLocation@fileImage" target="_blank">
+                    <img class="gallery-picture-size img-fluid py-3 px-1" src="@folderLocation@fileImage" alt="@filename">
+                </a>
+            </div>
+        </div>
+
+        @{
+            filename = "AP-Logo-Gray";
+            fileImage = filename + extension;
+            sizeText = size600x600Text;
+            bgColor = "bg-transparent";
+            txtColor = "text-black";
+        }
+        <div class="col-12 col-md-2 col-lg-4 py-1">
+            <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
+                <p class="pt-2 @txtColor fw-bold">@filename</p>
+                <p class="@txtColor">@sizeText</p>
+                <a href="@folderLocation@fileImage" target="_blank">
+                    <img class="gallery-picture-size img-fluid py-3 px-1" src="@folderLocation@fileImage" alt="@filename">
+                </a>
+            </div>
+        </div>
+
+        @{
+            filename = "AP-Logo-White";
+            fileImage = filename + extension;
+            sizeText = size600x600Text;
+            bgColor = "bg-transparent";
+            txtColor = "text-black";
+        }
+        <div class="col-12 col-md-2 col-lg-4 py-1">
+            <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
+                <p class="pt-2 @txtColor fw-bold">@filename</p>
+                <p class="@txtColor">@sizeText</p>
+                <a href="@folderLocation@fileImage" target="_blank">
+                    <img class="gallery-picture-size img-fluid py-3 px-1" src="@folderLocation@fileImage" alt="@filename">
+                </a>
+            </div>
+        </div>
+
+        @{
+            filename = "Bird-Bible-Gray";
+            fileImage = filename + extension;
+            sizeText = size600x600Text;
+            bgColor = "bg-transparent";
+            txtColor = "text-black";
+        }
+        <div class="col-12 col-md-2 col-lg-4 py-1">
+            <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
+                <p class="pt-2 @txtColor fw-bold">@filename</p>
+                <p class="@txtColor">@sizeText</p>
+                <a href="@folderLocation@fileImage" target="_blank">
+                    <img class="gallery-picture-size img-fluid py-3 px-1" src="@folderLocation@fileImage" alt="@filename">
+                </a>
+            </div>
+        </div>
+
+        @{
+            filename = "Bird-Bible-White";
+            fileImage = filename + extension;
+            sizeText = size600x600Text;
+            bgColor = "bg-transparent";
+            txtColor = "text-black";
+        }
+        <div class="col-12 col-md-2 col-lg-4 py-1">
+            <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
+                <p class="pt-2 @txtColor fw-bold">@filename</p>
+                <p class="@txtColor">@sizeText</p>
+                <a href="@folderLocation@fileImage" target="_blank">
+                    <img class="gallery-picture-size img-fluid py-3 px-1" src="@folderLocation@fileImage" alt="@filename">
+                </a>
+            </div>
+        </div>
+
+        @{
+            filename = "Bird-Gray";
+            fileImage = filename + extension;
+            sizeText = size600x600Text;
+            bgColor = "bg-transparent";
+            txtColor = "text-black";
+        }
+        <div class="col-12 col-md-2 col-lg-4 py-1">
+            <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
+                <p class="pt-2 @txtColor fw-bold">@filename</p>
+                <p class="@txtColor">@sizeText</p>
+                <a href="@folderLocation@fileImage" target="_blank">
+                    <img class="gallery-picture-size img-fluid py-3 px-1" src="@folderLocation@fileImage" alt="@filename">
+                </a>
+            </div>
+        </div>
+
+        @{
+            filename = "Bird-White";
+            fileImage = filename + extension;
+            sizeText = size600x600Text;
+            bgColor = "bg-transparent";
+            txtColor = "text-black";
+        }
+        <div class="col-12 col-md-2 col-lg-4 py-1">
+            <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
+                <p class="pt-2 @txtColor fw-bold">@filename</p>
+                <p class="@txtColor">@sizeText</p>
+                <a href="@folderLocation@fileImage" target="_blank">
+                    <img class="gallery-picture-size img-fluid py-3 px-1" src="@folderLocation@fileImage" alt="@filename">
+                </a>
+            </div>
+        </div>
+
+        @{
+            filename = "Seal-Black-English";
+            fileImage = filename + extension;
+            sizeText = size600x600Text;
+            bgColor = "bg-transparent";
+            txtColor = "text-black";
+        }
+        <div class="col-12 col-md-2 col-lg-4 py-1">
+            <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
+                <p class="pt-2 @txtColor fw-bold">@filename</p>
+                <p class="@txtColor">@sizeText</p>
+                <a href="@folderLocation@fileImage" target="_blank">
+                    <img class="gallery-picture-size img-fluid py-3 px-1" src="@folderLocation@fileImage" alt="@filename">
+                </a>
+            </div>
+        </div>
+
+         @{
+            filename = "Seal-Black-Spanish";
+            fileImage = filename + extension;
+            sizeText = size600x600Text;
+            bgColor = "bg-transparent";
+            txtColor = "text-black";
+        }
+        <div class="col-12 col-md-2 col-lg-4 py-1">
+            <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
+                <p class="pt-2 @txtColor fw-bold">@filename</p>
+                <p class="@txtColor">@sizeText</p>
+                <a href="@folderLocation@fileImage" target="_blank">
+                    <img class="gallery-picture-size img-fluid py-3 px-1" src="@folderLocation@fileImage" alt="@filename">
+                </a>
+            </div>
+        </div>
+
+        @{
+            filename = "Seal-White-English";
+            fileImage = filename + extension;
+            sizeText = size600x600Text;
+            bgColor = "bg-transparent";
+            txtColor = "text-black";
+        }
+        <div class="col-12 col-md-2 col-lg-4 py-1">
+            <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
+                <p class="pt-2 @txtColor fw-bold">@filename</p>
+                <p class="@txtColor">@sizeText</p>
+                <a href="@folderLocation@fileImage" target="_blank">
+                    <img class="gallery-picture-size img-fluid py-3 px-1" src="@folderLocation@fileImage" alt="@filename">
+                </a>
+            </div>
+        </div>
+
+         @{
+            filename = "Seal-White-Spanish";
+            fileImage = filename + extension;
+            sizeText = size600x600Text;
+            bgColor = "bg-transparent";
+            txtColor = "text-black";
+        }
+        <div class="col-12 col-md-2 col-lg-4 py-1">
+            <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
+                <p class="pt-2 @txtColor fw-bold">@filename</p>
+                <p class="@txtColor">@sizeText</p>
+                <a href="@folderLocation@fileImage" target="_blank">
+                    <img class="gallery-picture-size img-fluid py-3 px-1" src="@folderLocation@fileImage" alt="@filename">
+                </a>
+            </div>
+        </div>
+
+        @{
+            filename = "Seal-Gold-English";
+            fileImage = filename + extension;
+            sizeText = size600x600Text;
+            bgColor = "bg-transparent";
+            txtColor = "text-black";
+        }
+        <div class="col-12 col-md-2 col-lg-4 py-1">
+            <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
+                <p class="pt-2 @txtColor fw-bold">@filename</p>
+                <p class="@txtColor">@sizeText</p>
+                <a href="@folderLocation@fileImage" target="_blank">
+                    <img class="gallery-picture-size img-fluid py-3 px-1" src="@folderLocation@fileImage" alt="@filename">
+                </a>
+            </div>
+        </div>
+
+         @{
+            filename = "Seal-Gold-Spanish";
+            fileImage = filename + extension;
+            sizeText = size600x600Text;
+            bgColor = "bg-transparent";
+            txtColor = "text-black";
+        }
+        <div class="col-12 col-md-2 col-lg-4 py-1">
+            <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
+                <p class="pt-2 @txtColor fw-bold">@filename</p>
+                <p class="@txtColor">@sizeText</p>
+                <a href="@folderLocation@fileImage" target="_blank">
+                    <img class="gallery-picture-size img-fluid py-3 px-1" src="@folderLocation@fileImage" alt="@filename">
+                </a>
+            </div>
+        </div>
+
+        @{
+            filename = "Fish";
+            fileImage = filename + extension;
+            sizeText = size600x600Text;
+            bgColor = "bg-transparent";
+            txtColor = "text-black";
+        }
+        <div class="col-12 col-md-2 col-lg-4 py-1">
+            <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
+                <p class="pt-2 @txtColor fw-bold">@filename</p>
+                <p class="@txtColor">@sizeText</p>
+                <a href="@folderLocation@fileImage" target="_blank">
+                    <img class="gallery-picture-size img-fluid py-3 px-1" src="@folderLocation@fileImage" alt="@filename">
+                </a>
+            </div>
+        </div>
+
+        @{
+            filename = "Loving-Leading";
+            fileImage = filename + extension;
+            sizeText = size600x600Text;
+            bgColor = "bg-transparent";
+            txtColor = "text-black";
+        }
+        <div class="col-12 col-md-2 col-lg-4 py-1">
+            <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
+                <p class="pt-2 @txtColor fw-bold">@filename</p>
+                <p class="@txtColor">@sizeText</p>
+                <a href="@folderLocation@fileImage" target="_blank">
+                    <img class="gallery-picture-size img-fluid py-3 px-1" src="@folderLocation@fileImage" alt="@filename">
+                </a>
+            </div>
+        </div>  
+    </div>
+</div>
+
+<!-- Add a "Top" button to page so we can get back to the top of the page. -->
+<script>
+
+    //Get the button
+    var mybutton = document.getElementById("top-button");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+
+</script>

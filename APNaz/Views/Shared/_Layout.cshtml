@@ -1,0 +1,504 @@
+﻿@{
+    // This Site
+    string siteURL = "https://APNazarene.org/"; 
+
+    // Set Site Name
+    string siteName = "Avon Park Nazarene Church";
+
+    // Short name appears in Nav Bar at top on Phones... Can be longer like "Avon Park Nazarene" or "Avon Park Naz"
+    string siteNameShort = "AP Naz";
+
+    // Overall Organization
+    string siteOrganization = "Nazarene Church";
+
+    // Set default values    
+    string pageTitle = ViewBag.Message + " | " + siteNameShort;
+    string description = "Our congregation is a family, part of the global family of people called Nazarenes, who, in turn, are part of the Body of Christ Universal. We invite you to worship and learn with us.";
+    string folder = "";
+
+    string shareImage = "About-ls.jpg";
+    string shareImageFolder = siteURL + "Content/ShareImages/";
+
+    // Default Link Share Settings -- (shows on "Link Share" card when a link is shared)
+    string ogSite_Name = siteOrganization;
+    string ogTitle = pageTitle;
+    string ogDescription = description;
+    string ogURL = siteURL + folder;
+    string canonical = siteURL + folder;
+
+    // Default Link Share Image
+    string ogImage = shareImageFolder + "AP-Logo-Gray-Green-ls.png";
+    string ogImageWidth = "1200";
+    string ogImageHeight = "630";
+
+    // 'Active Link' variables to keep track of the active link    
+    string active01 = "";
+    string active02 = "";
+    string active03 = "";
+    string active04 = "";
+    string active05 = "";
+    string active06 = "";
+    string active07 = "";
+    string active08 = "";
+    string active09 = "";
+    string active10 = "";
+    string active11 = "";
+    string active12 = "";
+    string active13 = "";
+    string active14 = "";
+    string active15 = "";
+
+    // aria-current="page"
+    string ariaSelected01 = "false";
+    string ariaSelected02 = "false";
+    string ariaSelected03 = "false";
+    string ariaSelected04 = "false";
+    string ariaSelected05 = "false";
+    string ariaSelected06 = "false";
+    string ariaSelected07 = "false";
+    string ariaSelected08 = "false";
+    string ariaSelected09 = "false";
+    string ariaSelected10 = "false";
+    string ariaSelected11 = "false";
+    string ariaSelected12 = "false";
+    string ariaSelected13 = "false";
+    string ariaSelected14 = "false";
+    string ariaSelected15 = "false";
+
+    // Change Link Share card information based on the View link shared
+    switch (ViewBag.Message)
+    {
+        case "Home":
+            {               
+                pageTitle = siteNameShort;
+                folder = "";
+                shareImage = "AP-Logo-Gray-Green-ls.png";
+                active01 = "active";
+                ariaSelected01 = "true";
+                break;
+            }
+        case "Contact":
+            {    
+                pageTitle = "Contact Us";
+                folder = "Info/Contact/";
+                description = "Please reach out and contact us and we will respond!";
+                shareImage = "AP-Logo-Gray-Green-ls.png";
+                active02 = "active";
+                ariaSelected02 = "true";
+                break;
+            }
+        case "Worship":
+            {        
+                pageTitle = "Worship with us";
+                description = "Our Online Worship";
+                folder = "Info/Worship/";                
+                shareImage = "AP-Logo-Gray-Green-ls.png";
+                active03 = "active";
+                ariaSelected03 = "true";
+                break;
+            }
+        case "Calendar":
+            {           
+                pageTitle = "Our Calendar";
+                description = "Our Online Calendar";
+                folder = "Info/Calendar/";                
+                shareImage = "AP-Logo-Gray-Green-ls.png";
+                active04 = "active";
+                ariaSelected04 = "true";
+                break;
+            }
+        case "Members":
+            {
+                pageTitle = "Members";
+                description = "Members Area";
+                folder = "Info/Members/";                
+                shareImage = "AP-Logo-Gray-Green-ls.png";
+                active05 = "active";
+                ariaSelected05 = "true";
+                break;
+            }
+        case "Gallery":
+            {
+                pageTitle = "Our Gallery";
+                description = "Our Online Gallery";
+                folder = "Gallery/";                
+                shareImage = "Gallery-logo-ls.jpg";
+                active06 = "active";
+                ariaSelected06 = "true";
+                break;
+            }
+
+        case "Privacy":
+            {   
+                pageTitle = "Privacy Policy";
+                description = "Our Privacy Policy";
+                folder = "Info/Privacy";                
+                shareImage = "AP-Logo-Gray-Green-ls.png";               
+                active07 = "active";
+                ariaSelected07 = "true";
+                break;
+            }
+
+        case "TOS":
+            {
+                pageTitle = "Terms of Service";
+                description = "Our terms of Service";
+                folder = "Info/TOS";                
+                shareImage = "AP-Logo-Gray-Green-ls.png";
+                active08 = "active";
+                ariaSelected08 = "true";
+                break;
+            }
+
+        case "Staff":
+            {
+                pageTitle = "Meet our Staff";
+                description = "Our Staff";
+                folder = "Info/Staff";                
+                shareImage = "Staff-Logo-ls.jpg";
+                active09 = "active";
+                ariaSelected09 = "true";
+                break;
+            }
+
+        case "Purpose":
+            { 
+                pageTitle = "Purpose";
+                description = "Our Mission";
+                folder = "Info/Purpose";               
+                shareImage = "Purpose-Logo-ls.jpg";
+                active10 = "active";
+                ariaSelected10 = "true";
+                break;
+            }
+
+        case "Nazarenes":
+            {
+                pageTitle = "Nazarenes";
+                description = "Who We Are!";
+                folder = "Info/Nazarenes";
+                shareImage = "Nazarenes-Logo-ls.jpg";                
+                active11 = "active";
+                ariaSelected11 = "true";
+                break;
+            }
+
+        case "Links":
+            {
+                pageTitle = "More Links";
+                folder = "Info/Links";
+                shareImage = "Links-logo-ls.jpg";
+                active12 = "active";
+                ariaSelected12 = "true";
+                break;
+            }  
+
+        case "Bible":
+            {
+                pageTitle = ViewBag.Message;
+                folder = "Bible";
+                description = "The NIV Bible";
+                shareImage = "About-ls.jpg";
+                active13 = "active";
+                ariaSelected13 = "true";
+                break;
+            }
+
+        case "Colors":
+            {
+                pageTitle = ViewBag.Message;
+                description = "Guideline Colors";
+                folder = "Info/Colors";
+                shareImage = "Colors-ls.png";
+                break;
+            }
+
+        case "Emergency":
+            {
+                pageTitle = ViewBag.Message;
+                description = "In Case of an Emergency";
+                folder = "Bible/Emergency";
+                shareImage = "Emergency-ls.png";
+                break;
+            }
+
+        case "OldTestament":
+            {
+                pageTitle = "Old Testament";
+                description = "The Old Testament";
+                folder = "Bible/OldTestament";                
+                shareImage = "Old-Testament-ls.jpg";               
+                break;
+            }
+
+        case "NewTestament":
+            {
+                pageTitle = "New Testament";
+                description = "The New Testament";
+                shareImage = "New-Testament-ls";
+                folder = "Bible/NewTestament";
+                break;                
+            }
+
+    }
+
+    ogTitle = pageTitle;
+    ogDescription = description;
+    canonical = siteURL + folder;
+    
+    ogImage = shareImageFolder + shareImage;
+    ogURL = siteURL + folder;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Site Name -->
+    <title>@pageTitle</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Google Site Verification  (valid) -->
+    <meta name="google-site-verification" content="wdaytYpXJY1e9iWkOJXCS6HBuc0aCDxz--VJTfwTT3E" />
+
+    <!-- FavIcon(s) - (all your Logo... plenty of them!) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="~/content/icons/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" type="image/pgn" href="~/content/icons/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="~/content/icons/android-chrome-512x512.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="~/content/icons/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="~/content/icons/favicon-32x32.png" />
+    <link rel="icon" type="image/x-icon" href="~/favicon.ico" />    
+    
+    <!-- Fonts (Lato -  add more fonts here) -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:300, 400, 500, 600' rel='stylesheet' type='text/css'>    
+
+    <!-- Default FB App ID unused -->
+    <meta property="fb:app_id" content="966242223397117" />
+
+    <!-- Link Share Setup -->
+    <!-- This info is used for the card shown when you share a link on the web (I call it "Link Share"). -->
+    <!-- (more info here: https://ogp.me/) -->
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="@ogTitle" />
+    <meta property="og:determiner" content="The" />
+    <meta property="og:description" content="@ogDescription" />
+    <meta property="og:site_name" content="@ogSite_Name" />
+    <meta property="og:url" content="@ogURL" />
+    <meta property="og:image:url" content="@ogImage" />
+    <meta property="og:image:alt" content="Logo Image" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content=@ogImageWidth />
+    <meta property="og:image:height" content=@ogImageHeight />
+
+    <!-- Twitter Link Share Setup -->
+    <!-- (more info here: https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/markup) -->
+
+    <meta name="twitter:card" content="photo" />
+    <meta name="twitter:title" content="@ogTitle" />
+    <meta name="twitter:image" content="@ogImage" />
+    <meta name="twitter:image:width" content=@ogImageWidth />
+    <meta name="twitter:image:height" content=@ogImageHeight />
+
+    <!-- Website Setup -->
+    <meta name="description" content="@ogDescription" />
+    <link rel="canonical" href="@canonical" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" /> 
+    
+    <link rel="stylesheet" href="~/css/colors.css" />
+    <link rel="stylesheet" href="~/css/fontsize.css" />
+    <link rel="stylesheet" href="~/css/mycards.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/sizes.css" />
+    <link rel="stylesheet" href="~/css/spacing.css" />
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Top Header Navbar Menu -->
+    <header>       
+        <nav class="navbar navbar-expand-lg navbar-dark bg-gray-darker border-bottom box-shadow px-0 mb-0 mb-lg-4 my-0">
+            <div class="d-flex flex-grow-1">                
+
+                <!-- Set to show on lg -->
+                <a class="navbar-brand navbar-text nav-text-fs text-white d-none d-lg-inline-block ps-2" href="/">@siteName<img class="bird-size px-2 pb-2" src="~/Content/Svg/Logos/Bird-White.svg" alt="Bird Image"/></a>
+
+                <!-- Set to show on sm -->
+                <a class="navbar-brand navbar-text nav-text-fs text-white d-lg-none d-inline-block w-100 text-center me-0 ps-5" href="/"><img class="home-size px-2 pb-2" src="~/content/svg/buttons/home.svg"/>@siteNameShort<img class="bird-size px-2 pb-2" src="~/Content/Svg/Logos/Bird-White.svg" alt="Bird Image"/></a>
+
+                <!-- Toggle Button -->
+                <div class="text-left pe-2 pt-1">
+                    <button class="navbar-toggler pe-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Selection Choices -->
+            <div class="collapse navbar-collapse flex-grow-1 text-right px-2" id="navbarToggler">
+
+                <ul class=" ps-4 navbar-nav ms-auto flex-nowrap">
+
+                    <!-- Home -->
+                    <li class="nav-item">
+                        <a class="@active01 nav-link nav-link-fs" aria-selected="@ariaSelected01" href="/"><img class="show-me-at-the-bottom home-size px-2 pb-2" src="~/content/svg/buttons/home.svg" />Home</a>
+                    </li>
+
+                    <!-- Contact -->
+                    <li class="nav-item">
+                        <a class="@active02 nav-link nav-link-fs" aria-selected="@ariaSelected02" href="/Info/Contact"><img class="show-me-at-the-bottom home-size px-2 pb-2" src="~/content/svg/Cards/Email-White.svg" />Contact</a>
+                    </li>
+
+                    <!-- Worship -->
+                    <li class="nav-item">
+                        <a class="@active03 nav-link nav-link-fs" aria-selected="@ariaSelected03" href="https://backtothebible.app/library/p/apnazarene" target="_blank"><img class="show-me-at-the-bottom home-size px-2 pb-2" src="~/content/svg/cards/Cross-White.svg" />Worship</a>
+                    </li>
+
+                    <!-- Calendar -->
+                    <li class="nav-item">
+                        <a class="@active04 nav-link nav-link-fs" aria-selected="@ariaSelected04" href="/Info/Calendar"><img class="show-me-at-the-bottom home-size px-2 pb-2" src="~/content/svg/cards/Calendar-White.svg" />Calendar</a>
+                    </li>
+
+                    <!-- Members -->
+                    <li class="nav-item">
+                        <a class="@active05 nav-link nav-link-fs" aria-selected="@ariaSelected05" href="https://APNaz.churchtrac.com/" target="_blank"><img class="show-me-at-the-bottom home-size px-2 pb-2" src="~/content/svg/Cards/Staff-White.svg" />Members</a>
+                    </li>
+
+                    <!-- Bible -->
+                    <li class="nav-item">
+                        <a class="@active13 nav-link nav-link-fs" aria-selected="@ariaSelected13" href="~/Bible/"><img class="show-me-at-the-bottom home-size px-2 pb-2" src="~/Content/Svg/Logos/Bird-Bible-White.svg" />Bible</a>
+                    </li>                   
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content (Views) -->
+    <div class="container p-0" id="MainContainer">
+        <main role="main" class="p-0">
+            @RenderBody()
+        </main>
+    </div>
+
+    <!-- Bottom Footer Navbar Menu -->
+    <footer class="navbar navbar-dark border-top bg-gray-darker" role="contentinfo" aria-label="Site footer">
+
+        <div class="container text-right">
+            <div class="row w-100 gx-0 gx-lg-5">
+
+                <!-- Info -->
+                <div class="col-4">
+                    <h6 class="navbar-text navbar-text-footer-fs text-white mb-0">Info</h6>
+                    <ul class="navbar-nav ms-auto flex-nowrap ps-2">
+
+                        <!-- Home -->
+                        <li class="nav-item text-light">
+                            <a class="@active01 nav-link footer-fs text-nowrap" aria-selected="@ariaSelected01" href="/">About Us</a>
+                        </li>
+                      
+                        <!-- Contact -->
+                        <li class="nav-item text-light">
+                            <a class="@active02 nav-link footer-fs text-nowrap" aria-selected="@ariaSelected02" href="/Info/Contact">Contact Us</a>
+                        </li>
+
+                        <!-- Our Staff -->
+                        <li class="nav-item text-light">
+                            <a class="@active09 nav-link footer-fs" aria-selected="@ariaSelected09" href="/Info/Staff">Meet our Staff</a>
+                        </li>
+
+                        <!-- Privacy -->
+                        <li class="nav-item text-light">
+                            <a class="@active07 nav-link footer-fs text-nowrap" aria-selected="@ariaSelected07" href="/Info/Privacy">Privacy Policy</a>
+                        </li>
+
+                        <!-- TOS -->
+                        <li class="nav-item text-light">
+                            <a class="@active08 nav-link footer-fs" aria-selected="@ariaSelected08" href="/Info/TOS">Terms of Service</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Features -->
+                <div class="col-4">
+                    <h6 class="navbar-text navbar-text-footer-fs text-white mb-0">Features</h6>
+                    <ul class="navbar-nav ms-auto flex-nowrap ps-2">
+
+                        <!-- Online Worship -->
+                        <li class="nav-item text-light">
+                            <a class="@active05 nav-link footer-fs" aria-selected="@ariaSelected05" href="https://backtothebible.app/library/p/apnazarene" target="_blank">Online Worship</a>
+                        </li>
+
+                        <!-- Member Area -->
+                        <li class="nav-item text-light">
+                            <a class="@active03 nav-link footer-fs" aria-selected="@ariaSelected03" href="https://APNaz.churchtrac.com/ " target="_blank">Member Area</a>
+                        </li>
+
+                        <!-- Calendar -->
+                        <li class="nav-item text-light">
+                               
+                            <a class="@active04 nav-link footer-fs" aria-selected="@ariaSelected04" href="/Info/Calendar">Calendar</a>
+                        </li>
+
+                        <!-- Email Sign-up -->
+                        <li class="nav-item text-light">
+                            <a class="@active14 nav-link footer-fs" aria-selected="@ariaSelected14" href="https://mailchi.mp/5dc417814456/apncsignup" target="_blank">Email Sign-up</a>
+                        </li>
+
+                        <!-- Blog -->                        
+                        <li class="nav-item text-light">
+                            <a class="@active15 nav-link footer-fs" aria-selected="@ariaSelected15" href="https://APNaz.wordpress.com/" target="_blank">Blog</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <!-- Links -->
+                <div class="col-4 pe-0">
+                    <h6 class="navbar-text navbar-text-footer-fs text-white mb-0">Links</h6>
+                    <ul class="navbar-nav ms-auto flex-nowrap ps-2">
+                        
+                        <!-- Nazarenes -->
+                        <li class="nav-item text-light">
+                            <a class="@active11 nav-link footer-fs" aria-selected="@ariaSelected11" href="/Info/Nazarenes">Nazarenes</a>
+                        </li>
+
+                        <!-- Purpose -->
+                        <li class="nav-item text-light">
+                            <a class="@active10 nav-link footer-fs" aria-selected="@ariaSelected10" href="/Info/Purpose">Purpose</a>
+                        </li>
+
+                        <!-- Gallery -->
+                        <li class="nav-item text-light">
+                            <a class="@active06 nav-link footer-fs" aria-selected="@ariaSelected06" href="~/Gallery">Gallery</a>
+                        </li>
+
+                        <!-- More Links -->
+                        <li class="nav-item text-light">
+                            <a class="@active12 nav-link footer-fs" aria-selected="@ariaSelected12" href="/Info/Links">More Links</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="w-100 bg-gray-darker text-white pt-4">
+            <p class="text-center py-2 text-white" style="font-size: 10px;">Copyright © @DateTime.Now.Year - All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>

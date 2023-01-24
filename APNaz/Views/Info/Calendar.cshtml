@@ -1,0 +1,53 @@
+﻿@{
+    ViewData["Title"] = "Calendar";
+}
+
+<!-- Heading Row-->
+<div Class="my-3 w-100">
+    <h3 class="text-center text-white">
+        Our Calendar
+        <img class="card-image-size" src="~/Content/Svg/Cards/Calendar.svg" />
+    </h3>
+</div>
+
+<iframe class="my-calendar-size" src="https://www.churchtrac.com/public_calendar?ui=4A64E3C8&view=listMonth" scrolling="auto"></iframe>
+
+<div class="calendar-view-bottom-spacing"></div>
+
+<!-- Remove overall Container -->
+<script>
+    if (document.getElementById("MainContainer").classList.contains("container")) {
+        document.getElementById("MainContainer").classList.remove("container");
+    };
+</script>
+
+
+
+    @*// Not deleted for reference*@
+
+    @*//const collection = document.getElementsByClassName("nav-link-fs");    
+    //for (let i = 0; i < collection.length; i++) {
+    //    collection[i].style["-webkit-text-size-adjust"] = "160%";
+    //};
+
+    //const collection2 = document.getElementsByClassName("nav-text-fs");
+    //for (let i = 0; i < collection2.length; i++) {
+    //    collection2[i].style["-webkit-text-size-adjust"] = "260%";
+    //};
+
+    //const collection3 = document.getElementsByClassName("footer-fs");
+    //for (let i = 0; i < collection3.length; i++) {
+    //    collection3[i].style["-webkit-text-size-adjust"] = "200%";
+    //};
+
+    //const collection = document.getElementsByClassName("nav-link-fs");
+    //for (let i = 0; i < collection.length; i++) {
+    //    collection[i].style["font-size"] = "36px";
+    //};
+
+    //var width = (window.innerWidth > 0) ? window.innerWidth : screen.Width;
+    //if (width <= 1240px) {
+    //    for (let i = 0; i < collection.length; i++) {
+    //        collection[i].style["font-size"] = "36px";
+    //    };
+    //} else { }*@

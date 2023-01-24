@@ -1,0 +1,118 @@
+﻿@{
+    ViewData["Title"] = "Bible";
+}
+
+<style>
+    
+    /* Tab Stuff */
+    .nav-item {        
+        color: #414042;
+        border-color: #414042;
+        border-style: solid;
+        border-width: thin;
+        border-bottom-style: none;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+    } 
+
+    .nav-link {
+        color: #414042;
+    }       
+        
+        .nav-link:hover {           
+            color: #C72D27;            
+        }
+
+    /* Tab Stuff End */
+
+</style>
+
+<!-- Top Button placed here -->
+<button onclick="topFunction()" id="top-button" title="Go to top">Top</button>
+
+<!-- Heading -->
+<div Class="container pt-3 pt-lg-2 px-2 px-lg-4 pb-lg-3">
+
+    <!-- Page Heading Card -->
+    <div class="my-card bg-gray-lighter border-dark card-heading-size mx-auto py-2">
+        <p class="text-gray-darker text-center fw-bolder fs-2 pt-3">The Bible</p>
+        <p class="text-center pb-2"><a class="text-gray-dark text-bold fs-6" href="http://www.biblegateway.com/versions/?action=getVersionInfo&amp;vid=31" target="_blank"><span class="text-nowrap">New International Version</span><br/>(NIV)</a></p>
+    </div>
+
+    <p class="text-center text-white text-bold fs-5 pt-3"><span class="text-nowrap">Click on the Book</span> <span class="text-nowrap">you would like to read.</span></p>
+
+    <!-- Assistive Hearing -->
+    <div class="col-12 col-md-6 col-lg-3 mb-lg-4 pt-4 ps-2 ps-md-0 ps-lg-0 mx-auto">
+
+        <!-- Assistive Hearing Card -->
+        <p class="text-center text-white text-bold fs-6 pb-3">(The Bible will also read to you.)</p>
+        <div class="assistive-hearing-size ratio">
+            <img src="/content/svg/misc/assistive-hearing-design-2.svg">
+        </div>
+        
+    </div>
+</div>
+
+<!-- Tab List -->
+<ul class="nav nav-tabs bg-gray-dark" id="myTab" role="tablist">
+
+    <!-- Old Testament Tab -->
+    <li class="nav-item" role="presentation" style="background-color: #DEDFE0; border-left: none;">
+        <button id="old-testament-tab" type="button" role="tab" class="nav-link fw-bold fs-6 px-2 active" data-bs-toggle="tab" data-bs-target="#old-testament" aria-controls="old-testament" aria-selected="true">Old Testament</button>
+    </li>
+
+    <!-- New Testament Tab -->
+    <li class="nav-item" role="presentation" style="background-color: #84CBA0;">
+        <button id="new-testament-tab" type="button" role="tab" class="nav-link fw-bold fs-6 px-2" data-bs-toggle="tab" data-bs-target="#new-testament" aria-controls="new-testament" aria-selected="false">New Testament</button>
+    </li>
+</ul>
+
+<!-- Tab Views -->
+<div class="tab-content my-card-radius mb-0 mb-lg-3" id="myTabContent">
+
+    <!-- Old Testament -->
+    <div id="old-testament" role="tabpanel" class="my-card-footer tab-pane fade show bg-white p-0 p-lg-2 active" aria-labelledby="old-testament-tab">
+        <partial name="OldTestamentPartial" />
+    </div>
+
+    <!-- New Testament -->
+    <div id="new-testament" role="tabpanel" class="my-card-footer tab-pane fade bg-white p-0 p-lg-2" aria-labelledby="new-testament-tab">
+        <partial name="NewTestamentPartial" />
+    </div>
+</div>
+<!-- End Content -->
+
+<!-- Extra padding before footer if needed -->
+<div class="bible-view-bottom-spacing"></div>
+
+
+<!-- Change background color and background image -->
+<script>
+    changeBackgroundColor("#4A4B4C");
+    changeBackgroundImage("none");
+</script>
+
+<!-- Add a "Top" button to page so we can get back to the top of the page. -->
+<script>
+
+    //Get the button
+    var mybutton = document.getElementById("top-button");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+
+</script>
