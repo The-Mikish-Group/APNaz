@@ -14,7 +14,7 @@ if (!app.Environment.IsDevelopment())
 }
 
 // Comment out line below for http sites
-//app.UseHttpsRedirection();
+app.UseHttpsRedirection();
 
 app.UseStaticFiles();
 
