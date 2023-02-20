@@ -16,20 +16,11 @@
     string description = "Our congregation is a family, part of the global family of people called Nazarenes, who, in turn, are part of the Body of Christ Universal. We invite you to worship and learn with us.";
     string folder = "";
 
+    //Share Image and ShareImage folder
     string shareImage = "About-ls.jpg";
     string shareImageFolder = siteURL + "Content/ShareImages/";
-
-    // Default Link Share Settings -- (shows on "Link Share" card when a link is shared)
-    string ogSite_Name = siteOrganization;
-    string ogTitle = pageTitle;
-    string ogDescription = description;
-    string ogURL = siteURL + folder;
-    string canonical = siteURL + folder;
-
-    // Default Link Share Image
-    string ogImage = shareImageFolder + "AP-Logo-Gray-Green-ls.png";
-    string ogImageWidth = "1200";
-    string ogImageHeight = "630";
+    string imageWidth = "1200";
+    string imageHeight = "630";
 
     // 'Active Link' variables to keep track of the active link    
     string active01 = "";
@@ -242,12 +233,16 @@
 
     }
 
-    ogTitle = pageTitle;
-    ogDescription = description;
-    canonical = siteURL + folder;
+    // Page Share Settings -- (shows on "PageShare" card when a link is shared)
+    string ogSite_Name = siteOrganization;
+    string ogTitle = pageTitle;
+    string ogDescription = description;
+    string ogURL = siteURL + folder;
+    string canonical = siteURL + folder;  
     
-    ogImage = shareImageFolder + shareImage;
-    ogURL = siteURL + folder;
+    string ogImage = shareImageFolder + shareImage;
+    string ogImageWidth = imageWidth;
+    string ogImageHeight = imageHeight;
 }
 
 <!DOCTYPE html>
@@ -262,6 +257,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="@description" />
+    <link rel="canonical" href="@canonical" />
 
     <!-- Google Site Verification  (valid) -->
     <meta name="google-site-verification" content="wdaytYpXJY1e9iWkOJXCS6HBuc0aCDxz--VJTfwTT3E" />
@@ -283,7 +280,6 @@
     <!-- Link Share Setup -->
     <!-- This info is used for the card shown when you share a link on the web (I call it "Link Share"). -->
     <!-- (more info here: https://ogp.me/) -->
-
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:title" content="@ogTitle" />
@@ -299,18 +295,14 @@
 
     <!-- Twitter Link Share Setup -->
     <!-- (more info here: https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/markup) -->
-
     <meta name="twitter:card" content="photo" />
     <meta name="twitter:title" content="@ogTitle" />
     <meta name="twitter:image" content="@ogImage" />
     <meta name="twitter:image:width" content=@ogImageWidth />
     <meta name="twitter:image:height" content=@ogImageHeight />
 
-    <!-- Website Setup -->
-    <meta name="description" content="@ogDescription" />
-    <link rel="canonical" href="@canonical" />
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" /> 
-    
+    <!-- CSS Link Setup -->    
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />    
     <link rel="stylesheet" href="~/css/colors.css" />
     <link rel="stylesheet" href="~/css/fontsize.css" />
     <link rel="stylesheet" href="~/css/mycards.css" />
@@ -318,12 +310,11 @@
     <link rel="stylesheet" href="~/css/sizes.css" />
     <link rel="stylesheet" href="~/css/spacing.css" />
 
+    <!-- JS Link Setup -->
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js"></script>
-
 </head>
-
 <body>
 
     <!-- Top Header Navbar Menu -->
