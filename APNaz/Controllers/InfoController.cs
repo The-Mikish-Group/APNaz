@@ -75,7 +75,14 @@ public class InfoController : Controller   {
     {
         ViewBag.Message = "Colors";
         return View();
-    }    
+    }
+
+    public IActionResult CaptchaEmail()
+    {
+        ViewBag.Message = "CaptchaEmail";
+        return View();
+    }
+    
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
