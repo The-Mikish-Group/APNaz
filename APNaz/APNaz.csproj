@@ -7,9 +7,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\Content\Videos\April.m4v" />
+    <Content Remove="wwwroot\Content\Videos\March-01.m4v" />
+    <Content Remove="wwwroot\Content\Videos\May.m4v" />
+    <Content Remove="wwwroot\Content\Videos\prayerisnotrocketscience.jpg" />
+    <Content Remove="wwwroot\Content\Videos\prayerisnotrocketscience.mp4" />
+    <Content Remove="wwwroot\Content\Videos\Retooning-The-Nativity.m4v" />
+    <Content Remove="wwwroot\Content\Videos\worshipisnotrocketscience.mp4" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Update="wwwroot\sitemap.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\Content\Videos\" />
   </ItemGroup>
 
 </Project>
