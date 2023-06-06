@@ -343,7 +343,7 @@
         min-height: 298px;
     }
     .please-contact-spacing {
-        min-height: 47px;
+        min-height:  7px;
     }
 }
 /* #endregion */
@@ -358,7 +358,7 @@
         min-height: 16px;
     }
     .please-contact-spacing {
-        min-height: 119px;
+        min-height: 85px;
     }
     .staff-view-bottom-spacing {
         min-height: 92px;
@@ -441,7 +441,7 @@
     }
 
     .please-contact-spacing {
-        min-height: 90px;
+        min-height: 55px;
 
     }
 
@@ -730,7 +730,7 @@
 @media (min-width: 1200px) {
     
     .please-contact-spacing {
-        min-height: 67px;
+        min-height: 33px;
     }
 }
 /* #endregion */
@@ -739,7 +739,7 @@
 @media (min-width: 1399.98px) {
     
     .please-contact-spacing {
-        min-height: 44px;
+        min-height: 11px;
     }
 }
 /* #endregion */

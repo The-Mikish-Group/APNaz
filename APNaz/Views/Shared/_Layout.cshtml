@@ -38,6 +38,7 @@
     string active13 = "";
     string active14 = "";
     string active15 = "";
+    string active16 = "";
 
     // aria-current="page"
     string ariaSelected01 = "false";
@@ -55,6 +56,7 @@
     string ariaSelected13 = "false";
     string ariaSelected14 = "false";
     string ariaSelected15 = "false";
+    string ariaSelected16 = "false";
 
     // Change Link Share card information based on the View link shared
     switch (ViewBag.Message)
@@ -184,6 +186,15 @@
                 break;
             }  
 
+        case "GiveOnline":
+            {
+                pageTitle = "Give Online";
+                folder = "Info/Links";
+                shareImage = "Links-logo-ls.jpg";
+                active16 = "active";
+                ariaSelected16 = "true";
+                break;
+            }
         case "Bible":
             {
                 pageTitle = ViewBag.Message;
@@ -313,7 +324,7 @@
     <!-- JS Link Setup -->
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js"></script>
+    <script src="~/js/site01.js"></script>
 </head>
 <body>
 
@@ -477,6 +488,11 @@
                         <!-- More Links -->
                         <li class="nav-item text-light">
                             <a class="@active12 nav-link footer-fs" aria-selected="@ariaSelected12" href="/Info/Links">More Links</a>
+                        </li>
+
+                        <!-- Give Online -->
+                        <li class="nav-item text-light">
+                            <a class="@active16 nav-link footer-fs" aria-selected="@ariaSelected16" href="https://apnaz.churchtrac.com" target="_blank">Give Online</a>
                         </li>
                     </ul>
                 </div>

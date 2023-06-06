@@ -34,9 +34,9 @@ function eventToggleLogo() {
     toggleLogo();
 
     // Set the countdown Interval.
-    setInterval(function () {
-        toggleLogo();
-    }, 4500);
+    //setInterval(function () {
+    //    toggleLogo();
+    //}, 4500);
 }
 
 // Called by function eventToggleLogo
@@ -64,9 +64,9 @@ function eventToggleSeal() {
     toggleSealGold();
 
     // Set the countdown Interval.
-    setInterval(function () {
-        toggleSealGold();
-    }, 4500);
+    //setInterval(function () {
+    //    toggleSealGold();
+    //}, 4500);
 }
 
 // Called by function eventToggleSeal
@@ -114,12 +114,12 @@ function toggleSealBlack() {
     if (document.getElementById("Seal-Black-English-Text").classList.contains('noshow')) {
         document.getElementById("Seal-Black-English-Text").classList.replace('noshow', 'show');
         document.getElementById("Seal-Black-Spanish-Text").classList.replace('show', 'noshow');
-    } else {
-        // Seal_Black_Spanish_Text - Show
-        if (document.getElementById("Seal-Black-Spanish-Text").classList.contains('noshow')) {
-            document.getElementById("Seal-Black-Spanish-Text").classList.replace('noshow', 'show');
-            document.getElementById("Seal-Black-English-Text").classList.replace('show', 'noshow');
-        }
+    //} else {
+    //    // Seal_Black_Spanish_Text - Show
+    //    if (document.getElementById("Seal-Black-Spanish-Text").classList.contains('noshow')) {
+    //        document.getElementById("Seal-Black-Spanish-Text").classList.replace('noshow', 'show');
+    //        document.getElementById("Seal-Black-English-Text").classList.replace('show', 'noshow');
+    //    }
     }
 
     //***********************************************//
