@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <Content Remove="wwwroot\Content\Videos\April.m4v" />
+    <Content Remove="wwwroot\Content\Videos\Jesus_creed_no_Logo_No_End_Logo_Version_HD.mp4" />
     <Content Remove="wwwroot\Content\Videos\March-01.m4v" />
     <Content Remove="wwwroot\Content\Videos\May.m4v" />
     <Content Remove="wwwroot\Content\Videos\prayerisnotrocketscience.jpg" />
