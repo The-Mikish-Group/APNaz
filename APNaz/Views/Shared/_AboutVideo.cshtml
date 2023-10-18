@@ -15,14 +15,31 @@
 			<img class="love-lead-size" src="~/content/svg/Misc/Loving-Leading-01.svg" />
 		</div>
 	</div>
-	
-	<!-- Video -->
-	<video class="bg-black w-100 my-card-radius" controls  autoplay loop>
-		
-		<!-- Current Video -->		
-		<source src="~/content/videos/october.mp4#t=1.0" type="video/mp4" />
 
-		Your browser does not support the video tag.
-
+	<!-- New Auto Year_Month Naming -->
+    <video id="videoPlayer" class="bg-black w-100 my-card-radius" controls autoplay loop>        
+		<source id="videoSource" src="" type="video/mp4">
 	</video>
+
 </div>
+
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+		// Get the current date
+		const currentDate = new Date();
+		const currentMonth = (currentDate.getMonth() + 1).toString().padStart(2, '0'); // Zero-padding the month
+		const currentYear = currentDate.getFullYear();
+
+		// Construct the video source URL based on the current date (change the t=2.0 to control where video starts)
+		const videoName = `content/videos/${currentYear}_${currentMonth}.mp4#t=2.0`;
+
+		// Set the source of the <video> element
+		const videoSource = document.getElementById("videoSource");
+		videoSource.src = videoName;
+
+		// Reload the video to apply the new source
+		const videoPlayer = document.getElementById("videoPlayer");
+		videoPlayer.load();
+	});
+
+</script>
