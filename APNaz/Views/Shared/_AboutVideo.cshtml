@@ -3,7 +3,6 @@
         height: 100%;
         width: 100%;
     }
-
 </style>
 
 <!-- Column Video Container - Welcome Video -->
@@ -31,7 +30,7 @@
 		const currentYear = currentDate.getFullYear();
 
 		// Construct the video source URL based on the current date (change the t=2.0 to control where video starts)
-		const videoName = `content/videos/${currentYear}_${currentMonth}.mp4#t=2.0`;
+		const videoName = `content/videos/${currentYear}_${currentMonth}.mp4#t=1.0`;
 
 		// Set the source of the <video> element
 		const videoSource = document.getElementById("videoSource");
@@ -41,5 +40,4 @@
 		const videoPlayer = document.getElementById("videoPlayer");
 		videoPlayer.load();
 	});
-
 </script>

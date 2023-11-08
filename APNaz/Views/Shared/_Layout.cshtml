@@ -40,24 +40,6 @@
     string active15 = "";
     string active16 = "";
 
-    // aria-current="page"
-    string ariaSelected01 = "false";
-    string ariaSelected02 = "false";
-    string ariaSelected03 = "false";
-    string ariaSelected04 = "false";
-    string ariaSelected05 = "false";
-    string ariaSelected06 = "false";
-    string ariaSelected07 = "false";
-    string ariaSelected08 = "false";
-    string ariaSelected09 = "false";
-    string ariaSelected10 = "false";
-    string ariaSelected11 = "false";
-    string ariaSelected12 = "false";
-    string ariaSelected13 = "false";
-    string ariaSelected14 = "false";
-    string ariaSelected15 = "false";
-    string ariaSelected16 = "false";
-
     // Change Link Share card information based on the View link shared
     switch (ViewBag.Message)
     {
@@ -67,7 +49,6 @@
                 folder = "";
                 shareImage = "AP-Logo-Gray-Green-ls.png";
                 active01 = "active";
-                ariaSelected01 = "true";
                 break;
             }
         case "Contact":
@@ -77,7 +58,6 @@
                 description = "Please reach out and contact us and we will respond!";
                 shareImage = "AP-Logo-Gray-Green-ls.png";
                 active02 = "active";
-                ariaSelected02 = "true";
                 break;
             }
         case "Worship":
@@ -87,7 +67,6 @@
                 folder = "Info/Worship/";                
                 shareImage = "AP-Logo-Gray-Green-ls.png";
                 active03 = "active";
-                ariaSelected03 = "true";
                 break;
             }
         case "Calendar":
@@ -97,7 +76,6 @@
                 folder = "Info/Calendar/";                
                 shareImage = "AP-Logo-Gray-Green-ls.png";
                 active04 = "active";
-                ariaSelected04 = "true";
                 break;
             }
         case "Members":
@@ -107,7 +85,6 @@
                 folder = "Info/Members/";                
                 shareImage = "AP-Logo-Gray-Green-ls.png";
                 active05 = "active";
-                ariaSelected05 = "true";
                 break;
             }
         case "Gallery":
@@ -117,7 +94,6 @@
                 folder = "Gallery/";                
                 shareImage = "Gallery-logo-ls.jpg";
                 active06 = "active";
-                ariaSelected06 = "true";
                 break;
             }
 
@@ -128,7 +104,6 @@
                 folder = "Info/Privacy";                
                 shareImage = "AP-Logo-Gray-Green-ls.png";               
                 active07 = "active";
-                ariaSelected07 = "true";
                 break;
             }
 
@@ -139,7 +114,6 @@
                 folder = "Info/TOS";                
                 shareImage = "AP-Logo-Gray-Green-ls.png";
                 active08 = "active";
-                ariaSelected08 = "true";
                 break;
             }
 
@@ -150,7 +124,6 @@
                 folder = "Info/Staff";                
                 shareImage = "Staff-Logo-ls.jpg";
                 active09 = "active";
-                ariaSelected09 = "true";
                 break;
             }
 
@@ -161,7 +134,6 @@
                 folder = "Info/Purpose";               
                 shareImage = "Purpose-Logo-ls.jpg";
                 active10 = "active";
-                ariaSelected10 = "true";
                 break;
             }
 
@@ -172,7 +144,6 @@
                 folder = "Info/Nazarenes";
                 shareImage = "Nazarenes-Logo-ls.jpg";                
                 active11 = "active";
-                ariaSelected11 = "true";
                 break;
             }
 
@@ -182,7 +153,6 @@
                 folder = "Info/Links";
                 shareImage = "Links-logo-ls.jpg";
                 active12 = "active";
-                ariaSelected12 = "true";
                 break;
             }  
 
@@ -192,7 +162,6 @@
                 folder = "Info/Links";
                 shareImage = "Links-logo-ls.jpg";
                 active16 = "active";
-                ariaSelected16 = "true";
                 break;
             }
         case "Bible":
@@ -202,7 +171,6 @@
                 description = "The NIV Bible";
                 shareImage = "About-ls.jpg";
                 active13 = "active";
-                ariaSelected13 = "true";
                 break;
             }
 
@@ -354,32 +322,32 @@
 
                     <!-- Home -->
                     <li class="nav-item">
-                        <a class="@active01 nav-link nav-link-fs" aria-selected="@ariaSelected01" href="/"><img class="show-me-at-the-bottom home-size px-2 pb-2" src="~/content/svg/buttons/home.svg" />Home</a>
+                        <a class="@active01 nav-link nav-link-fs" href="/"><img class="show-me-at-the-bottom home-size px-2 pb-2" src="~/content/svg/buttons/home.svg" />Home</a>
                     </li>
 
                     <!-- Contact -->
                     <li class="nav-item">
-                        <a class="@active02 nav-link nav-link-fs" aria-selected="@ariaSelected02" href="/Info/Contact"><img class="show-me-at-the-bottom home-size px-2 pb-2" src="~/content/svg/Cards/Email-White.svg" />Contact</a>
+                        <a class="@active02 nav-link nav-link-fs" href="/Info/Contact"><img class="show-me-at-the-bottom home-size px-2 pb-2" src="~/content/svg/Cards/Email-White.svg" />Contact</a>
                     </li>
 
                     <!-- Worship -->
                     <li class="nav-item">
-                        <a class="@active03 nav-link nav-link-fs" aria-selected="@ariaSelected03" href="https://backtothebible.app/library/p/apnazarene" target="_blank"><img class="show-me-at-the-bottom home-size px-2 pb-2" src="~/content/svg/cards/Cross-White.svg" />Worship</a>
+                        <a class="@active03 nav-link nav-link-fs" href="https://backtothebible.app/library/p/apnazarene" target="_blank"><img class="show-me-at-the-bottom home-size px-2 pb-2" src="~/content/svg/cards/Cross-White.svg" />Worship</a>
                     </li>
 
                     <!-- Calendar -->
                     <li class="nav-item">
-                        <a class="@active04 nav-link nav-link-fs" aria-selected="@ariaSelected04" href="/Info/Calendar"><img class="show-me-at-the-bottom home-size px-2 pb-2" src="~/content/svg/cards/Calendar-White.svg" />Calendar</a>
+                        <a class="@active04 nav-link nav-link-fs" href="/Info/Calendar"><img class="show-me-at-the-bottom home-size px-2 pb-2" src="~/content/svg/cards/Calendar-White.svg" />Calendar</a>
                     </li>
 
                     <!-- Members -->
                     <li class="nav-item">
-                        <a class="@active05 nav-link nav-link-fs" aria-selected="@ariaSelected05" href="https://APNaz.churchtrac.com/" target="_blank"><img class="show-me-at-the-bottom home-size px-2 pb-2" src="~/content/svg/Cards/Staff-White.svg" />Members</a>
+                        <a class="@active05 nav-link nav-link-fs" href="https://APNaz.churchtrac.com/" target="_blank"><img class="show-me-at-the-bottom home-size px-2 pb-2" src="~/content/svg/Cards/Staff-White.svg" />Members</a>
                     </li>
 
                     <!-- Bible -->
                     <li class="nav-item">
-                        <a class="@active13 nav-link nav-link-fs" aria-selected="@ariaSelected13" href="~/Bible/"><img class="show-me-at-the-bottom home-size px-2 pb-2" src="~/Content/Svg/Logos/Bird-Bible-White.svg" />Bible</a>
+                        <a class="@active13 nav-link nav-link-fs" href="~/Bible/"><img class="show-me-at-the-bottom home-size px-2 pb-2" src="~/Content/Svg/Logos/Bird-Bible-White.svg" />Bible</a>
                     </li>                   
                 </ul>
             </div>
@@ -406,27 +374,27 @@
 
                         <!-- Home -->
                         <li class="nav-item text-light">
-                            <a class="@active01 nav-link footer-fs text-nowrap" aria-selected="@ariaSelected01" href="/">About Us</a>
+                            <a class="@active01 nav-link footer-fs text-nowrap" href="/">About Us</a>
                         </li>
                       
                         <!-- Contact -->
                         <li class="nav-item text-light">
-                            <a class="@active02 nav-link footer-fs text-nowrap" aria-selected="@ariaSelected02" href="/Info/Contact">Contact Us</a>
+                            <a class="@active02 nav-link footer-fs text-nowrap" href="/Info/Contact">Contact Us</a>
                         </li>
 
                         <!-- Our Staff -->
                         <li class="nav-item text-light">
-                            <a class="@active09 nav-link footer-fs" aria-selected="@ariaSelected09" href="/Info/Staff">Meet our Staff</a>
+                            <a class="@active09 nav-link footer-fs" href="/Info/Staff">Meet our Staff</a>
                         </li>
 
                         <!-- Privacy -->
                         <li class="nav-item text-light">
-                            <a class="@active07 nav-link footer-fs text-nowrap" aria-selected="@ariaSelected07" href="/Info/Privacy">Privacy Policy</a>
+                            <a class="@active07 nav-link footer-fs text-nowrap" href="/Info/Privacy">Privacy Policy</a>
                         </li>
 
                         <!-- TOS -->
                         <li class="nav-item text-light">
-                            <a class="@active08 nav-link footer-fs" aria-selected="@ariaSelected08" href="/Info/TOS">Terms of Service</a>
+                            <a class="@active08 nav-link footer-fs" href="/Info/TOS">Terms of Service</a>
                         </li>
                     </ul>
                 </div>
@@ -438,28 +406,28 @@
 
                         <!-- Online Worship -->
                         <li class="nav-item text-light">
-                            <a class="@active05 nav-link footer-fs" aria-selected="@ariaSelected05" href="https://backtothebible.app/library/p/apnazarene" target="_blank">Online Worship</a>
+                            <a class="@active05 nav-link footer-fs" href="https://backtothebible.app/library/p/apnazarene" target="_blank">Online Worship</a>
                         </li>
 
                         <!-- Member Area -->
                         <li class="nav-item text-light">
-                            <a class="@active03 nav-link footer-fs" aria-selected="@ariaSelected03" href="https://APNaz.churchtrac.com/ " target="_blank">Member Area</a>
+                            <a class="@active03 nav-link footer-fs" href="https://APNaz.churchtrac.com/ " target="_blank">Member Area</a>
                         </li>
 
                         <!-- Calendar -->
                         <li class="nav-item text-light">
                                
-                            <a class="@active04 nav-link footer-fs" aria-selected="@ariaSelected04" href="/Info/Calendar">Calendar</a>
+                            <a class="@active04 nav-link footer-fs" href="/Info/Calendar">Calendar</a>
                         </li>
 
                         <!-- Email Sign-up -->
                         <li class="nav-item text-light">
-                            <a class="@active14 nav-link footer-fs" aria-selected="@ariaSelected14" href="https://mailchi.mp/5dc417814456/apncsignup" target="_blank">Email Sign-up</a>
+                            <a class="@active14 nav-link footer-fs" href="https://mailchi.mp/5dc417814456/apncsignup" target="_blank">Email Sign-up</a>
                         </li>
 
                         <!-- Blog -->                        
                         <li class="nav-item text-light">
-                            <a class="@active15 nav-link footer-fs" aria-selected="@ariaSelected15" href="https://APNaz.wordpress.com/" target="_blank">Blog</a>
+                            <a class="@active15 nav-link footer-fs" href="https://APNaz.wordpress.com/" target="_blank">Blog</a>
                         </li>
 
                     </ul>
@@ -472,27 +440,27 @@
                         
                         <!-- Nazarenes -->
                         <li class="nav-item text-light">
-                            <a class="@active11 nav-link footer-fs" aria-selected="@ariaSelected11" href="/Info/Nazarenes">Nazarenes</a>
+                            <a class="@active11 nav-link footer-fs" href="/Info/Nazarenes">Nazarenes</a>
                         </li>
 
                         <!-- Purpose -->
                         <li class="nav-item text-light">
-                            <a class="@active10 nav-link footer-fs" aria-selected="@ariaSelected10" href="/Info/Purpose">Purpose</a>
+                            <a class="@active10 nav-link footer-fs" href="/Info/Purpose">Purpose</a>
                         </li>
 
                         <!-- Gallery -->
                         <li class="nav-item text-light">
-                            <a class="@active06 nav-link footer-fs" aria-selected="@ariaSelected06" href="~/Gallery">Gallery</a>
+                            <a class="@active06 nav-link footer-fs" href="~/Gallery">Gallery</a>
                         </li>
 
                         <!-- More Links -->
                         <li class="nav-item text-light">
-                            <a class="@active12 nav-link footer-fs" aria-selected="@ariaSelected12" href="/Info/Links">More Links</a>
+                            <a class="@active12 nav-link footer-fs" href="/Info/Links">More Links</a>
                         </li>
 
                         <!-- Give Online -->
                         <li class="nav-item text-light">
-                            <a class="@active16 nav-link footer-fs" aria-selected="@ariaSelected16" href="https://apnaz.churchtrac.com" target="_blank">Give Online</a>
+                            <a class="@active16 nav-link footer-fs" href="https://apnaz.churchtrac.com" target="_blank">Give Online</a>
                         </li>
                     </ul>
                 </div>
