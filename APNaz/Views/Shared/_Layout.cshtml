@@ -18,7 +18,7 @@
 
     //Share Image and ShareImage folder
     string shareImage = "About-ls.jpg";
-    string shareImageFolder = siteURL + "Content/ShareImages/";
+    string shareImageFolder = siteURL + "ShareImages/";
     string imageWidth = "1200";
     string imageHeight = "630";
 
@@ -243,11 +243,11 @@
     <meta name="google-site-verification" content="wdaytYpXJY1e9iWkOJXCS6HBuc0aCDxz--VJTfwTT3E" />
 
     <!-- FavIcon(s) - (all your Logo... plenty of them!) -->
-    <link rel="apple-touch-icon" sizes="180x180" href="~/content/icons/apple-touch-icon.png" />
-    <link rel="apple-touch-icon" type="image/pgn" href="~/content/icons/android-chrome-192x192.png" />
-    <link rel="icon" type="image/png" sizes="512x512" href="~/content/icons/android-chrome-512x512.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="~/content/icons/favicon-16x16.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="~/content/icons/favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="~/icons/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" type="image/pgn" href="~/icons/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="~/icons/android-chrome-512x512.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="~/icons/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="~/icons/favicon-32x32.png" />
     <link rel="icon" type="image/x-icon" href="~/favicon.ico" />    
     
     <!-- Fonts (Lato -  add more fonts here) -->
@@ -284,10 +284,10 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />    
     <link rel="stylesheet" href="~/css/colors.css" />
     <link rel="stylesheet" href="~/css/fontsize.css" />
-    <link rel="stylesheet" href="~/css/mycards.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/mycards.css" />    
     <link rel="stylesheet" href="~/css/sizes.css" />
     <link rel="stylesheet" href="~/css/spacing.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
 
     <!-- JS Link Setup -->
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
@@ -302,10 +302,10 @@
             <div class="d-flex flex-grow-1">                
 
                 <!-- Set to show on lg -->
-                <a class="navbar-brand navbar-text nav-text-fs text-white d-none d-lg-inline-block ps-2" href="/">@siteName<img class="bird-size px-2 pb-2" src="~/Content/Svg/Logos/Bird-White.svg" alt="Bird Image"/></a>
+                <a class="navbar-brand navbar-text nav-text-fs text-white d-none d-lg-inline-block ps-2" href="/">@siteName<img class="bird-size px-2 pb-2" src="~/Svg/Logos/Bird-White.svg" alt="Bird Image"/></a>
 
                 <!-- Set to show on sm -->
-                <a class="navbar-brand navbar-text nav-text-fs text-white d-lg-none d-inline-block w-100 text-center me-0 ps-5" href="/"><img class="home-size px-2 pb-2" src="~/content/svg/buttons/home.svg"/>@siteNameShort<img class="bird-size px-2 pb-2" src="~/Content/Svg/Logos/Bird-White.svg" alt="Bird Image"/></a>
+                <a class="navbar-brand navbar-text nav-text-fs text-white d-lg-none d-inline-block w-100 text-center me-0 ps-5" href="/"><img class="home-size px-2 pb-2" src="~/svg/buttons/home.svg"/>@siteNameShort<img class="bird-size px-2 pb-2" src="~/Svg/Logos/Bird-White.svg" alt="Bird Image"/></a>
 
                 <!-- Toggle Button -->
                 <div class="text-left pe-2 pt-1">
@@ -322,32 +322,32 @@
 
                     <!-- Home -->
                     <li class="nav-item">
-                        <a class="@active01 nav-link nav-link-fs" href="/"><img class="show-me-at-the-bottom home-size px-2 pb-2" src="~/content/svg/buttons/home.svg" />Home</a>
+                        <a class="@active01 nav-link nav-link-fs" href="/"><img class="show-me-at-the-bottom home-size px-2 pb-2" src="~/svg/buttons/home.svg" />Home</a>
                     </li>
 
                     <!-- Contact -->
                     <li class="nav-item">
-                        <a class="@active02 nav-link nav-link-fs" href="/Info/Contact"><img class="show-me-at-the-bottom home-size px-2 pb-2" src="~/content/svg/Cards/Email-White.svg" />Contact</a>
+                        <a class="@active02 nav-link nav-link-fs" href="/Info/Contact"><img class="show-me-at-the-bottom home-size px-2 pb-2" src="~/svg/Cards/Email-White.svg" />Contact</a>
                     </li>
 
                     <!-- Worship -->
                     <li class="nav-item">
-                        <a class="@active03 nav-link nav-link-fs" href="https://backtothebible.app/library/p/apnazarene" target="_blank"><img class="show-me-at-the-bottom home-size px-2 pb-2" src="~/content/svg/cards/Cross-White.svg" />Worship</a>
+                        <a class="@active03 nav-link nav-link-fs" href="https://backtothebible.app/library/p/apnazarene" target="_blank"><img class="show-me-at-the-bottom home-size px-2 pb-2" src="~/svg/cards/Cross-White.svg" />Worship</a>
                     </li>
 
                     <!-- Calendar -->
                     <li class="nav-item">
-                        <a class="@active04 nav-link nav-link-fs" href="/Info/Calendar"><img class="show-me-at-the-bottom home-size px-2 pb-2" src="~/content/svg/cards/Calendar-White.svg" />Calendar</a>
+                        <a class="@active04 nav-link nav-link-fs" href="/Info/Calendar"><img class="show-me-at-the-bottom home-size px-2 pb-2" src="~/svg/cards/Calendar-White.svg" />Calendar</a>
                     </li>
 
                     <!-- Members -->
                     <li class="nav-item">
-                        <a class="@active05 nav-link nav-link-fs" href="https://APNaz.churchtrac.com/" target="_blank"><img class="show-me-at-the-bottom home-size px-2 pb-2" src="~/content/svg/Cards/Staff-White.svg" />Members</a>
+                        <a class="@active05 nav-link nav-link-fs" href="https://APNaz.churchtrac.com/" target="_blank"><img class="show-me-at-the-bottom home-size px-2 pb-2" src="~/svg/Cards/Staff-White.svg" />Members</a>
                     </li>
 
                     <!-- Bible -->
                     <li class="nav-item">
-                        <a class="@active13 nav-link nav-link-fs" href="~/Bible/"><img class="show-me-at-the-bottom home-size px-2 pb-2" src="~/Content/Svg/Logos/Bird-Bible-White.svg" />Bible</a>
+                        <a class="@active13 nav-link nav-link-fs" href="~/Bible/"><img class="show-me-at-the-bottom home-size px-2 pb-2" src="~/Svg/Logos/Bird-Bible-White.svg" />Bible</a>
                     </li>                   
                 </ul>
             </div>
@@ -450,7 +450,7 @@
 
                         <!-- Gallery -->
                         <li class="nav-item text-light">
-                            <a class="@active06 nav-link footer-fs" href="~/Gallery">Gallery</a>
+                            <a class="@active06 nav-link footer-fs" href="~/AP">Gallery</a>
                         </li>
 
                         <!-- More Links -->

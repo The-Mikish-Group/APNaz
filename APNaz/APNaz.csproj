@@ -7,25 +7,45 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Controllers\BibleController.cs" />
     <Compile Remove="Views\Shared\_NoAccess.cshtml.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Remove="Views\Shared\_NoAccess.cshtml" />
-    <Content Remove="wwwroot\Content\Videos\April.m4v" />
-    <Content Remove="wwwroot\Content\Videos\Jesus_creed_no_Logo_No_End_Logo_Version_HD.mp4" />
-    <Content Remove="wwwroot\Content\Videos\March-01.m4v" />
-    <Content Remove="wwwroot\Content\Videos\May.m4v" />
-    <Content Remove="wwwroot\Content\Videos\prayerisnotrocketscience.jpg" />
-    <Content Remove="wwwroot\Content\Videos\prayerisnotrocketscience.mp4" />
-    <Content Remove="wwwroot\Content\Videos\Retooning-The-Nativity.m4v" />
-    <Content Remove="wwwroot\Content\Videos\worshipisnotrocketscience.mp4" />
+    <Content Remove="wwwroot\Videos\April.m4v" />
+    <Content Remove="wwwroot\Videos\Jesus_creed_no_Logo_No_End_Logo_Version_HD.mp4" />
+    <Content Remove="wwwroot\Videos\March-01.m4v" />
+    <Content Remove="wwwroot\Videos\May.m4v" />
+    <Content Remove="wwwroot\Videos\prayerisnotrocketscience.jpg" />
+    <Content Remove="wwwroot\Videos\prayerisnotrocketscience.mp4" />
+    <Content Remove="wwwroot\Videos\Retooning-The-Nativity.m4v" />
+    <Content Remove="wwwroot\Videos\worshipisnotrocketscience.mp4" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Update="wwwroot\sitemap.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\Gallery\AP\WebArt\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\PageImages\BackgroundBlurr.webp" />
+    <None Include="wwwroot\PageImages\Church-01.webp" />
+    <None Include="wwwroot\PageImages\Church-Crop-02.webp" />
+    <None Include="wwwroot\PageImages\Empty.gif" />
+    <None Include="wwwroot\PageImages\Links.webp" />
+    <None Include="wwwroot\PageImages\Nazarenes.webp" />
+    <None Include="wwwroot\PageImages\Purpose.webp" />
+    <None Include="wwwroot\PageImages\Staff-Photos\Bridewell-01.png" />
+    <None Include="wwwroot\PageImages\Staff-Photos\Jorge-01.png" />
+    <None Include="wwwroot\PageImages\Staff-Photos\kathrynp-01.png" />
+    <None Include="wwwroot\PageImages\Staff-Photos\Napier-01.png" />
+    <None Include="wwwroot\PageImages\Staff.webp" />
   </ItemGroup>
 
 </Project>

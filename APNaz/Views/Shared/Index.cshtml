@@ -1,0 +1,16 @@
+﻿@{
+    string currentController = ViewContext.RouteData.Values["controller"]?.ToString() ?? "Home";
+}
+
+<style>
+    body {
+        background-color: #84CBA0;
+    }
+</style>
+
+<h2 class="text-center">
+    @currentController Galleries
+</h2>
+
+<partial name="GalleryMenu" />
+

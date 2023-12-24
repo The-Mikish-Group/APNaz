@@ -48,15 +48,15 @@
 	<lastmod>2022-01-01</lastmod>
 </url>
 <url>
-	<loc>https://apnazarene.org/Gallery/Pictures01</loc>
+	<loc>https://apnazarene.org/AP</loc>
 	<lastmod>2022-01-01</lastmod>
 </url>
 <url>
-	<loc>https://apnazarene.org/Gallery/Pictures02</loc>
+	<loc>https://apnazarene.org/AP2</loc>
 	<lastmod>2022-01-01</lastmod>
 </url>
 <url>
-	<loc>https://apnazarene.org/Gallery/Pictures03</loc>
+	<loc>https://apnazarene.org/MV</loc>
 	<lastmod>2022-01-01</lastmod>
 </url>
 <url>
