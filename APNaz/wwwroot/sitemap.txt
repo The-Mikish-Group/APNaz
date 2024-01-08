@@ -52,26 +52,6 @@
 	<lastmod>2022-01-01</lastmod>
 </url>
 <url>
-	<loc>https://apnazarene.org/AP2</loc>
-	<lastmod>2022-01-01</lastmod>
-</url>
-<url>
-	<loc>https://apnazarene.org/MV</loc>
-	<lastmod>2022-01-01</lastmod>
-</url>
-<url>
-	<loc>https://apnazarene.org/Gallery/WebArtPNG</loc>
-	<lastmod>2022-01-01</lastmod>
-</url>
-<url>
-	<loc>https://apnazarene.org/Gallery/WebArtSVG</loc>
-	<lastmod>2022-01-01</lastmod>
-</url>
-<url>
-	<loc>https://apnazarene.org/Gallery/WebArtZIP</loc>
-	<lastmod>2022-01-01</lastmod>
-</url>
-<url>
 	<loc>https://apnazarene.org/Bible/Acts</loc>
 	<lastmod>2022-01-01</lastmod>
 </url>

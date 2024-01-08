@@ -15,10 +15,8 @@
     <Compile Remove="wwwroot\lib\jquery-validation-unobtrusive\**" />
     <Compile Remove="wwwroot\lib\jquery-validation\**" />
     <Compile Remove="wwwroot\lib\jquery\**" />
-    <Compile Remove="wwwroot\PageImages\**" />
-    <Compile Remove="wwwroot\ShareImages\**" />
     <Compile Remove="wwwroot\Videos\**" />
-    <Compile Remove="wwwroot\Virtual\**" />
+    <Compile Remove="wwwroot\Virtual\Resources\**" />
     <Content Remove="wwwroot\css_old\**" />
     <Content Remove="wwwroot\Gallery\**" />
     <Content Remove="wwwroot\js\**" />
@@ -26,10 +24,8 @@
     <Content Remove="wwwroot\lib\jquery-validation-unobtrusive\**" />
     <Content Remove="wwwroot\lib\jquery-validation\**" />
     <Content Remove="wwwroot\lib\jquery\**" />
-    <Content Remove="wwwroot\PageImages\**" />
-    <Content Remove="wwwroot\ShareImages\**" />
     <Content Remove="wwwroot\Videos\**" />
-    <Content Remove="wwwroot\Virtual\**" />
+    <Content Remove="wwwroot\Virtual\Resources\**" />
     <EmbeddedResource Remove="wwwroot\css_old\**" />
     <EmbeddedResource Remove="wwwroot\Gallery\**" />
     <EmbeddedResource Remove="wwwroot\js\**" />
@@ -37,10 +33,8 @@
     <EmbeddedResource Remove="wwwroot\lib\jquery-validation-unobtrusive\**" />
     <EmbeddedResource Remove="wwwroot\lib\jquery-validation\**" />
     <EmbeddedResource Remove="wwwroot\lib\jquery\**" />
-    <EmbeddedResource Remove="wwwroot\PageImages\**" />
-    <EmbeddedResource Remove="wwwroot\ShareImages\**" />
     <EmbeddedResource Remove="wwwroot\Videos\**" />
-    <EmbeddedResource Remove="wwwroot\Virtual\**" />
+    <EmbeddedResource Remove="wwwroot\Virtual\Resources\**" />
     <None Remove="wwwroot\css_old\**" />
     <None Remove="wwwroot\Gallery\**" />
     <None Remove="wwwroot\js\**" />
@@ -48,10 +42,8 @@
     <None Remove="wwwroot\lib\jquery-validation-unobtrusive\**" />
     <None Remove="wwwroot\lib\jquery-validation\**" />
     <None Remove="wwwroot\lib\jquery\**" />
-    <None Remove="wwwroot\PageImages\**" />
-    <None Remove="wwwroot\ShareImages\**" />
     <None Remove="wwwroot\Videos\**" />
-    <None Remove="wwwroot\Virtual\**" />
+    <None Remove="wwwroot\Virtual\Resources\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -64,13 +56,27 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="IronSoftware.System.Drawing" Version="2024.1.1" />
+    <None Include="wwwroot\PageImages\BackgroundBlurr.webp" />
+    <None Include="wwwroot\PageImages\Church-01.webp" />
+    <None Include="wwwroot\PageImages\Church-Crop-02.webp" />
+    <None Include="wwwroot\PageImages\Links.webp" />
+    <None Include="wwwroot\PageImages\Nazarenes.webp" />
+    <None Include="wwwroot\PageImages\Purpose.webp" />
+    <None Include="wwwroot\PageImages\Staff.webp" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Update="wwwroot\sitemap.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\Gallery\AP\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SixLabors.ImageSharp" Version="3.1.2" />
   </ItemGroup>
 
 </Project>

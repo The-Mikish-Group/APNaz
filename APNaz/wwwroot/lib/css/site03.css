@@ -51,6 +51,17 @@ container, div, h1, h2, h3, h4, h5, p{
     display: inline;
 }
 
+/* Bible Tab Stuff */
+.bible-nav-item > .nav-link {
+    color: #414042;
+    border-color: #414042;
+    border-style: solid;
+    border-width: thin;
+    border-bottom-style: none;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+} 
+
 /* Image Gallery Stuff */
 #image-containers {
     display: none;
@@ -79,12 +90,12 @@ img {
     text-overflow: ellipsis;
 }
 
-.nav-item {
+/*.nav-item {
     width: 150px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-}
+}*/
 
 .menu-link {
     text-decoration: none;
