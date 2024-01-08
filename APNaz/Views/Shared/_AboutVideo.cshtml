@@ -11,7 +11,7 @@
 	<!-- Row - Loving and Leading Logo -->
 	<div class="my-card-body mx-auto show-me-at-the-top">
 		<div class="text-center px-4 pt-3 pb-2">
-			<img class="love-lead-size" src="~/svg/Misc/Loving-Leading-01.svg" />
+			<img class="love-lead-size" src="~/lib/svg/Misc/Loving-Leading-01.svg" />
 		</div>
 	</div>
 
@@ -30,7 +30,7 @@
 		const currentYear = currentDate.getFullYear();
 
 		// Construct the video source URL based on the current date (change the t=2.0 to control where video starts)
-		const videoName = `content/videos/${currentYear}_${currentMonth}.mp4#t=3.0`;
+		const videoName = `videos/${currentYear}_${currentMonth}.mp4#t=3.0`;
 
 		// Set the source of the <video> element
 		const videoSource = document.getElementById("videoSource");

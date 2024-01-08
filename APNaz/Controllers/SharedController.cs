@@ -7,43 +7,33 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace APNaz.Controllers
 {
+    public class GalleriesController : Controller
+    {
+        protected IActionResult CustomView(string viewName)
+        {
+            ViewData["ViewName"] = viewName;
+            return View("Galleries");
+        }
+
+        public IActionResult Index() => CustomView("Galleries");
+    }
     public class BaseController : Controller
     {
+        public IActionResult Index() => GalleryView();
+        public IActionResult Gallery(string viewName) => GalleryView(viewName);
         protected IActionResult GalleryView(string viewName = "Gallery")
         {
             ViewData["ViewName"] = viewName;
             return View();
-            }
         }
-
-    public class GalleriesController : BaseController
-    {
-        public IActionResult Index() => View("Galleries");
     }
+    public class APController : BaseController { }
+    public class AP2Controller : BaseController { }  
 
-    // AP Gallery
-    public class APController : BaseController
-    {
-        public IActionResult Index() => GalleryView();
-        public IActionResult Gallery(string viewName) => GalleryView(viewName);
-    }
 
-    // AP Gallery 2
-    public class AP2Controller : BaseController
-    {
-        public IActionResult Index() => GalleryView();
-        public IActionResult Gallery(string viewName) => GalleryView(viewName);
-    }
+    // Add more galleries here: (the controller name and the 'galleryfolder/ folderName should be the same)
+    // Uncomment the line below to create a "Family" controller, then add a folder named "Family" to your 'galleryFolder' with images.
+    //
+    // public class FamilyController : BaseController { }  
 
-    // MV Gallery (Follow format to add more galleries) ;
-    // make sure to create a gallery folder under
-    // wwwroot\gallery with the same name.
-    // That is it for adding additional galleries.
-
-    public class MVController : BaseController
-    {
-        public IActionResult Index() => GalleryView();
-        public IActionResult Gallery(string viewName) => GalleryView(viewName);
-    }
-   
 }

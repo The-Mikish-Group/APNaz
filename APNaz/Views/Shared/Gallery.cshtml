@@ -1,55 +1,157 @@
-﻿@{  
-    var filter = "*.*";
+﻿<!-- Shared Gallery.cshtml -->
+@{
+    // Gallery Folder Name (location of gallery = wwwroot/{galleryFolder})
+    string galleryFolder = "gallery"; 
+
+    // Get the gallery folders for the gallery button menu
+    string currentController = ViewContext.RouteData.Values["controller"]?.ToString() ?? "Shared";
+    var folders = Directory.GetDirectories(System.IO.Path.Combine(Directory.GetCurrentDirectory(), $"wwwroot/{galleryFolder}/{currentController}"))
+                           .Select(folder => System.IO.Path.GetFileName(folder))
+                           .ToList();
+
+    // Get the gallery file paths for the current gallery (viewname)
     string currentAction = ViewContext.RouteData.Values["action"]?.ToString() ?? "";
-    var viewName = ViewData["ViewName"]?.ToString() ?? currentAction;
-    string currentController = ViewContext.RouteData.Values["controller"]?.ToString() ?? "Home";
     var contentPath = System.IO.Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", currentAction, currentController);
+    var viewName = ViewData["ViewName"]?.ToString() ?? currentAction;
+
+    // Read all folder files
+    var filter = "*.*";
     var allFiles = Directory.GetFiles(System.IO.Path.Combine(contentPath, viewName), filter);
+
+    // Filter for the files we want
     var files = allFiles
-        .Where(file => System.IO.Path.GetExtension(file).Equals(".png", StringComparison.OrdinalIgnoreCase) ||
-                       System.IO.Path.GetExtension(file).Equals(".jpg", StringComparison.OrdinalIgnoreCase))
+        .Where(file =>
+            !System.IO.Path.GetFileName(file).StartsWith("background", StringComparison.OrdinalIgnoreCase) &&
+            !System.IO.Path.GetFileName(file).EndsWith("_thumb.jpg", StringComparison.OrdinalIgnoreCase) &&
+            (System.IO.Path.GetExtension(file).Equals(".png", StringComparison.OrdinalIgnoreCase) ||
+             System.IO.Path.GetExtension(file).Equals(".jpg", StringComparison.OrdinalIgnoreCase) ||
+             System.IO.Path.GetExtension(file).Equals(".gif", StringComparison.OrdinalIgnoreCase) ||
+             System.IO.Path.GetExtension(file).Equals(".svg", StringComparison.OrdinalIgnoreCase) ||
+             System.IO.Path.GetExtension(file).Equals(".webp", StringComparison.OrdinalIgnoreCase)))
         .Select(file => $"~/{System.IO.Path.Combine(currentAction, currentController, viewName, System.IO.Path.GetFileName(file)).Replace("\\", "/")}")
         .ToList();
+
+    // Path for the thumbnails folder
+    var thumbnailsPath = System.IO.Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", galleryFolder, currentController, viewName);
+
+    // Move thumbnail creation logic to a separate service
+    var thumbnailService = new ThumbnailService();
+
+    foreach (var file in files)
+    {       
+        // Create thumbnail only if it doesn't exist
+        thumbnailService.CreateOrRetrieveThumbnail(file, System.IO.Path.Combine(thumbnailsPath, $"{System.IO.Path.GetFileNameWithoutExtension(file)}_thumb.jpg"), thumbnailsPath);
+    }
+
+    // Get the backgroundImage path
+    string backgroundImage = $"gallery/{currentController}/{viewName}/background.webp"; // default
+    string[] extensions = { ".jpg", ".png", ".webp", ".svg" };
+
+    // Iterate through the possible background extension until there is a match,
+    foreach (var extension in extensions)
+    {
+        var bgPath = $"gallery/{currentController}/{viewName}/background{extension}";
+        if (System.IO.File.Exists(System.IO.Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", bgPath)))
+        {
+            backgroundImage = bgPath;
+            break;
+        }
+    }
 }
 
-<style>
-    body {
-        background-color: #84CBA0;
-    }
-</style>
-
-<partial name="GalleryMenu" />
-
-<div class="container">
-    <button type="button" onclick="topFunction()" id="top-button" title="Go to top">Top</button>
-    <div class="text-center mt-3">
-        <h2>@viewName</h2>
-    </div>
-    <div id="images-container" class="row g-0 g-lg-4">
-        @foreach (var file in files)
+<!-- Function to create a thumbnail (use your preferred method/library) -->
+@functions {
+    public class ThumbnailService
+    {
+        public void CreateOrRetrieveThumbnail(string file, string thumbnail, string thumbnailsPath)
         {
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-3">
-                <a class="d-block text-center text-decoration-none" href="@Url.Content(file)" target="_blank" title="Full Screen">
-                    <img class="menu-link w-100 img-fluid mx-auto" data-src="@Url.Content(file)" alt="" />
-                    <div class="text-black text-center">
-                        @System.IO.Path.GetFileNameWithoutExtension(file)
-                    </div>
-                </a>
-            </div>
+            try
+            {
+                if (!System.IO.File.Exists(thumbnail))
+                {
+                    CreateThumbnail(file, thumbnailsPath);
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error creating thumbnail: {ex.Message}");
+            }
         }
-    </div>        
+
+        private void CreateThumbnail(string file, string thumbnailsPath)
+        {            
+            Gallery.Helpers.ImageHelper.CreateThumbnail(file, thumbnailsPath);
+        }
+    }
+}
+ 
+<!-- Go to Top button -->
+<button type="button" onclick="topFunction()" id="top-button" title="Go to top">Top</button>
+
+<!-- Gallery Link menu -->
+<div class="row gx-0 gx-lg-4 justify-content-center row-cols-4 row-cols-sm-4 row-cols-md-6 row-cols-lg-8 row-cols-xl-auto  g-1 g-lg-3 mt-2 mb-3">
+
+    <!-- Back Link -->
+    <div class="col menu-item">
+        <div class="bg-danger text-center p-0 border border border-dark rounded" style="width:50px; height: 35px;">
+            <a class="menu-link text-dark w-100" style="height: 34px; display: flex; align-items: center;" href="/@currentController">
+                <img src="/lib/svg/buttons/back-white.svg" alt="Back" style="height: 24px;">
+            </a>
+        </div>
+    </div>
+
+    <!-- Gallery Links -->
+    @foreach (var folder in folders)
+    {
+        <div class="col menu-item" data-viewName="@folder">
+            <div id="@folder" class="bg-gray-lighter text-center p-0 border border-dark rounded">
+                <a id="@folder-link" class="menu-link text-dark w-100" asp-controller="@currentController" asp-action="gallery" asp-route-viewName="@folder">@folder</a>
+            </div>
+        </div>
+    }
 </div>
 
-<script>
-    hideCurrentMenuSelection('@viewName');
-    function hideCurrentMenuSelection(viewName) {
-        var elements = document.querySelectorAll('.menu-item');
-        elements.forEach(function (element) {
-            if (element.getAttribute('data-viewName') === viewName) {
-                element.style.display = 'none';
-            } else {
-                element.style.display = '';
-            }
-        });
+<!-- Gallery Images -->
+<div id="images-container" class="row g-0 g-lg-2" style="display: none">
+
+    <!-- Display each Image file and filename -->
+    @foreach (var file in files)
+    {
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-3">
+
+            <!-- Link to file -->
+            <a class="menu-link d-block text-center bg-gray-lighter" href="@Url.Content(file)" target="_blank" title="Full-Screen">
+
+                <!-- file_thumb -->
+                <img class="w-100 img-fluid mx-auto" data-src="@Url.Content(System.IO.Path.Combine("/", currentAction, currentController, viewName, System.IO.Path.GetFileNameWithoutExtension(file) + "_thumb.jpg").Replace("\\", "/"))" alt="_Click Me_" />
+
+                <!-- file name (max of 30 characters shown) -->
+                <div class="text-black text-center pt-1">                    
+                    @System.IO.Path.GetFileNameWithoutExtension(file).Substring(0, Math.Min(30, System.IO.Path.GetFileNameWithoutExtension(file).Length))
+                </div>
+            </a>
+        </div>
     }
+</div>
+
+<!-- Spacing for Large Screens if needed -->
+<div class="gallery-view-bottom-spacing"></div>
+
+<!-- Replaces the background-image -->
+<script>
+    $("body").css("background-image", "url('../@Url.Content(backgroundImage)')");
+</script>
+
+<!-- Toggle the Current Menu Button to indicate it is selected -->
+<script>
+    var mainElement = document.getElementById("@viewName");
+    var secondaryElement = document.getElementById("@viewName-link");
+
+    mainElement.classList.toggle("bg-gray-lighter");
+    mainElement.classList.toggle("bg-gray-dark");
+    mainElement.style.pointerEvents = 'none';
+
+    secondaryElement.classList.toggle("text-dark");
+    secondaryElement.classList.toggle("text-light");
+    secondaryElement.classList.add("selected");
 </script>

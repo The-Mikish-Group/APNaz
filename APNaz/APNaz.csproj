@@ -4,7 +4,51 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\Gallery\**" />
+    <Compile Remove="wwwroot\js\**" />
+    <Compile Remove="wwwroot\lib\bootstrap\**" />
+    <Compile Remove="wwwroot\lib\jquery-validation-unobtrusive\**" />
+    <Compile Remove="wwwroot\lib\jquery-validation\**" />
+    <Compile Remove="wwwroot\lib\jquery\**" />
+    <Compile Remove="wwwroot\PageImages\**" />
+    <Compile Remove="wwwroot\ShareImages\**" />
+    <Compile Remove="wwwroot\Videos\**" />
+    <Compile Remove="wwwroot\Virtual\**" />
+    <Content Remove="wwwroot\Gallery\**" />
+    <Content Remove="wwwroot\js\**" />
+    <Content Remove="wwwroot\lib\bootstrap\**" />
+    <Content Remove="wwwroot\lib\jquery-validation-unobtrusive\**" />
+    <Content Remove="wwwroot\lib\jquery-validation\**" />
+    <Content Remove="wwwroot\lib\jquery\**" />
+    <Content Remove="wwwroot\PageImages\**" />
+    <Content Remove="wwwroot\ShareImages\**" />
+    <Content Remove="wwwroot\Videos\**" />
+    <Content Remove="wwwroot\Virtual\**" />
+    <EmbeddedResource Remove="wwwroot\Gallery\**" />
+    <EmbeddedResource Remove="wwwroot\js\**" />
+    <EmbeddedResource Remove="wwwroot\lib\bootstrap\**" />
+    <EmbeddedResource Remove="wwwroot\lib\jquery-validation-unobtrusive\**" />
+    <EmbeddedResource Remove="wwwroot\lib\jquery-validation\**" />
+    <EmbeddedResource Remove="wwwroot\lib\jquery\**" />
+    <EmbeddedResource Remove="wwwroot\PageImages\**" />
+    <EmbeddedResource Remove="wwwroot\ShareImages\**" />
+    <EmbeddedResource Remove="wwwroot\Videos\**" />
+    <EmbeddedResource Remove="wwwroot\Virtual\**" />
+    <None Remove="wwwroot\Gallery\**" />
+    <None Remove="wwwroot\js\**" />
+    <None Remove="wwwroot\lib\bootstrap\**" />
+    <None Remove="wwwroot\lib\jquery-validation-unobtrusive\**" />
+    <None Remove="wwwroot\lib\jquery-validation\**" />
+    <None Remove="wwwroot\lib\jquery\**" />
+    <None Remove="wwwroot\PageImages\**" />
+    <None Remove="wwwroot\ShareImages\**" />
+    <None Remove="wwwroot\Videos\**" />
+    <None Remove="wwwroot\Virtual\**" />
+  </ItemGroup>
 
   <ItemGroup>
     <Compile Remove="Controllers\BibleController.cs" />
@@ -13,39 +57,12 @@
 
   <ItemGroup>
     <Content Remove="Views\Shared\_NoAccess.cshtml" />
-    <Content Remove="wwwroot\Videos\April.m4v" />
-    <Content Remove="wwwroot\Videos\Jesus_creed_no_Logo_No_End_Logo_Version_HD.mp4" />
-    <Content Remove="wwwroot\Videos\March-01.m4v" />
-    <Content Remove="wwwroot\Videos\May.m4v" />
-    <Content Remove="wwwroot\Videos\prayerisnotrocketscience.jpg" />
-    <Content Remove="wwwroot\Videos\prayerisnotrocketscience.mp4" />
-    <Content Remove="wwwroot\Videos\Retooning-The-Nativity.m4v" />
-    <Content Remove="wwwroot\Videos\worshipisnotrocketscience.mp4" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Update="wwwroot\sitemap.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="wwwroot\Gallery\AP\WebArt\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="wwwroot\PageImages\BackgroundBlurr.webp" />
-    <None Include="wwwroot\PageImages\Church-01.webp" />
-    <None Include="wwwroot\PageImages\Church-Crop-02.webp" />
-    <None Include="wwwroot\PageImages\Empty.gif" />
-    <None Include="wwwroot\PageImages\Links.webp" />
-    <None Include="wwwroot\PageImages\Nazarenes.webp" />
-    <None Include="wwwroot\PageImages\Purpose.webp" />
-    <None Include="wwwroot\PageImages\Staff-Photos\Bridewell-01.png" />
-    <None Include="wwwroot\PageImages\Staff-Photos\Jorge-01.png" />
-    <None Include="wwwroot\PageImages\Staff-Photos\kathrynp-01.png" />
-    <None Include="wwwroot\PageImages\Staff-Photos\Napier-01.png" />
-    <None Include="wwwroot\PageImages\Staff.webp" />
   </ItemGroup>
 
 </Project>
