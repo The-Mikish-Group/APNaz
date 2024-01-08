@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="wwwroot\css_old\**" />
     <Compile Remove="wwwroot\Gallery\**" />
     <Compile Remove="wwwroot\js\**" />
     <Compile Remove="wwwroot\lib\bootstrap\**" />
@@ -18,6 +19,7 @@
     <Compile Remove="wwwroot\ShareImages\**" />
     <Compile Remove="wwwroot\Videos\**" />
     <Compile Remove="wwwroot\Virtual\**" />
+    <Content Remove="wwwroot\css_old\**" />
     <Content Remove="wwwroot\Gallery\**" />
     <Content Remove="wwwroot\js\**" />
     <Content Remove="wwwroot\lib\bootstrap\**" />
@@ -28,6 +30,7 @@
     <Content Remove="wwwroot\ShareImages\**" />
     <Content Remove="wwwroot\Videos\**" />
     <Content Remove="wwwroot\Virtual\**" />
+    <EmbeddedResource Remove="wwwroot\css_old\**" />
     <EmbeddedResource Remove="wwwroot\Gallery\**" />
     <EmbeddedResource Remove="wwwroot\js\**" />
     <EmbeddedResource Remove="wwwroot\lib\bootstrap\**" />
@@ -38,6 +41,7 @@
     <EmbeddedResource Remove="wwwroot\ShareImages\**" />
     <EmbeddedResource Remove="wwwroot\Videos\**" />
     <EmbeddedResource Remove="wwwroot\Virtual\**" />
+    <None Remove="wwwroot\css_old\**" />
     <None Remove="wwwroot\Gallery\**" />
     <None Remove="wwwroot\js\**" />
     <None Remove="wwwroot\lib\bootstrap\**" />
@@ -57,6 +61,10 @@
 
   <ItemGroup>
     <Content Remove="Views\Shared\_NoAccess.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="IronSoftware.System.Drawing" Version="2024.1.1" />
   </ItemGroup>
 
   <ItemGroup>
