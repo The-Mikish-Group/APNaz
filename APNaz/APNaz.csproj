@@ -72,11 +72,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\Gallery\AP\" />
+    <PackageReference Include="SixLabors.ImageSharp" Version="3.1.2" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="SixLabors.ImageSharp" Version="3.1.2" />
+    <Folder Include="wwwroot\Gallery\" />
   </ItemGroup>
 
 </Project>

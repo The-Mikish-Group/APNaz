@@ -27,8 +27,8 @@ namespace APNaz.Controllers
             return View();
         }
     }
-    public class APController : BaseController { }
-    public class AP2Controller : BaseController { }  
+    public class APNazController : BaseController { }
+    public class APController : BaseController { }  
 
 
     // Add more galleries here: (the controller name and the 'galleryfolder/ folderName should be the same)
