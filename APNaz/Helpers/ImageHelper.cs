@@ -11,7 +11,7 @@ namespace Gallery.Helpers
 {
     public static class ImageHelper
     {
-        private static IWebHostEnvironment _env;
+        private static IWebHostEnvironment? _env;
 
         public static void Initialize(IWebHostEnvironment env)
         {

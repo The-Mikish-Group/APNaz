@@ -10,8 +10,14 @@
 .contact-view-bottom-spacing {
     min-height: 0;
 }
+.gallery-index-view-bottom-spacing {
+    min-height: 1124px;
+}
 .gallery-view-bottom-spacing {
     min-height: 0;
+}
+.slideshow-view-bottom-spacing {
+    min-height: 1124px;
 }
 .purpose-view-bottom-spacing {
     min-height: 0;

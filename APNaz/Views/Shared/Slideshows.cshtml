@@ -1,21 +1,20 @@
-﻿<!-- Shared Galleries -->
+﻿<!-- Shared Slideshows -->
 @{
-    // Gallery Folder Name (location of gallery = wwwroot/{galleryFolder})
-    string galleryFolder = "gallery";
-
-    var viewName = ViewData["ViewName"]?.ToString();    
-    var folders = Directory.GetDirectories(System.IO.Path.Combine(Directory.GetCurrentDirectory(), $"wwwroot/{galleryFolder}"))
+    // Slideshows Folder Name (location of Slideshows = wwwroot/{slideshowsFolder})
+    string slideshowsFolder = "Gallery"; // default
+    var imageFolder = ViewData["ViewName"]?.ToString();    
+    var folders = Directory.GetDirectories(System.IO.Path.Combine(Directory.GetCurrentDirectory(), $"wwwroot/{slideshowsFolder}"))
                            .Select(folder => System.IO.Path.GetFileName(folder))
                            .ToList();
     
     // Get the backgroundImage path
-    string backgroundImage = $"{galleryFolder}/background.webp"; // default
+    string backgroundImage = $"{slideshowsFolder}/background.webp"; // default
     string[] imageExtensions = { ".jpg", ".png", ".webp", ".svg" }; // possible extensions
 
     // Loop through possible extensions
     foreach (var extension in imageExtensions)
     {
-        var imagePath = $"{galleryFolder}/background{extension}";
+        var imagePath = $"{slideshowsFolder}/background{extension}";
         if (System.IO.File.Exists(System.IO.Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", imagePath)))
         {
             backgroundImage = imagePath;
@@ -25,15 +24,15 @@
 }
 
 <div class="text-center mt-3">
-    <h2 class="text-white">@viewName</h2>
+    <h2 class="text-white">@imageFolder</h2>
 </div>
 
 <div class="container text-center">
-    <div class="row gx-0 gx-lg-4 justify-content-center row-cols-4 row-cols-sm-4 row-cols-md-6 row-cols-lg-8 row-cols-xl-auto  g-1 g-lg-3 mb-3">
+    <div class="row gx-0 gx-lg-4 justify-content-center g-0 g-sm-1 g-lg-3 mb-3">
        
         @foreach (var folder in folders)
         {
-            <div class="col menu-item" data-viewName="@folder">
+            <div class="col-1 menu-item" data-viewName="@folder">
                 <div class="text-center p-0 border border border-dark rounded">
                     <a class="menu-link bg-gray-lighter text-black w-100" asp-controller="@folder">@folder</a>
                 </div>
@@ -43,7 +42,7 @@
 </div>
 
 <!-- Spacing for Large Screens if needed -->
-<div class="galleries-view-bottom-spacing"> </div>
+<div class="slideshow-view-bottom-spacing"> </div>
 
 <!-- Replaces the background-image -->
 <script>

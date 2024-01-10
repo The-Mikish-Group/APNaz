@@ -1,24 +1,33 @@
-﻿<!-- Shared Index -->
+﻿<!-- Shared/Index.cshtml -->
 @{
-    // viewName is used in script to identify elements by id and is also a gallery folder 
-    var viewName = ViewData["ViewName"]?.ToString();
+    var galleriesFolder = "Gallery"; // Set default
 
-
-    // Get the Gallery folders
     string currentController = ViewContext.RouteData.Values["controller"]?.ToString() ?? "Shared";
+    var currentGallery = currentController.Replace("slide", "", StringComparison.OrdinalIgnoreCase);    
 
-    var folders = Directory.GetDirectories(System.IO.Path.Combine(Directory.GetCurrentDirectory(), $"wwwroot/Gallery/{currentController}"))
+    // Gallery type (used in html heading display)
+    var galleryType = currentController.Contains("slide", StringComparison.OrdinalIgnoreCase)
+        ? "Slideshows"
+        : "Galleries";
+    galleryType ??= "Galleries"; // Set default if null
+
+    // Target View Slideshow.cshtml or Gallery.cshtml (for the Folder Link Buttons)
+    var targetView = currentController.Contains("slide", StringComparison.OrdinalIgnoreCase)
+        ? "Slideshow" 
+        : "Gallery";  
+    targetView ??= "Gallery"; // Set default if null
+
+    // Folders in current Gallery's folder
+    var folders = Directory.GetDirectories(System.IO.Path.Combine(Directory.GetCurrentDirectory(), $"wwwroot/{galleriesFolder}/{currentGallery}"))
                            .Select(folder => System.IO.Path.GetFileName(folder))
                            .ToList();  
 
     // Background image stuff
-    string backgroundImage = $"gallery/{currentController}/background.webp"; // default
-    string[] imageExtensions = { ".jpg", ".png", ".webp", ".svg" }; // possible extensions
-
-    // Loop through possible extensions for background image
+    string backgroundImage = $"{galleriesFolder}/{currentGallery}/background.webp"; // default
+    string[] imageExtensions = { ".jpg", ".png", ".webp", ".svg" }; // possible extensions        
     foreach (var extension in imageExtensions)
     {
-        var imagePath = $"gallery/{currentController}/background{extension}";
+        var imagePath = $"{galleriesFolder}/{currentGallery}/background{extension}";
         if (System.IO.File.Exists(System.IO.Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", imagePath)))
         {            
             backgroundImage = imagePath;
@@ -28,31 +37,30 @@
 }
 
 <!-- View Heading -->
-<div class="text-center mt-3">
+<div class="text-center mt-3 mb-2">
     <h2 class="text-white">
-        @currentController
+        @currentGallery @galleryType
     </h2>
 </div>
 
-<!-- Row to hold Gallery Links -->
+<!-- Row to hold Links -->
 <div class="row gx-0 gx-lg-4 justify-content-center row-cols-4 row-cols-sm-4 row-cols-md-6 row-cols-lg-8 row-cols-xl-auto  g-1 g-lg-3 mb-3">   
 
     <!-- Back Link -->
     <div class="col menu-item">
         <div class="bg-danger text-center p-0 border border border-dark rounded" style="width:50px; height: 35px;">
-            @* <a class="menu-link text-dark w-100" style="height: 34px; display: flex; align-items: center;" asp-controller="Home" asp-action="Index"> *@
-            <a class="menu-link text-dark w-100" style="height: 34px; display: flex; align-items: center;" href="https://apnazarene.org">
+            <a class="menu-link text-dark w-100" style="height: 34px; display: flex; align-items: center;" asp-controller="Info" asp-action="Index">
                 <img src="lib/svg/buttons/back-white.svg" alt="Home" style="height: 24px;">
             </a>
         </div>
     </div>
 
-    <!-- Gallery Links -->
+    <!-- Folder Links -->
     @foreach (var folder in folders)
     {
         <div class="col menu-item" data-viewName="@folder">
             <div id="@folder" class="bg-gray-lighter text-center p-0 border border-dark rounded">
-                <a id="@folder-link" class="menu-link text-dark w-100" asp-controller="@currentController" asp-action="Gallery" asp-route-viewName="@folder">@folder</a>
+                <a id="@folder-link" class="menu-link text-dark w-100" asp-controller="@currentController" asp-action="@targetView" asp-route-viewName="@folder">@folder</a>
             </div>
         </div>
     }
@@ -60,7 +68,7 @@
 </div>
 
 <!-- Spacing for Large Screens if needed -->
-<div class="gallery-view-bottom-spacing"> </div>
+<div class="gallery-index-view-bottom-spacing"> </div>
 
 <!-- Replaces the background-image -->
 <script>

@@ -27,22 +27,18 @@ namespace APNaz.Controllers
 
         public IActionResult Index() => CustomView("Galleries");
     }
-
-
-    public class GalleryBaseController : Controller
+    public class GalleriesBaseController : Controller
     {
         public IActionResult Index() => GalleryView();
         public IActionResult Gallery(string viewName) => GalleryView(viewName);
-        protected IActionResult GalleryView(string imagefolder = "Gallery")
+        protected IActionResult GalleryView(string viewName = "Gallery")
         {
-            ViewData["ViewName"] = imagefolder;
+            ViewData["ViewName"] = viewName;
             return View();
         }
     }
-    public class APNazController : GalleryBaseController { }
-    public class APController : GalleryBaseController { }
-
-
+    public class APNazController : GalleriesBaseController { }
+    public class APController : GalleriesBaseController { }
     public class SlideshowBaseController : Controller
     {
         public IActionResult Index() => SlideshowView();
@@ -55,8 +51,6 @@ namespace APNaz.Controllers
     }
     public class APNazSlideController : SlideshowBaseController { }
     public class APSlideController : SlideshowBaseController { }
-
-
     // Add more galleries here: (the controller name and the 'galleryfolder/ folderName should be the same)
     // Uncomment the line below to create a "Family" controller, then add a folder named "Family" to your 'galleryFolder' with images.
     //
