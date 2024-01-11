@@ -53,10 +53,13 @@
   <ItemGroup>
     <Compile Remove="Controllers\BibleController.cs" />
     <Compile Remove="Controllers\SharedControllerold.cs" />
+    <Compile Remove="Helpers\ImageHelper.cs" />
     <Compile Remove="Views\Shared\_NoAccess.cshtml.cs" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Remove="Views\Shared\Slideshow.cshtml" />
+    <Content Remove="Views\Shared\Slideshows.cshtml" />
     <Content Remove="Views\Shared\_NoAccess.cshtml" />
   </ItemGroup>
 

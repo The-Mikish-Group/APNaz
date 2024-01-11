@@ -1,5 +1,3 @@
-using Gallery.Helpers;
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -9,7 +7,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddHttpContextAccessor();
 
 // Initialize ImageHelper with the environment
-ImageHelper.Initialize(builder.Environment);
+ImageDisplayHelper.Initialize(builder.Environment);
 
 var app = builder.Build();
 

@@ -41,20 +41,21 @@ namespace APNaz.Controllers
     }
     public class APNazController : GalleryBaseController { }
     public class APController : GalleryBaseController { }
+    public class APNazSlideController : GalleryBaseController { }
+    public class APSlideController : GalleryBaseController { }
 
-
-    public class SlideshowBaseController : Controller
-    {
-        public IActionResult Index() => SlideshowView();
-        public IActionResult Slideshow(string viewName) => SlideshowView(viewName);
-        protected IActionResult SlideshowView(string viewName = "Slideshow")
-        {
-            ViewData["ViewName"] = viewName;
-            return View();
-        }
-    }
-    public class APNazSlideController : SlideshowBaseController { }
-    public class APSlideController : SlideshowBaseController { }
+    //public class SlideshowBaseController : Controller
+    //{
+    //    public IActionResult Index() => SlideshowView();
+    //    public IActionResult Slideshow(string viewName) => SlideshowView(viewName);
+    //    protected IActionResult SlideshowView(string viewName = "Slideshow")
+    //    {
+    //        ViewData["ViewName"] = viewName;
+    //        return View();
+    //    }
+    //}
+    //public class APNazSlideController : SlideshowBaseController { }
+    //public class APSlideController : SlideshowBaseController { }
 
 
     // Add more galleries here: (the controller name and the 'galleryfolder/ folderName should be the same)

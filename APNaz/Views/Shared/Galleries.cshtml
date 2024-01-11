@@ -1,21 +1,21 @@
 ﻿<!-- Shared Galleries -->
 @{
     // Gallery Folder Name (location of gallery = wwwroot/{galleryFolder})
-    string galleryFolder = "gallery";
+    string gallerysFolder = "gallery";
 
-    var viewName = ViewData["ViewName"]?.ToString();    
-    var folders = Directory.GetDirectories(System.IO.Path.Combine(Directory.GetCurrentDirectory(), $"wwwroot/{galleryFolder}"))
+    var imageFolder = ViewData["ViewName"]?.ToString();
+    var folders = Directory.GetDirectories(System.IO.Path.Combine(Directory.GetCurrentDirectory(), $"wwwroot/{gallerysFolder}"))
                            .Select(folder => System.IO.Path.GetFileName(folder))
                            .ToList();
     
     // Get the backgroundImage path
-    string backgroundImage = $"{galleryFolder}/background.webp"; // default
+    string backgroundImage = $"{gallerysFolder}/background.webp"; // default
     string[] imageExtensions = { ".jpg", ".png", ".webp", ".svg" }; // possible extensions
 
     // Loop through possible extensions
     foreach (var extension in imageExtensions)
     {
-        var imagePath = $"{galleryFolder}/background{extension}";
+        var imagePath = $"{gallerysFolder}/background{extension}";
         if (System.IO.File.Exists(System.IO.Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", imagePath)))
         {
             backgroundImage = imagePath;
@@ -25,7 +25,7 @@
 }
 
 <div class="text-center mt-3">
-    <h2 class="text-white">@viewName</h2>
+    <h2 class="text-white">@imageFolder</h2>
 </div>
 
 <div class="container text-center">
