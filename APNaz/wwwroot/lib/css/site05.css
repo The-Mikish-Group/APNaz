@@ -1,0 +1,141 @@
+/* General Custom Html stuff */
+body {
+    overflow-y: scroll;
+    line-height: 1;
+    padding-top: 0;
+    margin: 0;
+    font-size: 14px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    /*background-color: #4a4b4c;*/ /* bg-gray */   
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* don't like padding and margins on elements by default */
+container, div, h1, h2, h3, h4, h5, p{
+    cursor:default;
+    padding: 0;
+    margin: 0;
+}
+
+/* make everything a borderbox */
+* {
+    box-sizing: border-box;
+}
+
+/* no border class */
+.no-border {
+    border: none;
+}
+
+/* Cursors */ 
+.no-cursor {
+    cursor: none;
+}
+.pointer-cursor {
+    cursor: pointer;
+}
+
+/**********************/
+/* Responsive */
+.btn {
+    transition: 1s ease-in-out;
+}
+.show-me-at-the-top {
+    display: none;
+}
+.show-me-at-the-bottom {
+    display: inline;
+}
+
+/* Bible Tab Stuff */
+.bible-nav-item > .nav-link {
+    color: #414042;
+    border-color: #414042;
+    border-style: solid;
+    border-width: thin;
+    border-bottom-style: none;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+} 
+
+/* Image Gallery Stuff */
+#image-containers {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+    #image-containers div .filename {
+        color: black !important;
+        text-decoration: none !important;
+    }
+
+/* #image-containers div:hover .filename {
+            color: green !important;
+        }*/
+
+img {
+    cursor: pointer;
+    transition: border 0.3s ease-in-out;
+}
+
+.menu-item {
+    min-width: 90px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.menu-link {
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    transition: color 0.3s ease, border-color 0.3s ease, font-weight 0.3s ease;
+    padding: 8px;
+    display: inline-block;
+}
+
+    .menu-link:hover {
+        color: black !important;
+        font-weight: bold !important;
+    }
+
+    .menu-link.selected {
+        font-weight: bold !important;
+    }
+
+.border-link {
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    transition: color 0.3s ease, border-color 0.3s ease, font-weight 0.3s ease;
+    padding: 8px;
+    display: inline-block;
+    border-color: Black !important;
+}
+
+    .border-link:hover {
+        color: black !important;
+        border-color: Black !important;
+        font-weight: bold !important;
+    }
+
+    .border-link.selected {
+        font-weight: bold !important;
+    }
+
+/* #region (BS -lg- ) (min-width: 992px) Start of Desktop */
+@media (min-width: 992px) {
+
+    .show-me-at-the-top {
+        display: inline;
+    }
+    .show-me-at-the-bottom {
+        display: none;
+    }   
+}
+/* #endregion*/

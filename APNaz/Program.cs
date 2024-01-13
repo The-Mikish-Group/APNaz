@@ -1,3 +1,5 @@
+using APNaz.Helpers;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -7,7 +9,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddHttpContextAccessor();
 
 // Initialize ImageHelper with the environment
-ImageDisplayHelper.Initialize(builder.Environment);
+ImageHelper.Initialize(builder.Environment);
 
 var app = builder.Build();
 

@@ -1,31 +1,33 @@
 ﻿<!-- Shared Galleries -->
 @{
-    // Gallery Folder Name (location of gallery = wwwroot/{galleryFolder})
     string gallerysFolder = "gallery";
-
-    var imageFolder = ViewData["ViewName"]?.ToString();
-    var folders = Directory.GetDirectories(System.IO.Path.Combine(Directory.GetCurrentDirectory(), $"wwwroot/{gallerysFolder}"))
+    string galleryFolder = ViewData["ViewName"]?.ToString() ?? ViewContext.RouteData.Values["action"]?.ToString() ?? "";
+    var currentFolder = System.IO.Directory.GetCurrentDirectory();
+    var wwwRoot = System.IO.Path.Combine(currentFolder, "wwwroot/");
+    var folders = Directory.GetDirectories(System.IO.Path.Combine(currentFolder, $"wwwroot/{gallerysFolder}"))
                            .Select(folder => System.IO.Path.GetFileName(folder))
+                           .Where(folder => !System.IO.Path.GetFileName(folder).StartsWith("_"))
                            .ToList();
-    
-    // Get the backgroundImage path
-    string backgroundImage = $"{gallerysFolder}/background.webp"; // default
-    string[] imageExtensions = { ".jpg", ".png", ".webp", ".svg" }; // possible extensions
 
-    // Loop through possible extensions
+    // Get the backgroundImage path to change background
+    string backgroundImage = $"{gallerysFolder}/background.webp"; // default
+
+    // Loop through possible background extensions
+    string[] imageExtensions = { ".jpg", ".png", ".webp", ".svg", 
+}; // possible extensions   
     foreach (var extension in imageExtensions)
     {
-        var imagePath = $"{gallerysFolder}/background{extension}";
-        if (System.IO.File.Exists(System.IO.Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", imagePath)))
+        var background = $"{gallerysFolder}/background{extension}";
+        if (System.IO.File.Exists($"{wwwRoot}{background}"))
         {
-            backgroundImage = imagePath;
+            backgroundImage = background;
             break;
         }
     }
 }
 
 <div class="text-center mt-3">
-    <h2 class="text-white">@imageFolder</h2>
+    <h2 class="text-white">@galleryFolder</h2>
 </div>
 
 <div class="container text-center">

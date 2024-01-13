@@ -53,17 +53,21 @@
   <ItemGroup>
     <Compile Remove="Controllers\BibleController.cs" />
     <Compile Remove="Controllers\SharedControllerold.cs" />
-    <Compile Remove="Helpers\ImageHelper.cs" />
+    <Compile Remove="Helpers\ImageDisplayHelper.cs" />
     <Compile Remove="Views\Shared\_NoAccess.cshtml.cs" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Remove="Views\Shared\Galleries.cshtml" />
+    <Content Remove="Views\Shared\GalleryGood.cshtml" />
+    <Content Remove="Views\Shared\Galleryxxx.cshtml" />
     <Content Remove="Views\Shared\Slideshow.cshtml" />
     <Content Remove="Views\Shared\Slideshows.cshtml" />
     <Content Remove="Views\Shared\_NoAccess.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\Gallery\APNaz\background.webp" />
     <None Include="wwwroot\PageImages\BackgroundBlurr.webp" />
     <None Include="wwwroot\PageImages\Church-01.webp" />
     <None Include="wwwroot\PageImages\Church-Crop-02.webp" />
@@ -81,10 +85,6 @@
 
   <ItemGroup>
     <PackageReference Include="SixLabors.ImageSharp" Version="3.1.2" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="wwwroot\Gallery\APNaz\" />
   </ItemGroup>
 
 </Project>

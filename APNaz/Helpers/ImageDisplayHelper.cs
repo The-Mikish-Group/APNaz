@@ -40,8 +40,9 @@ public class ImageDisplayHelper
                      Path.GetExtension(file).Equals(".webp", StringComparison.OrdinalIgnoreCase)))
                 .Select(file => $"~/{Path.Combine(imagesFolder, currentDisplay, imagefolder, Path.GetFileName(file)).Replace("\\", "/")}")
                 .ToList();
-
-        var thumbnailService = new ThumbnailService();
+        
+        
+        
         var thumbnailsPath = currentImageFolder;
         foreach (var file in files) {
             thumbnailService.CreateOrRetrieveThumbnail(file, Path.Combine(thumbnailsPath, $"{Path.GetFileNameWithoutExtension(file)}_thumb.jpg"), thumbnailsPath);
@@ -104,11 +105,7 @@ public class ThumbnailService
             Console.WriteLine($"Error creating thumbnail: {ex.Message}");
         }
     }
-    private static IWebHostEnvironment? _env;
-    public static void Initialize(IWebHostEnvironment env)
-    {
-        _env = env;
-    }
+    private IWebHostEnvironment? _env;    
     public static void CreateThumbnail(string file, string thumbnailsPath)
     {
 
