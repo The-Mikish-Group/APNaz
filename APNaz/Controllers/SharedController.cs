@@ -7,24 +7,33 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace APNaz.Controllers
 {
-    public class SlideshowsController : Controller
+    public class CombosController : Controller // Combos Controller
     {
         protected IActionResult CustomView(string viewName)
         {
             ViewData["ViewName"] = viewName;
             return View("Slideshows");
         }
+        public IActionResult Index() => CustomView("Combos");
+    }
 
+    public class SlideshowsController : Controller  //Slideshows Controller
+    {
+        protected IActionResult CustomView(string viewName)
+        {
+            ViewData["ViewName"] = viewName;
+            return View("Slideshows");
+        }
         public IActionResult Index() => CustomView("Slideshows");
     }
-    public class GalleriesController : Controller
+
+    public class GalleriesController : Controller  // Galleries Controller
     {
         protected IActionResult CustomView(string viewName)
         {
             ViewData["ViewName"] = viewName;
             return View("Galleries");
         }
-
         public IActionResult Index() => CustomView("Galleries");
     }
 
@@ -42,6 +51,7 @@ namespace APNaz.Controllers
     public class APNazController : GalleryBaseController { }
     public class APController : GalleryBaseController { }
     public class APNazSlideController : GalleryBaseController { }
-    public class APSlideController : GalleryBaseController { }   
-
+    public class APNazComboController : GalleryBaseController { }
+    public class APSlideController : GalleryBaseController { }
+    public class APComboController : GalleryBaseController { }
 }

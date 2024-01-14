@@ -19,7 +19,10 @@
 
     // Get the folders for the menu links
     var currentController = ViewContext.RouteData.Values["controller"]?.ToString() ?? "Shared";
-    var galleryFolder = currentController.Replace("slide", "", StringComparison.OrdinalIgnoreCase);
+    var galleryFolder = currentController
+    .Replace("slide", "", StringComparison.OrdinalIgnoreCase)
+    .Replace("combo", "", StringComparison.OrdinalIgnoreCase);
+
     var folders = Directory.GetDirectories(System.IO.Path.Combine(Directory.GetCurrentDirectory(), $"wwwroot/{galleriesFolder}/{galleryFolder}"))
     .Where(folder => !System.IO.Path.GetFileName(folder).StartsWith("_"))
     .Select(folder => System.IO.Path.GetFileName(folder))
@@ -81,7 +84,14 @@
         : "Galleries";
     galleryType ??= "Galleries"; // Set default if null
 
-    // Target View
+    // Gallery type (used in html heading display)
+    galleryType = currentController.Contains("combo", StringComparison.OrdinalIgnoreCase)
+        ? "Combos"
+        : galleryType;
+    galleryType ??= "Galleries"; // Set default if null
+
+
+    // Target View (Everything currently targets Gallery)
     var targetView = currentController.Contains("slide", StringComparison.OrdinalIgnoreCase)
         ? "Gallery" // send someplace else like Slideshow.cshtml
         : "Gallery";
@@ -168,10 +178,11 @@
     </div>
 
 }
-else
+
+@if (galleryType == "Galleries")
 {
 
-    <!-- Gallery Images -->
+    <!-- The Gallery -->
     <div id="images-container" class="row g-0 g-sm-2 g-lg-2" style="display: none">
 
         <!-- Display each Image file and filename -->
@@ -193,6 +204,57 @@ else
             </div>
         }
     </div>
+}
+
+@if (galleryType == "Combos")
+{
+    <!-- The Slideshow -->
+    <div class="container ms-auto me-auto pb-3 pb-lg-3 px-0">
+        <div class="mx-sm-1 mx-md-0 carousel slide pb-0 pointer-event my-rounded" id="CarouselControl" data-bs-ride="carousel">
+
+            <div class="my-rounded carousel-inner" id="CarouselItems">
+
+                @foreach (var file in files)
+                {
+                    <div class='w-100 bg-transparent carousel-item @(file == files.First() ? "active" : "")'>
+                        <img class='d-block h-100 mx-auto bg-gray-lighter p-2'
+                             src="@Url.Content(System.IO.Path.Combine("/", galleriesFolder, galleryFolder, imagefolder, System.IO.Path.GetFileNameWithoutExtension(file) + "_thumb.jpg").Replace("\\", "/"))"
+                             alt="@System.IO.Path.GetFileNameWithoutExtension(file).Substring(0, Math.Min(30, System.IO.Path.GetFileNameWithoutExtension(file).Length))" />
+                    </div>
+                }
+
+            </div>
+
+            <!-- Left And right controls -->
+            <a title="prev" class="carousel-control-prev" href="#CarouselControl" role="button" data-bs-slide="prev"></a>
+            <a title="next" class="carousel-control-next" href="#CarouselControl" role="button" data-bs-slide="next"></a>
+
+        </div>
+    </div>
+
+    <!-- The Gallery -->
+    <div id="images-container" class="row g-0 g-sm-2 g-lg-2" style="display: none">
+
+        <!-- Display each Image file and filename -->
+        @foreach (var file in files)
+        {
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-3">
+
+                <!-- Link to file -->
+                <a title="Click for full-screen." class="menu-link d-block text-center bg-gray-lighter" href="@Url.Content(file)" target="_blank">
+
+                    <!-- file_thumb -->
+                    <img class="w-100 img-fluid mx-auto" data-src="@Url.Content(System.IO.Path.Combine("/", galleriesFolder, galleryFolder, imagefolder, System.IO.Path.GetFileNameWithoutExtension(file) + "_thumb.jpg").Replace("\\", "/"))" alt="_Click Me_" />
+
+                    <!-- file name (max of 30 characters shown) -->
+                    <div class="text-black text-center pt-1">
+                        @System.IO.Path.GetFileNameWithoutExtension(file).Substring(0, Math.Min(30, System.IO.Path.GetFileNameWithoutExtension(file).Length))
+                    </div>
+                </a>
+            </div>
+        }
+    </div>
+
 }
 <!-- Spacing for Large Screens if needed -->
 <div class="gallery-view-bottom-spacing"></div>

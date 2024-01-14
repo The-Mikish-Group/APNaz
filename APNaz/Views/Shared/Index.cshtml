@@ -1,36 +1,30 @@
 ﻿<!-- Shared/Index.cshtml -->
 @{
-    var galleriesFolder = "Gallery"; // Set default
-    string currentController = ViewContext.RouteData.Values["controller"]?.ToString() ?? "Shared";
-    string galleryFolder = currentController;
+    var galleriesFolder = "Gallery";
+    var currentController = ViewContext.RouteData.Values["controller"]?.ToString() ?? "Shared";
 
-    // Gallery type (used in html heading display)
-    var galleryType = currentController.Contains("slide", StringComparison.OrdinalIgnoreCase)
-        ? "Slideshows"
-        : "Galleries";   
-    galleryType ??= "Galleries"; // Set default if null
+    // galleryFolder
+    var galleryFolder = currentController.Replace("slide", "", StringComparison.OrdinalIgnoreCase)
+                                         .Replace("combo", "", StringComparison.OrdinalIgnoreCase);
+    // galleryType
+    var galleryType = currentController.Contains("slide", StringComparison.OrdinalIgnoreCase) ? "Slideshows" :
+                      currentController.Contains("combo", StringComparison.OrdinalIgnoreCase) ? "Galleries" : "Galleries";
+    galleryType ??= "Galleries"; // default 
+    
+    // folders
+    var foldersPath = System.IO.Path.Combine(Directory.GetCurrentDirectory(), $"wwwroot/{galleriesFolder}/{galleryFolder}");
+    var folders = Directory.GetDirectories(foldersPath)
+                          .Where(folder => !System.IO.Path.GetFileName(folder).StartsWith("_"))
+                          .Select(folder => System.IO.Path.GetFileName(folder))
+                          .ToList();
 
-    // Target View Slideshow.cshtml or Gallery.cshtml (for the Folder Link Buttons)
-    var targetView = currentController.Contains("slide", StringComparison.OrdinalIgnoreCase)
-        ? "Gallery" 
-        : "Gallery";  
-    targetView ??= "Gallery"; // Set default if null
-
-    // Folders in current Gallery's folder
-    galleryFolder = galleryFolder.Replace("slide", "", StringComparison.OrdinalIgnoreCase);  // important to strip off "slide here."  
-    var folders = Directory.GetDirectories(System.IO.Path.Combine(Directory.GetCurrentDirectory(), $"wwwroot/{galleriesFolder}/{galleryFolder}"))
-    .Where(folder => !System.IO.Path.GetFileName(folder).StartsWith("_"))
-    .Select(folder => System.IO.Path.GetFileName(folder))
-    .ToList();
-
-    // Background image stuff  
-    string backgroundImage = $"{galleriesFolder}/{galleryFolder}/background.webp"; // default
-    string[] imageExtensions = { ".jpg", ".png", ".webp", ".svg", }; // possible extensions        
+    var backgroundImage = $"{galleriesFolder}/{galleryFolder}/background.webp";
+    var imageExtensions = new[] { ".jpg", ".png", ".webp", ".svg" };
     foreach (var extension in imageExtensions)
     {
         var imagePath = $"{galleriesFolder}/{galleryFolder}/background{extension}";
         if (System.IO.File.Exists(System.IO.Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", imagePath)))
-        {            
+        {
             backgroundImage = imagePath;
             break;
         }
@@ -61,11 +55,10 @@
     {
         <div class="col-1 col-sm-2 menu-item" data-viewName="@folder">
             <div id="@folder" class="bg-gray-lighter text-center p-0 border border-dark rounded">
-                <a id="@folder-link" class="menu-link text-dark" asp-controller="@currentController" asp-action="@targetView" asp-route-viewName="@folder">@folder</a>
+                <a id="@folder-link" class="menu-link text-dark" asp-controller="@currentController" asp-action="Gallery" asp-route-viewName="@folder">@folder</a>
             </div>
         </div>
     }
-
 </div>
 
 <!-- Spacing for Large Screens if needed -->
