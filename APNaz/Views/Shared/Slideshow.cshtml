@@ -7,16 +7,7 @@
 @{
     // Galleries Folder Name
     string galleriesFolder = "Gallery";
-
-    // Function to get image dimensions
-    Size GetImageDimensions(string imagePath)
-    {
-        using (var image = Image.Load(imagePath))
-        {
-            return new Size(image.Width, image.Height);
-        }
-    }
-
+    
     // Get the folders for the menu links
     var currentController = ViewContext.RouteData.Values["controller"]?.ToString() ?? "Shared";
     var galleryFolder = currentController.Replace("slide", "", StringComparison.OrdinalIgnoreCase);
@@ -58,9 +49,9 @@
 
     foreach (var file in files)
     {
-        var filename = System.IO.Path.Combine(System.IO.Path.GetFileNameWithoutExtension(file)) + "_thumb.jpg";
+        var filename = System.IO.Path.Combine(System.IO.Path.GetFileNameWithoutExtension(file)) +  "_thumb.jpg";        
         thumbnailService.CreateOrRetrieveThumbnail(file, filename, currentImageFolder, thumbnailWidth, thumbnailHeight);
-    }
+    } 
 
     // Get the backgroundImage path
     string backgroundImage = $"{galleriesFolder}/{galleryFolder}/{imagefolder}/background.webp"; // default
@@ -75,22 +66,25 @@
         }
     }
 
-    // Gallery type (used in html heading display)
-    var galleryType = currentController.Contains("slide", StringComparison.OrdinalIgnoreCase)
-        ? "Slideshows"
-        : "Galleries";
-    galleryType ??= "Galleries"; // Set default if null
-
-    // Target View
+    // Target View Slideshow.cshtml or Gallery.cshtml (for the Folder Link Buttons)
     var targetView = currentController.Contains("slide", StringComparison.OrdinalIgnoreCase)
         ? "Gallery" // send someplace else like Slideshow.cshtml
         : "Gallery";
     targetView ??= "Gallery"; // Set default if null
-}
 
+
+    // Function to get image dimensions
+    Size GetImageDimensions(string imagePath)
+    {
+        using (var image = Image.Load(imagePath))
+        {
+            return new Size(image.Width, image.Height);
+        }
+    }
+}
 <!-- Function to create a thumbnail -->
 @functions {
-
+    
     public class ThumbnailService
     {
         public void CreateOrRetrieveThumbnail(string file, string thumbnail, string thumbnailsPath, int thumbnailWidth, int thumbnailHeight)
@@ -109,7 +103,7 @@
         }
 
         private void CreateThumbnail(string file, string thumbnailsPath, int thumbnailWidth, int thumbnailHeight)
-        {
+        {            
             ImageHelper.CreateThumbnail(file, thumbnailsPath, thumbnailWidth, thumbnailHeight);
         }
     }
@@ -135,65 +129,62 @@
     {
         <div class="col-1 menu-item" data-viewName="@folder">
             <div id="@folder" class="bg-gray-lighter text-center p-0 border border-dark rounded">
-                <a title="menu-link" id="@folder-link" class="menu-link text-dark w-100" asp-controller="@currentController" asp-action="@targetView" asp-route-viewName="@folder">@folder</a>
+                <a title="folder-link" id="@folder-link" class="menu-link text-dark w-100" asp-controller="@currentController" asp-action="slideshow" asp-route-viewName="@folder">@folder</a>
             </div>
         </div>
     }
 </div>
 
-@if (galleryType == "Slideshows")
-{
-    <!-- The Slideshow -->
-    <div class="container ms-auto me-auto pb-3 pb-lg-3 px-0">
-        <div class="mx-sm-1 mx-md-0 carousel slide pb-0 pointer-event my-rounded" id="CarouselControl" data-bs-ride="carousel">
+<!-- The Slideshow -->
+<div class="container ms-auto me-auto pb-3 pb-lg-3 px-0">
+    <div class="mx-sm-1 mx-md-0 carousel slide pb-0 pointer-event my-rounded" id="CarouselControl" data-bs-ride="carousel">
 
-            <div class="my-rounded carousel-inner" id="CarouselItems">
+        <div class="my-rounded carousel-inner" id="CarouselItems">
 
-                @foreach (var file in files)
-                {
-                    <div class='w-100 bg-transparent carousel-item @(file == files.First() ? "active" : "")'>
-                        <img class='d-block h-100 mx-auto bg-gray-lighter p-2'
-                             src="@Url.Content(System.IO.Path.Combine("/", galleriesFolder, galleryFolder, imagefolder, System.IO.Path.GetFileNameWithoutExtension(file) + "_thumb.jpg").Replace("\\", "/"))"
-                             alt="@System.IO.Path.GetFileNameWithoutExtension(file).Substring(0, Math.Min(30, System.IO.Path.GetFileNameWithoutExtension(file).Length))" />
-                    </div>
-                }
-
-            </div>
-
-            <!-- Left And right controls -->
-            <a title="prev" class="carousel-control-prev" href="#CarouselControl" role="button" data-bs-slide="prev"></a>
-            <a title="next" class="carousel-control-next" href="#CarouselControl" role="button" data-bs-slide="next"></a>
+            @foreach (var file in files)
+            {
+                <div class='w-100 bg-transparent carousel-item @(file == files.First() ? "active" : "")'>
+                    <img class='d-block h-100 mx-auto bg-gray-lighter p-2'
+                         src="@Url.Content(System.IO.Path.Combine("/", galleriesFolder, galleryFolder, imagefolder, System.IO.Path.GetFileNameWithoutExtension(file) + "_thumb.jpg").Replace("\\", "/"))"
+                         alt="@System.IO.Path.GetFileNameWithoutExtension(file)" />
+                </div>
+            }
 
         </div>
+
+        <!-- Left And right controls -->
+        <a title="prev" class="carousel-control-prev" href="#CarouselControl" role="button" data-bs-slide="prev"></a>
+        <a title="next" class="carousel-control-next" href="#CarouselControl" role="button" data-bs-slide="next"></a>
+
     </div>
+</div>
 
-}
-else
-{
+@* <!-- Gallery Images -->
+<div id="images-container" class="row g-0 g-sm-2 g-lg-2" style="display: none">
 
-    <!-- Gallery Images -->
-    <div id="images-container" class="row g-0 g-sm-2 g-lg-2" style="display: none">
+    <!-- Display each Image file and filename -->
+    @foreach (var file in files)
+    {
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-3">
 
-        <!-- Display each Image file and filename -->
-        @foreach (var file in files)
-        {
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-3">
+            <!-- Link to file -->
+            <a title="Full-Screen" class="menu-link d-block text-center bg-gray-lighter" href="@Url.Content(file)" target="_blank">
 
-                <!-- Link to file -->
-                <a title="Click for full-screen." class="menu-link d-block text-center bg-gray-lighter" href="@Url.Content(file)" target="_blank">
+                <!-- file_thumb -->
+                <img class="w-100 img-fluid mx-auto" data-src="@Url.Content(System.IO.Path.Combine("/", galleriesFolder, galleryFolder, imagefolder, System.IO.Path.GetFileNameWithoutExtension(file) + "_thumb.jpg").Replace("\\", "/"))" alt="_Click Me_" />
+                
+                
 
-                    <!-- file_thumb -->
-                    <img class="w-100 img-fluid mx-auto" data-src="@Url.Content(System.IO.Path.Combine("/", galleriesFolder, galleryFolder, imagefolder, System.IO.Path.GetFileNameWithoutExtension(file) + "_thumb.jpg").Replace("\\", "/"))" alt="_Click Me_" />
+                <!-- file name (max of 30 characters shown) -->
+                <div class="text-black text-center pt-1">
+                    @System.IO.Path.GetFileNameWithoutExtension(file).Substring(0, Math.Min(30, System.IO.Path.GetFileNameWithoutExtension(file).Length))
+                </div>
+            </a>
 
-                    <!-- file name (max of 30 characters shown) -->
-                    <div class="text-black text-center pt-1">
-                        @System.IO.Path.GetFileNameWithoutExtension(file).Substring(0, Math.Min(30, System.IO.Path.GetFileNameWithoutExtension(file).Length))
-                    </div>
-                </a>
-            </div>
-        }
-    </div>
-}
+        </div>
+    }
+</div> *@
+
 <!-- Spacing for Large Screens if needed -->
 <div class="gallery-view-bottom-spacing"></div>
 

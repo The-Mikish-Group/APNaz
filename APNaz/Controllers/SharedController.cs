@@ -7,6 +7,16 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace APNaz.Controllers
 {
+    public class SlideshowsController : Controller
+    {
+        protected IActionResult CustomView(string viewName)
+        {
+            ViewData["ViewName"] = viewName;
+            return View("Slideshows");
+        }
+
+        public IActionResult Index() => CustomView("Slideshows");
+    }
     public class GalleriesController : Controller
     {
         protected IActionResult CustomView(string viewName)
@@ -17,6 +27,7 @@ namespace APNaz.Controllers
 
         public IActionResult Index() => CustomView("Galleries");
     }
+
 
     public class GalleryBaseController : Controller
     {
@@ -31,8 +42,6 @@ namespace APNaz.Controllers
     public class APNazController : GalleryBaseController { }
     public class APController : GalleryBaseController { }
     public class APNazSlideController : GalleryBaseController { }
-    public class APSlideController : GalleryBaseController { }
-    
-    // public class FamilyController : GalleriesBaseController { }  
+    public class APSlideController : GalleryBaseController { }   
 
 }

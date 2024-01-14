@@ -1,22 +1,23 @@
 ﻿<!-- Shared/Index.cshtml -->
 @{
     var galleriesFolder = "Gallery"; // Set default
-
-    string galleryFolder = ViewContext.RouteData.Values["controller"]?.ToString() ?? "Shared";
+    string currentController = ViewContext.RouteData.Values["controller"]?.ToString() ?? "Shared";
+    string galleryFolder = currentController;
 
     // Gallery type (used in html heading display)
-    var galleryType = galleryFolder.Contains("slide", StringComparison.OrdinalIgnoreCase)
-        ? "Slideshows" // obsolete?
-        : "Galleries";
+    var galleryType = currentController.Contains("slide", StringComparison.OrdinalIgnoreCase)
+        ? "Slideshows"
+        : "Galleries";   
     galleryType ??= "Galleries"; // Set default if null
 
     // Target View Slideshow.cshtml or Gallery.cshtml (for the Folder Link Buttons)
-    var targetView = galleryFolder.Contains("slide", StringComparison.OrdinalIgnoreCase)
+    var targetView = currentController.Contains("slide", StringComparison.OrdinalIgnoreCase)
         ? "Gallery" 
         : "Gallery";  
     targetView ??= "Gallery"; // Set default if null
 
     // Folders in current Gallery's folder
+    galleryFolder = galleryFolder.Replace("slide", "", StringComparison.OrdinalIgnoreCase);  // important to strip off "slide here."  
     var folders = Directory.GetDirectories(System.IO.Path.Combine(Directory.GetCurrentDirectory(), $"wwwroot/{galleriesFolder}/{galleryFolder}"))
     .Where(folder => !System.IO.Path.GetFileName(folder).StartsWith("_"))
     .Select(folder => System.IO.Path.GetFileName(folder))
@@ -39,7 +40,7 @@
 <!-- View Heading -->
 <div class="text-center my-2">
     <h2 class="text-white">
-        @galleryFolder.Replace("slide", "", StringComparison.OrdinalIgnoreCase) @galleryType
+        @galleryFolder @galleryType
     </h2>
 </div>
 
@@ -60,7 +61,7 @@
     {
         <div class="col-1 col-sm-2 menu-item" data-viewName="@folder">
             <div id="@folder" class="bg-gray-lighter text-center p-0 border border-dark rounded">
-                <a id="@folder-link" class="menu-link text-dark" asp-controller="@galleryFolder" asp-action="Gallery" asp-route-viewName="@folder">@folder</a>
+                <a id="@folder-link" class="menu-link text-dark" asp-controller="@currentController" asp-action="@targetView" asp-route-viewName="@folder">@folder</a>
             </div>
         </div>
     }

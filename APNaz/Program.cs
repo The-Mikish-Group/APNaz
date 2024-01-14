@@ -1,14 +1,14 @@
-using APNaz.Helpers;
+using APNaz.Helpers; // Update as needed (mv)
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-// Add HttpContextAccessor
+// Add HttpContextAccessor (mv)
 builder.Services.AddHttpContextAccessor();
 
-// Initialize ImageHelper with the environment
+// Initialize ImageHelper with the environment (mv)
 ImageHelper.Initialize(builder.Environment);
 
 var app = builder.Build();
@@ -21,7 +21,7 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-// Comment out line below for http sites
+// Comment out line below for http sites (mv)
 app.UseHttpsRedirection();
 
 app.UseStaticFiles();

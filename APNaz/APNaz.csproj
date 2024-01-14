@@ -61,7 +61,6 @@
     <Content Remove="Views\Shared\Galleries.cshtml" />
     <Content Remove="Views\Shared\GalleryGood.cshtml" />
     <Content Remove="Views\Shared\Galleryxxx.cshtml" />
-    <Content Remove="Views\Shared\Slideshow.cshtml" />
     <Content Remove="Views\Shared\Slideshows.cshtml" />
     <Content Remove="Views\Shared\_NoAccess.cshtml" />
   </ItemGroup>
