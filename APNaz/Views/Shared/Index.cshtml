@@ -8,8 +8,8 @@
                                          .Replace("combo", "", StringComparison.OrdinalIgnoreCase);
     // galleryType
     var galleryType = currentController.Contains("slide", StringComparison.OrdinalIgnoreCase) ? "Slideshows" :
-                      currentController.Contains("combo", StringComparison.OrdinalIgnoreCase) ? "Galleries" : "Galleries";
-    galleryType ??= "Galleries"; // default 
+                      currentController.Contains("combo", StringComparison.OrdinalIgnoreCase) ? "Galleries" : "Galleries"; // Say Gallerys in Heading instead of Combos ie "Combos" : "Galleries"; 
+    galleryType ??= "Galleries"; // default - handle null
     
     // folders
     var foldersPath = System.IO.Path.Combine(Directory.GetCurrentDirectory(), $"wwwroot/{galleriesFolder}/{galleryFolder}");
@@ -38,7 +38,7 @@
     </h2>
 </div>
 
-<!-- Link Button Menu   -->
+<!-- Link Button Menu -->
 <div class="container justify-content-center row gx-1 gx-lg-4 my-2 p-0">
 
     <!-- Back Link Button -->
@@ -66,5 +66,7 @@
 
 <!-- Replaces the background-image -->
 <script>
-    $("body").css("background-image", "url('../@Url.Content(backgroundImage)')");
+    // $("body").css("background-image", "url('../@Url.Content(backgroundImage)')"); // control background
+    $("body").css("background-color", "#40996D"); /* bg-green-dark */
+    $("body").css("background-image", "url('../PageImages/BackgroundBlurr.webp')");
 </script>

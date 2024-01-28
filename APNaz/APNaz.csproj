@@ -7,6 +7,10 @@
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Optimize>True</Optimize>
+  </PropertyGroup>
+
   <ItemGroup>
     <Compile Remove="wwwroot\css_old\**" />
     <Compile Remove="wwwroot\Gallery\**" />
@@ -62,6 +66,7 @@
     <Content Remove="Views\Shared\GalleryGood.cshtml" />
     <Content Remove="Views\Shared\Galleryxxx.cshtml" />
     <Content Remove="Views\Shared\Slideshows.cshtml" />
+    <Content Remove="Views\Shared\Slideshowxx.cshtml" />
     <Content Remove="Views\Shared\_NoAccess.cshtml" />
   </ItemGroup>
 
