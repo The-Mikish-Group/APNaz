@@ -269,7 +269,9 @@
 
 /* #region Resposive color changes */
 
-/* Responsive Link Hover and Active colors  in <a></a>*/
+/*#region Responsive color changes */
+
+/* Default <a> link */
 a {
     color: #414042 /* text-gray-darker */
 }
@@ -279,7 +281,7 @@ a {
         color: #7d7e81; /* text-gray */
     }
 
-/* Responsive link colors (link class)*/
+/* link */
 .link {
     color: #424143; /* almost black */
 }
@@ -290,22 +292,33 @@ a {
         color: #8e774d; /* text-gold */
     }
 
-.link-white {
-    color: #ffffff;
+.chalk-link {
+   /* text-decoration: none;
+    border-bottom: 2px dotted #b1b2b3;*/
+    color: white;
 }
 
-    .link-white:hover,
-    .link-white:active,
-    .link-white:focus {
+    .chalk-link:hover,
+    .chalk-link:active,
+    .chalk-link:focus {
         color: #40996d; /* green-dark */
     }
 
+/* chalk-link-selected */
+.chalk-link-selected {
+    text-decoration: none;
+    border-bottom: 2px dotted #80b24d;
+    color: #80b24d;
+}
+    
 .nav-link {
     color: #DEDFE0; /* light gray */
 }
 
-    .nav-link:hover {
-        color: white;
+    .nav-link:active,
+    .nav-link:hover,
+    .nav-link:focus {
+        color: white !important;
     }
 
 .nav-pills .nav-link.active,
@@ -315,7 +328,7 @@ a {
     border-color: #1861ac;
 }
 
-/* Responsive Button Primary colors */
+/* btn-Primary colors */
 .btn-primary {
     color: white;
     background-color: #40996d; /* bg-green-dark */
@@ -329,8 +342,9 @@ a {
         border-color: #7d7e81; /* gray */
     }
 
-/* Used in Gallery Group Auto Top function
-   Must be #ID : Used by JS document.getElementById */
+/* #endregion */
+
+/* #region Top Button */
 #top-button {
     display: none;
     position: fixed;
@@ -346,12 +360,17 @@ a {
     padding: 8px 24px;
     border-radius: 4px;
 }
-
+ 
     #top-button:hover {
         background-color: #4A4B4C; /* bg-gray-dark */
     }
+    #top-button:active {
+        background-color: red; /* bg-gray-dark */
+    }
 
-/* Responsive Card colors */
+ /* #endregion*/
+
+/* #region Responsive Card colors */
 
 /* Staff Card Colors */
 .staff-card-color {
@@ -434,6 +453,56 @@ a {
 
 .image-dark-show {
     display: none;
+}
+
+/* #endregion */
+
+/* #region Slideshow bar buttons */
+#Previous {
+    border: 1px solid transparent;
+}
+
+    #Previous:hover,
+    #Previous:active,
+    #Previous:focus {
+        border: 1px solid black;
+    }
+
+#Next {
+    border: 1px solid transparent;
+}
+
+    #Next:hover,
+    #Next:active,
+    #Next:focus {
+        border: 1px solid black;
+    }
+
+#Copy {
+    border: 1px solid transparent;
+}
+
+    #Copy:hover,
+    #Copy:active,
+    #Copy:focus {
+        border: 1px solid black;
+    }
+
+.slideshow-button {
+    height: 28px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+
+    .slideshow-button:hover,
+    .slideshow-button:hover,
+    .slideshow-button:hover {
+        border: 1px solid black;
+    }
+
+.slideshow-button-image {
+    width: 26px;
+    height: 26px;
 }
 
 /* #endregion */
