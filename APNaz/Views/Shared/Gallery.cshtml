@@ -161,72 +161,75 @@
     <div class="container justify-content-center row gx-1 gx-lg-4 my-2 p-0">
 
         <!-- Back Link Button -->
-        <div class="col-1 menu-item">
-            <div class="bg-danger text-center p-0 border border border-dark rounded" style="width:50px; height: 35px;">
-                <a class="menu-link text-dark" style="height: 34px; display: flex; align-items: center;" href="../apnazcombo">
-                    <img src="~/lib/svg/Buttons/Back-White.svg" alt="Home" style="height: 24px;">
+        <div class="col-2 pt-1 mb-1">
+            <div class="h-100 text-center text-white">
+                <a class="btn bg-red-dark btn-sm group-button-size" href="../apnazcombo">
+                    <img alt="" class="back-button-image-size" src="/lib/svg/Buttons/Back-White.svg">
                 </a>
             </div>
-        </div>
+        </div>        
 
-        <!-- Folder Links -->
-        @foreach (var folder in folders)
-        {
-            <div class="col-1 col-sm-2 menu-item" data-viewName="@folder">
-                <div id="@folder" class="bg-gray-lighter text-center p-0 border border-dark rounded">
-                    <a id="@folder-link" class="menu-link text-dark" asp-controller="@currentController" asp-action="Gallery" asp-route-viewName="@folder">@folder</a>
-                </div>
+        <div class="col-8 menu-item">
+            <div class="row">    
+
+                <!-- Folder Links -->
+                @foreach (var folder in folders)
+                {
+                    <div class="col-6 col-lg-3 menu-item" data-viewName="@folder">
+                        <div id="@folder" class="bg-green-lighter text-center p-0 border border-dark rounded">
+                            <a id="@folder-link" class="menu-link text-dark" asp-controller="@currentController" asp-action="Gallery" asp-route-viewName="@folder">@folder</a>
+                        </div>
+                    </div>
+                }
+
             </div>
-        }
+        </div>        
     </div>
 
 
     <!-- Content Column -->
-    <div class="col-12 text-start pt-4">
+    <div class="col-12 text-start px-0 pt-4">
 
         <!-- Display Slideshow -->
         @if (galleryType == "Slideshows" || galleryType == "Combos")
         {
             <!-- Slideshow Controls -->
-            <div id="SlideshowControls" class="row container-fluid text-center mb-2">
+            <div id="SlideshowControls" class="row text-center px-0 mb-2">
 
                 <!-- Prev -->
-                <div class="col text-end">
+                <div class="col-4 text-end">
                     <button id="Previous" class="slideshow-button" type="button" title="Previous image">
                         <img class="slideshow-button-image" alt="Prev" src="/lib/svg/Buttons/Previous.svg"> Prev
                     </button>
                 </div>
 
                 <!-- Copy -->
-                <div class="col text-center">
+                <div class="col-4 text-center">
                     <button id="Copy" class="slideshow-button" type="button" title="Copy Link to Clipboard" tooltip="Copy this Link" onclick="copyLink()">
-                        <img alt="Copy" class="slideshow-button-image" src="~/lib/svg/Buttons/Links.svg"> Copy
+                        <img alt="Copy" class="slideshow-button-image" src="/lib/svg/Buttons/Links.svg"> Copy
                     </button>
                 </div>
 
                 <!-- Next -->
-                <div class="col text-start">
+                <div class="col-4 text-start">
                     <button id="Next" class="slideshow-button" type="button" title="Next image">
                         Next <img class="slideshow-button-image" alt="Next" src="/lib/svg/Buttons/Next.svg">
                     </button>
                 </div>
 
-            </div>
+            </div>          
 
             <!-- Slideshow -->
             <div id="my-group-2" class="row container-fluid text-center mb-2 mx-0 px-0">
 
                 <!-- Column Carousel -->
-                <div class="col-12 p-0 m-0 mb-3">
-
-                    <!-- useless container -->
-                    <container class="p-0 m-0">
+                <div class="col-12 p-0 m-0 mb-3">                    
 
                         <!-- Carousel Control-->
                         <div id="CarouselControl" class="carousel slide pointer-event" data-bs-ride="carousel">
 
                             <!-- Carousel Inner (CarouselItems) -->
-                            <div id="CarouselItems" class="carousel-inner">
+                            <div id="CarouselItems" class="carousel-inner rounded">
 
                                 @foreach (var file in files)
                                 {
@@ -243,9 +246,7 @@
                             <a title="prev" class="carousel-control-prev" href="#CarouselControl" role="button" data-bs-slide="prev"></a>
                             <a title="next" class="carousel-control-next" href="#CarouselControl" role="button" data-bs-slide="next"></a>
 
-                        </div><!-- End Carousel Inner (CarouselItems) -->
-
-                    </container> <!-- End useless container -->
+                        </div><!-- End Carousel Inner (CarouselItems) -->                   
 
                 </div><!-- End Carousel Column -->
 
@@ -294,13 +295,13 @@
     var mainElement = document.getElementById("@imagefolder");
     var secondaryElement = document.getElementById("@imagefolder-link");
 
-    mainElement.classList.toggle("bg-gray-lighter");
-    mainElement.classList.toggle("bg-gray-dark");
+    mainElement.classList.toggle("bg-green-lighter");
+    mainElement.classList.toggle("bg-green-dark");
     mainElement.style.pointerEvents = 'none';
 
     secondaryElement.classList.toggle("text-dark");
     secondaryElement.classList.toggle("text-light");
-    secondaryElement.classList.add("selected");
+    @* secondaryElement.classList.add("selected"); *@
 </script>
 
 

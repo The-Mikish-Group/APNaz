@@ -42,10 +42,10 @@
 <div class="container justify-content-center row gx-1 gx-lg-4 my-2 p-0">
 
     <!-- Back Link Button -->
-    <div class="col-1 menu-item">
-        <div class="bg-danger text-center p-0 border border border-dark rounded" style="width:50px; height: 35px;">
-            <a class="menu-link text-dark" style="height: 34px; display: flex; align-items: center;" asp-controller="Info" asp-action="Index">
-                <img src="~/lib/svg/buttons/back-white.svg" alt="Home" style="height: 24px;">
+    <div class="col-2 pt-1 mb-1">
+        <div class="h-100 text-center text-white">
+            <a class="btn bg-red-dark btn-sm group-button-size" href="~/">
+                <img alt="" class="back-button-image-size" src="/lib/svg/Buttons/Back-White.svg">
             </a>
         </div>
     </div>
@@ -53,8 +53,8 @@
     <!-- Folder Links -->
     @foreach (var folder in folders)
     {
-        <div class="col-1 col-sm-2 menu-item" data-viewName="@folder">
-            <div id="@folder" class="bg-gray-lighter text-center p-0 border border-dark rounded">
+        <div class="col-6 col-lg-3 menu-item" data-viewName="@folder">
+            <div id="@folder" class="bg-green-lighter text-center p-0 border border-dark rounded">
                 <a id="@folder-link" class="menu-link text-dark" asp-controller="@currentController" asp-action="Gallery" asp-route-viewName="@folder">@folder</a>
             </div>
         </div>

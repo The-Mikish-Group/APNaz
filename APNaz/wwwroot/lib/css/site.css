@@ -159,21 +159,9 @@ img {
 }
 /* #endregion */
 
-/* Bible Tab Stuff */
-.bible-nav-item > .nav-link {
-    color: #414042;
-    border-color: #414042;
-    border-style: solid;
-    border-width: thin;
-    border-bottom-style: none;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
-} 
-
-/* #region (BS -lg- ) (min-width: 992px) Start of Desktop */
-@media (min-width: 992px) {
-
-    .show-at-top {
+    /* #region (BS -lg- ) (min-width: 992px) Start of Desktop */
+    @media (min-width: 992px) {
+        .show-at-top {
         display: inline;
     }
     .show-at-bottom {

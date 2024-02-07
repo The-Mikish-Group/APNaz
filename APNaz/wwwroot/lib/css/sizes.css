@@ -61,7 +61,7 @@
 }
 .my-calendar-size {
     width: 100%;
-    height: 920px;
+    height: 1150px;
 }
 .staff-photo-size {    
     height: 208px;
@@ -80,8 +80,17 @@
     font-size: 16px;
 }
 
-.CarouselItem, 
-#CarouselImage
+#Previous {
+    min-width:75px;
+}
+#Copy {
+    min-width: 75px;
+}
+#Next {
+    min-width: 75px;
+}
+
+.CarouselItem, #CarouselImage
 {    
     height: auto !important;
     width: 100%;

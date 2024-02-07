@@ -328,6 +328,22 @@ a {
     border-color: #1861ac;
 }
 
+/* Bible Tab Stuff */
+.bible-nav-item > .nav-link {
+    color: #414042;
+    border-color: #414042;
+    border-style: solid;
+    border-width: thin;
+    border-bottom-style: none;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+    .bible-nav-item > .nav-link:active,
+    .bible-nav-item > .nav-link:focus {
+        color: #414042 !important;
+    }
+
 /* btn-Primary colors */
 .btn-primary {
     color: white;
