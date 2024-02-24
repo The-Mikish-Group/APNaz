@@ -368,7 +368,7 @@
     </div>
 
     <!-- Bottom Footer Navbar Menu -->
-    <footer class="navbar navbar-dark border-top bg-gray-darker" role="contentinfo" aria-label="Site footer">
+    <footer id="footer" class="navbar navbar-dark border-top bg-gray-darker" role="contentinfo" aria-label="Site footer">
 
         <div class="container text-right">
             <div class="row w-100 gx-0 gx-lg-5">
@@ -478,6 +478,25 @@
             <p class="text-center py-2 text-white" style="font-size: 10px;">Copyright © @DateTime.Now.Year - All Rights Reserved.</p>
         </div>
     </footer>
+
+    <!-- Adjust Footer -->
+    <script>
+        // Adjust the position of the footer based on actual content and footer height
+        function adjustFooterPosition() {
+            var mainContainer = document.getElementById('MainContainer');
+            var footer = document.getElementById('footer');
+
+            // Calculate the space between content, footer, and the bottom of the page
+            var spaceToBottom = window.innerHeight - mainContainer.offsetHeight - footer.offsetHeight;
+
+            // Adjust the position of the footer if the space is less than 0
+            footer.style.bottom = (spaceToBottom < 0) ? -spaceToBottom + 'px' : 'auto';
+        }
+
+        // Call the function when the page loads and when it resizes
+        window.addEventListener('load', adjustFooterPosition);
+        window.addEventListener('resize', adjustFooterPosition);
+    </script>
 
     @await RenderSectionAsync("Scripts", required: false)
 

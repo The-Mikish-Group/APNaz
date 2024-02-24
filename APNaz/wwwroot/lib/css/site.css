@@ -6,14 +6,12 @@ body {
     overflow-y: scroll;
     padding: 0;
     margin: 0;
-
     line-height: 1.4;
     font-size: 14px;
     font-weight: 400;
     font-family: "Lato", sans-serif;
     font: 0.85em/1.35em 'Lato', cursive, sans-serif;
     text-rendering: optimizeLegibility;
-    
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -23,6 +21,10 @@ body {
     position: absolute;
     top: 15px;
     transform: translateY(-10%);
+}
+
+html > body header {
+    width: 100%;
 }
 
 /* Set for Auto Push Footer*/
@@ -37,8 +39,8 @@ body {
 }
 
 /* don't like padding and margins on elements by default */
-container, div, h1, h2, h3, h4, h5, p{
-    cursor:default;
+container, div, h1, h2, h3, h4, h5, p {
+    cursor: default;
     padding: 0;
     margin: 0;
 }
@@ -55,11 +57,13 @@ container, div, h1, h2, h3, h4, h5, p{
 
 /* Cursors */
 .cursor {
-    cursor: url(http://www.icon100.com/up/3772/128/425-hand-pointer.png), auto;
+    cursor: pointer;
 }
+
 .no-cursor {
     cursor: none;
 }
+
 .pointer-cursor {
     cursor: pointer;
 }
@@ -137,7 +141,6 @@ img {
     top: 0px;
     margin-left: auto;
     margin-right: auto;
-    
     background-image: url(../../images/blackboard.png);
     background-size: cover;
     /*border-top: 10px solid darkgoldenrod;
@@ -154,18 +157,20 @@ img {
 .show-at-top {
     display: none;
 }
+
 .show-at-bottom {
     display: inline;
 }
 /* #endregion */
 
-    /* #region (BS -lg- ) (min-width: 992px) Start of Desktop */
-    @media (min-width: 992px) {
-        .show-at-top {
+/* #region (BS -lg- ) (min-width: 992px) Start of Desktop */
+@media (min-width: 992px) {
+    .show-at-top {
         display: inline;
     }
+
     .show-at-bottom {
         display: none;
-    }   
+    }
 }
 /* #endregion*/
