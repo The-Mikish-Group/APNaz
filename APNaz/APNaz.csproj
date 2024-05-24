@@ -19,5 +19,11 @@
     <PackageReference Include="SixLabors.ImageSharp" Version="3.1.4" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\Gallery\APNaz\" />
+    <Folder Include="wwwroot\Videos\" />
+    <Folder Include="wwwroot\Virtual\Resources\" />
+  </ItemGroup>
+
       
 </Project>
