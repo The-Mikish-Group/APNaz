@@ -1,0 +1,548 @@
+﻿@{
+    ViewData["Title"] = "GuidelineColors";
+}
+
+@{
+    string color = "";
+    string shade = "";
+    string hexvalue = "";
+    string background = "";
+}
+
+<head>
+    <meta name="robots" content="none">
+</head>
+
+<style>
+    .show  {
+        display: inline;
+    }
+
+    .noshow {
+        display: none;
+    }
+
+    .color-width {
+        min-width: 250px;
+    }
+
+    #captchaBackground {
+        height: 220px;
+        width: 250px;
+        background-color: #414042;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #captcha {
+        height: 60%;
+        width: 80%;
+        font-size: 30px;
+        letter-spacing: 3px;
+        margin: auto;
+        display: block;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    #submitButton {        
+        background-color: #40996D;        
+        font-weight: bold;
+    }
+
+    #refreshButton {
+        background-color: #84CBA0;        
+        font-weight: bold;
+    }
+
+    #textBox {
+        height: 25px;
+    }
+
+    .incorrectCaptcha {
+        color: #C72D27;
+    }
+
+    .correctCaptcha {
+        color: #265039;
+    }
+
+</style>
+
+<!-- mycaptcha Show/NoShow -->
+<div id="mycaptcha" class="noshow container">
+
+    <!-- Row -->
+    <div Class="row gx-0 gx-lg-4">
+
+        <!-- Column -->
+        <div class="col-12">
+
+            <!-- Captcha -->
+            <div class="my-card-body h-100 mx-auto" style="width:250px;">
+
+                <div id="captchaBackground">
+
+                    <canvas id="captcha">captcha text</canvas>
+                    <p class="fs-5 text-white pb-2">Re-enter below.</p>
+
+                    <input id="textBox" type="text" name="text">
+                    <div id="buttons">
+                        <input class="m-2 btn" id="submitButton" type="submit">
+                        <button id="refreshButton" type="submit" class="m-2 btn">Refresh</button>
+                    </div>
+
+                    <span id="output"></span>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="myView" class="show m-0 p-0 text-center mx-auto">
+
+    <!-- Heading Row-->
+    <div class="row gx-0 gx-lg-4 my-2">
+        <div Class="col-12 mt-2 mt-lg-3">
+            <div style="width: 300px;" class="my-card border-dark bg-gray-lighter mx-auto px-2 py-2 mb-4">
+                <h2 class="text-center text-gray-darker text-nowrap">Guideline Colors<img alt="" class="card-image-size ps-2" src="~/lib/svg/Cards/WebArt.svg" /></h2>
+            </div>
+
+            <!-- Links Description -->
+            <p class="fs-5 text-center text-bold text-gray-lighter ms-3 pb-2"><span class="text-nowrap">Here are the</span> <span class="text-nowrap">Guideline Colors.</span></p>
+        </div>
+    </div>
+
+    <!-- Gray -->
+    <h3 class="text-gray-lighter text-start ps-2">Gray</h3>
+    <div class="row gx-0 gx-lg-4 pb-3">
+        @{
+            color = "gray";
+            shade = "lighter";
+            hexvalue = "Hex: #DEDFE0";
+            background = "bg" + "-" + color + "-" + shade;
+        }
+        <div class="col-12 col-sm-12 col-md-6 col-lg-2 my-card-radius color-width p-2 mx-0 my-2 mx-md-2 mx-lg-2 @background">
+            <p class="text-gray-darker text-nowrap fs-4">@background</p>
+            <p class="text-gray-darker text-nowrap fs-5">@hexvalue</p>
+        </div>
+        @{
+            color = "gray";
+            shade = "light";
+            hexvalue = "Hex: #ABADB0";
+            background = "bg" + "-" + color + "-" + shade;
+        }
+        <div class="col-12 col-sm-12 col-md-6 col-lg-2 my-card-radius color-width p-2 mx-0 my-2 mx-md-2 mx-lg-2 @background">
+            <p class="text-gray-darker text-nowrap fs-4">@background</p>
+            <p class="text-gray-darker text-nowrap fs-5">@hexvalue</p>
+        </div>
+        @{
+            color = "gray";
+            shade = "";
+            hexvalue = "Hex: #7D7E81";
+            background = "bg" + "-" + color;
+        }
+        <div class="col-12 col-sm-12 col-md-6 col-lg-2 my-card-radius color-width p-2 mx-0 my-2 mx-md-2 mx-lg-2 @background">
+            <p class="text-gray-lighter text-nowrap fs-4">@background</p>
+            <p class="text-gray-lighter text-nowrap fs-5">@hexvalue</p>
+        </div>
+        @{
+            color = "gray";
+            shade = "dark";
+            hexvalue = "Hex: #4A4B4C";
+            background = "bg" + "-" + color + "-" + shade;
+        }
+        <div class="col-12 col-sm-12 col-md-6 col-lg-2 my-card-radius color-width p-2 mx-0 my-2 mx-md-2 mx-lg-2 @background">
+            <p class="text-gray-lighter text-nowrap fs-4">@background</p>
+            <p class="text-gray-lighter text-nowrap fs-5">@hexvalue</p>
+        </div>
+        @{
+            color = "gray";
+            shade = "darker";
+            hexvalue = "Hex: #414042";
+            background = "bg" + "-" + color + "-" + shade;
+        }
+        <div class="col-12 col-sm-12 col-md-6 col-lg-2 my-card-radius color-width p-2 mx-0 my-2 mx-md-2 mx-lg-2 @background">
+            <p class="text-gray-lighter text-nowrap fs-4">@background</p>
+            <p class="text-gray-lighter text-nowrap fs-5">@hexvalue</p>
+        </div>
+    </div>
+
+    <!-- Green -->
+    <h3 class="text-green-lighter text-start ps-2">Green</h3>
+    <div class="row gx-0 gx-lg-4 pb-3">
+        @{
+            color = "green";
+            shade = "lighter";
+            hexvalue = "Hex: #84CBA0";
+            background = "bg" + "-" + color + "-" + shade;
+        }
+        <div class="col-12 col-sm-12 col-md-6 col-lg-2 my-card-radius color-width p-2 mx-0 my-2 mx-md-2 mx-lg-2 @background">
+            <p class="text-gray-darker text-nowrap fs-4">@background</p>
+            <p class="text-gray-darker text-nowrap fs-5">@hexvalue</p>
+        </div>
+        @{
+            color = "green";
+            shade = "light";
+            hexvalue = "Hex: #5DBF8B";
+            background = "bg" + "-" + color + "-" + shade;
+        }
+        <div class="col-12 col-sm-12 col-md-6 col-lg-2 my-card-radius color-width p-2 mx-0 my-2 mx-md-2 mx-lg-2 @background">
+            <p class="text-gray-darker text-nowrap fs-4">@background</p>
+            <p class="text-gray-darker text-nowrap fs-5">@hexvalue</p>
+        </div>
+        @{
+            color = "green";
+            shade = "";
+            hexvalue = "Hex: #4DAF7C";
+            background = "bg" + "-" + color;
+        }
+        <div class="col-12 col-sm-12 col-md-6 col-lg-2 my-card-radius color-width p-2 mx-0 my-2 mx-md-2 mx-lg-2 @background">
+            <p class="text-gray-lighter text-nowrap fs-4">@background</p>
+            <p class="text-gray-lighter text-nowrap fs-5">@hexvalue</p>
+        </div>
+        @{
+            color = "green";
+            shade = "dark";
+            hexvalue = "Hex: #40996D";
+
+            background = "bg" + "-" + color + "-" + shade;
+        }
+        <div class="col-12 col-sm-12 col-md-6 col-lg-2 my-card-radius color-width p-2 mx-0 my-2 mx-md-2 mx-lg-2 @background">
+            <p class="text-gray-lighter text-nowrap fs-4">@background</p>
+            <p class="text-gray-lighter text-nowrap fs-5">@hexvalue</p>
+        </div>
+        @{
+            color = "green";
+            shade = "darker";
+            hexvalue = "Hex: #265039";
+            background = "bg" + "-" + color + "-" + shade;
+        }
+        <div class="col-12 col-sm-12 col-md-6 col-lg-2 my-card-radius color-width p-2 mx-0 my-2 mx-md-2 mx-lg-2 @background">
+            <p class="text-gray-lighter text-nowrap fs-4">@background</p>
+            <p class="text-gray-lighter text-nowrap fs-5">@hexvalue</p>
+        </div>
+    </div>
+
+    <!-- Purple -->
+    <h3 class="text-purple-lighter text-start ps-2">Purple</h3>
+    <div class="row gx-0 gx-lg-4 pb-3">
+        @{
+            color = "purple";
+            shade = "lighter";
+            hexvalue = "Hex: #A688BF";
+            background = "bg" + "-" + color + "-" + shade;
+        }
+        <div class="col-12 col-sm-12 col-md-6 col-lg-2 my-card-radius color-width p-2 mx-0 my-2 mx-md-2 mx-lg-2 @background">
+            <p class="text-gray-darker text-nowrap fs-4">@background</p>
+            <p class="text-gray-darker text-nowrap fs-5">@hexvalue</p>
+        </div>
+        @{
+            color = "purple";
+            shade = "light";
+            hexvalue = "Hex: #836AA3";
+            background = "bg" + "-" + color + "-" + shade;
+        }
+        <div class="col-12 col-sm-12 col-md-6 col-lg-2 my-card-radius color-width p-2 mx-0 my-2 mx-md-2 mx-lg-2 @background">
+            <p class="text-gray-darker text-nowrap fs-4">@background</p>
+            <p class="text-gray-darker text-nowrap fs-5">@hexvalue</p>
+        </div>
+        @{
+            color = "purple";
+            shade = "";
+            hexvalue = "Hex: #695683";
+            background = "bg" + "-" + color;
+        }
+        <div class="col-12 col-sm-12 col-md-6 col-lg-2 my-card-radius color-width p-2 mx-0 my-2 mx-md-2 mx-lg-2 @background">
+            <p class="text-gray-lighter text-nowrap fs-4">@background</p>
+            <p class="text-gray-lighter text-nowrap fs-5">@hexvalue</p>
+        </div>
+        @{
+            color = "purple";
+            shade = "dark";
+            hexvalue = "Hex: #57446C";
+            background = "bg" + "-" + color + "-" + shade;
+        }
+        <div class="col-12 col-sm-12 col-md-6 col-lg-2 my-card-radius color-width p-2 mx-0 my-2 mx-md-2 mx-lg-2 @background">
+            <p class="text-gray-lighter text-nowrap fs-4">@background</p>
+            <p class="text-gray-lighter text-nowrap fs-5">@hexvalue</p>
+        </div>
+        @{
+            color = "purple";
+            shade = "darker";
+            hexvalue = "Hex: #332940";
+            background = "bg" + "-" + color + "-" + shade;
+        }
+        <div class="col-12 col-sm-12 col-md-6 col-lg-2 my-card-radius color-width p-2 mx-0 my-2 mx-md-2 mx-lg-2 @background">
+            <p class="text-gray-lighter text-nowrap fs-4">@background</p>
+            <p class="text-gray-lighter text-nowrap fs-5">@hexvalue</p>
+        </div>
+    </div>
+
+    <!-- Blue -->
+    <h3 class="text-blue-lighter text-start ps-2">Blue</h3>
+    <div class="row gx-0 gx-lg-4 pb-3">
+        @{
+            color = "blue";
+            shade = "lighter";
+            hexvalue = "Hex: #83D3EB";
+            background = "bg" + "-" + color + "-" + shade;
+        }
+        <div class="col-12 col-sm-12 col-md-6 col-lg-2 my-card-radius color-width p-2 mx-0 my-2 mx-md-2 mx-lg-2 @background">
+            <p class="text-gray-darker text-nowrap fs-4">@background</p>
+            <p class="text-gray-darker text-nowrap fs-5">@hexvalue</p>
+        </div>
+        @{
+            color = "blue";
+            shade = "light";
+            hexvalue = "Hex: #50B8D4";
+            background = "bg" + "-" + color + "-" + shade;
+        }
+        <div class="col-12 col-sm-12 col-md-6 col-lg-2 my-card-radius color-width p-2 mx-0 my-2 mx-md-2 mx-lg-2 @background">
+            <p class="text-gray-darker text-nowrap fs-4">@background</p>
+            <p class="text-gray-darker text-nowrap fs-5">@hexvalue</p>
+        </div>
+        @{
+            color = "blue";
+            shade = "";
+            hexvalue = "Hex: #54A0BA";
+            background = "bg" + "-" + color;
+        }
+        <div class="col-12 col-sm-12 col-md-6 col-lg-2 my-card-radius color-width p-2 mx-0 my-2 mx-md-2 mx-lg-2 @background">
+            <p class="text-gray-lighter text-nowrap fs-4">@background</p>
+            <p class="text-gray-lighter text-nowrap fs-5">@hexvalue</p>
+        </div>
+        @{
+            color = "blue";
+            shade = "dark";
+            hexvalue = "Hex: #53819A";
+            background = "bg" + "-" + color + "-" + shade;
+        }
+        <div class="col-12 col-sm-12 col-md-6 col-lg-2 my-card-radius color-width p-2 mx-0 my-2 mx-md-2 mx-lg-2 @background">
+            <p class="text-gray-lighter text-nowrap fs-4">@background</p>
+            <p class="text-gray-lighter text-nowrap fs-5">@hexvalue</p>
+        </div>
+        @{
+            color = "blue";
+            shade = "darker";
+            hexvalue = "Hex: #214351";
+            background = "bg" + "-" + color + "-" + shade;
+        }
+        <div class="col-12 col-sm-12 col-md-6 col-lg-2 my-card-radius color-width p-2 mx-0 my-2 mx-md-2 mx-lg-2 @background">
+            <p class="text-gray-lighter text-nowrap fs-4">@background</p>
+            <p class="text-gray-lighter text-nowrap fs-5">@hexvalue</p>
+        </div>
+    </div>
+
+    <!-- Red -->
+    <h3 class="text-red-light text-start ps-2">Red</h3>
+    <div class="row gx-0 gx-lg-4 pb-3">
+        @{
+            color = "red";
+            shade = "light";
+            hexvalue = "Hex: #F2644E";
+            background = "bg" + "-" + color + "-" + shade;
+        }
+        <div class="col-12 col-sm-12 col-md-6 col-lg-2 my-card-radius color-width p-2 mx-0 my-2 mx-md-2 mx-lg-2 @background">
+            <p class="text-gray-darker text-nowrap fs-4">@background</p>
+            <p class="text-gray-darker text-nowrap fs-5">@hexvalue</p>
+        </div>
+        @{
+            color = "red";
+            shade = "";
+            hexvalue = "Hex: #EF4237";
+            background = "bg" + "-" + color;
+        }
+        <div class="col-12 col-sm-12 col-md-6 col-lg-2 my-card-radius color-width p-2 mx-0 my-2 mx-md-2 mx-lg-2 @background">
+            <p class="text-gray-lighter text-nowrap fs-4">@background</p>
+            <p class="text-gray-lighter text-nowrap fs-5">@hexvalue</p>
+        </div>
+        @{
+            color = "red";
+            shade = "dark";
+            hexvalue = "Hex: #C72D27";
+            background = "bg" + "-" + color + "-" + shade;
+        }
+        <div class="col-12 col-sm-12 col-md-6 col-lg-2 my-card-radius color-width p-2 mx-0 my-2 mx-md-2 mx-lg-2 @background">
+            <p class="text-gray-lighter text-nowrap fs-4">@background</p>
+            <p class="text-gray-lighter text-nowrap fs-5">@hexvalue</p>
+        </div>
+    </div>
+
+    <!-- Orange -->
+    <h3 class="text-orange-light text-start ps-2">Orange</h3>
+    <div class="row gx-0 gx-lg-4 pb-3">
+        @{
+            color = "orange";
+            shade = "light";
+            hexvalue = "Hex: #FBB042";
+            background = "bg" + "-" + color + "-" + shade;
+        }
+        <div class="col-12 col-sm-12 col-md-6 col-lg-2 my-card-radius color-width p-2 mx-0 my-2 mx-md-2 mx-lg-2 @background">
+            <p class="text-gray-darker text-nowrap fs-4">@background</p>
+            <p class="text-gray-darker text-nowrap fs-5">@hexvalue</p>
+        </div>
+        @{
+            color = "orange";
+            shade = "";
+            hexvalue = "Hex: #F89626";
+            background = "bg" + "-" + color;
+        }
+        <div class="col-12 col-sm-12 col-md-6 col-lg-2 my-card-radius color-width p-2 mx-0 my-2 mx-md-2 mx-lg-2 @background">
+            <p class="text-gray-darker text-nowrap fs-4">@background</p>
+            <p class="text-gray-darker text-nowrap fs-5">@hexvalue</p>
+        </div>
+        @{
+            color = "orange";
+            shade = "dark";
+            hexvalue = "Hex: #F47B20";
+            background = "bg" + "-" + color + "-" + shade;
+        }
+        <div class="col-12 col-sm-12 col-md-6 col-lg-2 my-card-radius color-width p-2 mx-0 my-2 mx-md-2 mx-lg-2 @background">
+            <p class="text-gray-darker text-nowrap fs-4">@background</p>
+            <p class="text-gray-darker text-nowrap fs-5">@hexvalue</p>
+        </div>
+    </div>
+
+    <!-- Yellow -->
+    <h3 class="text-yellow-light text-start ps-2">Yellow</h3>
+    <div class="row gx-0 gx-lg-4 pb-3">
+        @{
+            color = "yellow";
+            shade = "light";
+            hexvalue = "Hex: #FAF06F";
+            background = "bg" + "-" + color + "-" + shade;
+        }
+        <div class="col-12 col-sm-12 col-md-6 col-lg-2 my-card-radius color-width p-2 mx-0 my-2 mx-md-2 mx-lg-2 @background">
+            <p class="text-gray-darker text-nowrap fs-4">@background</p>
+            <p class="text-gray-darker text-nowrap fs-5">@hexvalue</p>
+        </div>
+        @{
+            color = "yellow";
+            shade = "";
+            hexvalue = "Hex: #F4D40F";
+            background = "bg" + "-" + color;
+        }
+        <div class="col-12 col-sm-12 col-md-6 col-lg-2 my-card-radius color-width p-2 mx-0 my-2 mx-md-2 mx-lg-2 @background">
+            <p class="text-gray-darker text-nowrap fs-4">@background</p>
+            <p class="text-gray-darker text-nowrap fs-5">@hexvalue</p>
+        </div>
+        @{
+            color = "yellow";
+            shade = "dark";
+            hexvalue = "Hex: #E8BE1F";
+            background = "bg" + "-" + color + "-" + shade;
+        }
+        <div class="col-12 col-sm-12 col-md-6 col-lg-2 my-card-radius color-width p-2 mx-0 my-2 mx-md-2 mx-lg-2 @background">
+            <p class="text-gray-darker text-nowrap fs-4">@background</p>
+            <p class="text-gray-darker text-nowrap fs-5">@hexvalue</p>
+        </div>
+    </div>
+
+    <!-- Seal -->
+    <h3 class="text-gold text-start ps-2">Seal Colors</h3>
+    <div class="row gx-0 gx-lg-4 pb-3">
+        @{
+            color = "gold";
+            shade = "";
+            hexvalue = "Hex: #8E774D";
+            background = "bg" + "-" + color;
+        }
+        <div class="col-12 col-sm-12 col-md-6 col-lg-2 my-card-radius color-width p-2 mx-0 my-2 mx-md-2 mx-lg-2 @background">
+            <p class="text-gray-darker text-nowrap fs-4">@background</p>
+            <p class="text-gray-darker text-nowrap fs-5">@hexvalue</p>
+        </div>
+        @{
+            color = "black";
+            shade = "seal";
+            hexvalue = "Hex: #231F20";
+            background = "bg" + "-" + color + "-" + shade;
+        }
+        <div class="col-12 col-sm-12 col-md-6 col-lg-2 my-card-radius color-width p-2 mx-0 my-2 mx-md-2 mx-lg-2 @background">
+            <p class="text-gray-lighter text-nowrap fs-4">@background</p>
+            <p class="text-gray-lighter text-nowrap fs-5">@hexvalue</p>
+        </div>
+    </div>
+    @* <div class="colors-view-bottom-spacingx"></div> *@
+</div>
+
+<script>
+
+    // document.querySelector() is used to select an element from the document using its ID
+    let captchaText = document.querySelector('#captcha');
+    var ctx = captchaText.getContext("2d");
+    ctx.font = "30px Roboto";
+    ctx.fillStyle = "#F47B20";
+
+    let userText = document.querySelector('#textBox');
+    let submitButton = document.querySelector('#submitButton');
+    let output = document.querySelector('#output');
+    let refreshButton = document.querySelector('#refreshButton');
+
+    // alphaNums contains the characters with which you want to create the CAPTCHA
+    let alphaNums = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '2', '3', '4', '5', '6', '7', '8', '9'];
+    let emptyArr = [];
+
+    // This loop generates a random string of 7 characters using alphaNums
+    // Further this string is displayed as a CAPTCHA
+    for (let i = 1; i <= 7; i++) {
+        emptyArr.push(alphaNums[Math.floor(Math.random() * alphaNums.length)]);
+    }
+    var c = emptyArr.join('');
+    ctx.fillText(emptyArr.join(''), captchaText.width / 4, captchaText.height / 2);
+
+    // This event listener is stimulated whenever the user press the "Enter" button
+    // "Correct!" or "Incorrect, please try again" message is
+    // displayed after validating the input text with CAPTCHA
+    userText.addEventListener('keyup', function (e) {
+        // Key Code Value of "Enter" Button is 13
+        if (e.keyCode === 13) {
+            if (userText.value === c) {
+                output.classList.add("correctCaptcha");
+                if (document.getElementById("mycaptcha").classList.contains('show')) {
+                    document.getElementById("mycaptcha").classList.replace('show', 'noshow');
+                    document.getElementById("myView").classList.replace('noshow', 'show');
+                };
+            } else {
+                output.classList.add("incorrectCaptcha");
+                output.innerHTML = "Incorrect, please try again";
+            }
+        }
+    });
+
+    // This event listener is stimulated whenever the user clicks the "Submit" button
+    // "Correct!" or "Incorrect, please try again" message is
+    // displayed after validating the input text with CAPTCHA
+    submitButton.addEventListener('click', function () {
+        if (userText.value === c) {
+            output.classList.add("correctCaptcha");
+            if (document.getElementById("mycaptcha").classList.contains('show')) {
+                document.getElementById("mycaptcha").classList.replace('show', 'noshow');
+                document.getElementById("myView").classList.replace('noshow', 'show');
+            }
+        } else {
+            output.classList.add("incorrectCaptcha");
+            output.innerHTML = "Incorrect, please try again";
+        }
+    });
+
+    // This event listener is stimulated whenever the user press the "Refresh" button
+    // A new random CAPTCHA is generated and displayed after the user clicks the "Refresh" button
+    refreshButton.addEventListener('click', function () {
+        userText.value = "";
+        let refreshArr = [];
+        for (let j = 1; j <= 7; j++) {
+            refreshArr.push(alphaNums[Math.floor(Math.random() * alphaNums.length)]);
+        }
+        ctx.clearRect(0, 0, captchaText.width, captchaText.height);
+        c = refreshArr.join('');
+        ctx.fillText(refreshArr.join(''), captchaText.width / 4, captchaText.height / 2);
+        output.innerHTML = "";
+    });
+
+</script>

@@ -1,0 +1,165 @@
+﻿@{
+	ViewData["Title"] = "Links";
+}
+
+@{
+	string link01 = "https://www.facebook.com/APNazarene";
+	string linkText01 = "Find us on Facebook";
+
+	string link02 = "https://apnc.online.church";
+	string linkText02 = "Online Worship";
+
+	string link03 = "http://APNaz.churchtrac.com";
+	string linkText03 = "Online Directory";
+
+	string link04 = "https://wlavonparknazarene.gotandem.com/public";
+	string linkText04 = "Our (Desktop) App";
+
+	string link05 = "https://usacanadaregion.org";
+	// string linkText05 = "About the Church of the Nazarene"; // moved directly to html because of wrapping
+
+	string link06 = "http://nazarene.org";
+	//string linkText06 = "International Church of the Nazarene"; // moved directly to html because of wrapping
+
+	string link07 = "http://www.usacanadaregion.org";
+	string linkText07 = "USA / Canada Region";
+
+	string link08 = "http://sfnazarene.org";
+	string linkText08 = "South Florida District";
+
+	string link09 = "https://www.lpccc.net";
+	//string linkText09 = "Lake Placid Camp & Conference Center"; // moved directly to html because of wrapping
+
+	string link10 = "https://usacanadaregion.org/education";
+	string linkText10 = "Nazarene Colleges";
+
+	string link11 = "http://avonparkcamp.org";
+	string linkText11 = "Avon Park Holiness Camp";
+
+	string link12 = "/Bible";
+	//string linkText12 = "The Bible (New International Version)";
+
+	string link13 = "http://biblegateway.com";
+	string linkText13 = "Bible Gateway";
+
+	string link14 = "https://www.thefoundrypublishing.com";
+	string linkText14 = "The Foundry Publishing";
+
+	string link15 = "https://nazarene.org/manual";
+	string linkText15 = "Nazarene Manual";
+
+	string link16 = "https://apnazarene.org/resources/manual/";
+	string linkText16 = "Church of the Nazarene Manuals";
+
+	/* To add more links, copy the last two lines above and edit them to the new link and text to display.    */
+	/* Do the same as per the note below in the "content section of Html code almost at the end.              */
+	/* Link 12 has been edited in html part to NOT open in a new tab "_blank". but rather, "_self" since it   */
+	/* now lives on this site. Remember to change it if reassigning order of tags.                            */
+
+}	
+
+<!-- Content Image Top -->
+<div Class="container pt-0 pt-md-2 pt-lg-2 px-1 px-lg-4 pb-lg-3 bg-transparent show-at-top">
+
+	<!-- Row - Image -->
+	<div class="row gx-0 gx-lg-4">		
+
+		<!-- Column - Image -->
+		<div class="mx-auto col-12 my-0 mt-lg-2 pt-lg-3 pb-lg-4 mb-lg-1 lh-sm">
+
+			<!-- Container - Image -->
+			<div class="my-card-body h-100">
+				<div class="text-center px-4 pt-3 pb-2">
+					<img alt="" class="bird-size-med" src="~/lib/svg/logos/bird-gray.svg" />
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Content Body -->
+<div Class="my-card-radius mt-sm-3 pt-3 pt-lg-2 px-1 px-lg-4 pb-lg-3 bg-green-dark mx-auto" style="max-width: 600px;">
+
+	<!-- Heading Row-->
+	<div class="row gx-0 gx-lg-4">
+		<div Class="col-12 mt-2 mt-lg-3">
+			<div class="my-card border-dark bg-gray-darker page-button-size mx-auto py-1 mb-4">
+				<h2 class="text-center text-white text-nowrap">More Links<img alt="" class="card-image-size ps-2" src="~/lib/svg/Cards/Links.svg" /></h2>
+			</div>
+
+			<!-- Links Description -->
+			<p class="fs-5 text-center text-bold text-gray-darker ms-3 pb-2"><span class="text-nowrap">Here are some</span> <span class="text-nowrap">more helpful Links.</span></p>
+		</div>	
+	</div>
+
+	<!-- Links -->
+	<div class="row gx-0 gx-lg-4">
+		<div Class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 mt-2 mt-lg-3 mx-auto w-100">
+
+            <!-- Links -->
+			<p class="fw-normal fs-5 mb-3">
+                <a class="nav-link link text-decoration-underline" href="@link01" target="_blank">@linkText01</a>
+            </p>
+			<p class="fw-normal fs-5 mb-3">
+				<a class="nav-link link text-decoration-underline" href="@link02" target="_blank">@linkText02</a>
+            </p>
+			<p class="fs-5 mb-3">
+				<a class="nav-link link fw-normal text-decoration-underline" href="@link03" target="_blank">@linkText03</a>
+            </p>
+			<p class="text-gray-darker fs-5 mb-3">
+				<a class="nav-link link fw-normal text-decoration-underline" href="@link04" target="_blank">@linkText04</a>
+            </p>
+			<p class="text-gray-darker fs-5 mb-3">
+				<a class="nav-link link fw-normal text-decoration-underline" href="@link05" target="_blank"><span class="text-nowrap">About the Church</span> <span class="text-nowrap">of the Nazarene</span></a>
+            </p>
+			<p class="text-gray-darker fs-5 mb-3">
+				<a class="nav-link link fw-normal text-decoration-underline" href="@link06" target="_blank"><span class="text-nowrap">International Church</span> <span class="text-nowrap">of the Nazarene</span></a>
+            </p>
+			<p class="text-gray-darker fs-5 mb-3">
+				<a class="nav-link link fw-normal text-decoration-underline" href="@link07" target="_blank">@linkText07</a>
+            </p>
+			<p class="text-gray-darker fs-5 mb-3">
+				<a class="nav-link link fw-normal text-decoration-underline" href="@link08" target="_blank">@linkText08</a>
+            </p>
+			<p class="text-gray-darker fs-5 mb-3">
+				<a class="nav-link link fw-normal text-decoration-underline" href="@link09" target="_blank">
+                    <span class="text-nowrap">Lake Placid Camp</span> <span class="text-nowrap">& Conference Center</span>
+                </a>
+            </p>
+			<p class="text-gray-darker fs-5 mb-3">
+				<a class="nav-link link fw-normal text-decoration-underline" href="@link10" target="_blank">@linkText10</a>
+			</p>
+			<p class="text-gray-darker fs-5 mb-3">
+				<a class="nav-link link fw-normal text-decoration-underline text-gray-darker" href="@link11" target="_blank">@linkText11</a>
+            </p>
+			<p class="text-gray-darker fs-5 mb-3">
+				<a class="nav-link link fw-normal text-decoration-underline text-gray-darker" href="@link12" target="_self"><span class="text-nowrap">The Bible</span> <span class="text-nowrap">(New International Version)</span></a>
+            </p>
+			<p class="text-gray-darker fs-5 mb-3">
+				<a class="nav-link link fw-normal text-decoration-underline text-gray-darker" href="@link13" target="_blank">@linkText13</a>
+            </p>
+			<p class="text-gray-darker fs-5 mb-3">
+				<a class="nav-link link fw-normal text-decoration-underline text-gray-darker" href="@link14" target="_blank">@linkText14</a>
+            </p>
+			<p class="text-gray-darker fs-5 mb-3">
+				<a class="nav-link link fw-normal text-decoration-underline text-gray-darker" href="@link15" target="_blank">@linkText15</a>
+            </p>
+			<p class="text-gray-darker fs-5 mb-3">
+				<a class="nav-link link fw-normal text-decoration-underline text-gray-darker" href="@link16" target="_blank">@linkText16</a>
+			</p>
+			<br />		
+
+		</div>
+	</div>	
+</div>
+
+<br />
+<br />
+<br />
+
+<!-- End Content -->
+
+<script>
+	$("body").css("background-color", "#40996D"); /* bg-green-dark */
+	$("body").css("background-image", "url('../PageImages/BackgroundBlurr.webp')");
+</script>

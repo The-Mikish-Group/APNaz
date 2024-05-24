@@ -1,0 +1,156 @@
+﻿@{
+    ViewData["Title"] = "Staff";
+
+    string photosFolder = "/PageImages/staff-photos/";
+
+    string staffName01 = "Pastor Curt Napier";
+    string staffTitle01 = "Lead Pastor";
+    string staffPhoto01 = "napier-01.png";    
+
+    string staffText01English = "Rev. Curt & Wanda Napier have served in pastoral ministry in the Church of the Nazarene for 20 years. Ordained in 2005 at Indian Lake Nazarene Camp in Vicksburg, MI by Dr. Jim Bond, General Superintendent Emeritus, Rev. Napier has served Nazarene churches in both the Michigan and Eastern KY Districts in both the Lead Pastor and Interim Pastoral roles. He and Wanda have two adult children and four grandchildren who reside in Michigan. Their philosophy of ministry in the Church is to love and lead God’s people as God would love and lead them. The Napiers began attending Avon Park Naz in December of 2021.";
+    string staffText01Spanish = "";
+
+    string staffName02 = "Dr. Patricia Bridewell";
+    string staffTitle02 = "Administrative Pastor";
+    string staffPhoto02 = "bridewell-01.png";
+
+    string staffText02English = "Administrative Pastor Patricia Bridewell (Pastor Patty) joined our staff on April 18, 2021. She holds degrees from Kentucky Wesleyan College, Western Kentucky University, and Newburgh Theological Seminary, and is currently taking classes in the Ministerial Preparation Program at Nazarene Bible College.";
+    string staffText02Spanish = "";
+
+    string scrString01 = photosFolder + staffPhoto01;
+    string scrString02 = photosFolder + staffPhoto02;
+    
+}
+
+<!-- Container -->
+<div Class="pt-4 pt-lg-0 px-4 px-lg-4 pb-lg-3">
+
+    <!-- Cards Row-->
+    <div Class="row gx-0 gx-md-3 gx-lg-4">
+
+        <!-- Staff-1 -->
+        <div class="col-12 col-md-6 col-lg-6 m-lg-0 pb-3 lh-sm">
+
+            <!-- Card - Header -->
+            <div class="my-card staff-card-color px-3 px-lg-0 py-2 lh-sm text-center border border-dark">
+
+                <!-- Header Image and text -->
+                <img alt="" class="my-card staff-photo-size staff-photo-color border border-dark" src="@scrString01">
+                <h5 class="py-2">@staffTitle01</h5>
+                <button type="button" id="btnShow01Modal" class="btn btn-primary button mb-2">@staffName01</button>
+            </div>
+
+            <div class="container">
+                <div class="modal fade" tabindex="-1" id="profile01Modal"
+                     data-keyboard="false" data-backdrop="static">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">@staffName01</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="my-card-footer">
+                                    <p class="fw-normal text-dark">@staffText01English</p>
+                                    <p class="fw-normal text-dark italic py-3">@staffText01Spanish</p>                                    
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" id="btnHide01Modal" class="btn btn-primary button">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Staff-2 -->
+        <div class="col-12 col-md-6 col-lg-6 m-lg-0 pb-3 lh-sm">
+
+            <!-- Card - Header -->
+            <div class="my-card staff-card-color px-3 px-lg-0 py-2 lh-sm text-center border border-dark">
+
+                <!-- Header Image and text -->
+                <img alt="" class="my-card staff-photo-size staff-photo-color border border-dark" src="@scrString02">
+                <h5 class="py-2">@staffTitle02</h5>
+                <button type="button" id="btnShow02Modal" class="btn btn-primary button mb-2">@staffName02</button>
+            </div>
+
+            <div class="container">
+                <div class="modal fade" tabindex="-1" id="profile02Modal"
+                     data-keyboard="false" data-backdrop="static">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">@staffName02</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="my-card-footer">
+                                    <p class="fw-normal text-dark">@staffText02English</p>
+                                    <p class="fw-normal text-dark italic py-3">@staffText02Spanish</p>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" id="btnHide02Modal" class="btn btn-primary button">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+       
+    </div>
+</div>
+
+<!-- Content Image Bottom -->
+<div Class="pt-0 pt-lg-2 px-2 px-lg-4 pb-lg-3 bg-transparent">
+
+    <!-- Row - Image -->
+    <div class="row gx-0 gx-lg-4">
+
+        <!-- Column - Image -->
+        <div class="mx-auto col-12 mt-2 pt-lg-3 pb-lg-4 mb-lg-1 lh-sm">
+
+            <!-- Container - Image -->
+            <div class="my-card-body h-100 show-at-top">
+                <div class="text-center px-4 pt-3 pb-2">
+                    <img alt="" class="fish-size" src="~/lib/svg/logos/fish.svg" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@* <div class="staff-view-bottom-spacingx"></div> *@
+
+<script type="text/javascript"> 
+    
+    $(document).ready(function () {
+        $("#profile01Modal").modal('hide');
+    });
+
+    $("#btnShow01Modal").click(function () {
+        $("#profile01Modal").modal('show');
+    });
+
+    $("#btnHide01Modal").click(function () {
+        $("#profile01Modal").modal('hide');
+    });
+
+    $(document).ready(function () {
+        $("#profile02Modal").modal('hide');
+    });
+
+    $("#btnShow02Modal").click(function () {
+        $("#profile02Modal").modal('show');
+    });
+
+    $("#btnHide02Modal").click(function () {
+        $("#profile02Modal").modal('hide');
+    });
+       
+
+</script>
+
+<script>    
+    $("body").css("background-image", "url('../PageImages/Staff.webp')");
+</script>

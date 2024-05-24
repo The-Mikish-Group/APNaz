@@ -1,0 +1,89 @@
+/* Responsive Extra Spacing */
+
+/* #region bottom spacing */
+.please-contact-spacing {
+    min-height: 22px;
+}
+/* #endregion */
+
+/* #region (BS -sm- ) (min-width: 575px) and (max-width: 768px) Small tablet styles */
+@media (min-width: 575px) and (max-width: 768px) {
+ 
+    /* Extra Spacing */
+    .about-view-bottom-spacingx {
+        min-height: 0;
+    }
+    .contact-view-bottom-spacingx {
+        min-height: 0;
+    }
+    .staff-view-bottom-spacingx {
+        min-height: 518px;
+    }
+    .calendar-view-bottom-spacingx {
+        min-height: 42px;
+    }
+    .gallery-index-view-bottom-spacingx {
+        min-height: 500px;
+    }
+    .gallery-view-bottom-spacingx {
+        min-height: 972px;
+    }
+    .picture01-view-bottom-spacingx {
+        min-height: 752px;
+    }
+    .picture02-view-bottom-spacingx {
+        min-height: 340px;
+    }
+    .picture03-view-bottom-spacingx {
+        min-height: 156px;
+    }
+    .purpose-view-bottom-spacingx {
+        min-height: 49px;
+    }
+    .nazarenes-view-bottom-spacingx {
+        min-height: 318px;
+    }
+    .links-view-bottom-spacingx {
+        min-height: 298px;
+    }
+    .please-contact-spacing {
+        min-height:  7px;
+    }
+}
+/* #endregion */
+
+/* #region (BS -md- ) (min-width: 768.01px) and (max-width: 991px) Large tablet styles */
+@media (min-width: 768.01px) and (max-width: 991px) {  
+
+    .please-contact-spacing {
+        min-height: 85px;
+    }
+}
+/* #endregion */
+
+/* #region (BS -lg- ) (min-width: 992px) Start of Desktop */
+@media (min-width: 992px) {  
+
+    .please-contact-spacing {
+        min-height: 55px;
+    }    
+}
+/* #endregion */
+
+/* #region (BS -xlg- ) (min-width: 1200px) Medium Desktop */
+@media (min-width: 1200px) {
+    
+    .please-contact-spacing {
+        min-height: 33px;
+    }
+}
+/* #endregion */
+
+/* #region (BS -xlg- ) (min-width: 1399.98px) Large Desktop */
+@media (min-width: 1399.98px) {    
+
+    .please-contact-spacing {
+        min-height: 11px;
+    }
+}
+/* #endregion */

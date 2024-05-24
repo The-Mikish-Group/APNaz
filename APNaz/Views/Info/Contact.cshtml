@@ -1,0 +1,284 @@
+﻿@{
+    ViewData["Title"] = "Contact";
+}
+@{
+    string photosFolder = "/PageImages/staff-photos/";
+
+    string staffName01 = "Curt Napier";
+    string staffPhoto01 = "napier-01.png";
+
+    string staffText01English = "Rev. Curt & Wanda Napier have served in pastoral ministry in the Church of the Nazarene for 20 years. Ordained in 2005 at Indian Lake Nazarene Camp in Vicksburg, MI by Dr. Jim Bond, General Superintendent Emeritus, Rev. Napier has served Nazarene churches in both the Michigan and Eastern KY Districts in both the Lead Pastor and Interim Pastoral roles. He and Wanda have two adult children and four grandchildren who reside in Michigan. Their philosophy of ministry in the Church is to love and lead God’s people as God would love and lead them. The Napiers began attending Avon Park Naz in December of 2021.";
+    string staffText01Spanish = "";    
+
+    string staffName02 = "Patricia Bridewell";   
+    string staffPhoto02 = "bridewell-01.png";
+
+    string staffText02English = "Administrative Pastor Patricia Bridewell (Pastor Patty) joined our staff on April 18, 2021, and was ordained an elder in the Church of the Nazarene on April 13, 2024. She holds degrees from Kentucky Wesleyan College, Western Kentucky University, and Newburgh Theological Seminary. She also completed the Ministerial Preparation Program at Nazarene Bible College.";
+    string staffText02Spanish = "";
+       
+    string scrString01 = photosFolder + staffPhoto01;
+    string scrString02 = photosFolder + staffPhoto02;
+
+}
+
+<!-- Container -->
+<div class="px-lg-0 py-md-3 pt-lg-0 pb-lg-3">
+
+    <!-- Cards Row-->
+    <div class="row gx-0 gx-md-3 gx-lg-4">
+
+        <!-- Column - Our Church -->
+        <div class="col-12 col-md-6 col-lg-6 my-lg-0 lh-sm">
+
+            <!-- Card - Our Church -->
+            <div class="my-card-contact-header my-card-ourchurch p-3 lh-sm text-center">
+
+                <!-- Body -->
+                <a class="fs-1" href="http://APNazarene.org/" target="_blank">
+                    <img alt="" class="cross-size" src="/lib/svg/Cards/Cross-White.svg">Our Church
+                </a>
+                <p class="fw-bold">is filled with<br>caring and loving people.</p>
+
+            </div>
+
+            <!-- Content Row - Church Picture -->
+            <div class="row gx-0 gx-lg-5">
+                <div class="col-12">
+                    <img alt="" class="ratio" src="/PageImages/church-crop-02.webp">
+                </div>
+            </div>
+
+            <!-- Card - Contact Us -->
+            <div class="my-card-contact-footer-gray-light text-center">
+
+                <div class="please-contact-spacing"></div>
+
+                <!-- Body - Please Contact -->
+                <h2 class="pt-2">Please Contact Us</h2>
+                <p class="fw-bold">If you need to reach someone for prayer,<br />or more information about us,<br />please email or call:</p>
+                <h6 class="pt-1"><a class="text-white" href="../Info/CaptchaEmail">APNazarene@APNazarene.org</a></h6>
+                <h6 class ="pt-1 text-white">863-453-4851</h6>
+                <h5 class="pt-1 pb-3 fw-bolder">We're ready to assist<br>on your spiritual journey.</h5>
+
+                <div class="please-contact-spacing"></div>
+
+            </div>
+
+        </div>
+
+        <!-- Column - Contacts -->
+        <div class="col-12 col-md-6 col-lg-6 my-lg-0 lh-sm">
+
+            <!-- Contacts -->
+            <div class="my-card-contact-header text-start bg-gold pt-4">
+
+                <!-- Pastors -->
+                <table class="table-sm table-borderless mx-auto">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h5 class="text-black fw-bolder">Lead Pastor</h5>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                @*<h5 class="text-white">Curt Napier</h5>*@
+                                <button type="button" id="btnShow01Modal" class="btn btn-transparent button no-border p-0 fs-5 text-white">@staffName01</button>
+                                <div class="container">
+                                    <div class="modal fade" tabindex="-1" id="profile01Modal"
+                                         data-keyboard="false" data-backdrop="static">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h4 class="modal-title">@staffName01</h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="my-card-footer">
+                                                        <p class="fw-normal text-dark">@staffText01English</p>
+                                                        <p class="fw-normal text-dark italic py-3">@staffText01Spanish</p>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" id="btnHide01Modal" class="btn btn-primary button">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h5 class="text-black fw-bolder">Administrative Pastor</h5>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                @*<h5 class="text-white">Patricia Bridewell</h5>*@
+                                <button type="button" id="btnShow02Modal" class="btn btn-transparent button no-border p-0 fs-5 text-white">@staffName02</button>
+                                <div class="container">
+                                    <div class="modal fade" tabindex="-1" id="profile02Modal"
+                                         data-keyboard="false" data-backdrop="static">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h4 class="modal-title">@staffName02</h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="my-card-footer">
+                                                        <p class="fw-normal text-dark">@staffText02English</p>
+                                                        <p class="fw-normal text-dark italic py-3">@staffText02Spanish</p>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" id="btnHide02Modal" class="btn btn-primary button">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>                       
+                    </tbody>
+                </table>
+
+                <!-- Address -->
+                <table class="table-sm table-borderless mx-auto my-3">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h5 class="m-0 fw-bolder text-black"><span class="text-nowrap">Avon Park</span> <span class="text-nowrap">Nazarene Church</span></h5>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h6 class="m-0 text-black text-nowrap ps-1">707 West Main Street - Box 1118</h6>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h6 class="m-0 text-black text-nowrap ps-1">Avon Park, Florida 33826</h6>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Buttons -->
+                <div class="pt-0 text-center">
+
+                    <!-- Facebook Page Button -->
+                    <div class="pt-1">
+                        <button style="color:#3C599B; border: none; background-color: transparent; width: 200px; border-radius:8px; padding-left: 20px;text-align: left;" onclick="newTab('https://www.facebook.com/APNazarene/')">
+                            <img style="height:32px; width:32px;" src="/lib/svg/Buttons/FB-Square.Svg"> <b>Facebook Page</b>
+                        </button>
+                    </div>
+
+                    <!-- Facebook Group Page Button -->
+                    <div class="pt-1">
+                        <button style="color: #3C599B; border: none; background-color: transparent; width: 200px; border-radius:8px; padding-left: 20px;text-align: left;" onclick="newTab('https://www.facebook.com/groups/APNazarene')">
+                            <img style="height:32px; width:32px;" src="/lib/svg/Buttons/FB-Home.Svg"> <b>Facebook Group</b>
+                        </button>
+                    </div>
+
+                    <!--Google Page Button -->
+                    <div class="py-1">
+                        <button style="color: #3C599B; border: none; background-color: transparent; width: 200px; border-radius: 8px; padding-left: 20px; text-align: left;" onclick="newTab('https://goo.gl/maps/rNxXB4jRiUU3h8pH8')">
+                            <img style="height:32px; width:32px;" src="/lib/svg/Buttons/Google-Square.svg"> <b>Google Maps</b>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Column - Seal and Salutations -->
+            <div class="my-card-contact-footer-gold text-black pt-3 pb-2 bg-gold border-dark">
+                <div class="my-card-body lh-sm text-center">
+
+                    <!-- Seal -->
+                    <div class="px-5">
+
+                        <!-- Seal-->
+                        <div class="seal-size ratio">
+                            <img src="~/lib/svg/logos/seal-gold-english.svg" />
+                        </div>
+
+                    </div>
+
+                    <!--Salutations -->
+                    <h2 class="pt-1 pb-sm-1 fs-1 text-white text-bold">
+                        <img alt="" class="bird-bible-size p-2" src="/lib/svg/Logos/Bird-Bible-White.svg">God bless you!
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Emergency Numbers -->
+<partial name="../bible/emergency"/>
+
+<!-- Fish -->
+<div class="container">
+
+    <!-- Row Fish -->
+    <div Class="row gx-0 gx-lg-5 show-at-top">
+
+        <!-- Column - Fish -->
+        <div class="col-12 mt-lg-0 pt-lg-0 pb-lg-1 mb-lg-1 lh-sm">
+
+            <!-- Container Fish -->
+            <div class="my-card-body h-100">
+                <div class="fish-size mx-auto px-4 pt-0 pb-4">
+                    <img src="~/lib/svg/logos/fish.svg" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+@* <div class="contact-view-bottom-spacingx"></div> *@
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $("#profile01Modal").modal('hide');
+    });
+
+    $("#btnShow01Modal").click(function () {
+        $("#profile01Modal").modal('show');
+    });
+
+    $("#btnHide01Modal").click(function () {
+        $("#profile01Modal").modal('hide');
+    });
+
+    $(document).ready(function () {
+        $("#profile02Modal").modal('hide');
+    });
+
+    $("#btnShow02Modal").click(function () {
+        $("#profile02Modal").modal('show');
+    });
+
+    $("#btnHide02Modal").click(function () {
+        $("#profile02Modal").modal('hide');
+    });
+    $(document).ready(function () {
+        $("#profile03Modal").modal('hide');
+    });
+
+    $("#btnShow03Modal").click(function () {
+        $("#profile03Modal").modal('show');
+    });
+
+    $("#btnHide03Modal").click(function () {
+        $("#profile03Modal").modal('hide');
+    });
+</script>
+
+<!-- Background -->
+<script>
+    $("body").css("background-color", "#40996D");  /* bg-green-dark */
+    $("body").css("background-image", "url('../PageImages/BackgroundBlurr.webp')");	
+</script>

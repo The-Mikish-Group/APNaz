@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Calendar";
+}
+
+<!-- Heading Row-->
+<div Class="my-3 w-100">
+    <h3 class="text-center text-white">
+        Our Calendar
+        <img alt="" class="card-image-size" src="~/lib/svg/Cards/Calendar.svg" />
+    </h3>
+</div>
+
+<iframe class="my-calendar-size" src="https://www.churchtrac.com/public_calendar?ui=4A64E3C8&view=listMonth" scrolling="auto"></iframe>
+
+@* <div class="calendar-view-bottom-spacingx"></div> *@
+
+<!-- Remove overall Container -->
+<script>
+    if (document.getElementById("MainContainer").classList.contains("container")) {
+        document.getElementById("MainContainer").classList.remove("container");
+    };
+</script>

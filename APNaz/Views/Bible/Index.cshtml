@@ -1,0 +1,65 @@
+﻿@{
+    ViewData["Title"] = "Bible";
+}
+
+<style>
+
+    body {
+        background-image: none;
+        background-color: #4DAF7C;
+    }
+
+</style>
+
+<!-- Heading -->
+<div Class="container pt-3 pt-lg-2 px-2 px-lg-4 pb-lg-3">
+
+    <!-- Page Heading Card -->
+    <div class="my-card bg-gray-lighter border-dark card-heading-size mx-auto py-2">
+        <p class="text-gray-darker text-center fw-bolder fs-2 pt-3">The Bible</p>
+        <p class="text-center pb-2"><a class="text-gray-dark text-bold fs-6" href="http://www.biblegateway.com/versions/?action=getVersionInfo&amp;vid=31" target="_blank"><span class="text-nowrap">New International Version</span><br />(NIV)</a></p>
+    </div>
+
+    <p class="text-center text-white text-bold fs-5 pt-3"><span class="text-nowrap">Click on the Book</span> <span class="text-nowrap">you would like to read.</span></p>
+
+    <!-- Assistive Hearing -->
+    <div class="col-12 col-md-6 col-lg-3 mb-lg-4 pt-4 ps-2 ps-md-0 ps-lg-0 mx-auto">
+
+        <!-- Assistive Hearing Card -->
+        <p class="text-center text-white text-bold fs-6 pb-3">(The Bible will also read to you.)</p>
+        <div class="assistive-hearing-size ratio">
+            <img src="/lib/svg/misc/assistive-hearing-design-2.svg">
+        </div>
+
+    </div>
+</div>
+
+<ul class="nav nav-tabs bg-transpatent border-0" id="myTab" role="tablist">
+
+    <!-- Old Testament Tab -->
+    <li class="bible-nav-item" role="presentation" style="background-color: transparent; border-left: none;">
+        <button id="old-testament-tab" type="button" role="tab" class="bg-gray-lighter w-100 nav-link fw-bold fs-6 px-2 active" data-bs-toggle="tab" data-bs-target="#old-testament" aria-controls="old-testament" aria-selected="true">Old Testament</button>
+    </li>
+
+    <!-- New Testament Tab -->
+    <li class="bible-nav-item" role="presentation" style="background-color: transparent;">
+        <button id="new-testament-tab" type="button" role="tab" class="bg-gray-lighter w-100 nav-link fw-bold fs-6 px-2" data-bs-toggle="tab" data-bs-target="#new-testament" aria-controls="new-testament" aria-selected="false" tabindex="-1">New Testament</button>
+    </li>
+</ul>
+
+<!-- Tab Views -->
+<div class="tab-content my-card-radius mb-0 mb-lg-3" id="myTabContent">
+
+    <!-- Old Testament -->
+    <div id="old-testament" role="tabpanel" class="my-card-footer-bible tab-pane fade show bg-white p-0 p-lg-2 active" aria-labelledby="old-testament-tab">
+        <partial name="OldTestamentPartial" />
+    </div>
+
+    <!-- New Testament -->
+    <div id="new-testament" role="tabpanel" class="my-card-footer-bible tab-pane fade bg-white p-0 p-lg-2" aria-labelledby="new-testament-tab">
+        <partial name="NewTestamentPartial" />
+    </div>
+</div>
+<!-- End Content -->
+<!-- Extra padding before footer if needed -->
+<div class="bible-view-bottom-spacingx"></div>
