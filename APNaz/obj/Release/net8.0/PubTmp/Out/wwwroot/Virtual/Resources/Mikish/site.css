@@ -1,0 +1,155 @@
+@import url(//fonts.googleapis.com/css?family=Muli:300,400,600|Inconsolata);
+
+body {
+  margin: 0;
+  font-weight: 600;
+  font-family: "Muli", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  text-rendering: optimizeLegibility;
+  background-color: white;
+}
+
+.myClock {
+  background-image: url(https://mikish.com/Content/XML/Svg/Site/Countdowns.Svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: scale;
+}
+
+#myBox {
+  margin: 60px auto;
+  width: 320px;
+  min-height: 260px;
+
+  /* border: thin solid black; */
+
+  border-radius: 10px;
+
+
+  /* background: linear-gradient(black 18%, lightgray 28%); */
+}
+
+#mybox-header {
+  padding: 10px 0 20px;
+  border: none transparent;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#lblheader {
+  font-size: 30px;
+  padding-bottom: 22px;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.2), 0 1px 1px rgba(0, 0, 0, 0.8);
+}
+
+#eventdate,
+#lbldays,
+#lblhours,
+#lblminites,
+#lblseconds,
+#lbltimezone {
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.6);
+}
+
+#lbleventname,
+#days,
+#hours,
+#minutes,
+#seconds {
+  color: rgba(139, 0, 0, 0.8);
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.6);
+}
+
+#lblheader,
+#lbleventname,
+#eventdate,
+#lbltimezone,
+#daysspan,
+#hmsspan {
+  text-align: center;
+}
+
+#lbleventname {
+  font-size: 22px;
+}
+
+#days {
+  font-size: 48px;
+}
+
+#lbldays {
+  font-size: 24px;
+}
+
+#hours,
+#minutes,
+#seconds {
+  font-size: 18px;
+}
+
+#lblhours,
+#lblminutes,
+#lblseconds,
+#eventdate {
+  font-size: 16px;
+}
+
+#lbltimezone {
+  font-size: 12px;
+}
+
+#eventdate,
+#daysspan,
+#hmsspan {
+  padding-bottom: 10px;
+}
+
+#centeredselect {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#floaterContainer {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.floater1,
+.floater2,
+.floater3,
+.floater4 {
+  position: fixed;
+  user-select: none;
+  z-index: 1000;
+  width: 10px;
+  height: 10px;
+}
+
+.floater1:hover,
+.floater2:hover,
+.floater3:hover,
+.floater4:hover {
+  cursor: default;
+}
+
+h3 {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Molle', cursive;
+  font-size: 3em;
+  color: hsla(255, 255%, 255%, .1);
+}
+
+.footer {
+	padding: 15px 0;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;  
+  text-align: center;
+}

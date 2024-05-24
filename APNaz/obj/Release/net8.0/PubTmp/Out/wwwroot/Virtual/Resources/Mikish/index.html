@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Links to jQuery and Select2 libraries used by custom dropdown -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+  
+  <link href="site.css" rel="stylesheet" />
+
+</head>
+
+<body id="body">
+  <div id="floatercontainer">		
+    <div id="floater1">
+       <img class="floater1" src="https://mikish.com/Content/XML/Svg/Site/Transparent.Svg" />
+    </div>
+		<div id="floater2">
+       <img class="floater2" src="https://mikish.com/Content/XML/Svg/Site/Transparent.Svg" />
+    </div>
+		<div id="floater3">
+       <img class="floater3" src="https://mikish.com/Content/XML/Svg/Site/Transparent.Svg" />
+    </div>
+		<div id="floater4">
+       <img class="floater4" src="https://mikish.com/Content/XML/Svg/Site/Transparent.Svg" />
+    </div>		
+  </div>
+  <div id="myBox">
+    <div id="mybox-header">
+      <div id="lblheader">Season Countdowns</div>
+      <div id="centeredselect">
+        <select class="dropdowns" id="eventselect" onchange="eventCountdown()">
+          <option></option>
+          <option value="1">Spring</option>
+          <option value="2">Summer</option>
+          <option value="3">Autumn</option>
+          <option value="4">Winter</option>
+        </select>
+      </div>
+    </div>
+    <div id="lbleventname"></div>
+    <div id="eventdate"></div>
+    <div id="daysspan">
+      <span id="days"></span> <span id="lbldays"></span>
+    </div>
+    <div id="hmsspan">
+      <span id="hours"></span> <span id="lblhours"></span>
+      <span id="minutes"></span> <span id="lblminutes"></span>
+      <span id="seconds"></span> <span id="lblseconds"></span>
+    </div>
+    <div class="footer" id="lbltimezone"></div>
+  </div>
+</body>
+</html>
+
+<script>  
+
+// Specify the number of *total of each floater* you want visible
+const sizeFactor = 50;
+const floaterCount = 8;
+
+// The start of animation
+var requestAnimationFrame = window.requestAnimationFrame ||
+  window.mozRequestAnimationFrame ||
+  window.webkitRequestAnimationFrame ||
+  window.msRequestAnimationFrame;
+
+var transforms = ["transform",
+  "msTransform",
+  "webkitTransform",
+  "mozTransform",
+  "oTransform"
+];
+
+var transformProperty = getSupportedPropertyName(transforms);
+
+// Array to store our floater objects
+var floaters = [];
+
+// Global variables to store our browser's window size
+var browserWidth;
+var browserHeight;
+
+// Flag to reset the position of the floaters
+var resetPosition = false;
+
+setup();
+
+// It all starts here...
+function setup() {
+  window.addEventListener("DOMContentLoaded", generateFloaters, false);
+  window.addEventListener("resize", setResetFlag, false);
+}
+// Prefix management
+function getSupportedPropertyName(properties) {
+  for (var i = 0; i < properties.length; i++) {
+    if (typeof document.body.style[properties[i]] != "undefined") {
+      return properties[i];
+    }
+  }
+  return null;
+}
+
+// Constructor for our floater objects
+function Floater(element, speed, xPos, yPos) {
+
+  // set initial floater properties
+  this.element = element;
+  this.speed = speed;
+  this.xPos = xPos;
+  this.yPos = yPos;
+
+  // declare variables used for floater's motion
+  this.counter = 0;
+  this.sign = Math.random() < 0.5 ? 1 : -1;
+
+  // Use the commented out settings when using a text character for the floater
+  // // setting an initial opacity and size for our floater
+  // // this.element.style.opacity = .1 + Math.random();
+  // // this.element.style.fontSize = 12 + Math.random() * 50 + "px";
+
+  // Adjust Svg size and Opacity
+  this.element.style.opacity = 0.2 + Math.random();
+  var svgSize = 12 + Math.random() * sizeFactor + "px";
+  this.element.style.width = svgSize;
+  this.element.style.height = svgSize;
+}
+
+// The function responsible for actually moving our floaters
+Floater.prototype.update = function() {
+
+  // using some trigonometry to determine our x and y position
+  this.counter += this.speed / 5000;
+  this.xPos += this.sign * this.speed * Math.cos(this.counter) / 40;
+  this.yPos += Math.sin(this.counter) / 40 + this.speed / 30;
+
+  // setting our floater's position
+  setTranslate3DTransform(this.element, Math.round(this.xPos), Math.round(this.yPos));
+
+  // if floater goes below the browser window, move it back to the top
+  if (this.yPos > browserHeight) {
+    this.yPos = -50;
+  }
+}
+
+// Set your floater's position
+function setTranslate3DTransform(element, xPosition, yPosition) {
+  var val = "translate3d(" + xPosition + "px, " + yPosition + "px" + ", 0)";
+  element.style[transformProperty] = val;
+}
+
+// The function responsible for creating the floater
+function generateFloaters() {
+
+  // get our floater element from the DOM and store it
+  var originalFloater1 = document.querySelector(".floater1");
+  var originalFloater2 = document.querySelector(".floater2");
+  var originalFloater3 = document.querySelector(".floater3");
+  var originalFloater4 = document.querySelector(".floater4");
+
+  // access our floater element's parent container
+  var floaterContainer1 = originalFloater1.parentNode;
+  var floaterContainer2 = originalFloater2.parentNode;
+  var floaterContainer3 = originalFloater3.parentNode;
+  var floaterContainer4 = originalFloater4.parentNode;
+
+  // get our browser's size
+  browserWidth = document.documentElement.clientWidth;
+  browserHeight = document.documentElement.clientHeight;
+
+  // create each individual floater
+  for (var i = 0; i < floaterCount; i++) {
+
+    // clone our original floaters and add to floaterContainer
+    var floaterClone1 = originalFloater1.cloneNode(true);
+    var floaterClone2 = originalFloater2.cloneNode(true);
+    var floaterClone3 = originalFloater3.cloneNode(true);
+    var floaterClone4 = originalFloater4.cloneNode(true);
+
+    floaterContainer1.appendChild(floaterClone1);
+    floaterContainer2.appendChild(floaterClone2);
+    floaterContainer3.appendChild(floaterClone3);
+    floaterContainer4.appendChild(floaterClone4);
+
+    // set our floater's initial position and related properties
+    var initialXPos = getPosition(50, browserWidth);
+    var initialYPos = getPosition(50, browserHeight);
+    var speed1 = 5 + Math.random() * 40;
+    var speed2 = 5 + Math.random() * 40;
+    var speed3 = 5 + Math.random() * 40;
+    var speed4 = 5 + Math.random() * 40;
+
+    // create our floater objects
+    var floaterObject1 = new Floater(floaterClone1,
+      speed1,
+      initialXPos,
+      initialYPos);
+    var floaterObject2 = new Floater(floaterClone2,
+      speed2,
+      initialXPos,
+      initialYPos);
+    var floaterObject3 = new Floater(floaterClone3,
+      speed3,
+      initialXPos,
+      initialYPos);
+    var floaterObject4 = new Floater(floaterClone4,
+      speed4,
+      initialXPos,
+      initialYPos);
+
+    floaters.push(floaterObject1);
+    floaters.push(floaterObject2);
+    floaters.push(floaterObject3);
+    floaters.push(floaterObject4);
+  }
+
+  // remove the original floaters because we no longer need them visible
+  floaterContainer1.removeChild(originalFloater1);
+  floaterContainer2.removeChild(originalFloater2);
+  floaterContainer3.removeChild(originalFloater3);
+  floaterContainer4.removeChild(originalFloater4);
+
+  // call the moveFloaters function every 30 milliseconds
+  moveFloaters();
+}
+
+// Responsible for moving each floater by calling its update function
+function moveFloaters() {
+  for (var i = 0; i < floaters.length; i++) {
+    var floater = floaters[i];
+    floater.update();
+  }
+
+  // Reset the position of all the floaters to a new value
+  if (resetPosition) {
+    browserWidth = document.documentElement.clientWidth;
+    browserHeight = document.documentElement.clientHeight;
+
+    for (var i = 0; i < floaters.length; i++) {
+      var floater = floaters[i];
+
+      floater.xPos = getPosition(50, browserWidth);
+      floater.yPos = getPosition(50, browserHeight);
+    }
+
+    resetPosition = false;
+  }
+
+  requestAnimationFrame(moveFloaters);
+}
+
+// This function returns a number between (maximum - offset) and (maximum + offset)
+function getPosition(offset, size) {
+  return Math.round(-1 * offset + Math.random() * (size + 2 * offset));
+}
+
+// Trigger a reset of all the floaters' positions
+function setResetFlag(e) {
+  resetPosition = true;
+}
+
+//*****************************************************//
+// eventCountdown() is a Dynamic Event Countdown.      //
+//                                                     //
+// The main function, countdown(), is called and an    //
+// interval is set to repeatedly run it.               //
+//*****************************************************//
+function eventCountdown() {
+
+  // Update the first time.
+  countdown();
+
+  // Set the countdown Interval.
+  setInterval(function() {
+    countdown();
+  }, 1000);
+}
+
+//*****************************************************//
+// Functions and setup used by eventCountdown()        //
+//*****************************************************//
+
+//*****************************************************//
+// countdown()                                         //
+//                                                     //
+// This is the main function used to calculate         //
+// and display the event countdown.                    //
+//                                                     //
+// eventName is provided by the dropdown and is        //
+//   one of the following strings:                     //
+//        "spring, "summer", "autumn", "winter"        //
+//*****************************************************//
+function countdown() {
+
+  // Get the selection info from the dropdown.
+  var e = window.document.getElementById("eventselect");
+  var value = e.options[e.selectedIndex].value;
+
+  // If there is a selection, then do stuff; otherewise clear the screen.
+  if (value > 0) {
+
+    // Get the eventDate.
+    var eventName = e.options[e.selectedIndex].text;
+    var eventYear = new Date().getFullYear();
+    var eventDate = calcStartDate(eventYear, eventName);
+    if (new Date() > eventDate) {
+
+      // Add a year because eventDate has already occured for this year.
+      eventDate = calcStartDate(eventYear + 1, eventName);
+    }
+
+    // Create the Timezone string.   
+    var timeZoneString =
+      Intl.DateTimeFormat().resolvedOptions().timeZone + " " +
+      new Date().toTimeString().slice(9);
+
+    // display the Timezone string. 
+    document.getElementById("lbltimezone").innerHTML = timeZoneString;
+
+    // Date Format Options used with .toLocaleString to display eventDate.
+    let options = {
+      weekday: "short",
+      year: "numeric",
+      month: "numeric",
+      day: "numeric",
+      hour: "numeric",
+      minute: "numeric",
+      second: "numeric"
+    };
+
+    // Display the eventName and eventDate.
+    document.getElementById("lbleventname").innerHTML = eventName + " starts on:";
+    document.getElementById("eventdate").innerHTML = eventDate.toLocaleString("en-US", options);
+    
+    if (eventName == "Spring") {    
+    $(".floater1").attr("src","https://mikish.com/Content/XML/Svg/Site/egg1.Svg");
+    $(".floater2").attr("src","https://mikish.com/Content/XML/Svg/Site/egg2.Svg");
+    $(".floater3").attr("src","https://mikish.com/Content/XML/Svg/Site/egg3.Svg");
+    $(".floater4").attr("src","https://mikish.com/Content/XML/Svg/Site/egg4.Svg")
+    document.body.style.backgroundColor = "lightpink";
+    document.getElementById("lbleventname").style.color="purple";
+    document.getElementById("days").style.color="purple";
+    document.getElementById("hours").style.color="purple";
+    document.getElementById("minutes").style.color="purple";
+    document.getElementById("seconds").style.color="purple";
+    }
+    
+    if (eventName == "Summer") {    
+    $(".floater1").attr("src","https://mikish.com/Content/XML/Svg/Site/BlueSun.Svg");
+    $(".floater2").attr("src","https://mikish.com/Content/XML/Svg/Site/BlueSun.Svg");
+    $(".floater3").attr("src","https://mikish.com/Content/XML/Svg/Site/BlueSun.Svg");
+    $(".floater4").attr("src","https://mikish.com/Content/XML/Svg/Site/BlueSun.Svg")
+    document.body.style.backgroundColor = "lightyellow";
+    document.getElementById("lbleventname").style.color="green";
+    document.getElementById("days").style.color="green";
+    document.getElementById("hours").style.color="green";
+    document.getElementById("minutes").style.color="green";
+    document.getElementById("seconds").style.color="green";
+    }
+    
+    if (eventName == "Autumn") {    
+    $(".floater1").attr("src","https://mikish.com/Content/XML/Svg/Site/Autumn1.Svg");
+    $(".floater2").attr("src","https://mikish.com/Content/XML/Svg/Site/Autumn2.Svg");
+    $(".floater3").attr("src","https://mikish.com/Content/XML/Svg/Site/Autumn3.Svg");
+    $(".floater4").attr("src","https://mikish.com/Content/XML/Svg/Site/Autumn4.Svg")
+    document.body.style.backgroundColor = "antiquewhite";         
+    document.getElementById("lbleventname").style.color="chocolate";
+    document.getElementById("days").style.color="chocolate";
+    document.getElementById("hours").style.color="chocolate";
+    document.getElementById("minutes").style.color="chocolate";
+    document.getElementById("seconds").style.color="chocolate";
+    }
+    
+    if (eventName == "Winter") {
+    $(".floater1").attr("src","https://mikish.com/Content/XML/Svg/Site/Snowflake1.Svg");
+    $(".floater2").attr("src","https://mikish.com/Content/XML/Svg/Site/Snowflake2.Svg");
+    $(".floater3").attr("src","https://mikish.com/Content/XML/Svg/Site/Snowflake3.Svg");
+    $(".floater4").attr("src","https://mikish.com/Content/XML/Svg/Site/Snowflake4.Svg");    
+    document.body.style.backgroundColor = "lightblue";      
+    document.getElementById("lbleventname").style.color="darkblue";
+    document.getElementById("days").style.color="darkblue";
+    document.getElementById("hours").style.color="darkblue";
+    document.getElementById("minutes").style.color="darkblue";
+    document.getElementById("seconds").style.color="darkblue";
+    } 
+    
+    // Update the dynamic countdown elements.
+    updateCountdownDisplay(eventDate);
+
+  } else {
+
+    // No dropdown selection selected, clear the screen.
+    document.getElementById("lbleventname").innerHTML = "";
+    document.getElementById("eventdate").innerHTML = "";
+    document.getElementById("days").innerHTML = "";
+    document.getElementById("lbldays").innerHTML = "";
+    document.getElementById("hours").innerHTML = "";
+    document.getElementById("lblhours").innerHTML = "";
+    document.getElementById("minutes").innerHTML = "";
+    document.getElementById("lblminutes").innerHTML = "";
+    document.getElementById("seconds").innerHTML = "";
+    document.getElementById("lblseconds").innerHTML = "";
+    document.getElementById("lbltimezone").innerHTML = "";
+    document.body.style.backgroundColor = "white";      
+    document.getElementById("lbleventname").style.color="darkred";
+    document.getElementById("days").style.color="darkred";
+    document.getElementById("hours").style.color="darkred";
+    document.getElementById("minutes").style.color="darkred";
+    document.getElementById("seconds").style.color="darkred";
+  }
+}
+
+//*****************************************************//
+// updateCountdownDisplay(eventDate)                   //
+//                                                     //
+// This function updates the dynamic display.          //
+//*****************************************************//
+function updateCountdownDisplay(eventDate) {
+
+  // If past the eventDate then run updateCountdown() to use next year's eventDate.     
+  try {
+    //get out of here
+    if (new Date().getTime() > eventDate.getTime()) throw "exit";
+  } catch (e) {
+    // handle exception by starting over.
+    countdown();
+  }
+
+  const second = 1000,
+    minute = second * 60,
+    hour = minute * 60,
+    day = hour * 24;
+
+  let datediff = eventDate - new Date().getTime();
+  var s, m, h, d;
+  s = Math.floor((datediff % (minute)) / second);
+  m = Math.floor((datediff % (hour)) / (minute));
+  h = Math.floor((datediff % (day)) / (hour));
+  d = Math.floor(datediff / (day));
+
+  // Update the dynamic countdown display.
+  document.getElementById("days").innerHTML = d > 1 ? d : d > 0 ? d : "<br />";
+  document.getElementById("lbldays").innerHTML = d > 1 ? "Days" : d > 0 ? "Day" : "in";
+  document.getElementById("hours").innerHTML = h > 1 ? h : h > 0 ? h : "";
+  document.getElementById("lblhours").innerHTML = h > 1 ? "hours," : h > 0 ? "hour," : "";
+  document.getElementById("minutes").innerHTML = m > 1 ? m : m > 0 ? m : "";
+  document.getElementById("lblminutes").innerHTML = m > 1 ? "minutes, and" : m > 0 ? "minute, and" : "";
+  document.getElementById("seconds").innerHTML = s > 1 ? s : s > 0 ? s : "0";
+  document.getElementById("lblseconds").innerHTML = s > 1 ? "seconds" : s > 0 ? "second" : "seconds";
+}
+
+//*****************************************************//
+//** End of SeasonCountdown() stuff *******************//
+//*****************************************************//
+
+
+//*****************************************************//
+// calcStartDate(eventYear, eventName)                 //
+//                                                     //
+// The functions for getting the Season Dates.         //
+//                                                     //
+// This function is based on the formulas from:        //
+//   Astronomical Algorithms (1998)/ Jean Meeus,       //
+//     pp. 177-182 - Equinoxes and Solstices.          //
+//                                                     //
+// Returns the Local Date and Time of the start of     //
+// the requested Season for the requested year.        //
+//                                                     //
+//     eventYear is a 4 digit integer of the year.     //
+//     eventName is one of the following strings:      //
+//        "spring, "summer", "autumn", "winter".       //
+//*****************************************************//
+function calcStartDate(eventYear, eventName) {
+
+  var y = (eventYear - 2000) / 1000;
+  var y2 = y * y;
+  var y3 = y2 * y;
+  var y4 = y3 * y;
+  var jde;
+
+  switch (eventName.toLowerCase()) {
+    case "spring":
+      jde = 2451623.80984 + 365242.37404 * y + 0.05169 * y2 - 0.00411 * y3 - 0.00057 * y4;
+      break;
+    case "summer":
+      jde = 2451716.56767 + 365241.62603 * y + 0.00325 * y2 + 0.00888 * y3 - 0.0003 * y4;
+      break;
+    case "autumn":
+      jde = 2451810.21715 + 365242.01767 * y - 0.11575 * y2 + 0.00337 * y3 + 0.00078 * y4;
+      break;
+    case "winter":
+      jde = 2451900.05952 + 365242.74049 * y - 0.06223 * y2 - 0.00823 * y3 + 0.00032 * y4;
+  }
+
+  const a = [
+    485, 203, 199, 182, 156, 136, 77, 74, 70, 58,
+    52, 50, 45, 44, 29, 18, 17, 16, 14, 12, 12, 12,
+    9, 8
+  ];
+  const b = [
+    324.96, 337.23, 342.08, 27.85, 73.14, 171.52,
+    222.54, 296.72, 243.58, 119.81, 297.17, 21.02,
+    247.54, 325.15, 60.93, 155.12, 288.79, 198.04,
+    199.76, 95.39, 287.11, 320.81, 227.73, 15.45
+  ];
+  const c = [
+    1934.136, 32964.467, 20.186, 445267.112, 45036.886,
+    22518.443, 65928.934, 3034.906, 9037.513, 33718.147,
+    150.678, 2281.226, 29929.562, 31555.956, 4443.417,
+    67555.328, 4562.452, 62894.029, 31436.921, 14577.848,
+    31931.756, 34777.259, 1222.114, 16859.074
+  ];
+
+  var t = (jde - 2451545.0) / 36525;
+  var s = 0;
+  var i = 0;
+  while (i < 24) {
+    s += a[i] * Math.cos((b[i] * Math.PI) / 180 + ((c[i] * Math.PI) / 180) * t);
+    i += 1;
+  }
+
+  var w = 35999.373 * t - 2.47;
+  var sw = 1 + 0.0334 * Math.cos((w * Math.PI) / 180) + 0.0007 * Math.cos(2 * ((w * Math.PI) / 180));
+  var eventDateJDE = jde - 2415019 + 0.5 + (0.00001 * s) / sw;
+
+  // Convert OADate to Utc date.
+  var eventUtcDate = dateFromOADate(eventDateJDE);
+
+  // Converet Utc date to local date.
+  var eventDate = localFromUTCDate(eventUtcDate);
+
+  return eventDate;
+}
+
+//*****************************************************//
+// Additional functions used by CalculateSeasonDate()  //
+//*****************************************************//
+
+//*****************************************************//
+// dateFromOADate(oaDate)                              //
+//                                                     //
+// Gets Date from OADate.                              //
+//*****************************************************//
+function dateFromOADate(oaDate) {
+
+  var days = parseInt(oaDate);
+  var ms = Math.abs((oaDate - days) * 8.64e7);
+  var newDate = new Date(1899, 11, 30 + days, 0, 0, 0, ms);
+
+  return newDate;
+}
+
+//*****************************************************//
+// localFromUTCDate(eventDate)                         //
+//                                                     //
+// Convert to Local Date (Timezone & DST adjustments). //
+//*****************************************************//
+function localFromUTCDate(eventDate) {
+
+  var newDate = new Date(
+    eventDate.getTime() + eventDate.getTimezoneOffset() * 60 * 1000
+  );
+  var hours = eventDate.getHours();
+  var offsetTZ = eventDate.getTimezoneOffset() / 60;
+  var offsetDST = getoffsetDST();
+
+  newDate.setHours(hours - offsetTZ + offsetDST);
+
+  return newDate;
+}
+
+//*****************************************************//
+// getoffsetDST()                                      //
+//                                                     //
+// Get the Daylight Savings Time Offset (0 or 1).      //
+//*****************************************************//
+function getoffsetDST() {
+
+  var jan = new Date(new Date().getFullYear(), 0, 1);
+  var jul = new Date(new Date().getFullYear(), 6, 1);
+  var offsetDST = jan.getTimezoneOffset() < jul.getTimezoneOffset();
+
+  return offsetDST;
+}
+
+//*****************************************************//
+//** End of calcStartDate() stuff. ********************//
+//*****************************************************//
+
+//*****************************************************//
+// Set up the 'Select2' custom dropdown.               //
+//                                                     //
+// Select2 is a custom dropdown found at:              //
+//   https://select2.org/                              //
+//                                                     //
+// A normal <select></select> can be used, but Select2 //
+// provides more flexability.                          //
+//*****************************************************//
+$('.dropdowns').select2({
+  placeholder: 'Select a Season',
+  width: '180px',
+  minimumResultsForSearch: 6,
+  allowClear: false,
+});
+
+//** The End ******************************************//
+
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++//
+// Floaters Svg 
+
+function setColorById(id,sColor) {
+ var elem;
+ if (document.getElementById) {
+  if (elem=document.getElementById(id)) {
+   if (elem.style) {
+    elem.style.color=sColor;
+    return 1;  // success
+   }
+  }
+ }
+ return 0;  // failure
+}
+
+</script>
