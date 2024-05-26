@@ -310,51 +310,41 @@
 <!-- Site.js Entry -->
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-
-        var images = document.querySelectorAll("img[data-src]");
-        var imagesContainer = document.getElementById("images-container");
-
-        var observer = new IntersectionObserver(
-            function (entries, observer) {
-                entries.forEach(function (entry) {
-                    if (entry.isIntersecting) {
-                        var img = entry.target;
-                        img.src = img.getAttribute("data-src");
-                        observer.unobserve(img);
-                    }
-                });
+    const images = document.querySelectorAll("img[data-src]");
+    const imagesContainer = document.getElementById("images-container");
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const img = entry.target;
+                img.src = img.getAttribute("data-src");
+                observer.unobserve(img);
             }
-        );    
-
-        images.forEach(function (img) {
-            observer.observe(img);
         });
-
-        var checkLoadingCompletion = function () {
-            if (images && Array.from(images).every(img => img.complete)) {
-                imagesContainer.style.display = "flex";
-            } else {
-                setTimeout(checkLoadingCompletion, 100);
-            }
-        };
-
-        checkLoadingCompletion(); 
-        
-        window.onscroll = function () {
-            
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                document.getElementById("top-button").style.display = "block";
-            } else {
-                document.getElementById("top-button").style.display = "none";
-            }
-        };
-        
-        window.topFunction = function () {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        };
     });
-</script>
+
+    images.forEach(img => observer.observe(img));
+
+    function checkLoadingCompletion() {
+        if ([...images].every(img => img.complete)) {
+            imagesContainer.style.display = "flex";
+        } else {
+            setTimeout(checkLoadingCompletion, 100);
+        }
+    }
+
+    checkLoadingCompletion();
+
+    window.onscroll = function () {
+        const topButton = document.getElementById("top-button");
+        topButton.style.display = document.documentElement.scrollTop > 20 ? "block" : "none";
+    };
+
+    window.topFunction = function () {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    };
+});
+ </script>
 
 <!-- Replaces the background-image -->
 <script>
@@ -371,8 +361,7 @@
     mainElement.style.pointerEvents = 'none';
 
     secondaryElement.classList.toggle("text-dark");
-    secondaryElement.classList.toggle("text-light");
-    @* secondaryElement.classList.add("selected"); *@
+    secondaryElement.classList.toggle("text-light");    
 </script>
 
 
@@ -385,6 +374,9 @@
         // Get Domain
         var domain = window.location.origin;
 
+        // Define the possible extensions
+        var extensions = ['jpg', 'png', 'gif', 'webp', 'svg'];
+
         // Initialize the carousel
         $('#CarouselControl').on('slid.bs.carousel', function () {
             // Get the active item
@@ -394,7 +386,7 @@
             var imageBaseLink = domain + activeItem.find('img').attr('src');
 
             // Define the possible extensions
-            var extensions = ['jpg', 'png', 'gif', 'webp', 'svg'];
+            // var extensions = ['jpg', 'png', 'gif', 'webp', 'svg'];
 
             // Try to find the actual image file with the right extension
             var actualImageLink = findActualImageLink(imageBaseLink, extensions);
@@ -433,7 +425,6 @@
                 return false;
             }
         }
-
 
     });
 </script>

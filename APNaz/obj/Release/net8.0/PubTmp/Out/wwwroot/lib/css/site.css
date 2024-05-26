@@ -140,16 +140,8 @@ img {
     position: relative;
     top: 0px;
     margin-left: auto;
-    margin-right: auto;
-    background-image: url(../../images/blackboard.png);
-    background-size: cover;
-    /*border-top: 10px solid darkgoldenrod;
-    border-bottom: 40px solid darkgoldenrod;
-    border-left: 3px solid darkgoldenrod;
-    border-right: 3px solid darkgoldenrod;
-    border-radius: 12px;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;*/
+    margin-right: auto;    
+    background-size: cover;    
 }
 /* #endregion */
 

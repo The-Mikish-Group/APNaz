@@ -22,7 +22,7 @@ if (!app.Environment.IsDevelopment())
 }
 
 // Comment out line below for http sites (mv)
-// app.UseHttpsRedirection();
+app.UseHttpsRedirection();
 
 app.UseStaticFiles();
 
