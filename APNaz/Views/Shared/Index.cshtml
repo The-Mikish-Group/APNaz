@@ -8,9 +8,9 @@
                                          .Replace("combo", "", StringComparison.OrdinalIgnoreCase);
     // galleryType
     var galleryType = currentController.Contains("slide", StringComparison.OrdinalIgnoreCase) ? "Slideshows" :
-                      currentController.Contains("combo", StringComparison.OrdinalIgnoreCase) ? "Galleries" : "Galleries"; // Say Gallerys in Heading instead of Combos ie "Combos" : "Galleries"; 
+                      currentController.Contains("combo", StringComparison.OrdinalIgnoreCase) ? "Galleries" : "Galleries"; // Say Gallerys in Heading instead of Combos ie "Combos" : "Galleries";
     galleryType ??= "Galleries"; // default - handle null
-    
+
     // folders
     var foldersPath = System.IO.Path.Combine(Directory.GetCurrentDirectory(), $"wwwroot/{galleriesFolder}/{galleryFolder}");
     var folders = Directory.GetDirectories(foldersPath)
@@ -50,17 +50,21 @@
         </div>
     </div>
 
-    <!-- Folder Links -->
-    @foreach (var folder in folders)
-    {
-        <div class="col-6 col-lg-3 menu-item" data-viewName="@folder">
-            <div id="@folder" class="bg-green-lighter text-center p-0 border border-dark rounded">
-                <a id="@folder-link" class="menu-link text-dark" asp-controller="@currentController" asp-action="Gallery" asp-route-viewName="@folder">@folder</a>
-            </div>
-        </div>
-    }
-</div>
+    <div class="col-8 menu-item">
+        <div class="row">
 
+            <!-- Folder Links -->
+            @foreach (var folder in folders)
+            {
+                <div class="col-6 col-lg-3 menu-item" data-viewName="@folder">
+                    <div id="@folder" class="bg-green-lighter text-center p-0 border border-dark rounded">
+                        <a id="@folder-link" class="menu-link text-dark" asp-controller="@currentController" asp-action="Gallery" asp-route-viewName="@folder">@folder</a>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
 <!-- Replaces the background-image -->
 <script>
     // $("body").css("background-image", "url('../@Url.Content(backgroundImage)')"); // control background

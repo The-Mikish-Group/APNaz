@@ -307,6 +307,55 @@
 
 </div>
 
+<!-- Site.js Entry -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        var images = document.querySelectorAll("img[data-src]");
+        var imagesContainer = document.getElementById("images-container");
+
+        var observer = new IntersectionObserver(
+            function (entries, observer) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        var img = entry.target;
+                        img.src = img.getAttribute("data-src");
+                        observer.unobserve(img);
+                    }
+                });
+            }
+        );    
+
+        images.forEach(function (img) {
+            observer.observe(img);
+        });
+
+        var checkLoadingCompletion = function () {
+            if (images && Array.from(images).every(img => img.complete)) {
+                imagesContainer.style.display = "flex";
+            } else {
+                setTimeout(checkLoadingCompletion, 100);
+            }
+        };
+
+        checkLoadingCompletion(); 
+        
+        window.onscroll = function () {
+            
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("top-button").style.display = "block";
+            } else {
+                document.getElementById("top-button").style.display = "none";
+            }
+        };
+        
+        window.topFunction = function () {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        };
+    });
+</script>
+
 <!-- Replaces the background-image -->
 <script>
     $("body").css("background-image", "url('../@Url.Content(backgroundImage)')");
@@ -375,12 +424,16 @@
         async function doesFileExist(url) {
             try {
                 const response = await fetch(url, { method: 'HEAD' });
+                if (!response.ok) {
+                    console.error('HTTP error:', response.status, response.statusText);
+                }
                 return response.ok;
             } catch (error) {
                 console.error('Error checking file existence:', error);
                 return false;
             }
         }
+
 
     });
 </script>
