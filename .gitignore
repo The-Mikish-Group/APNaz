@@ -1,0 +1,15 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/APNaz/FileContentIndex/ad2757fe-f468-40fc-8b77-1152fe3eb6ea.vsidx
+/.vs/APNaz/FileContentIndex/b86d3436-93f4-4cc8-b5af-33d55883c9ac.vsidx
+/.vs/APNaz/DesignTimeBuild/.dtbcache.v2
+/.vs/APNaz/FileContentIndex/be8bba9b-8f57-48c7-b638-1f7329d70c3f.vsidx
+/.vs/APNaz/v17/.futdcache.v2
+/.vs/APNaz/v17/.suo
+/.vs/APNaz/v17/DocumentLayout.json
+/.vs/ProjectEvaluation/apnaz.metadata.v8.bin
+/.vs/ProjectEvaluation/apnaz.projects.v8.bin
+/.vs/ProjectEvaluation/apnaz.strings.v8.bin
+/APNaz/APNaz.csproj
