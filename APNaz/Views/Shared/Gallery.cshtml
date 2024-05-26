@@ -18,19 +18,19 @@
     }
 
     // Get the folders for the menu links
-    var currentController = ViewContext.RouteData.Values["controller"]?.ToString() ?? "Shared";
-    var galleryFolder = currentController
+    string currentController = ViewContext.RouteData.Values["controller"]?.ToString() ?? "Shared";
+    string galleryFolder = currentController
     .Replace("slide", "", StringComparison.OrdinalIgnoreCase)
     .Replace("combo", "", StringComparison.OrdinalIgnoreCase);
 
-    var folders = Directory.GetDirectories(System.IO.Path.Combine(Directory.GetCurrentDirectory(), $"wwwroot/{galleriesFolder}/{galleryFolder}"))
+    List<string> folders = Directory.GetDirectories(System.IO.Path.Combine(Directory.GetCurrentDirectory(), $"wwwroot/{galleriesFolder}/{galleryFolder}"))
     .Where(folder => !System.IO.Path.GetFileName(folder).StartsWith("_"))
     .Select(folder => System.IO.Path.GetFileName(folder))
     .ToList();
 
     // Get the Gallery files for display
-    var imagefolder = ViewData["ViewName"]?.ToString() ?? ViewContext.RouteData.Values["action"]?.ToString() ?? "";
-    var currentImageFolder = System.IO.Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", galleriesFolder, galleryFolder, imagefolder);
+    string imagefolder = ViewData["ViewName"]?.ToString() ?? ViewContext.RouteData.Values["action"]?.ToString() ?? "";
+    string currentImageFolder = System.IO.Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", galleriesFolder, galleryFolder, imagefolder);
 
     // Get the Gallery files for display
     var files = Directory.GetFiles(currentImageFolder, "*.*")

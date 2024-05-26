@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "qiCkjvjUTfY4GIvJiaE7EQ8nf7/Vqt4v/kh8d1AMx34=",
+  "Hash": "/aVG1KPEqgbuxBY56AC+et6u4YRy2q6pdj2H8FZCYSk=",
   "Source": "APNaz",
   "BasePath": "_content/APNaz",
   "Mode": "Default",
@@ -696,7 +696,7 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
+      "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Gallery\\APNaz\\Manuals\\1895.pdf"
     },
@@ -715,7 +715,7 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
+      "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Gallery\\APNaz\\Manuals\\1898-Church_of_the_Nazarene.pdf"
     },
@@ -734,7 +734,7 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
+      "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Gallery\\APNaz\\Manuals\\1903-Church_of_the_Nazarene.pdf"
     },
@@ -753,7 +753,7 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
+      "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Gallery\\APNaz\\Manuals\\1904.pdf"
     },
@@ -772,7 +772,7 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
+      "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Gallery\\APNaz\\Manuals\\1905.pdf"
     },
@@ -791,7 +791,7 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
+      "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Gallery\\APNaz\\Manuals\\1906_Update.pdf"
     },
@@ -810,7 +810,7 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
+      "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Gallery\\APNaz\\Manuals\\1907.pdf"
     },
@@ -829,7 +829,7 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
+      "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Gallery\\APNaz\\Manuals\\1908-Manual-of-the-Pentecostal-Church-of-the-Nazarene.pdf"
     },
@@ -848,7 +848,7 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
+      "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Gallery\\APNaz\\Manuals\\1911.pdf"
     },
@@ -867,7 +867,7 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
+      "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Gallery\\APNaz\\Manuals\\1915.pdf"
     },
@@ -886,7 +886,7 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
+      "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Gallery\\APNaz\\Manuals\\1919.pdf"
     },
@@ -905,7 +905,7 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
+      "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Gallery\\APNaz\\Manuals\\1923.pdf"
     },
@@ -924,7 +924,7 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
+      "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Gallery\\APNaz\\Manuals\\1928-EN_manual_1928.pdf"
     },
@@ -943,7 +943,7 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
+      "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Gallery\\APNaz\\Manuals\\1932-EN_manual_1932.pdf"
     },
@@ -962,7 +962,7 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
+      "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Gallery\\APNaz\\Manuals\\1936-EN_CON_Manual.pdf"
     },
@@ -981,7 +981,7 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
+      "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Gallery\\APNaz\\Manuals\\1940-EN_CON_Manual.pdf"
     },
@@ -1000,7 +1000,7 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
+      "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Gallery\\APNaz\\Manuals\\1944-EN_CON_Manual.pdf"
     },
@@ -1019,7 +1019,7 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
+      "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Gallery\\APNaz\\Manuals\\1948-EN_manual_church_nazarene.pdf"
     },
@@ -1038,7 +1038,7 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
+      "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Gallery\\APNaz\\Manuals\\1952-EN_CON_Manual.pdf"
     },
@@ -1057,7 +1057,7 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
+      "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Gallery\\APNaz\\Manuals\\1956-EN_Manual.pdf"
     },
@@ -1076,7 +1076,7 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
+      "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Gallery\\APNaz\\Manuals\\1960-EN_CON_Manual.pdf"
     },
@@ -1095,7 +1095,7 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
+      "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Gallery\\APNaz\\Manuals\\1964-EN_Manual.pdf"
     },
@@ -1114,7 +1114,7 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
+      "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Gallery\\APNaz\\Manuals\\1968-EN_Manual.pdf"
     },
@@ -1133,7 +1133,7 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
+      "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Gallery\\APNaz\\Manuals\\1972-EN_Manual.pdf"
     },
@@ -1152,7 +1152,7 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
+      "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Gallery\\APNaz\\Manuals\\1976-Manual.pdf"
     },
@@ -1171,7 +1171,7 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
+      "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Gallery\\APNaz\\Manuals\\1980-EN_Nazarene_Manual.pdf"
     },
@@ -1190,7 +1190,7 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
+      "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Gallery\\APNaz\\Manuals\\1985-EN_Nazarene_Manual.pdf"
     },
@@ -1209,7 +1209,7 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
+      "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Gallery\\APNaz\\Manuals\\1989-Church_of_the_Nazarene.pdf"
     },
@@ -1228,7 +1228,7 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
+      "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Gallery\\APNaz\\Manuals\\1993-Manual.pdf"
     },
@@ -1247,7 +1247,7 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
+      "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Gallery\\APNaz\\Manuals\\1997-Church_of_the_Nazarene.pdf"
     },
@@ -1266,7 +1266,7 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
+      "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Gallery\\APNaz\\Manuals\\2001-Church_of_the_Nazarene.pdf"
     },
@@ -1285,7 +1285,7 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
+      "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Gallery\\APNaz\\Manuals\\2005-Manual.pdf"
     },
@@ -1304,7 +1304,7 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
+      "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Gallery\\APNaz\\Manuals\\2009-ManualEnglish.pdf"
     },
@@ -1323,7 +1323,7 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
+      "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Gallery\\APNaz\\Manuals\\2013-EN_manual.pdf"
     },
@@ -1342,7 +1342,7 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
+      "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Gallery\\APNaz\\Manuals\\2017-Manual.pdf"
     },
@@ -1361,7 +1361,7 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
+      "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Gallery\\APNaz\\Manuals\\2023-Manual.pdf"
     },
