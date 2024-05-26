@@ -1,12 +1,12 @@
 {
   "Files": [
     {
-      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\Avon Park\\0ur Church.webp",
-      "PackagePath": "staticwebassets\\Gallery\\APNaz\\Avon Park\\0ur Church.webp"
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\Avon Park\\Our Church.webp",
+      "PackagePath": "staticwebassets\\Gallery\\APNaz\\Avon Park\\Our Church.webp"
     },
     {
-      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\Avon Park\\0ur Church_thumb.jpg",
-      "PackagePath": "staticwebassets\\Gallery\\APNaz\\Avon Park\\0ur Church_thumb.jpg"
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\Avon Park\\Our Church_thumb.jpg",
+      "PackagePath": "staticwebassets\\Gallery\\APNaz\\Avon Park\\Our Church_thumb.jpg"
     },
     {
       "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\Avon Park\\Pastor Patty.jpg",
@@ -181,104 +181,200 @@
       "PackagePath": "staticwebassets\\Gallery\\APNaz\\Manuals\\2023-Manual.pdf"
     },
     {
-      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\_WebArt\\AP-Logo-Church-Gray-English-Gray.png",
-      "PackagePath": "staticwebassets\\Gallery\\APNaz\\_WebArt\\AP-Logo-Church-Gray-English-Gray.png"
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\WebArt\\AP-Logo-Church-Gray-English-Gray.png",
+      "PackagePath": "staticwebassets\\Gallery\\APNaz\\WebArt\\AP-Logo-Church-Gray-English-Gray.png"
     },
     {
-      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\_WebArt\\AP-Logo-Church-Gray-English-White.png",
-      "PackagePath": "staticwebassets\\Gallery\\APNaz\\_WebArt\\AP-Logo-Church-Gray-English-White.png"
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\WebArt\\AP-Logo-Church-Gray-English-Gray_thumb.jpg",
+      "PackagePath": "staticwebassets\\Gallery\\APNaz\\WebArt\\AP-Logo-Church-Gray-English-Gray_thumb.jpg"
     },
     {
-      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\_WebArt\\AP-Logo-Church-Gray-Spanish-Gray.png",
-      "PackagePath": "staticwebassets\\Gallery\\APNaz\\_WebArt\\AP-Logo-Church-Gray-Spanish-Gray.png"
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\WebArt\\AP-Logo-Church-Gray-English-White.png",
+      "PackagePath": "staticwebassets\\Gallery\\APNaz\\WebArt\\AP-Logo-Church-Gray-English-White.png"
     },
     {
-      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\_WebArt\\AP-Logo-Church-Gray-Spanish-White.png",
-      "PackagePath": "staticwebassets\\Gallery\\APNaz\\_WebArt\\AP-Logo-Church-Gray-Spanish-White.png"
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\WebArt\\AP-Logo-Church-Gray-English-White_thumb.jpg",
+      "PackagePath": "staticwebassets\\Gallery\\APNaz\\WebArt\\AP-Logo-Church-Gray-English-White_thumb.jpg"
     },
     {
-      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\_WebArt\\AP-Logo-Church-White-English-Gray.png",
-      "PackagePath": "staticwebassets\\Gallery\\APNaz\\_WebArt\\AP-Logo-Church-White-English-Gray.png"
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\WebArt\\AP-Logo-Church-Gray-Spanish-Gray.png",
+      "PackagePath": "staticwebassets\\Gallery\\APNaz\\WebArt\\AP-Logo-Church-Gray-Spanish-Gray.png"
     },
     {
-      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\_WebArt\\AP-Logo-Church-White-English-White.png",
-      "PackagePath": "staticwebassets\\Gallery\\APNaz\\_WebArt\\AP-Logo-Church-White-English-White.png"
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\WebArt\\AP-Logo-Church-Gray-Spanish-Gray_thumb.jpg",
+      "PackagePath": "staticwebassets\\Gallery\\APNaz\\WebArt\\AP-Logo-Church-Gray-Spanish-Gray_thumb.jpg"
     },
     {
-      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\_WebArt\\AP-Logo-Church-White-Spanish-Gray.png",
-      "PackagePath": "staticwebassets\\Gallery\\APNaz\\_WebArt\\AP-Logo-Church-White-Spanish-Gray.png"
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\WebArt\\AP-Logo-Church-Gray-Spanish-White.png",
+      "PackagePath": "staticwebassets\\Gallery\\APNaz\\WebArt\\AP-Logo-Church-Gray-Spanish-White.png"
     },
     {
-      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\_WebArt\\AP-Logo-Church-White-Spanish-White.png",
-      "PackagePath": "staticwebassets\\Gallery\\APNaz\\_WebArt\\AP-Logo-Church-White-Spanish-White.png"
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\WebArt\\AP-Logo-Church-Gray-Spanish-White_thumb.jpg",
+      "PackagePath": "staticwebassets\\Gallery\\APNaz\\WebArt\\AP-Logo-Church-Gray-Spanish-White_thumb.jpg"
     },
     {
-      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\_WebArt\\AP-Logo-Gray.png",
-      "PackagePath": "staticwebassets\\Gallery\\APNaz\\_WebArt\\AP-Logo-Gray.png"
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\WebArt\\AP-Logo-Church-White-English-Gray.png",
+      "PackagePath": "staticwebassets\\Gallery\\APNaz\\WebArt\\AP-Logo-Church-White-English-Gray.png"
     },
     {
-      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\_WebArt\\AP-Logo-White.png",
-      "PackagePath": "staticwebassets\\Gallery\\APNaz\\_WebArt\\AP-Logo-White.png"
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\WebArt\\AP-Logo-Church-White-English-Gray_thumb.jpg",
+      "PackagePath": "staticwebassets\\Gallery\\APNaz\\WebArt\\AP-Logo-Church-White-English-Gray_thumb.jpg"
     },
     {
-      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\_WebArt\\Bird-Bible-Gray.png",
-      "PackagePath": "staticwebassets\\Gallery\\APNaz\\_WebArt\\Bird-Bible-Gray.png"
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\WebArt\\AP-Logo-Church-White-English-White.png",
+      "PackagePath": "staticwebassets\\Gallery\\APNaz\\WebArt\\AP-Logo-Church-White-English-White.png"
     },
     {
-      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\_WebArt\\Bird-Bible-White.png",
-      "PackagePath": "staticwebassets\\Gallery\\APNaz\\_WebArt\\Bird-Bible-White.png"
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\WebArt\\AP-Logo-Church-White-English-White_thumb.jpg",
+      "PackagePath": "staticwebassets\\Gallery\\APNaz\\WebArt\\AP-Logo-Church-White-English-White_thumb.jpg"
     },
     {
-      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\_WebArt\\Bird-Gray.png",
-      "PackagePath": "staticwebassets\\Gallery\\APNaz\\_WebArt\\Bird-Gray.png"
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\WebArt\\AP-Logo-Church-White-Spanish-Gray.png",
+      "PackagePath": "staticwebassets\\Gallery\\APNaz\\WebArt\\AP-Logo-Church-White-Spanish-Gray.png"
     },
     {
-      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\_WebArt\\Bird-White.png",
-      "PackagePath": "staticwebassets\\Gallery\\APNaz\\_WebArt\\Bird-White.png"
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\WebArt\\AP-Logo-Church-White-Spanish-Gray_thumb.jpg",
+      "PackagePath": "staticwebassets\\Gallery\\APNaz\\WebArt\\AP-Logo-Church-White-Spanish-Gray_thumb.jpg"
     },
     {
-      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\_WebArt\\Fish.png",
-      "PackagePath": "staticwebassets\\Gallery\\APNaz\\_WebArt\\Fish.png"
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\WebArt\\AP-Logo-Church-White-Spanish-White.png",
+      "PackagePath": "staticwebassets\\Gallery\\APNaz\\WebArt\\AP-Logo-Church-White-Spanish-White.png"
     },
     {
-      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\_WebArt\\Loving-Leading.png",
-      "PackagePath": "staticwebassets\\Gallery\\APNaz\\_WebArt\\Loving-Leading.png"
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\WebArt\\AP-Logo-Church-White-Spanish-White_thumb.jpg",
+      "PackagePath": "staticwebassets\\Gallery\\APNaz\\WebArt\\AP-Logo-Church-White-Spanish-White_thumb.jpg"
     },
     {
-      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\_WebArt\\Seal-Black-English.png",
-      "PackagePath": "staticwebassets\\Gallery\\APNaz\\_WebArt\\Seal-Black-English.png"
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\WebArt\\AP-Logo-Gray.png",
+      "PackagePath": "staticwebassets\\Gallery\\APNaz\\WebArt\\AP-Logo-Gray.png"
     },
     {
-      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\_WebArt\\Seal-Black-Spanish.png",
-      "PackagePath": "staticwebassets\\Gallery\\APNaz\\_WebArt\\Seal-Black-Spanish.png"
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\WebArt\\AP-Logo-Gray_thumb.jpg",
+      "PackagePath": "staticwebassets\\Gallery\\APNaz\\WebArt\\AP-Logo-Gray_thumb.jpg"
     },
     {
-      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\_WebArt\\Seal-Gold-English.png",
-      "PackagePath": "staticwebassets\\Gallery\\APNaz\\_WebArt\\Seal-Gold-English.png"
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\WebArt\\AP-Logo-White.png",
+      "PackagePath": "staticwebassets\\Gallery\\APNaz\\WebArt\\AP-Logo-White.png"
     },
     {
-      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\_WebArt\\Seal-Gold-Spanish.png",
-      "PackagePath": "staticwebassets\\Gallery\\APNaz\\_WebArt\\Seal-Gold-Spanish.png"
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\WebArt\\AP-Logo-White_thumb.jpg",
+      "PackagePath": "staticwebassets\\Gallery\\APNaz\\WebArt\\AP-Logo-White_thumb.jpg"
     },
     {
-      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\_WebArt\\Seal-White-English.png",
-      "PackagePath": "staticwebassets\\Gallery\\APNaz\\_WebArt\\Seal-White-English.png"
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\WebArt\\Bird-Bible-Gray.png",
+      "PackagePath": "staticwebassets\\Gallery\\APNaz\\WebArt\\Bird-Bible-Gray.png"
     },
     {
-      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\_WebArt\\Seal-White-Spanish.png",
-      "PackagePath": "staticwebassets\\Gallery\\APNaz\\_WebArt\\Seal-White-Spanish.png"
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\WebArt\\Bird-Bible-Gray_thumb.jpg",
+      "PackagePath": "staticwebassets\\Gallery\\APNaz\\WebArt\\Bird-Bible-Gray_thumb.jpg"
     },
     {
-      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\_WebArt\\WebArt-black.png",
-      "PackagePath": "staticwebassets\\Gallery\\APNaz\\_WebArt\\WebArt-black.png"
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\WebArt\\Bird-Bible-White.png",
+      "PackagePath": "staticwebassets\\Gallery\\APNaz\\WebArt\\Bird-Bible-White.png"
     },
     {
-      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\_WebArt\\WebArt-white.png",
-      "PackagePath": "staticwebassets\\Gallery\\APNaz\\_WebArt\\WebArt-white.png"
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\WebArt\\Bird-Bible-White_thumb.jpg",
+      "PackagePath": "staticwebassets\\Gallery\\APNaz\\WebArt\\Bird-Bible-White_thumb.jpg"
     },
     {
-      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\_WebArt\\background.jpg",
-      "PackagePath": "staticwebassets\\Gallery\\APNaz\\_WebArt\\background.jpg"
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\WebArt\\Bird-Gray.png",
+      "PackagePath": "staticwebassets\\Gallery\\APNaz\\WebArt\\Bird-Gray.png"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\WebArt\\Bird-Gray_thumb.jpg",
+      "PackagePath": "staticwebassets\\Gallery\\APNaz\\WebArt\\Bird-Gray_thumb.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\WebArt\\Bird-White.png",
+      "PackagePath": "staticwebassets\\Gallery\\APNaz\\WebArt\\Bird-White.png"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\WebArt\\Bird-White_thumb.jpg",
+      "PackagePath": "staticwebassets\\Gallery\\APNaz\\WebArt\\Bird-White_thumb.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\WebArt\\Fish.png",
+      "PackagePath": "staticwebassets\\Gallery\\APNaz\\WebArt\\Fish.png"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\WebArt\\Fish_thumb.jpg",
+      "PackagePath": "staticwebassets\\Gallery\\APNaz\\WebArt\\Fish_thumb.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\WebArt\\Loving-Leading.png",
+      "PackagePath": "staticwebassets\\Gallery\\APNaz\\WebArt\\Loving-Leading.png"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\WebArt\\Loving-Leading_thumb.jpg",
+      "PackagePath": "staticwebassets\\Gallery\\APNaz\\WebArt\\Loving-Leading_thumb.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\WebArt\\Seal-Black-English.png",
+      "PackagePath": "staticwebassets\\Gallery\\APNaz\\WebArt\\Seal-Black-English.png"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\WebArt\\Seal-Black-English_thumb.jpg",
+      "PackagePath": "staticwebassets\\Gallery\\APNaz\\WebArt\\Seal-Black-English_thumb.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\WebArt\\Seal-Black-Spanish.png",
+      "PackagePath": "staticwebassets\\Gallery\\APNaz\\WebArt\\Seal-Black-Spanish.png"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\WebArt\\Seal-Black-Spanish_thumb.jpg",
+      "PackagePath": "staticwebassets\\Gallery\\APNaz\\WebArt\\Seal-Black-Spanish_thumb.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\WebArt\\Seal-Gold-English.png",
+      "PackagePath": "staticwebassets\\Gallery\\APNaz\\WebArt\\Seal-Gold-English.png"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\WebArt\\Seal-Gold-English_thumb.jpg",
+      "PackagePath": "staticwebassets\\Gallery\\APNaz\\WebArt\\Seal-Gold-English_thumb.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\WebArt\\Seal-Gold-Spanish.png",
+      "PackagePath": "staticwebassets\\Gallery\\APNaz\\WebArt\\Seal-Gold-Spanish.png"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\WebArt\\Seal-Gold-Spanish_thumb.jpg",
+      "PackagePath": "staticwebassets\\Gallery\\APNaz\\WebArt\\Seal-Gold-Spanish_thumb.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\WebArt\\Seal-White-English.png",
+      "PackagePath": "staticwebassets\\Gallery\\APNaz\\WebArt\\Seal-White-English.png"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\WebArt\\Seal-White-English_thumb.jpg",
+      "PackagePath": "staticwebassets\\Gallery\\APNaz\\WebArt\\Seal-White-English_thumb.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\WebArt\\Seal-White-Spanish.png",
+      "PackagePath": "staticwebassets\\Gallery\\APNaz\\WebArt\\Seal-White-Spanish.png"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\WebArt\\Seal-White-Spanish_thumb.jpg",
+      "PackagePath": "staticwebassets\\Gallery\\APNaz\\WebArt\\Seal-White-Spanish_thumb.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\WebArt\\WebArt-black.png",
+      "PackagePath": "staticwebassets\\Gallery\\APNaz\\WebArt\\WebArt-black.png"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\WebArt\\WebArt-black_thumb.jpg",
+      "PackagePath": "staticwebassets\\Gallery\\APNaz\\WebArt\\WebArt-black_thumb.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\WebArt\\WebArt-white.png",
+      "PackagePath": "staticwebassets\\Gallery\\APNaz\\WebArt\\WebArt-white.png"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\WebArt\\WebArt-white_thumb.jpg",
+      "PackagePath": "staticwebassets\\Gallery\\APNaz\\WebArt\\WebArt-white_thumb.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Gallery\\APNaz\\WebArt\\background.jpg",
+      "PackagePath": "staticwebassets\\Gallery\\APNaz\\WebArt\\background.jpg"
     },
     {
       "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\PageImages\\0ur Church.webp",
@@ -367,6 +463,14 @@
     {
       "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\ShareImages\\Staff-logo-ls.jpg",
       "PackagePath": "staticwebassets\\ShareImages\\Staff-logo-ls.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Videos\\2024_05.mp4",
+      "PackagePath": "staticwebassets\\Videos\\2024_05.mp4"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Videos\\2024_06.mp4",
+      "PackagePath": "staticwebassets\\Videos\\2024_06.mp4"
     },
     {
       "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Virtual\\Android\\index.html",
@@ -901,6 +1005,186 @@
       "PackagePath": "staticwebassets\\google1fcac5f74de0febb.html"
     },
     {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
       "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\css\\colors.css",
       "PackagePath": "staticwebassets\\lib\\css\\colors.css"
     },
@@ -949,8 +1233,68 @@
       "PackagePath": "staticwebassets\\lib\\icons\\favicon.ico"
     },
     {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\icons\\site.webmanifest",
+      "PackagePath": "staticwebassets\\lib\\icons\\site.webmanifest"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
       "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\js\\site.js",
       "PackagePath": "staticwebassets\\lib\\js\\site.js"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\svg\\Buttons\\8B2168ED.png",
+      "PackagePath": "staticwebassets\\lib\\svg\\Buttons\\8B2168ED.png"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\svg\\Buttons\\8B2168EE.png",
+      "PackagePath": "staticwebassets\\lib\\svg\\Buttons\\8B2168EE.png"
     },
     {
       "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\svg\\Buttons\\Back-Black.svg",
@@ -973,6 +1317,10 @@
       "PackagePath": "staticwebassets\\lib\\svg\\Buttons\\FB-Square.svg"
     },
     {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\svg\\Buttons\\GiveOnlineButton.ai",
+      "PackagePath": "staticwebassets\\lib\\svg\\Buttons\\GiveOnlineButton.ai"
+    },
+    {
       "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\svg\\Buttons\\GiveOnlineButton.jpg",
       "PackagePath": "staticwebassets\\lib\\svg\\Buttons\\GiveOnlineButton.jpg"
     },
@@ -991,6 +1339,10 @@
     {
       "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\svg\\Buttons\\Links.svg",
       "PackagePath": "staticwebassets\\lib\\svg\\Buttons\\Links.svg"
+    },
+    {
+      "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\svg\\Buttons\\MembersButton.ai",
+      "PackagePath": "staticwebassets\\lib\\svg\\Buttons\\MembersButton.ai"
     },
     {
       "Id": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\svg\\Buttons\\MembersButton.jpg",
