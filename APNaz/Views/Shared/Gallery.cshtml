@@ -5,10 +5,8 @@
 
 <!-- Shared Gallery.cshtml -->
 @{
-    // Galleries Folder Name
     string galleriesFolder = "Gallery";
 
-    // Function to get image dimensions
     Size GetImageDimensions(string imagePath)
     {
         using (var image = Image.Load(imagePath))
@@ -17,22 +15,19 @@
         }
     }
 
-    // Get the folders for the menu links
     string currentController = ViewContext.RouteData.Values["controller"]?.ToString() ?? "Shared";
     string galleryFolder = currentController
-    .Replace("slide", "", StringComparison.OrdinalIgnoreCase)
-    .Replace("combo", "", StringComparison.OrdinalIgnoreCase);
+        .Replace("slide", "", StringComparison.OrdinalIgnoreCase)
+        .Replace("combo", "", StringComparison.OrdinalIgnoreCase);
 
     List<string> folders = Directory.GetDirectories(System.IO.Path.Combine(Directory.GetCurrentDirectory(), $"wwwroot/{galleriesFolder}/{galleryFolder}"))
-    .Where(folder => !System.IO.Path.GetFileName(folder).StartsWith("_"))
-    .Select(folder => System.IO.Path.GetFileName(folder))
-    .ToList();
+        .Where(folder => !System.IO.Path.GetFileName(folder).StartsWith("_"))
+        .Select(folder => System.IO.Path.GetFileName(folder))
+        .ToList();
 
-    // Get the Gallery files for display
     string imagefolder = ViewData["ViewName"]?.ToString() ?? ViewContext.RouteData.Values["action"]?.ToString() ?? "";
     string currentImageFolder = System.IO.Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", galleriesFolder, galleryFolder, imagefolder);
 
-    // Get the Gallery files for display
     var files = Directory.GetFiles(currentImageFolder, "*.*")
         .Where(file =>
             !System.IO.Path.GetFileName(file).StartsWith("background", StringComparison.OrdinalIgnoreCase) &&
@@ -50,24 +45,21 @@
 
             if (System.IO.Path.GetExtension(file).Equals(".pdf", StringComparison.OrdinalIgnoreCase))
             {
-                dimensions = new Size(800, 800); // Default dimensions for PDF files
+                dimensions = new Size(800, 800);
             }
             else
             {
                 dimensions = GetImageDimensions(file);
             }
 
-            return new { ImagePath = imagePath, Dimensions = dimensions, };
+            return new { ImagePath = imagePath, Dimensions = dimensions, FileName = System.IO.Path.GetFileName(file) };
         })
-        .OrderBy(entry => entry.Dimensions.Width)
-        .ThenBy(entry => entry.Dimensions.Height)
+        .OrderBy(entry => entry.FileName) // Sort by file name
         .Select(entry => $"{entry.ImagePath}")
         .ToList();
 
 
-    // Create thumbnail only if it doesn't exist
     var thumbnailService = new ThumbnailService();
-
     int thumbnailWidth = 800;
     int thumbnailHeight = 800;
 
@@ -75,53 +67,34 @@
     {
         if (System.IO.Path.GetExtension(file).ToLower() == ".pdf")
         {
-            // Skip thumbnail conversion and renaming for PDF files
             continue;
         }
 
-        var filename = System.IO.Path.GetFileNameWithoutExtension(file) + "_thumb.jpg";
-        thumbnailService.CreateOrRetrieveThumbnail(file, filename, currentImageFolder, thumbnailWidth, thumbnailHeight);
+        string filename = System.IO.Path.GetFileNameWithoutExtension(file) + "_thumb.jpg";
+        await thumbnailService.CreateOrRetrieveThumbnailAsync(file, filename, currentImageFolder, thumbnailWidth, thumbnailHeight);
     }
 
-
-    // Get the backgroundImage path
-    string backgroundImage = $"{galleriesFolder}/{galleryFolder}/{imagefolder}/background.webp"; // default
-    string[] extensions = { ".jpg", ".png", ".webp", ".svg", };
+    string backgroundImage = $"{galleriesFolder}/{galleryFolder}/{imagefolder}/background.webp";
+    string[] extensions = { ".jpg", ".png", ".webp", ".svg" };
     foreach (var extension in extensions)
     {
         var bgPath = $"{galleriesFolder}/{galleryFolder}/{imagefolder}/background{extension}";
-        if (System.IO.File.Exists(System.IO.Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", bgPath)))
+        if (File.Exists(System.IO.Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", bgPath)))
         {
             backgroundImage = bgPath;
             break;
         }
     }
 
-    // Gallery type (used in html heading display)
-    var galleryType = currentController.Contains("slide", StringComparison.OrdinalIgnoreCase)
-        ? "Slideshows"
-        : "Galleries";
-    galleryType ??= "Galleries"; // Set default if null
-
-    // Gallery type (used in html heading display)
-    galleryType = currentController.Contains("combo", StringComparison.OrdinalIgnoreCase)
-        ? "Combos"
-        : galleryType;
-    galleryType ??= "Galleries"; // Set default if null
-
-    // Target View (Everything currently targets Gallery)
-    var targetView = currentController.Contains("slide", StringComparison.OrdinalIgnoreCase)
-        ? "Gallery" // send someplace else like Slideshow.cshtml
-        : "Gallery";
-    targetView ??= "Gallery"; // Set default if null
+    var galleryType = currentController.Contains("slide", StringComparison.OrdinalIgnoreCase) ? "Slideshows" : "Galleries";
+    galleryType = currentController.Contains("combo", StringComparison.OrdinalIgnoreCase) ? "Combos" : galleryType;
+    var targetView = currentController.Contains("slide", StringComparison.OrdinalIgnoreCase) ? "Gallery" : "Gallery";
 }
 
-<!-- Function to create a thumbnail -->
 @functions {
-
     public class ThumbnailService
     {
-        public void CreateOrRetrieveThumbnail(string file, string thumbnail, string thumbnailsPath, int thumbnailWidth, int thumbnailHeight)
+        public async Task CreateOrRetrieveThumbnailAsync(string file, string thumbnail, string thumbnailsPath, int thumbnailWidth, int thumbnailHeight)
         {
             const int maxRetries = 3;
             int retryCount = 0;
@@ -130,56 +103,43 @@
             {
                 try
                 {
-                    if (!System.IO.File.Exists(System.IO.Path.Combine(thumbnailsPath, thumbnail).Replace("\\", "/")))
+                    if (!File.Exists(System.IO.Path.Combine(thumbnailsPath, thumbnail).Replace("\\", "/")))
                     {
-                        // Thumbnail doesn't exist, create it
-                        CreateThumbnail(file, thumbnailsPath, thumbnailWidth, thumbnailHeight);
+                        await CreateThumbnailAsync(file, thumbnailsPath, thumbnailWidth, thumbnailHeight);
                     }
-                    return; // Thumbnail creation successful, exit the loop
+                    return;
                 }
                 catch (IOException ex) when (IsFileInUse(ex))
                 {
-                    // File is in use, wait for a short duration before retrying
                     retryCount++;
-                    System.Threading.Thread.Sleep(1000); // Wait for 1 second before retrying
+                    await Task.Delay(1000);
                 }
                 catch (Exception ex)
                 {
                     Console.WriteLine($"Error creating thumbnail: {ex.Message}");
-                    return; // Exit the loop on other exceptions
+                    return;
                 }
             }
 
-            // Console.WriteLine($"Failed to create thumbnail after {maxRetries} retries.");
+            Console.WriteLine($"Failed to create thumbnail after {maxRetries} retries.");
         }
 
-        private void CreateThumbnail(string file, string thumbnailsPath, int thumbnailWidth, int thumbnailHeight)
+        private async Task CreateThumbnailAsync(string file, string thumbnailsPath, int thumbnailWidth, int thumbnailHeight)
         {
-            ImageHelper.CreateThumbnail(file, thumbnailsPath, thumbnailWidth, thumbnailHeight);
+            await Task.Run(() => ImageHelper.CreateThumbnail(file, thumbnailsPath, thumbnailWidth, thumbnailHeight));
         }
 
         private bool IsFileInUse(Exception ex)
         {
-            // Check if the exception is related to the file being in use
-            // This is a simplistic check, and you may need to enhance it based on specific exceptions you receive
             return ex is IOException || (ex is UnauthorizedAccessException && ex.Message.Contains("being used by another process"));
         }
     }
 }
 
-<!-- Go to Top button -->
 <button type="button" onclick="topFunction()" id="top-button" title="Go to top">Top</button>
-
-<!-- Stores current image link in Slide -->
 <input title="ImageLink" hidden type="text" spellcheck="false" value="" id="imageLink">
-
-<!-- View Container Row -->
 <div class="container row mt-5 viewContainer">
-
-    <!-- Link Button Menu -->
     <div class="container justify-content-center row gx-1 gx-lg-4 my-2 p-0">
-
-        <!-- Back Link Button -->
         <div class="col-2 pt-1 mb-1">
             <div class="h-100 text-center text-white">
                 <a class="btn bg-red-dark btn-sm group-button-size" href="../apnazcombo">
@@ -187,11 +147,8 @@
                 </a>
             </div>
         </div>        
-
         <div class="col-8 menu-item">
-            <div class="row">    
-
-                <!-- Folder Links -->
+            <div class="row">
                 @foreach (var folder in folders)
                 {
                     <div class="col-6 col-lg-3 menu-item" data-viewName="@folder">
@@ -200,114 +157,122 @@
                         </div>
                     </div>
                 }
-
             </div>
-        </div>        
+        </div>
     </div>
 
-
-    <!-- Content Column -->
     <div class="col-12 text-start px-0 pt-4">
 
-        <!-- Display Slideshow -->
+        <!-- Display Slideshow ? -->
         @if (galleryType == "Slideshows" || galleryType == "Combos")
         {
+
             <!-- Slideshow Controls -->
             <div id="SlideshowControls" class="row text-center px-0 mb-2">
 
                 <!-- Prev -->
                 <div class="col-4 text-end">
                     <button id="Previous" class="slideshow-button" type="button" title="Previous image">
-                        <img class="slideshow-button-image" alt="Prev" src="/lib/svg/Buttons/Previous.svg"> Prev
+                        <img class="slideshow-button-image" alt="Prev" src="/Images/Svg/Buttons/Previous.svg"> Prev
                     </button>
                 </div>
 
                 <!-- Copy -->
                 <div class="col-4 text-center">
                     <button id="Copy" class="slideshow-button" type="button" title="Copy Link to Clipboard" tooltip="Copy this Link" onclick="copyLink()">
-                        <img alt="Copy" class="slideshow-button-image" src="/lib/svg/Buttons/Links.svg"> Copy
+                        <img alt="Copy" class="slideshow-button-image" src="/Images/Svg/Buttons/Links.svg"> Copy
                     </button>
                 </div>
 
                 <!-- Next -->
                 <div class="col-4 text-start">
                     <button id="Next" class="slideshow-button" type="button" title="Next image">
-                        Next <img class="slideshow-button-image" alt="Next" src="/lib/svg/Buttons/Next.svg">
+                        Next <img class="slideshow-button-image" alt="Next" src="/Images/Svg/Buttons/Next.svg">
                     </button>
                 </div>
 
-            </div>          
+            </div>
 
             <!-- Slideshow -->
             <div id="my-group-2" class="row container-fluid text-center mb-2 mx-0 px-0">
 
                 <!-- Column Carousel -->
-                <div class="col-12 p-0 m-0 mb-3">                    
+                <div class="col-12 p-0 m-0 mb-2">
 
-                        <!-- Carousel Control-->
-                        <div id="CarouselControl" class="carousel slide pointer-event" data-bs-ride="carousel">
+                    <!-- Carousel Control-->
+                    <div id="CarouselControl" class="carousel slide pointer-event" data-bs-ride="carousel">
 
-                            <!-- Carousel Inner (CarouselItems) -->
-                            <div id="CarouselItems" class="carousel-inner rounded">
+                        <!-- Carousel Inner (carousel-items) -->
+                        <div id="xcarousel-items" class="carousel-inner">
 
-                            @foreach (var file in files) {
-                                    if (System.IO.Path.GetExtension(file).ToLower() == ".pdf") {
-                                        // Skip thumbnail conversion and renaming for PDF files
-                                        continue;
-                                    }
-                                    <div class='bg-transparent carousel-item  @(file == files.First() ? "active" : "")'>
-                                        <img class='d-block bg-gray-lighter p-2'
-                                             src="@Url.Content(System.IO.Path.Combine("/", galleriesFolder, galleryFolder, imagefolder, System.IO.Path.GetFileNameWithoutExtension(file) + "_thumb.jpg").Replace("\\", "/"))"
-                                             alt="@System.IO.Path.GetFileNameWithoutExtension(file).Substring(0, Math.Min(30, System.IO.Path.GetFileNameWithoutExtension(file).Length))" id="CarouselImage" />
-                                    </div>
-                                }
+                            @foreach (var file in files)
+                            {
+                                <div class='bg-transparent carousel-item  @(file == files.First() ? "active" : "")'>
+                                    <img class='d-block bg-gray-lighter rounded p-2'
+                                         src="@Url.Content(System.IO.Path.Combine("/", galleriesFolder, galleryFolder, imagefolder, System.IO.Path.GetFileNameWithoutExtension(file) + "_thumb.jpg").Replace("\\", "/"))"
+                                         alt="@System.IO.Path.GetFileNameWithoutExtension(file).Substring(0, Math.Min(30, System.IO.Path.GetFileNameWithoutExtension(file).Length))" id="carousel-item" />
+                                </div>
+                            }
 
-                            </div>
+                        </div>
 
-                            <!-- Left And right controls -->
-                            <a title="prev" class="carousel-control-prev" href="#CarouselControl" role="button" data-bs-slide="prev"></a>
-                            <a title="next" class="carousel-control-next" href="#CarouselControl" role="button" data-bs-slide="next"></a>
+                        <!-- Left And right controls -->
+                        <a title="prev" class="carousel-control-prev" href="#CarouselControl" role="button" data-bs-slide="prev"></a>
+                        <a title="next" class="carousel-control-next" href="#CarouselControl" role="button" data-bs-slide="next"></a>
 
-                        </div><!-- End Carousel Inner (CarouselItems) -->                   
+                    </div><!--  End Carousel Control-->
 
                 </div><!-- End Carousel Column -->
 
             </div>
 
+            <!-- End Slideshow -->
         }
 
+        <!-- Display Gallery ? -->
         @if (galleryType == "Galleries" || galleryType == "Combos")
         {
 
             <!-- The Gallery -->
-            <div id="images-container" class="row g-0 g-sm-2 g-lg-2" style="display: none">
+            <div id="images-container" class="row g-2 g-sm-2 g-lg-2 bg-transparent" style="display: flex">
 
                 <!-- Display each Image file and filename -->
                 @foreach (var file in files)
                 {
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-1 mb-lg-3">
+                    <!-- Image Column -->
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-2">
 
-                        <!-- Link to file -->
+                        <!-- Image Link -->
                         <a title="Click for full-screen." class="menu-link d-block text-center bg-gray-lighter" href="@Url.Content(file)" target="_blank">
-
-                            <!-- file_thumb -->
+                            
+                            <!-- Image thumb (display thumb instead of origional picture) -->
+                            @if (file.Contains(".pdf"))
+                            {
+                                <img src="~/lib/svg/misc/pdfimage.svg" />
+                            } 
                             <img class="w-100 img-fluid mx-auto" data-src="@Url.Content(System.IO.Path.Combine("/", galleriesFolder, galleryFolder, imagefolder, System.IO.Path.GetFileNameWithoutExtension(file) + "_thumb.jpg").Replace("\\", "/"))" alt="" />
 
-                            <!-- file name (max of 30 characters shown) -->
+                            <!-- Truncated Image name (max of 30 characters shown) -->
                             <div class="text-black text-center pt-1">
                                 @System.IO.Path.GetFileNameWithoutExtension(file).Substring(0, Math.Min(30, System.IO.Path.GetFileNameWithoutExtension(file).Length))
                             </div>
-                        </a>
+
+                        </a><!-- End Image Link -->
+
                     </div>
+
+                    <!-- End Image Column -->
                 }
             </div>
+
+            <!-- End of the Gallery -->
         }
 
-    </div><!-- End Content Column -->
+    </div><!-- End Content Column -->    
 
 </div>
 
-<!-- Site.js Entry -->
+<!-- Lazy load and more -->
 <script>
     document.addEventListener("DOMContentLoaded", function () {
 
@@ -380,10 +345,13 @@
 <script>
     $(document).ready(function () {
 
-        $('#CarouselControl').carousel('next');
+       @*  $('#CarouselControl').carousel('next'); *@
 
         // Get Domain
         var domain = window.location.origin;
+
+        // Define the possible extensions
+        var extensions = ['jpg', 'png', 'gif', 'webp', 'svg'];
 
         // Initialize the carousel
         $('#CarouselControl').on('slid.bs.carousel', function () {
@@ -394,7 +362,7 @@
             var imageBaseLink = domain + activeItem.find('img').attr('src');
 
             // Define the possible extensions
-            var extensions = ['jpg', 'png', 'gif', 'webp', 'svg'];
+            // var extensions = ['jpg', 'png', 'gif', 'webp', 'svg'];
 
             // Try to find the actual image file with the right extension
             var actualImageLink = findActualImageLink(imageBaseLink, extensions);
@@ -433,8 +401,6 @@
                 return false;
             }
         }
-
-
     });
 </script>
 

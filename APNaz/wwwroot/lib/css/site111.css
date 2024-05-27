@@ -1,0 +1,168 @@
+/* #region Default Stuff */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-y: scroll;
+    padding: 0;
+    margin: 0;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Lato", sans-serif;
+    font: 0.85em/1.35em 'Lato', cursive, sans-serif;
+    text-rendering: optimizeLegibility;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.navbar-overhang {
+    position: absolute;
+    top: 15px;
+    transform: translateY(-10%);
+}
+
+html > body header {
+    width: 100%;
+}
+
+/* Set for Auto Push Footer*/
+#MainContainer {
+    flex: 1;
+    min-height: 100%;
+}
+
+#footer {
+    padding: 0px;
+    position: inherit;
+}
+
+/* don't like padding and margins on elements by default */
+container, div, h1, h2, h3, h4, h5, p {
+    cursor: default;
+    padding: 0;
+    margin: 0;
+}
+
+/* make everything a borderbox */
+* {
+    box-sizing: border-box;
+}
+
+/* no border class */
+.no-border {
+    border: none;
+}
+
+/* Cursors */
+.cursor {
+    cursor: pointer;
+}
+
+.no-cursor {
+    cursor: none;
+}
+
+.pointer-cursor {
+    cursor: pointer;
+}
+
+
+/**********************/
+/* Responsive */
+
+svg, #container {
+    height: 100%;
+    width: 100%;
+}
+
+.btn {
+    transition: 1s ease-in-out;
+}
+
+img {
+    cursor: pointer;
+    transition: border 0.3s ease-in-out;
+}
+
+/* #endregion */
+
+/* #region Menu */
+.menu-item {
+    min-width: 90px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.menu-link {
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    transition: color 0.3s ease, border-color 0.3s ease, font-weight 0.3s ease;
+    padding: 8px;
+    display: inline-block;
+}
+
+    .menu-link:hover {
+        color: black !important;
+        font-weight: bold !important;
+    }
+
+    .menu-link.selected {
+        font-weight: bold !important;
+    }
+
+.border-link {
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    transition: color 0.3s ease, border-color 0.3s ease, font-weight 0.3s ease;
+    padding: 8px;
+    display: inline-block;
+    border-color: Black !important;
+}
+
+    .border-link:hover {
+        color: black !important;
+        border-color: black !important;
+        font-weight: bold !important;
+    }
+
+    .border-link.selected {
+        font-weight: bold !important;
+    }
+/* #endregion */
+
+/* #region Theme */
+.viewContainer {
+    position: relative;
+    top: 0px;
+    margin-left: auto;
+    margin-right: auto;    
+    background-size: cover;    
+}
+/* #endregion */
+
+/* #region Show Top/Bottom */
+.show-at-top {
+    display: none;
+}
+
+.show-at-bottom {
+    display: inline;
+}
+/* #endregion */
+
+/* #region (BS -lg- ) (min-width: 992px) Start of Desktop */
+@media (min-width: 992px) {
+    .show-at-top {
+        display: inline;
+    }
+
+    .show-at-bottom {
+        display: none;
+    }
+}
+/* #endregion*/
