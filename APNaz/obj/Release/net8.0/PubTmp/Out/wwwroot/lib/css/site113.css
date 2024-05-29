@@ -1,0 +1,228 @@
+/* #region Default Stuff */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-y: scroll;
+    padding: 0;
+    margin: 0;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Lato", sans-serif;
+    font: 0.85em/1.35em 'Lato', cursive, sans-serif;
+    text-rendering: optimizeLegibility;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* 1 */
+@font-face {
+    font-family: 'cordial_prolight';
+    src: url('/virtual/resources/manual/rw_common/themes/cordialite/css/webfonts/cordial_web/cordial_light_59-webfont.eot');
+    src: url('/virtual/resources/manual/rw_common/themes/cordialite/css/webfonts/cordial_web/cordial_light_59-webfont.eot?#iefix') format('embedded-opentype'), url('/virtual/resources/manual/rw_common/themes/cordialite/css/webfonts/cordial_web/cordial_light_59-webfont.woff2') format('woff2'), url('/virtual/resources/manual/rw_common/themes/cordialite/css/webfonts/cordial_web/cordial_light_59-webfont.woff') format('woff'), url('/virtual/resources/manual/rw_common/themes/cordialite/css/webfonts/cordial_web/cordial_light_59-webfont.ttf') format('truetype'), url('/virtual/resources/manual/rw_common/themes/cordialite/css/webfonts/cordial_web/cordial_light_59-webfont.svg#cordial_prolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 2 */
+@font-face {
+    font-family: 'cordial_proregregular';
+    src: url('/virtual/resources/manual/rw_common/themes/cordialite/css/webfonts/cordial_web/cordial_regular_39-webfont.eot');
+    src: url('/virtual/resources/manual/rw_common/themes/cordialite/css/webfonts/cordial_web/cordial_regular_39-webfont.eot?#iefix') format('embedded-opentype'), url('/virtual/resources/manual/rw_common/themes/cordialite/css/webfonts/cordial_web/cordial_regular_39-webfont.woff2') format('woff2'), url('/virtual/resources/manual/rw_common/themes/cordialite/css/webfonts/cordial_web/cordial_regular_39-webfont.woff') format('woff'), url('/virtual/resources/manual/rw_common/themes/cordialite/css/webfonts/cordial_web/cordial_regular_39-webfont.ttf') format('truetype'), url('/virtual/resources/manual/rw_common/themes/cordialite/css/webfonts/cordial_web/cordial_regular_39-webfont.svg#cordial_proregregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 3 */
+@font-face {
+    font-family: 'cordial_promedium';
+    src: url('/virtual/resources/manual/rw_common/themes/cordialite/css/webfonts/cordial_web/cordial_medium_38-webfont.eot');
+    src: url('/virtual/resources/manual/rw_common/themes/cordialite/css/webfonts/cordial_web/cordial_medium_38-webfont.eot?#iefix') format('embedded-opentype'), url('/virtual/resources/manual/rw_common/themes/cordialite/css/webfonts/cordial_web/cordial_medium_38-webfont.woff2') format('woff2'), url('/virtual/resources/manual/rw_common/themes/cordialite/css/webfonts/cordial_web/cordial_medium_38-webfont.woff') format('woff'), url('/virtual/resources/manual/rw_common/themes/cordialite/css/webfonts/cordial_web/cordial_medium_38-webfont.ttf') format('truetype'), url('/virtual/resources/manual/rw_common/themes/cordialite/css/webfonts/cordial_web/cordial_medium_38-webfont.svg#cordial_promedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 4 */
+@font-face {
+    font-family: 'cordial_prosemibold';
+    src: url('/virtual/resources/manual/rw_common/themes/cordialite/css/webfonts/cordial_web/cordial_semibold_38-webfont.eot');
+    src: url('/virtual/resources/manual/rw_common/themes/cordialite/css/webfonts/cordial_web/cordial_semibold_38-webfont.eot?#iefix') format('embedded-opentype'), url('/virtual/resources/manual/rw_common/themes/cordialite/css/webfonts/cordial_web/cordial_semibold_38-webfont.woff2') format('woff2'), url('/virtual/resources/manual/rw_common/themes/cordialite/css/webfonts/cordial_web/cordial_semibold_38-webfont.woff') format('woff'), url('/virtual/resources/manual/rw_common/themes/cordialite/css/webfonts/cordial_web/cordial_semibold_38-webfont.ttf') format('truetype'), url('/virtual/resources/manual/rw_common/themes/cordialite/css/webfonts/cordial_web/cordial_semibold_38-webfont.svg#cordial_prosemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.light-text {
+    font-family: 'cordial_prolight', sans-serif;
+}
+
+.regular-text {
+    font-family: 'cordial_proregregular', sans-serif;
+}
+
+.medium-text {
+    font-family: 'cordial_promedium', sans-serif;
+}
+
+.semibold-text {
+    font-family: 'cordial_prosemibold', sans-serif;
+}
+/* cordial end */
+
+
+.navbar-overhang {
+    position: absolute;
+    top: 15px;
+    transform: translateY(-10%);
+}
+
+html > body header {
+    width: 100%;
+}
+
+/* Set for Auto Push Footer*/
+#MainContainer {
+    flex: 1;
+    min-height: 100%;
+}
+
+#footer {
+    padding: 0px;
+    position: inherit;
+}
+
+.navbar-overhang {
+    position: absolute;
+    top: 15px;
+    transform: translateY(-10%);
+}
+
+/* don't like padding and margins on elements by default */
+container, div, h1, h2, h3, h4, h5, p {
+    cursor: default;
+    padding: 0;
+    margin: 0;
+}
+
+/* make everything a borderbox */
+* {
+    box-sizing: border-box;
+}
+
+/* no border class */
+.no-border {
+    border: none;
+}
+
+/* Cursors */
+.cursor {
+    cursor: pointer;
+}
+
+.no-cursor {
+    cursor: none;
+}
+
+.pointer-cursor {
+    cursor: pointer;
+}
+
+
+/**********************/
+/* Responsive */
+
+svg, #container {
+    height: 100%;
+    width: 100%;
+}
+
+.btn {
+    transition: 1s ease-in-out;
+}
+
+img {
+    cursor: pointer;
+    transition: border 0.3s ease-in-out;
+}
+
+/* #endregion */
+
+/* #region Menu */
+.menu-item {
+    min-width: 90px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.menu-link {
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    transition: color 0.3s ease, border-color 0.3s ease, font-weight 0.3s ease;
+    padding: 8px;
+    display: inline-block;
+}
+
+    .menu-link:hover {
+        color: black !important;
+        font-weight: bold !important;
+    }
+
+    .menu-link.selected {
+        font-weight: bold !important;
+    }
+
+.border-link {
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    transition: color 0.3s ease, border-color 0.3s ease, font-weight 0.3s ease;
+    padding: 8px;
+    display: inline-block;
+    border-color: Black !important;
+}
+
+    .border-link:hover {
+        color: black !important;
+        border-color: black !important;
+        font-weight: bold !important;
+    }
+
+    .border-link.selected {
+        font-weight: bold !important;
+    }
+/* #endregion */
+
+/* #region Theme */
+.viewContainer {
+    position: relative;
+    top: 0px;
+    margin-left: auto;
+    margin-right: auto;    
+    background-size: cover;    
+}
+/* #endregion */
+
+/* #region Show Top/Bottom */
+.show-at-top {
+    display: none;
+}
+
+.show-at-bottom {
+    display: inline;
+}
+/* #endregion */
+
+/* #region (BS -lg- ) (min-width: 992px) Start of Desktop */
+@media (min-width: 992px) {
+    .show-at-top {
+        display: inline;
+    }
+
+    .show-at-bottom {
+        display: none;
+    }
+}
+/* #endregion*/

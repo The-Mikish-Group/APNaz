@@ -1,2 +1,0 @@
-
-jQuery.noConflict();jQuery("document").ready(function($){var nav=$('#topnav');$(window).scroll(function(){if($(this).scrollTop()>30){nav.addClass("f-navcontainer");}else{nav.removeClass("f-navcontainer");}});});

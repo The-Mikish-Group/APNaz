@@ -1,40 +1,75 @@
 ﻿@{
-    ViewData["Title"] = "Home";
+	ViewData["Title"] = "Home";
 }
 
 <!-- Content Container -->
 <div class="px-lg-4">
 
 	<!-- Content Row - Heading -->
-	<div class="row gx-0 gx-lg-3 align-items-end">
+	<div class="row gx-0 gx-lg-3">
 
 		<!-- Column - Logo and Description -->
-		<div class="col-lg-4 pb-lg-3">
-			<style>
-				
-			</style>
-
-			<!-- AP-Logo -->
-			<a title="link" href="/">
-				<div class="pb-lg-4">
-					<div id="container">
-                        <img src="~/lib/svg/logos/ap-logo-church-gray-english-white.svg" />
-					</div>
-				</div>
-			</a>
+		<div class="col-lg-4 pt-4 pb-lg-3">
 
 			<!-- Site Description -->
-			<div class="my-card-radius text-white my-md-3 my-lg-0 px-2 px-lg-0 pt-2 pb-1 border-dark bg-gray-darker">
+			<div class="my-card-radius text-white my-md-3 my-lg-0 px-2 px-lg-0 pt-2 pt-lg-4 pb-1 border-dark bg-transparent">
 				<div>
 					<p class="text-white text-center m-0 pt-1 pb-3 px-1 who-are-we-fs">WHO ARE WE?</p>
 					<p class="text-white text-start py-1 px-2 our-congregation-fs">Our congregation is a family, part of the global family of people called Nazarenes, who, in turn, are part of the Body of Christ universal.</p>
 					<p class="text-white text-center m-0 pb-2 px-1 pt-1 we-invite-you-fs">We invite you to worship <br>and learn with us.</p>
 				</div>
 			</div>
+
+			<!-- AP-Logo -->
+				<div class="pb-lg-4">
+					<div id="container">
+						<img src="/lib/svg/logos/ap-logo-church-gray-english-white.svg" alt="Logo">
+					</div>
+				</div>
 		</div>
 
 		<!-- Column Video Container - Welcome Video -->
-		<div class="col-lg-8 pb-lg-3">
+		<div class="col-lg-8 pb-lg-3 px-2 pt-5">
+
+			<!-- Row - Loving and Leading Logo -->
+			<div class="my-card-body mx-auto show-at-top">
+				<div class="text-center px-4 pt-0 pb-2">
+					<img alt="" class="love-lead-size" src="/lib/svg/Misc/Loving-Leading-01.svg">
+				</div>
+			</div>
+
+			<!-- New Auto Year_Month Naming -->
+			<video id="videoPlayer" class="bg-black my-card-radius" style="width: 100%;" controls="" autoplay="" muted="" loop="">			
+				<source id="videoSource" src="videos/2024_05.mp4#t=3.0" type="video/mp4">
+			</video>
+
+		</div>
+
+	</div>
+	@* <div class="row gx-0 gx-lg-3 align-items-end">
+
+		<!-- Column - Logo and Description -->
+		<div class="col-lg-4 pb-lg-3">
+
+			<!-- Site Description -->
+			<div class="my-card-radius text-white my-md-3 my-lg-0 px-2 px-lg-0 pt-2 pt-lg-4 pb-1 border-dark bg-transparent">
+				<div>
+					<p class="text-white text-center m-0 pt-1 pb-3 px-1 who-are-we-fs">WHO ARE WE?</p>
+					<p class="text-white text-start py-1 px-2 our-congregation-fs">Our congregation is a family, part of the global family of people called Nazarenes, who, in turn, are part of the Body of Christ universal.</p>
+					<p class="text-white text-center m-0 pb-2 px-1 pt-1 we-invite-you-fs">We invite you to worship <br>and learn with us.</p>
+				</div>
+			</div>
+
+			<!-- AP-Logo -->			
+			<div class="pb-lg-4">
+				<div id="container">
+					<img src="~/lib/svg/logos/ap-logo-church-gray-english-white.svg" alt="Logo" />
+				</div>
+			</div>			
+		</div>
+
+		<!-- Column Video Container - Welcome Video -->
+		<div class="col-lg-8 pb-lg-3 px-2 pt-4">
 
 			<!-- Row - Loving and Leading Logo -->
 			<div class="my-card-body mx-auto show-at-top">
@@ -50,16 +85,16 @@
 
 		</div>
 
-	</div>
+	</div> *@
 
 	<!-- Row - Cards -->
 	<div class="row gx-0 gx-sm-2 gx-md-3 gx-lg-3 align-content-end">
 
 		<!-- Card Online Worship  (Offsite) -->		
-		<div class="col-12 col-md-6 col-lg-4 px-0 pt-3 pt-lg-0 mb-lg-3 lh-sm">
+		<div class="col-12 col-md-6 col-lg-4 px-0 pt-2 pt-lg-0 mb-lg-3 lh-sm">
 
 			<!-- Card -->
-			<a class="w-100 btn btn-sm" href="https://backtothebible.app/library/p/apnazarene" target="_blank">
+			<a class="py-0 w-100 btn btn-sm" href="https://backtothebible.app/library/p/apnazarene" target="_blank">
 				<div class="my-card border-0 home-card-header-color">
 
 				<!-- Header -->
@@ -81,41 +116,41 @@
 			</a>
 		</div>
 
-        <!-- Column Container - Members Card (Offsite) -->
-        <div class="col-12 col-md-6 col-lg-4 px-0 pt-3 pt-lg-0 mb-lg-3 lh-sm">
+		<!-- Column Container - Members Card (Offsite) -->
+		<div class="col-12 col-md-6 col-lg-4 px-0 pt-2 pt-lg-0 mb-lg-3 lh-sm">
 
-            <!-- Card -->
-			<a class="w-100 btn btn-sm" href="https://APNaz.churchtrac.com/" target="_blank">
+			<!-- Card -->
+			<a class="py-0 w-100 btn btn-sm" href="https://APNaz.churchtrac.com/" target="_blank">
 				<div class="my-card border-0 home-card-header-color">
 
-                <!-- Header -->
-                <div class="w-100 py-2 px-3">
-                    <h3 class="pb-1">
+				<!-- Header -->
+				<div class="w-100 py-2 px-3">
+					<h3 class="pb-1">
 						<img alt="" class="card-image-size image-light-show" src="/lib/svg/Cards/Members-White.svg">
 						<img alt="" class="card-image-size image-dark-show" src="/lib/svg/Cards/Members-Black.svg">
-                        Member Area
-                    </h3>
-                    <p class="fw-normal mb-0">Churchtrac Website</p>
-                </div>
+						Member Area
+					</h3>
+					<p class="fw-normal mb-0">Churchtrac Website</p>
+				</div>
 
-                <!-- Footer -->
-                <div class="my-card-footer home-card-footer-color w-100">
+				<!-- Footer -->
+				<div class="my-card-footer home-card-footer-color w-100">
 					<p class="text-center card-text card-body-text-fs p-3 py-2 mb-0">Connect with us, Directory, Online Giving</p>
 
-                    <!-- Link -->
-                    @* <div class="text-center pt-0 pb-2">
-                        <a title="link" class="btn btn-sm btn-primary text-nowrap" href="https://APNaz.churchtrac.com/" target="_blank">Members</a>
-                    </div> *@
-                </div>
-            </div>
+					<!-- Link -->
+					@* <div class="text-center pt-0 pb-2">
+						<a title="link" class="btn btn-sm btn-primary text-nowrap" href="https://APNaz.churchtrac.com/" target="_blank">Members</a>
+					</div> *@
+				</div>
+			</div>
 			</a>
-        </div>
+		</div>
 
 		<!-- Column - Calandar Card (OnSite) -->
-		<div class="col-12 col-md-6 col-lg-4 px-0 pt-3 pt-lg-0 mb-lg-3 lh-sm">
+		<div class="col-12 col-md-6 col-lg-4 px-0 pt-2 pt-lg-0 mb-lg-3 lh-sm">
 
-            <!-- Card -->
-			<a class="w-100 btn btn-sm" href="../Info/Calendar" target="_self">
+			<!-- Card -->
+			<a class="py-0 w-100 btn btn-sm" href="../Info/Calendar" target="_self">
 				<div class="my-card border-0 home-card-header-color">
 
 				<!-- Header -->
@@ -142,10 +177,10 @@
 		</div>		
 
 		<!-- Column - Meet Our Staff  (OnSite) -->
-		<div class="col-12 col-md-6 col-lg-4 px-0 pt-3 pt-lg-0 mb-lg-3 lh-sm">
+		<div class="col-12 col-md-6 col-lg-4 px-0 pt-2 pt-lg-0 mb-lg-3 lh-sm">
 
 			<!-- Card -->
-			<a class="w-100 btn btn-sm" href="\info\staff">
+			<a class="py-0 w-100 btn btn-sm" href="\info\staff">
 				<div class="my-card border-0 home-card-header-color">
 
 				<!-- Header -->
@@ -168,10 +203,10 @@
 		</div>        
 
 		<!-- Column - Email Sign-up (OffSite) -->
-		<div class="col-12 col-md-6 col-lg-4 px-0 pt-3 pt-lg-0 mb-lg-3 lh-sm">
+		<div class="col-12 col-md-6 col-lg-4 px-0 pt-2 pt-lg-0 mb-lg-3 lh-sm">
 
 			<!-- Card -->
-			<a class="w-100 btn btn-sm" href="https://mailchi.mp/5dc417814456/apncsignup" target="_blank">
+			<a class="py-0 w-100 btn btn-sm" href="https://mailchi.mp/5dc417814456/apncsignup" target="_blank">
 				<div class="my-card border-0 home-card-header-color">
 
 				<!-- Header -->
@@ -193,31 +228,31 @@
 			</a>
 		</div>
 
-        <!-- Column - Desktop Links (OffSite) -->
-        <div class="col-12 col-md-6 col-lg-4 px-0 pt-3 pt-lg-0 mb-lg-3 lh-sm">
+		<!-- Column - Desktop Links (OffSite) -->
+		<div class="col-12 col-md-6 col-lg-4 px-0 pt-2 pt-lg-0 mb-lg-3 lh-sm">
 
-            <!-- Card -->
-			<a class="w-100 btn btn-sm" href="https://wlavonparknazarene.gotandem.com/public" target="_blank">
+			<!-- Card -->
+			<a class="py-0 w-100 btn btn-sm" href="https://wlavonparknazarene.gotandem.com/public" target="_blank">
 				<div class="my-card border-0 home-card-header-color">
 
-                <!-- Header -->
-                <div class="w-100 py-2 px-3">
-                    <h3 class="pb-1">
+				<!-- Header -->
+				<div class="w-100 py-2 px-3">
+					<h3 class="pb-1">
 						<img alt="" class="card-image-size image-light-show" src="/lib/svg/Cards/Links.svg">
 						<img alt="" class="card-image-size image-dark-show" src="/lib/svg/Cards/Links.svg">
-                        Desktop links
-                    </h3>
-                    <p class="fw-normal mb-0">Nazarene Connect</p>
-                </div>
+						Desktop links
+					</h3>
+					<p class="fw-normal mb-0">Nazarene Connect</p>
+				</div>
 
-                <!-- Footer -->
-                <div class="my-card-footer home-card-footer-color w-100">
+				<!-- Footer -->
+				<div class="my-card-footer home-card-footer-color w-100">
 					<p class="text-center card-text card-body-text-fs p-3 py-2 mb-0">Desktop Version of Nazarene Connect.</p>
-                    
-                </div>
-            </div>
+					
+				</div>
+			</div>
 			</A>
-        </div>				
+		</div>				
 	</div>
 
 	<!-- Row - Cards Hours -->
@@ -326,14 +361,14 @@
 	</div>
 
 	<!-- Row - Bottom Logo -->
-	<div class="row gx-0 gx-lg-4 show-at-bottom">
+	<div class="row gx-0 show-at-bottom">
 
 		<!-- Column - Logo -->
-		<div class="mx-auto col-12 mt-2 pt-lg-3 pb-lg-4 mb-lg-1 lh-sm">
+		<div class="mx-auto col-12 mt-0 lh-sm">
 
 			<!-- Container - Logo -->
 			<div class="my-card-body h-100">
-				<div class="text-center px-4 pt-3 pb-2">
+				<div class="text-center px-4 pt-0 pb-2">
 					<img alt="" class="love-lead-size" src="/lib/svg/Misc/Loving-Leading-01.svg">
 				</div>
 			</div>

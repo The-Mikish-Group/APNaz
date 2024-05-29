@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "xzOWjdHF/RfppPMzYdap2k8kQzwI2e+q20s7gt7FV1k=",
+  "Hash": "pQzJu1SPwNYvkCAGwxQSeZEgayC+53k5kvgFizmbCeI=",
   "Source": "APNaz",
   "BasePath": "_content/APNaz",
   "Mode": "Default",
@@ -2031,12 +2031,12 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\css\\colors.css",
+      "Identity": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\css\\colors113.css",
       "SourceId": "APNaz",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\",
       "BasePath": "_content/APNaz",
-      "RelativePath": "lib/css/colors.css",
+      "RelativePath": "lib/css/colors113.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2047,15 +2047,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\css\\colors.css"
+      "OriginalItemSpec": "wwwroot\\lib\\css\\colors113.css"
     },
     {
-      "Identity": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\css\\fontsize.css",
+      "Identity": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\css\\fontsize114.css",
       "SourceId": "APNaz",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\",
       "BasePath": "_content/APNaz",
-      "RelativePath": "lib/css/fontsize.css",
+      "RelativePath": "lib/css/fontsize114.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2066,15 +2066,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\css\\fontsize.css"
+      "OriginalItemSpec": "wwwroot\\lib\\css\\fontsize114.css"
     },
     {
-      "Identity": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\css\\mycards.css",
+      "Identity": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\css\\mycards113.css",
       "SourceId": "APNaz",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\",
       "BasePath": "_content/APNaz",
-      "RelativePath": "lib/css/mycards.css",
+      "RelativePath": "lib/css/mycards113.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2085,15 +2085,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\css\\mycards.css"
+      "OriginalItemSpec": "wwwroot\\lib\\css\\mycards113.css"
     },
     {
-      "Identity": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\css\\site111.css",
+      "Identity": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\css\\site113.css",
       "SourceId": "APNaz",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\",
       "BasePath": "_content/APNaz",
-      "RelativePath": "lib/css/site111.css",
+      "RelativePath": "lib/css/site113.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2104,15 +2104,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\css\\site111.css"
+      "OriginalItemSpec": "wwwroot\\lib\\css\\site113.css"
     },
     {
-      "Identity": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\css\\sizes.css",
+      "Identity": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\css\\sizes113.css",
       "SourceId": "APNaz",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\",
       "BasePath": "_content/APNaz",
-      "RelativePath": "lib/css/sizes.css",
+      "RelativePath": "lib/css/sizes113.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2123,15 +2123,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\css\\sizes.css"
+      "OriginalItemSpec": "wwwroot\\lib\\css\\sizes113.css"
     },
     {
-      "Identity": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\css\\spacing.css",
+      "Identity": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\css\\spacing113.css",
       "SourceId": "APNaz",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\",
       "BasePath": "_content/APNaz",
-      "RelativePath": "lib/css/spacing.css",
+      "RelativePath": "lib/css/spacing113.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2142,7 +2142,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\css\\spacing.css"
+      "OriginalItemSpec": "wwwroot\\lib\\css\\spacing113.css"
     },
     {
       "Identity": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\icons\\android-chrome-192x192.png",
@@ -2504,25 +2504,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
-    },
-    {
-      "Identity": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\js\\site111.js",
-      "SourceId": "APNaz",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\",
-      "BasePath": "_content/APNaz",
-      "RelativePath": "lib/js/site111.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\js\\site111.js"
     },
     {
       "Identity": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\svg\\Buttons\\8B2168ED.png",
@@ -3532,6 +3513,44 @@
       "OriginalItemSpec": "wwwroot\\lib\\svg\\Logos\\AP-Logo-White.svg"
     },
     {
+      "Identity": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\svg\\Logos\\APNazarene.svg",
+      "SourceId": "APNaz",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\",
+      "BasePath": "_content/APNaz",
+      "RelativePath": "lib/svg/Logos/APNazarene.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\svg\\Logos\\APNazarene.svg"
+    },
+    {
+      "Identity": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\svg\\Logos\\AvonParkNazareneChurch.svg",
+      "SourceId": "APNaz",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\",
+      "BasePath": "_content/APNaz",
+      "RelativePath": "lib/svg/Logos/AvonParkNazareneChurch.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\svg\\Logos\\AvonParkNazareneChurch.svg"
+    },
+    {
       "Identity": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\svg\\Logos\\Bird-Bible-Gray.svg",
       "SourceId": "APNaz",
       "SourceType": "Discovered",
@@ -3587,6 +3606,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\svg\\Logos\\Bird-Gray.svg"
+    },
+    {
+      "Identity": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\svg\\Logos\\Bird-Logo.svg",
+      "SourceId": "APNaz",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\",
+      "BasePath": "_content/APNaz",
+      "RelativePath": "lib/svg/Logos/Bird-Logo.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\svg\\Logos\\Bird-Logo.svg"
     },
     {
       "Identity": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\svg\\Logos\\Bird-White.svg",
@@ -3722,12 +3760,12 @@
       "OriginalItemSpec": "wwwroot\\lib\\svg\\Misc\\Loving-Leading-org.svg"
     },
     {
-      "Identity": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\svg\\Misc\\PDFImage.svg",
+      "Identity": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\svg\\Misc\\PDFImage1.svg",
       "SourceId": "APNaz",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\",
       "BasePath": "_content/APNaz",
-      "RelativePath": "lib/svg/Misc/PDFImage.svg",
+      "RelativePath": "lib/svg/Misc/PDFImage1.svg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -3738,7 +3776,26 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\svg\\Misc\\PDFImage.svg"
+      "OriginalItemSpec": "wwwroot\\lib\\svg\\Misc\\PDFImage1.svg"
+    },
+    {
+      "Identity": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\svg\\Misc\\PDFImage2.svg",
+      "SourceId": "APNaz",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\",
+      "BasePath": "_content/APNaz",
+      "RelativePath": "lib/svg/Misc/PDFImage2.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\svg\\Misc\\PDFImage2.svg"
     },
     {
       "Identity": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\PageImages\\0ur Church.webp",
@@ -3777,6 +3834,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\PageImages\\BackgroundBlurr.webp"
+    },
+    {
+      "Identity": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\PageImages\\banner_image.jpg",
+      "SourceId": "APNaz",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\",
+      "BasePath": "_content/APNaz",
+      "RelativePath": "PageImages/banner_image.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\PageImages\\banner_image.jpg"
     },
     {
       "Identity": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\PageImages\\Church-01.webp",
@@ -4176,6 +4252,44 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\sitemap.txt"
+    },
+    {
+      "Identity": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Videos\\2024_05.mp4",
+      "SourceId": "APNaz",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\",
+      "BasePath": "_content/APNaz",
+      "RelativePath": "Videos/2024_05.mp4",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Videos\\2024_05.mp4"
+    },
+    {
+      "Identity": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Videos\\2024_06.mp4",
+      "SourceId": "APNaz",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\",
+      "BasePath": "_content/APNaz",
+      "RelativePath": "Videos/2024_06.mp4",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Videos\\2024_06.mp4"
     },
     {
       "Identity": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Virtual\\Android\\index.html",

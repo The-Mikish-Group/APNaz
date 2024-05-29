@@ -14,8 +14,10 @@ namespace MyApp.Helpers
             return directories
                 .Where(folder =>
                 {
+                    char underscore = '_';
                     var folderName = Path.GetFileName(folder);
-                    return folderName != null && !folderName.StartsWith("_");
+                    return !(folderName == null
+                    || folderName.StartsWith(underscore));
                 })
                 .Select(Path.GetFileName)
                 .Where(name => name != null)
@@ -24,7 +26,7 @@ namespace MyApp.Helpers
 
         public static List<GalleryFile> GetGalleryFiles(string folderPath, string[] allowedExtensions)
         {
-            return Directory.GetFiles(folderPath)
+            return [.. Directory.GetFiles(folderPath)
                 .Where(file =>
                 {
                     var fileName = Path.GetFileName(file);
@@ -41,8 +43,7 @@ namespace MyApp.Helpers
                     Dimensions = GetImageDimensions(file)
                 })
                 .OrderBy(file => file.Dimensions.Width)
-                .ThenBy(file => file.Dimensions.Height)
-                .ToList();
+                .ThenBy(file => file.Dimensions.Height)];
         }
 
         private static Size GetImageDimensions(string imagePath)

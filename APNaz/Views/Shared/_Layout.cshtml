@@ -292,25 +292,22 @@
 
     <!-- CSS Link Setup -->
     @* <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" /> *@
-    <link rel="stylesheet" href="~/lib/css/colors.css" />
-    <link rel="stylesheet" href="~/lib/css/fontsize.css" />
-    <link rel="stylesheet" href="~/lib/css/mycards.css" />
-    <link rel="stylesheet" href="~/lib/css/sizes.css" />
-    <link rel="stylesheet" href="~/lib/css/spacing.css" />
-    <link rel="stylesheet" href="~/lib/css/site111.css" />
-
-    <!-- Site.js -->
-    <script defer src="~/lib/js/site111.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
-    
+    <link rel="stylesheet" href="~/lib/css/colors113.css" />
+    <link rel="stylesheet" href="~/lib/css/fontsize114.css" />
+    <link rel="stylesheet" href="~/lib/css/mycards113.css" />
+    <link rel="stylesheet" href="~/lib/css/sizes113.css" />
+    <link rel="stylesheet" href="~/lib/css/spacing113.css" />
+    <link rel="stylesheet" href="~/lib/css/site113.css" />    
+   
+     @await RenderSectionAsync("Scripts", required: false)
 </head>
 <body>
 
     <!-- Top Header Navbar Menu -->@* id="images-container" *@
     <div ></div>
-    <header>       
-        <nav class="navbar navbar-expand-lg navbar-dark bg-gray-darker border-bottom box-shadow px-0 mb-0 mb-lg-4 my-0">
-            <div class="d-flex flex-grow-1">                
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-0 position-relative">
+            <div class="d-flex flex-grow-1 ps-2">
 
                 <!-- Set to show on lg -->
                 <a class="navbar-brand navbar-text nav-text-fs text-white d-none d-lg-inline-block ps-2" href="/">@siteName<img alt="" class="bird-size px-2 pb-2" src="~/lib/svg/Logos/Bird-White.svg" alt="Bird Image"/></a>

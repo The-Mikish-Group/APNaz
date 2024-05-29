@@ -78,7 +78,7 @@
     string[] extensions = { ".jpg", ".png", ".webp", ".svg" };
     foreach (var extension in extensions)
     {
-        var bgPath = $"{galleriesFolder}/{galleryFolder}/{imagefolder}/background{extension}";
+        string bgPath = $"{galleriesFolder}/{galleryFolder}/{imagefolder}/background{extension}";
         if (File.Exists(System.IO.Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", bgPath)))
         {
             backgroundImage = bgPath;
@@ -142,7 +142,7 @@
     <div class="container justify-content-center row gx-1 gx-lg-4 my-2 p-0">
         <div class="col-2 pt-1 mb-1">
             <div class="h-100 text-center text-white">
-                <a class="btn bg-red-dark btn-sm group-button-size" href="../apnazcombo">
+                <a class="btn bg-red-dark btn-sm group-button-size" href="../apnaz">
                     <img alt="" class="back-button-image-size" src="/lib/svg/Buttons/Back-White.svg">
                 </a>
             </div>
@@ -151,13 +151,14 @@
             <div class="row">
                 @foreach (var folder in folders)
                 {
-                    <div class="col-6 col-lg-3 menu-item" data-viewName="@folder">
+                    <div class="col-6 col-lg-3 menu-item" data-view-name="@folder">
                         <div id="@folder" class="bg-green-lighter text-center p-0 border border-dark rounded">
                             <a id="@folder-link" class="menu-link text-dark" asp-controller="@currentController" asp-action="Gallery" asp-route-viewName="@folder">@folder</a>
                         </div>
                     </div>
                 }
             </div>
+
         </div>
     </div>
 
@@ -221,51 +222,64 @@
                         <a title="next" class="carousel-control-next" href="#CarouselControl" role="button" data-bs-slide="next"></a>
 
                     </div><!--  End Carousel Control-->
-
                 </div><!-- End Carousel Column -->
-
-            </div>
-
-            <!-- End Slideshow -->
+            </div><!-- End Slideshow -->
         }
 
         <!-- Display Gallery ? -->
         @if (galleryType == "Galleries" || galleryType == "Combos")
         {
-
             <!-- The Gallery -->
             <div id="images-container" class="row g-2 g-sm-2 g-lg-2 bg-transparent" style="display: flex">
 
+                @if (currentImageFolder.Contains("Manual")) {
+                    <div class="col-12 pt-3 pb-3 card text-center" style="background: url('/pageimages/banner_image.jpg') no-repeat center center; background-size: cover;">
+                        <p class="regular-text pb-3 text-gray-lighter church-manuals-fs">Church of the Nazarene Manuals</p>
+                        <p class="regular-text text-gray-lighter gathered-from-fs">Collected Primarily from WHDL.org</p>
+                    </div>
+                }
+
                 <!-- Display each Image file and filename -->
                 @foreach (var file in files)
-                {
-                    <!-- Image Column -->
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-2">
-
-                        <!-- Image Link -->
-                        <a title="Click for full-screen." class="menu-link d-block text-center bg-gray-lighter" href="@Url.Content(file)" target="_blank">
-                            
-                            <!-- Image thumb (display thumb instead of origional picture) -->
-                            @if (file.Contains(".pdf"))
-                            {
-                                <img src="~/lib/svg/misc/pdfimage.svg" />
-                            } 
-                            <img class="w-100 img-fluid mx-auto" data-src="@Url.Content(System.IO.Path.Combine("/", galleriesFolder, galleryFolder, imagefolder, System.IO.Path.GetFileNameWithoutExtension(file) + "_thumb.jpg").Replace("\\", "/"))" alt="" />
-
-                            <!-- Truncated Image name (max of 30 characters shown) -->
-                            <div class="text-black text-center pt-1">
-                                @System.IO.Path.GetFileNameWithoutExtension(file).Substring(0, Math.Min(30, System.IO.Path.GetFileNameWithoutExtension(file).Length))
-                            </div>
-
-                        </a><!-- End Image Link -->
-
-                    </div>
-
-                    <!-- End Image Column -->
+                {                    
+                    @if (file.EndsWith(".pdf", StringComparison.OrdinalIgnoreCase))
+                    {
+                        <!-- Image Column -->
+                        <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-2">
+                            <!-- Image Link -->
+                            <a title="Click for full-screen." class="menu-link d-block bg-gray-lighter" href="@Url.Content(file)" target="_blank">
+                                <!-- Content Container -->
+                                <div class="d-flex align-items-center py-2">
+                                    <!-- PDF Icon -->
+                                    <img style="height: 25px; margin-left: 30px; margin-right: 10px;" src="~/lib/svg/misc/pdfimage2.svg" />
+                                    <!-- Truncated Image name (max of 30 characters shown) -->
+                                    <div class="text-blue fs-4">
+                                        @System.IO.Path.GetFileNameWithoutExtension(file).Substring(0, Math.Min(30, System.IO.Path.GetFileNameWithoutExtension(file).Length))
+                                    </div>
+                                </div>
+                            </a><!-- End Image Link -->
+                        </div><!-- End Image Column -->
+                    }
+                    else
+                    {
+                        <!-- Image Column -->
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-2">
+                            <!-- Image Link -->
+                            <a title="Click for full-screen." class="menu-link d-block bg-gray-lighter text-center" href="@Url.Content(file)" target="_blank">
+                                <!-- Content Container -->
+                                <div class="d-flex justify-content-center py-2">
+                                    <!-- Image thumb (display thumb instead of original picture) -->
+                                    <img class="img-fluid" data-src="@Url.Content(System.IO.Path.Combine("/", galleriesFolder, galleryFolder, imagefolder, System.IO.Path.GetFileNameWithoutExtension(file) + "_thumb.jpg").Replace("\\", "/"))" alt="" />
+                                </div>
+                                <!-- Truncated Image name (max of 30 characters shown) -->
+                                <div class="text-black pt-0">
+                                    @System.IO.Path.GetFileNameWithoutExtension(file).Substring(0, Math.Min(30, System.IO.Path.GetFileNameWithoutExtension(file).Length))
+                                </div>
+                            </a><!-- End Image Link -->
+                        </div><!-- End Image Column -->
+                    }   
                 }
-            </div>
-
-            <!-- End of the Gallery -->
+            </div><!-- End of the Gallery -->
         }
 
     </div><!-- End Content Column -->    

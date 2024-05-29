@@ -1,0 +1,137 @@
+/* Logo settings*/
+.navbar-overhang {
+    position: absolute;
+    top: 15px;
+    transform: translateY(-10%);
+}
+
+aplogo {
+    height: 30px;
+}
+
+.logo {
+    height: 80px;
+}
+
+.home-size {
+    height: 30px;
+}
+
+.love-lead-size {
+    width: 300px;
+}
+.fish-size {
+    width: 700px;
+}
+.home-size {
+    height: 30px;
+}
+.bird-size {
+    height: 40px;
+}
+.bird-size-med {
+    height: 180px;
+}
+.give-online-size {
+    height: 120px;
+}
+.cross-size {
+    padding-right: 8px;
+    height: 60px;
+    font-size: 36px;
+}
+.bird-bible-size {
+    padding-right: 8px;
+    height: 80px;
+}
+.seal-size {
+    height: 180px;
+}
+.download-image-size {
+    width: 260px;
+}
+.assistive-hearing-size {
+    height: 100px;
+}
+.card-heading-size {
+    width: 260px;
+}
+.card-image-size {
+    padding-right: 8px;
+    padding-top: 0;
+    padding-bottom: 3px;
+    height: 27px;
+}
+.my-calendar-size {
+    width: 100%;
+    height: 1150px;
+}
+.staff-photo-size {    
+    height: 208px;
+}
+
+/* Buttons */
+.page-button-size {
+    width: 220px;
+}
+.back-button-image-size {
+    height: 18px;
+}
+.group-button-size {
+    min-width: 42px;
+    height: 35px;
+    font-size: 16px;
+}
+
+#Previous {
+    min-width:75px;
+}
+#Copy {
+    min-width: 75px;
+}
+#Next {
+    min-width: 75px;
+}
+
+.CarouselItem, #CarouselImage
+{    
+    height: auto !important;
+    width: 100%;
+}
+ 
+/* #endregion */
+
+/* #region (BS -sm- ) (min-width: 575px) and (max-width: 768px) Smaller tablets */
+@media (min-width: 575px) and (max-width: 768px) {    
+
+    .love-lead-size {
+        width: 400px;
+    }
+}
+/* #endregion  */
+
+/* #region (BS -md- ) (min-width: 768.01px) and (max-width: 991px) Large tablet styles */
+@media (min-width: 768.01px) and (max-width: 991px) {
+
+    .love-lead-size {
+        width: 478px;
+    }
+}    
+/* #endregion */
+
+/* #region (BS -lg- ) (min-width: 992px) Start of Desktop */
+@media (min-width: 992px) {    
+
+   .love-lead-size {
+        width: 800px;
+    }      
+}
+/* #endregion*/
+
+/* #region (BS -lx- ) (min-width: 1200px) Medium Desktop*/
+@media (min-width: 1200px) {}
+/* #endregion */
+
+/* #region (BS - xlg- ) (min-width: 1399.98px) Large Desktop */
+@media (min-width: 1399.98px) {}
+/* #endregion */
