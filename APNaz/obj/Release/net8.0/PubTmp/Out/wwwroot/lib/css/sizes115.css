@@ -120,18 +120,26 @@ aplogo {
 /* #endregion */
 
 /* #region (BS -lg- ) (min-width: 992px) Start of Desktop */
-@media (min-width: 992px) {    
+@media (min-width: 992px) {
 
-   .love-lead-size {
-        width: 800px;
+    .love-lead-size {
+        width: 580px;
     }      
 }
 /* #endregion*/
 
 /* #region (BS -lx- ) (min-width: 1200px) Medium Desktop*/
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    .love-lead-size {
+        width: 710px;
+    }  
+}
 /* #endregion */
 
 /* #region (BS - xlg- ) (min-width: 1399.98px) Large Desktop */
-@media (min-width: 1399.98px) {}
+@media (min-width: 1399.98px) {
+    .love-lead-size {
+        width: 800px;
+    }  
+}
 /* #endregion */

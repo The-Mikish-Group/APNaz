@@ -421,6 +421,8 @@ a {
 
 /* Home Card Colors */
 .home-card-header-color {
+    /*background: url('/pageimages/banner_image.jpg') no-repeat center center;*/
+    background-size: cover;
     background-color: #265039; /* bg-green-darker */
     color: white;
 }
@@ -458,7 +460,7 @@ a {
         }
 
 .home-card-footer-color {
-    background-color: #5DBF8B; /* bg-green-light */
+    background-color: #5DBF8B;
     color: black;
     transition: 1s ease-in-out;
 }
