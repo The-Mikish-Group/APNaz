@@ -99,8 +99,6 @@ aplogo {
     width: 100%;
 }
  
-/* #endregion */
-
 /* #region (BS -sm- ) (min-width: 575px) and (max-width: 768px) Smaller tablets */
 @media (min-width: 575px) and (max-width: 768px) {    
 
