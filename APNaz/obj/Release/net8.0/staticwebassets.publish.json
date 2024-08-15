@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "03YdL0cNXiIvfpZGKsOvrcHNZEH+zaqvLTMIWa3AJ0U=",
+  "Hash": "6SsGi2a4uYaHUcfr3ZpqiKJbo2SzmiwkrkLqFepZuqk=",
   "Source": "APNaz",
   "BasePath": "_content/APNaz",
   "Mode": "Default",
@@ -2962,12 +2962,12 @@
       "OriginalItemSpec": "wwwroot\\lib\\svg\\Buttons\\OffsiteButtons\\APNazCalendar.jpg"
     },
     {
-      "Identity": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\svg\\Buttons\\OffsiteButtons\\APNazNewz.jpg",
+      "Identity": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\svg\\Buttons\\OffsiteButtons\\APNazeNewz.jpg",
       "SourceId": "APNaz",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\",
       "BasePath": "_content/APNaz",
-      "RelativePath": "lib/svg/Buttons/OffsiteButtons/APNazNewz.jpg",
+      "RelativePath": "lib/svg/Buttons/OffsiteButtons/APNazeNewz.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2978,15 +2978,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\svg\\Buttons\\OffsiteButtons\\APNazNewz.jpg"
+      "OriginalItemSpec": "wwwroot\\lib\\svg\\Buttons\\OffsiteButtons\\APNazeNewz.jpg"
     },
     {
-      "Identity": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\svg\\Buttons\\OffsiteButtons\\APNazOffsiteButtons.zip",
+      "Identity": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\svg\\Buttons\\OffsiteButtons\\APNazENewz1.jpg",
       "SourceId": "APNaz",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\",
       "BasePath": "_content/APNaz",
-      "RelativePath": "lib/svg/Buttons/OffsiteButtons/APNazOffsiteButtons.zip",
+      "RelativePath": "lib/svg/Buttons/OffsiteButtons/APNazENewz1.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2997,7 +2997,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\svg\\Buttons\\OffsiteButtons\\APNazOffsiteButtons.zip"
+      "OriginalItemSpec": "wwwroot\\lib\\svg\\Buttons\\OffsiteButtons\\APNazENewz1.jpg"
     },
     {
       "Identity": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\svg\\Buttons\\OffsiteButtons\\APNazResourcez.jpg",
@@ -3055,6 +3055,44 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\svg\\Buttons\\OffsiteButtons\\ChurchDirectory.jpg"
+    },
+    {
+      "Identity": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\svg\\Buttons\\OffsiteButtons\\DesktopLinks.ai",
+      "SourceId": "APNaz",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\",
+      "BasePath": "_content/APNaz",
+      "RelativePath": "lib/svg/Buttons/OffsiteButtons/DesktopLinks.ai",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\svg\\Buttons\\OffsiteButtons\\DesktopLinks.ai"
+    },
+    {
+      "Identity": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\svg\\Buttons\\OffsiteButtons\\DesktopLinks.zip",
+      "SourceId": "APNaz",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\",
+      "BasePath": "_content/APNaz",
+      "RelativePath": "lib/svg/Buttons/OffsiteButtons/DesktopLinks.zip",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\svg\\Buttons\\OffsiteButtons\\DesktopLinks.zip"
     },
     {
       "Identity": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\svg\\Buttons\\OffsiteButtons\\GiveOnline.jpg",

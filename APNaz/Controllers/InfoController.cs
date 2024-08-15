@@ -63,13 +63,23 @@ public class InfoController : Controller   {
         ViewBag.Message = "Links";
         return View();
     }
-    
-    public IActionResult Colors()
+    	
+    public IActionResult HurricaneRelief()
+	{
+		ViewBag.Message = "HurricaneRelief";
+		return View();
+	}
+
+	public IActionResult Colors()
     {
         ViewBag.Message = "Colors";
         return View();
     }
-
+    public IActionResult Love()
+    {
+        ViewBag.Message = "Love";
+        return View();
+    }
     public IActionResult CaptchaEmail()
     {
         ViewBag.Message = "CaptchaEmail";
