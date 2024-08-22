@@ -63,8 +63,14 @@ public class InfoController : Controller   {
         ViewBag.Message = "Links";
         return View();
     }
-    	
-    public IActionResult HurricaneRelief()
+
+	public IActionResult Anniversary()
+	{
+		ViewBag.Message = "Anniversary";
+		return View();
+	}
+
+	public IActionResult HurricaneRelief()
 	{
 		ViewBag.Message = "HurricaneRelief";
 		return View();

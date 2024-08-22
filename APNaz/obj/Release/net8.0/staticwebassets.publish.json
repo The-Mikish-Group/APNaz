@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "6SsGi2a4uYaHUcfr3ZpqiKJbo2SzmiwkrkLqFepZuqk=",
+  "Hash": "2nxLbhLo7np1uKsca4Wu2yxYVeGsXg7FL+AftqE1/Qg=",
   "Source": "APNaz",
   "BasePath": "_content/APNaz",
   "Mode": "Default",
@@ -4273,6 +4273,25 @@
       "OriginalItemSpec": "wwwroot\\PageImages\\0ur Church.webp"
     },
     {
+      "Identity": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\PageImages\\Anniversary.png",
+      "SourceId": "APNaz",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\",
+      "BasePath": "_content/APNaz",
+      "RelativePath": "PageImages/Anniversary.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\PageImages\\Anniversary.png"
+    },
+    {
       "Identity": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\PageImages\\BackgroundBlurr.webp",
       "SourceId": "APNaz",
       "SourceType": "Discovered",
@@ -4347,6 +4366,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\PageImages\\Church-Crop-02.webp"
+    },
+    {
+      "Identity": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\PageImages\\HurricaneRelief.webp",
+      "SourceId": "APNaz",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\",
+      "BasePath": "_content/APNaz",
+      "RelativePath": "PageImages/HurricaneRelief.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\PageImages\\HurricaneRelief.webp"
     },
     {
       "Identity": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\PageImages\\Links.webp",
@@ -4482,6 +4520,25 @@
       "OriginalItemSpec": "wwwroot\\ShareImages\\About-ls.jpg"
     },
     {
+      "Identity": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\ShareImages\\Anniversary-ls.png",
+      "SourceId": "APNaz",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\",
+      "BasePath": "_content/APNaz",
+      "RelativePath": "ShareImages/Anniversary-ls.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ShareImages\\Anniversary-ls.png"
+    },
+    {
       "Identity": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\ShareImages\\AP-Logo-Gray-Green-ls.png",
       "SourceId": "APNaz",
       "SourceType": "Discovered",
@@ -4499,6 +4556,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\ShareImages\\AP-Logo-Gray-Green-ls.png"
+    },
+    {
+      "Identity": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\ShareImages\\Button-ls.png",
+      "SourceId": "APNaz",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\",
+      "BasePath": "_content/APNaz",
+      "RelativePath": "ShareImages/Button-ls.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ShareImages\\Button-ls.png"
     },
     {
       "Identity": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\ShareImages\\Colors-ls.png",
@@ -4575,6 +4651,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\ShareImages\\Gallery-logo-ls.jpg"
+    },
+    {
+      "Identity": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\ShareImages\\HurricaneRelief-ls.jpg",
+      "SourceId": "APNaz",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\",
+      "BasePath": "_content/APNaz",
+      "RelativePath": "ShareImages/HurricaneRelief-ls.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ShareImages\\HurricaneRelief-ls.jpg"
     },
     {
       "Identity": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\ShareImages\\Links-logo-ls.jpg",

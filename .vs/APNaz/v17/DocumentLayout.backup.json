@@ -7,60 +7,20 @@
       "RelativeMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|solutionrelative:apnaz\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|d:\\projects\\repos\\apnaz\\apnaz\\views\\info\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|solutionrelative:apnaz\\views\\info\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|d:\\projects\\repos\\apnaz\\apnaz\\controllers\\infocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|solutionrelative:apnaz\\controllers\\infocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|d:\\projects\\repos\\apnaz\\apnaz\\views\\info\\anniversary.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|solutionrelative:apnaz\\views\\info\\anniversary.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|d:\\projects\\repos\\apnaz\\apnaz\\views\\info\\hurricanerelief.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|solutionrelative:apnaz\\views\\info\\hurricanerelief.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|d:\\projects\\repos\\apnaz\\apnaz\\views\\info\\love.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|solutionrelative:apnaz\\views\\info\\love.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|d:\\projects\\repos\\apnaz\\apnaz\\views\\info\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|solutionrelative:apnaz\\views\\info\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|d:\\projects\\repos\\apnaz\\apnaz\\wwwroot\\lib\\css\\colors115.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|solutionrelative:apnaz\\wwwroot\\lib\\css\\colors115.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|d:\\projects\\repos\\apnaz\\apnaz\\views\\info\\links.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|solutionrelative:apnaz\\views\\info\\links.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|d:\\projects\\repos\\apnaz\\apnaz\\views\\info\\staff.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|solutionrelative:apnaz\\views\\info\\staff.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|d:\\projects\\repos\\apnaz\\apnaz\\wwwroot\\lib\\css\\sizes115.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|solutionrelative:apnaz\\wwwroot\\lib\\css\\sizes115.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|d:\\projects\\repos\\apnaz\\apnaz\\views\\info\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|solutionrelative:apnaz\\views\\info\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|d:\\projects\\repos\\apnaz\\apnaz\\views\\shared\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|solutionrelative:apnaz\\views\\shared\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|d:\\projects\\repos\\apnaz\\apnaz\\views\\shared\\gallery.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|solutionrelative:apnaz\\views\\shared\\gallery.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|d:\\projects\\repos\\apnaz\\apnaz\\views\\bible\\newtestamentpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|solutionrelative:apnaz\\views\\bible\\newtestamentpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|d:\\projects\\repos\\apnaz\\apnaz\\apnaz.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|solutionrelative:apnaz\\apnaz.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|d:\\projects\\repos\\apnaz\\apnaz\\wwwroot\\lib\\css\\site115.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|solutionrelative:apnaz\\wwwroot\\lib\\css\\site115.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|d:\\projects\\repos\\apnaz\\apnaz\\controllers\\infocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|solutionrelative:apnaz\\controllers\\infocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 15,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -81,163 +41,57 @@
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "HurricaneRelief.cshtml",
-              "DocumentMoniker": "D:\\Projects\\Repos\\APNaz\\APNaz\\Views\\Info\\HurricaneRelief.cshtml",
-              "RelativeDocumentMoniker": "APNaz\\Views\\Info\\HurricaneRelief.cshtml",
-              "ToolTip": "D:\\Projects\\Repos\\APNaz\\APNaz\\Views\\Info\\HurricaneRelief.cshtml*",
-              "RelativeToolTip": "APNaz\\Views\\Info\\HurricaneRelief.cshtml*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-15T19:37:41.642Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "InfoController.cs",
-              "DocumentMoniker": "D:\\Projects\\Repos\\APNaz\\APNaz\\Controllers\\InfoController.cs",
-              "RelativeDocumentMoniker": "APNaz\\Controllers\\InfoController.cs",
-              "ToolTip": "D:\\Projects\\Repos\\APNaz\\APNaz\\Controllers\\InfoController.cs*",
-              "RelativeToolTip": "APNaz\\Controllers\\InfoController.cs*",
-              "ViewState": "AgIAADYAAAAAAAAAAAAIwEcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T05:37:04.972Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Love.cshtml",
-              "DocumentMoniker": "D:\\Projects\\Repos\\APNaz\\APNaz\\Views\\Info\\Love.cshtml",
-              "RelativeDocumentMoniker": "APNaz\\Views\\Info\\Love.cshtml",
-              "ToolTip": "D:\\Projects\\Repos\\APNaz\\APNaz\\Views\\Info\\Love.cshtml",
-              "RelativeToolTip": "APNaz\\Views\\Info\\Love.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-18T05:34:23.929Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "sizes115.css",
-              "DocumentMoniker": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\css\\sizes115.css",
-              "RelativeDocumentMoniker": "APNaz\\wwwroot\\lib\\css\\sizes115.css",
-              "ToolTip": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\css\\sizes115.css",
-              "RelativeToolTip": "APNaz\\wwwroot\\lib\\css\\sizes115.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGMAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-05-30T01:47:42.498Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Staff.cshtml",
-              "DocumentMoniker": "D:\\Projects\\Repos\\APNaz\\APNaz\\Views\\Info\\Staff.cshtml",
-              "RelativeDocumentMoniker": "APNaz\\Views\\Info\\Staff.cshtml",
-              "ToolTip": "D:\\Projects\\Repos\\APNaz\\APNaz\\Views\\Info\\Staff.cshtml",
-              "RelativeToolTip": "APNaz\\Views\\Info\\Staff.cshtml",
-              "ViewState": "AQIAAAgAAAAAAAAAAABRwEIAAABBAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-29T10:02:50.997Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Links.cshtml",
-              "DocumentMoniker": "D:\\Projects\\Repos\\APNaz\\APNaz\\Views\\Info\\Links.cshtml",
-              "RelativeDocumentMoniker": "APNaz\\Views\\Info\\Links.cshtml",
-              "ToolTip": "D:\\Projects\\Repos\\APNaz\\APNaz\\Views\\Info\\Links.cshtml",
-              "RelativeToolTip": "APNaz\\Views\\Info\\Links.cshtml",
-              "ViewState": "AQIAAG8AAAAAAAAAAIBJwFMAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-29T09:57:47.507Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "APNaz.csproj",
-              "DocumentMoniker": "D:\\Projects\\Repos\\APNaz\\APNaz\\APNaz.csproj",
-              "RelativeDocumentMoniker": "APNaz\\APNaz.csproj",
-              "ToolTip": "D:\\Projects\\Repos\\APNaz\\APNaz\\APNaz.csproj",
-              "RelativeToolTip": "APNaz\\APNaz.csproj",
-              "ViewState": "AQIAAKcAAAAAAAAAAAAEwLgAAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-05-29T09:15:02.591Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Projects\\Repos\\APNaz\\APNaz\\Views\\Shared\\Index.cshtml",
-              "RelativeDocumentMoniker": "APNaz\\Views\\Shared\\Index.cshtml",
-              "ToolTip": "D:\\Projects\\Repos\\APNaz\\APNaz\\Views\\Shared\\Index.cshtml",
-              "RelativeToolTip": "APNaz\\Views\\Shared\\Index.cshtml",
-              "ViewState": "AQIAADEAAAAAAAAAAAAIwDsAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-29T09:35:37.182Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "NewTestamentPartial.cshtml",
-              "DocumentMoniker": "D:\\Projects\\Repos\\APNaz\\APNaz\\Views\\Bible\\NewTestamentPartial.cshtml",
-              "RelativeDocumentMoniker": "APNaz\\Views\\Bible\\NewTestamentPartial.cshtml",
-              "ToolTip": "D:\\Projects\\Repos\\APNaz\\APNaz\\Views\\Bible\\NewTestamentPartial.cshtml",
-              "RelativeToolTip": "APNaz\\Views\\Bible\\NewTestamentPartial.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAACAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-29T09:27:38.599Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Contact.cshtml",
-              "DocumentMoniker": "D:\\Projects\\Repos\\APNaz\\APNaz\\Views\\Info\\Contact.cshtml",
-              "RelativeDocumentMoniker": "APNaz\\Views\\Info\\Contact.cshtml",
-              "ToolTip": "D:\\Projects\\Repos\\APNaz\\APNaz\\Views\\Info\\Contact.cshtml",
-              "RelativeToolTip": "APNaz\\Views\\Info\\Contact.cshtml",
-              "ViewState": "AQIAACYAAAAAAAAAAADwv0UAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-29T09:17:25.114Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "site115.css",
-              "DocumentMoniker": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\css\\site115.css",
-              "RelativeDocumentMoniker": "APNaz\\wwwroot\\lib\\css\\site115.css",
-              "ToolTip": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\css\\site115.css",
-              "RelativeToolTip": "APNaz\\wwwroot\\lib\\css\\site115.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-05-29T09:05:00.298Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "colors115.css",
-              "DocumentMoniker": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\css\\colors115.css",
-              "RelativeDocumentMoniker": "APNaz\\wwwroot\\lib\\css\\colors115.css",
-              "ToolTip": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\css\\colors115.css",
-              "RelativeToolTip": "APNaz\\wwwroot\\lib\\css\\colors115.css",
-              "ViewState": "AQIAALgBAAAAAAAAAAAmwM4BAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-05-29T08:56:25.491Z"
+              "Title": "InfoController.cs",
+              "DocumentMoniker": "D:\\Projects\\Repos\\APNaz\\APNaz\\Controllers\\InfoController.cs",
+              "RelativeDocumentMoniker": "APNaz\\Controllers\\InfoController.cs",
+              "ToolTip": "D:\\Projects\\Repos\\APNaz\\APNaz\\Controllers\\InfoController.cs",
+              "RelativeToolTip": "APNaz\\Controllers\\InfoController.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAA/wEQAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T00:19:19.959Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Anniversary.cshtml",
+              "DocumentMoniker": "D:\\Projects\\Repos\\APNaz\\APNaz\\Views\\Info\\Anniversary.cshtml",
+              "RelativeDocumentMoniker": "APNaz\\Views\\Info\\Anniversary.cshtml",
+              "ToolTip": "D:\\Projects\\Repos\\APNaz\\APNaz\\Views\\Info\\Anniversary.cshtml",
+              "RelativeToolTip": "APNaz\\Views\\Info\\Anniversary.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAowBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-16T00:17:06.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Projects\\Repos\\APNaz\\APNaz\\Views\\Info\\Index.cshtml",
               "RelativeDocumentMoniker": "APNaz\\Views\\Info\\Index.cshtml",
               "ToolTip": "D:\\Projects\\Repos\\APNaz\\APNaz\\Views\\Info\\Index.cshtml",
               "RelativeToolTip": "APNaz\\Views\\Info\\Index.cshtml",
-              "ViewState": "AgIAADABAAAAAAAAAAAwwDQBAABWAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACsAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-29T08:54:43.838Z",
+              "WhenOpened": "2024-08-16T00:12:57.46Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HurricaneRelief.cshtml",
+              "DocumentMoniker": "D:\\Projects\\Repos\\APNaz\\APNaz\\Views\\Info\\HurricaneRelief.cshtml",
+              "RelativeDocumentMoniker": "APNaz\\Views\\Info\\HurricaneRelief.cshtml",
+              "ToolTip": "D:\\Projects\\Repos\\APNaz\\APNaz\\Views\\Info\\HurricaneRelief.cshtml",
+              "RelativeToolTip": "APNaz\\Views\\Info\\HurricaneRelief.cshtml",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAGcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-15T19:37:41.642Z",
               "EditorCaption": ""
             },
             {
@@ -246,24 +100,12 @@
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\Projects\\Repos\\APNaz\\APNaz\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "APNaz\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\Projects\\Repos\\APNaz\\APNaz\\Views\\Shared\\_Layout.cshtml*",
-              "RelativeToolTip": "APNaz\\Views\\Shared\\_Layout.cshtml*",
-              "ViewState": "AgIAAJMAAAAAAAAAAAAIwKIAAAAtAAAAAAAAAA==",
+              "ToolTip": "D:\\Projects\\Repos\\APNaz\\APNaz\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "APNaz\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAMEBAAAAAAAAAAAtwMUBAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-05-29T06:40:30.871Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Gallery.cshtml",
-              "DocumentMoniker": "D:\\Projects\\Repos\\APNaz\\APNaz\\Views\\Shared\\Gallery.cshtml",
-              "RelativeDocumentMoniker": "APNaz\\Views\\Shared\\Gallery.cshtml",
-              "ToolTip": "D:\\Projects\\Repos\\APNaz\\APNaz\\Views\\Shared\\Gallery.cshtml",
-              "RelativeToolTip": "APNaz\\Views\\Shared\\Gallery.cshtml",
-              "ViewState": "AQIAAIsAAAAAAAAAAAAYwJ4AAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-29T01:28:09.348Z"
             }
           ]
         },

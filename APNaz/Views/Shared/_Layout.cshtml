@@ -39,6 +39,7 @@
     string active14 = "";
     string active15 = "";
     string active16 = "";
+    string active17 = "";
 
     // Change Link Share card information based on the View link shared
     switch (ViewBag.Message)
@@ -161,10 +162,18 @@
                 pageTitle = "Hurricane Relief";
                 folder = "Info/HurricaneRelief";
                 shareImage = "HurricaneRelief-ls.jpg";
-                active12 = "active";
+                active17 = "active";
                 break;
             }
 
+        case "Anniversary":
+            {
+                pageTitle = "Anniversary";
+                folder = "Info/Anniversary";
+                shareImage = "Anniversary-ls.png";
+                active12 = "active";
+                break;
+            }
         // case "GiveOnline":
         //     {
         //         pageTitle = "Give Online";
@@ -414,6 +423,12 @@
                         <li class="nav-item text-light">
                             <a class="@active08 nav-link footer-fs" href="/Info/TOS">Terms of Service</a>
                         </li>
+
+                        <!-- Anniversary -->
+                        <li class="nav-item text-light">
+                            <a class="@active08 nav-link footer-fs" href="/Info/Anniversary">100 Years</a>
+                        </li>
+
                     </ul>
                 </div>
 
@@ -479,6 +494,11 @@
                         <!-- Give Online -->
                         <li class="nav-item text-light">
                             <a class="@active16 nav-link footer-fs" href="https://apnaz.churchtrac.com" target="_blank">Give Online</a>
+                        </li>
+
+                        <!-- Hurricane Relief -->
+                        <li class="nav-item text-light">
+                            <a class="@active17 nav-link footer-fs" href="/info/hurricanerelief">Hurricane Relief</a>
                         </li>
                     </ul>
                 </div>
