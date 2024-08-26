@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2nxLbhLo7np1uKsca4Wu2yxYVeGsXg7FL+AftqE1/Qg=",
+  "Hash": "m/3ZaNOQzAT1IkI61AeSDSxgsaH8avM2a63m0V24POU=",
   "Source": "APNaz",
   "BasePath": "_content/APNaz",
   "Mode": "Default",
@@ -4290,6 +4290,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\PageImages\\Anniversary.png"
+    },
+    {
+      "Identity": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\PageImages\\Anniversaryod.png",
+      "SourceId": "APNaz",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\",
+      "BasePath": "_content/APNaz",
+      "RelativePath": "PageImages/Anniversaryod.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\PageImages\\Anniversaryod.png"
     },
     {
       "Identity": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\PageImages\\BackgroundBlurr.webp",
