@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\Projects\\Repos\\APNaz\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|d:\\projects\\repos\\apnaz\\apnaz\\views\\info\\love.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|solutionrelative:apnaz\\views\\info\\love.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|d:\\projects\\repos\\apnaz\\apnaz\\views\\info\\hurricanerelief.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|solutionrelative:apnaz\\views\\info\\hurricanerelief.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -30,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,7 +50,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
+              "Title": "Love.cshtml",
+              "DocumentMoniker": "D:\\Projects\\Repos\\APNaz\\APNaz\\Views\\Info\\Love.cshtml",
+              "RelativeDocumentMoniker": "APNaz\\Views\\Info\\Love.cshtml",
+              "ToolTip": "D:\\Projects\\Repos\\APNaz\\APNaz\\Views\\Info\\Love.cshtml",
+              "RelativeToolTip": "APNaz\\Views\\Info\\Love.cshtml",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAACkAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-26T15:58:14.611Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "InfoController.cs",
               "DocumentMoniker": "D:\\Projects\\Repos\\APNaz\\APNaz\\Controllers\\InfoController.cs",
               "RelativeDocumentMoniker": "APNaz\\Controllers\\InfoController.cs",
@@ -58,7 +75,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Anniversary.cshtml",
               "DocumentMoniker": "D:\\Projects\\Repos\\APNaz\\APNaz\\Views\\Info\\Anniversary.cshtml",
               "RelativeDocumentMoniker": "APNaz\\Views\\Info\\Anniversary.cshtml",
@@ -70,7 +87,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Projects\\Repos\\APNaz\\APNaz\\Views\\Info\\Index.cshtml",
               "RelativeDocumentMoniker": "APNaz\\Views\\Info\\Index.cshtml",
@@ -82,20 +99,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "HurricaneRelief.cshtml",
               "DocumentMoniker": "D:\\Projects\\Repos\\APNaz\\APNaz\\Views\\Info\\HurricaneRelief.cshtml",
               "RelativeDocumentMoniker": "APNaz\\Views\\Info\\HurricaneRelief.cshtml",
-              "ToolTip": "D:\\Projects\\Repos\\APNaz\\APNaz\\Views\\Info\\HurricaneRelief.cshtml*",
-              "RelativeToolTip": "APNaz\\Views\\Info\\HurricaneRelief.cshtml*",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABwAAAAJAAAAAAAAAA==",
+              "ToolTip": "D:\\Projects\\Repos\\APNaz\\APNaz\\Views\\Info\\HurricaneRelief.cshtml",
+              "RelativeToolTip": "APNaz\\Views\\Info\\HurricaneRelief.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABUAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-08-15T19:37:41.642Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\Projects\\Repos\\APNaz\\APNaz\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "APNaz\\Views\\Shared\\_Layout.cshtml",
