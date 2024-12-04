@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Projects\\Repos\\APNaz\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|d:\\projects\\repos\\apnaz\\apnaz\\views\\info\\staff.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|solutionrelative:apnaz\\views\\info\\staff.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,6 +27,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Staff.cshtml",
+              "DocumentMoniker": "D:\\Projects\\Repos\\APNaz\\APNaz\\Views\\Info\\Staff.cshtml",
+              "RelativeDocumentMoniker": "APNaz\\Views\\Info\\Staff.cshtml",
+              "ToolTip": "D:\\Projects\\Repos\\APNaz\\APNaz\\Views\\Info\\Staff.cshtml*",
+              "RelativeToolTip": "APNaz\\Views\\Info\\Staff.cshtml*",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAAGIAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-04T20:09:31.045Z",
+              "EditorCaption": ""
             }
           ]
         },

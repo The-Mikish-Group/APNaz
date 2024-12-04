@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 806 403">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient);
+        stroke-width: 4px;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #2d5137;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="400.3" y1="491.4" x2="404.6" y2="37.4" gradientTransform="translate(0 404) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset=".1" stop-color="#afd1ee"/>
+      <stop offset=".2" stop-color="#abcfed"/>
+      <stop offset=".5" stop-color="#a7cdec"/>
+      <stop offset=".5" stop-color="#a5cceb"/>
+      <stop offset=".6" stop-color="#87bfe6"/>
+      <stop offset=".6" stop-color="#6fb5e2"/>
+      <stop offset=".7" stop-color="#5eaedf"/>
+      <stop offset=".7" stop-color="#54aadd"/>
+      <stop offset=".8" stop-color="#51a9dd"/>
+    </linearGradient>
+  </defs>
+  <g id="Button">
+    <rect class="cls-1" width="806" height="403"/>
+    <rect id="Button-2" class="cls-2" x="164.5" y="109.5" width="477" height="184" rx="57.3" ry="57.3"/>
+    <g id="Text">
+      <path class="cls-3" d="M268.2,226.7c0,4.3-2.2,6.5-6.5,6.5h-22.3c-4.2,0-6.3-2.2-6.3-6.5v-58c0-4.4,2.1-6.5,6.4-6.5h22.2c4.3,0,6.5,2.2,6.5,6.5v15.2h-10.7v-12.6h-13.9v52.8h13.9v-19.9h-7.9v-9h18.6v31.6h0Z"/>
+      <path class="cls-3" d="M286.7,180.8h-10.4v-10.7h10.4v10.7ZM286.6,233.2h-10.2v-45.9h10.2v45.9Z"/>
+      <path class="cls-3" d="M325.4,187.3l-11.7,46h-9.9l-11.7-46h10.7l6,30.2,6-30.2h10.6Z"/>
+      <path class="cls-3" d="M360.2,227.5c0,3.8-2,5.7-5.9,5.7h-17.9c-3.9,0-5.9-1.9-5.9-5.7v-34.5c0-3.8,2-5.7,5.9-5.7h17.9c3.9,0,5.9,1.9,5.9,5.7v16.8l-2.9,2.9h-16.8v12.9h9.8v-7.6h9.9v9.6h0ZM350.2,206v-11h-9.8v11h9.8Z"/>
+      <path class="cls-3" d="M423.3,226.7c0,4.3-2.1,6.5-6.4,6.5h-23.1c-4.2,0-6.3-2.2-6.3-6.5v-58c0-4.4,2.1-6.5,6.3-6.5h23.1c4.3,0,6.4,2.2,6.4,6.5v58ZM412.6,224.1v-52.8h-14.6v52.8h14.6Z"/>
+      <path class="cls-3" d="M461.9,233.2h-10.4v-37.2l-9.8.2v37h-10.4v-45.9h10.4v1.7c2.4-.4,4.8-.8,7.2-1.1,3-.5,5.4-.7,7.3-.7,3.8,0,5.7,1.9,5.7,5.6v40.5h0Z"/>
+      <path class="cls-3" d="M479.8,233.2h-10.2v-71.1h10.2v71.1Z"/>
+      <path class="cls-3" d="M498.1,180.8h-10.4v-10.7h10.4v10.7ZM498,233.2h-10.2v-45.9h10.2v45.9Z"/>
+      <path class="cls-3" d="M536.3,233.2h-10.4v-37.2l-9.8.2v37h-10.4v-45.9h10.4v1.7c2.4-.4,4.8-.8,7.2-1.1,3-.5,5.4-.7,7.3-.7,3.8,0,5.7,1.9,5.7,5.6v40.5h0Z"/>
+      <path class="cls-3" d="M573.4,227.5c0,3.8-2,5.7-5.9,5.7h-17.9c-3.9,0-5.9-1.9-5.9-5.7v-34.5c0-3.8,2-5.7,5.9-5.7h17.9c3.9,0,5.9,1.9,5.9,5.7v16.8l-2.9,2.9h-16.8v12.9h9.8v-7.6h9.9v9.6h0ZM563.5,206v-11h-9.8v11h9.8Z"/>
+    </g>
+  </g>
+</svg>

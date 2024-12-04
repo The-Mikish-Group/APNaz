@@ -335,4 +335,72 @@
 	<loc>https://apnazarene.org/Bible/Zephaniah</loc>
 	<lastmod>2022-01-01</lastmod>
 </url>
+<url>
+	<loc>https://apnazarene.org/Gallery/APNaz/Manuals/1948.pdf</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Gallery/APNaz/Manuals/1956.pdf</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Gallery/APNaz/Manuals/1964.pdf</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Gallery/APNaz/Manuals/2013.pdf</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Gallery/APNaz/Manuals/2023.pdf</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/resources/manual/resources/1895.pdf</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/resources/manual/resources/1932-EN_manual_1932.pdf</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/resources/manual/resources/1932-EN_manual_1932.pdf</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/resources/manual/resources/2023-Manual.pdf</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Info/Staff/</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/APNazCombo</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/apnaz</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/apnaz</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Index</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Info</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/apnazcombo</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/info/hurricanerelief</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
 </urlset>

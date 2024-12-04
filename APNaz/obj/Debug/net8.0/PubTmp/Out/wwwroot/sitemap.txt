@@ -1,0 +1,406 @@
+﻿<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<url>
+	<loc>https://apnazarene.org</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Info</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Info/Calendar</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Info/Contact</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Info/Links</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Info/Nazarenes</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Info/Privacy</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Info/Purpose</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Info/Staff</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Info/TOS</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Gallery</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/AP</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Acts</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Amos</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Chronicles1</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Chronicles2</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Colossians</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Corinthians1</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Corinthians2</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Daniel</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Deuteronomy</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Ecclesiastes</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Emergency</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Esther</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Exodus</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Ezekiel</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Galatians</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Genesis</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Habakkuk</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Haggai</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Hebrews</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Hosea</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Index</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Isaiah</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/James</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Jeremiah</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Job</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Joel</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/John</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/John1</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/John2</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/John3</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Jonah</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Joshua</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Jude</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Judges</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Kings1</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Kings2</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Lamentations</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Leviticus</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Luke</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Malachi</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Mark</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Matthew</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Micah</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Nahum</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Nehemiah</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Nehemiah</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/NewTestament</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/NewTestamentPartial</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Numbers</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Obadiah</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/OldTestament</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/OldTestamentPartial</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Peter1</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Peter2</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Philemon</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Philippians</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Proverbs</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Psalms</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Revelation</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Romans</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Ruth</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Samuel1</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Samuel2</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/SongofSolomon</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Thessalonians1</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Thessalonians2</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Timothy1</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Timothy2</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Titus</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Zechariah</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Zephaniah</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Gallery/APNaz/Manuals/1948.pdf</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Gallery/APNaz/Manuals/1956.pdf</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Gallery/APNaz/Manuals/1964.pdf</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Gallery/APNaz/Manuals/2013.pdf</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Gallery/APNaz/Manuals/2023.pdf</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/resources/manual/resources/1895.pdf</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/resources/manual/resources/1932-EN_manual_1932.pdf</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/resources/manual/resources/1932-EN_manual_1932.pdf</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/resources/manual/resources/2023-Manual.pdf</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Info/Staff/</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/APNazCombo</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/apnaz</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/apnaz</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Bible/Index</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/Info</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/apnazcombo</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+<url>
+	<loc>https://apnazarene.org/info/hurricanerelief</loc>
+	<lastmod>2022-01-01</lastmod>
+</url>
+</urlset>

@@ -1,0 +1,9 @@
+D:\Projects\Repos\APNaz\APNaz\obj\Debug\net8.0\PubTmp\Out\APNaz.exe
+D:\Projects\Repos\APNaz\APNaz\obj\Debug\net8.0\PubTmp\Out\web.config
+D:\Projects\Repos\APNaz\APNaz\obj\Debug\net8.0\PubTmp\Out\appsettings.Development.json
+D:\Projects\Repos\APNaz\APNaz\obj\Debug\net8.0\PubTmp\Out\appsettings.json
+D:\Projects\Repos\APNaz\APNaz\obj\Debug\net8.0\PubTmp\Out\APNaz.dll
+D:\Projects\Repos\APNaz\APNaz\obj\Debug\net8.0\PubTmp\Out\APNaz.deps.json
+D:\Projects\Repos\APNaz\APNaz\obj\Debug\net8.0\PubTmp\Out\APNaz.runtimeconfig.json
+D:\Projects\Repos\APNaz\APNaz\obj\Debug\net8.0\PubTmp\Out\APNaz.pdb
+D:\Projects\Repos\APNaz\APNaz\obj\Debug\net8.0\PubTmp\Out\SixLabors.ImageSharp.dll

@@ -10,14 +10,14 @@
     string staffText01English = "Rev. Curt & Wanda Napier have served in pastoral ministry in the Church of the Nazarene for 20 years. Ordained in 2005 at Indian Lake Nazarene Camp in Vicksburg, MI by Dr. Jim Bond, General Superintendent Emeritus, Rev. Napier has served Nazarene churches in both the Michigan and Eastern KY Districts in both the Lead Pastor and Interim Pastoral roles. He and Wanda have two adult children and four grandchildren who reside in Michigan. Their philosophy of ministry in the Church is to love and lead God’s people as God would love and lead them. The Napiers began attending Avon Park Naz in December of 2021.";
     string staffText01Spanish = "";    
 
-    string staffName02 = "Patricia Bridewell";   
-    string staffPhoto02 = "bridewell-01.png";
+    // string staffName02 = "Patricia Bridewell";   
+    // string staffPhoto02 = "bridewell-01.png";
 
-    string staffText02English = "Administrative Pastor Patricia Bridewell (Pastor Patty) joined our staff on April 18, 2021, and was ordained an elder in the Church of the Nazarene on April 13, 2024. She holds degrees from Kentucky Wesleyan College, Western Kentucky University, and Newburgh Theological Seminary. She also completed the Ministerial Preparation Program at Nazarene Bible College.";
-    string staffText02Spanish = "";
+    // string staffText02English = "Administrative Pastor Patricia Bridewell (Pastor Patty) joined our staff on April 18, 2021, and was ordained an elder in the Church of the Nazarene on April 13, 2024. She holds degrees from Kentucky Wesleyan College, Western Kentucky University, and Newburgh Theological Seminary. She also completed the Ministerial Preparation Program at Nazarene Bible College.";
+    // string staffText02Spanish = "";
        
     string scrString01 = photosFolder + staffPhoto01;
-    string scrString02 = photosFolder + staffPhoto02;
+    string scrString02 = photosFolder /* staffPhoto02 */;
 
 }
 
@@ -109,25 +109,25 @@
                         </tr>
                         <tr>
                             <td>
-                                <h5 class="text-black fw-bolder">Administrative Pastor</h5>
+                                <h5 class="text-black fw-bolder">@* Administrative Pastor *@</h5>
                             </td>
                         </tr>
                         <tr>
                             <td>
                                 @*<h5 class="text-white">Patricia Bridewell</h5>*@
-                                <button type="button" id="btnShow02Modal" class="btn btn-transparent button no-border p-0 fs-5 text-white">@staffName02</button>
+                                <button type="button" id="btnShow02Modal" class="btn btn-transparent button no-border p-0 fs-5 text-white">@* @staffName02 *@</button>
                                 <div class="container">
                                     <div class="modal fade" tabindex="-1" id="profile02Modal"
                                          data-keyboard="false" data-backdrop="static">
                                         <div class="modal-dialog modal-lg">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h4 class="modal-title">@staffName02</h4>
+                                                    <h4 class="modal-title">@* @staffName02 *@</h4>
                                                 </div>
                                                 <div class="modal-body">
                                                     <div class="my-card-footer">
-                                                        <p class="fw-normal text-dark">@staffText02English</p>
-                                                        <p class="fw-normal text-dark italic py-3">@staffText02Spanish</p>
+                                                        <p class="fw-normal text-dark">@* @staffText02English *@</p>
+                                                        <p class="fw-normal text-dark italic py-3">@* @staffText02Spanish *@</p>
                                                     </div>
                                                 </div>
                                                 <div class="modal-footer">
