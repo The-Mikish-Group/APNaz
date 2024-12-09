@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "qs+M7Cz5DSKRrRwAoziPEQ8A6/QGT33Iv83q9fxc5S0=",
+  "Hash": "D5g0zfx9AOJI1uO3ezqp+r8TycrzuHm/Qgo++n45Mc8=",
   "Source": "APNaz",
   "BasePath": "_content/APNaz",
   "Mode": "Default",
@@ -2913,27 +2913,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\sitemap.txt"
-    },
-    {
-      "Identity": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Videos\\2024_10.mp4",
-      "SourceId": "APNaz",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\",
-      "BasePath": "_content/APNaz",
-      "RelativePath": "Videos/2024_10#[.{fingerprint}]?.mp4",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "06d131d5zg",
-      "Integrity": "GHDZ/az9sreXI+M5IMrtyPfISonU110DaRLLZrcAZyc=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Videos\\2024_10.mp4"
     },
     {
       "Identity": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Virtual\\Android\\index.html",
@@ -15783,88 +15762,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-n0fLts8kHNI8tLNTVmgQpRTwC7J91yyDLqgrV3ImPM8="
-        }
-      ]
-    },
-    {
-      "Route": "Videos/2024_10.06d131d5zg.mp4",
-      "AssetFile": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Videos\\2024_10.mp4",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "11222200"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "video/mp4"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"GHDZ/az9sreXI+M5IMrtyPfISonU110DaRLLZrcAZyc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 08 Oct 2024 23:21:11 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "06d131d5zg"
-        },
-        {
-          "Name": "label",
-          "Value": "Videos/2024_10.mp4"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-GHDZ/az9sreXI+M5IMrtyPfISonU110DaRLLZrcAZyc="
-        }
-      ]
-    },
-    {
-      "Route": "Videos/2024_10.mp4",
-      "AssetFile": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Videos\\2024_10.mp4",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "11222200"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "video/mp4"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"GHDZ/az9sreXI+M5IMrtyPfISonU110DaRLLZrcAZyc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 08 Oct 2024 23:21:11 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-GHDZ/az9sreXI+M5IMrtyPfISonU110DaRLLZrcAZyc="
         }
       ]
     },

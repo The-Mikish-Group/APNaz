@@ -1656,18 +1656,6 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"v476ecipdc"},{"Name":"integrity","Value":"sha256-n0fLts8kHNI8tLNTVmgQpRTwC7J91yyDLqgrV3ImPM8="},{"Name":"label","Value":"_content/APNaz/sitemap.txt"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"10169"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022n0fLts8kHNI8tLNTVmgQpRTwC7J91yyDLqgrV3ImPM8=\u0022"},{"Name":"Last-Modified","Value":"Sun, 24 Nov 2024 22:13:36 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/APNaz/Videos/2024_10.06d131d5zg.mp4">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Videos\2024_10.mp4'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"06d131d5zg"},{"Name":"integrity","Value":"sha256-GHDZ/az9sreXI\u002BM5IMrtyPfISonU110DaRLLZrcAZyc="},{"Name":"label","Value":"_content/APNaz/Videos/2024_10.mp4"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"11222200"},{"Name":"Content-Type","Value":"video/mp4"},{"Name":"ETag","Value":"\u0022GHDZ/az9sreXI\u002BM5IMrtyPfISonU110DaRLLZrcAZyc=\u0022"},{"Name":"Last-Modified","Value":"Tue, 08 Oct 2024 23:21:11 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/APNaz/Videos/2024_10.mp4">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Videos\2024_10.mp4'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-GHDZ/az9sreXI\u002BM5IMrtyPfISonU110DaRLLZrcAZyc="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"11222200"},{"Name":"Content-Type","Value":"video/mp4"},{"Name":"ETag","Value":"\u0022GHDZ/az9sreXI\u002BM5IMrtyPfISonU110DaRLLZrcAZyc=\u0022"},{"Name":"Last-Modified","Value":"Tue, 08 Oct 2024 23:21:11 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/APNaz/Virtual/Android/index.czr2n3kyd9.html">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Virtual\Android\index.html'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

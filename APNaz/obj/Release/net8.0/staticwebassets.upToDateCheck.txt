@@ -136,7 +136,6 @@ wwwroot\ShareImages\Old-Testament-ls.jpg
 wwwroot\ShareImages\Purpose-Logo-ls.jpg
 wwwroot\ShareImages\Staff-logo-ls.jpg
 wwwroot\sitemap.txt
-wwwroot\Videos\2024_10.mp4
 wwwroot\Virtual\Android\index.html
 wwwroot\Virtual\App\index.html
 wwwroot\Virtual\Apple\index.html
