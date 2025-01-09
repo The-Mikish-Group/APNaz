@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "D5g0zfx9AOJI1uO3ezqp+r8TycrzuHm/Qgo++n45Mc8=",
+  "Hash": "LyLMKWvIOsGdGsbJhUsURdEk3OTQbMybWIRbq1K1NeM=",
   "Source": "APNaz",
   "BasePath": "_content/APNaz",
   "Mode": "Default",
@@ -2992,8 +2992,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "sgxfv6vzmo",
-      "Integrity": "1KE+Si0vi/6JFoenFA84119NarKwVUyYeH5mbcI4fdA=",
+      "Fingerprint": "3n0f2qben3",
+      "Integrity": "/8qy10QtoA0E8NCcjEPSika+Uy3bzKFV4SVDkUkf0O4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Virtual\\Arc\\index.html"
@@ -3144,6 +3144,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Virtual\\Live\\index.html"
+    },
+    {
+      "Identity": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Virtual\\Media\\index.html",
+      "SourceId": "APNaz",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\",
+      "BasePath": "_content/APNaz",
+      "RelativePath": "Virtual/Media/index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qoy5tr6jcg",
+      "Integrity": "JhgAw0y7X5/O/wj3t8867JDd4Xb43jOPpPEO+lsaJs8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Virtual\\Media\\index.html"
     },
     {
       "Identity": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Virtual\\Resources\\ADULTDJF20234.pdf",
@@ -16012,6 +16033,51 @@
       ]
     },
     {
+      "Route": "Virtual/Arc/index.3n0f2qben3.html",
+      "AssetFile": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Virtual\\Arc\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "176"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/8qy10QtoA0E8NCcjEPSika+Uy3bzKFV4SVDkUkf0O4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 31 Dec 2024 22:19:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3n0f2qben3"
+        },
+        {
+          "Name": "label",
+          "Value": "Virtual/Arc/index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/8qy10QtoA0E8NCcjEPSika+Uy3bzKFV4SVDkUkf0O4="
+        }
+      ]
+    },
+    {
       "Route": "Virtual/Arc/index.html",
       "AssetFile": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Virtual\\Arc\\index.html",
       "Selectors": [],
@@ -16022,7 +16088,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "152"
+          "Value": "176"
         },
         {
           "Name": "Content-Type",
@@ -16030,11 +16096,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"1KE+Si0vi/6JFoenFA84119NarKwVUyYeH5mbcI4fdA=\""
+          "Value": "\"/8qy10QtoA0E8NCcjEPSika+Uy3bzKFV4SVDkUkf0O4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 07 Jan 2024 16:28:12 GMT"
+          "Value": "Tue, 31 Dec 2024 22:19:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16044,52 +16110,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-1KE+Si0vi/6JFoenFA84119NarKwVUyYeH5mbcI4fdA="
-        }
-      ]
-    },
-    {
-      "Route": "Virtual/Arc/index.sgxfv6vzmo.html",
-      "AssetFile": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Virtual\\Arc\\index.html",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "152"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"1KE+Si0vi/6JFoenFA84119NarKwVUyYeH5mbcI4fdA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 07 Jan 2024 16:28:12 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "sgxfv6vzmo"
-        },
-        {
-          "Name": "label",
-          "Value": "Virtual/Arc/index.html"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-1KE+Si0vi/6JFoenFA84119NarKwVUyYeH5mbcI4fdA="
+          "Value": "sha256-/8qy10QtoA0E8NCcjEPSika+Uy3bzKFV4SVDkUkf0O4="
         }
       ]
     },
@@ -16664,6 +16685,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-pdkNqNN+iAEB1R5Ljy8JS08VVDjD6DyTEEYmKPG8Ebw="
+        }
+      ]
+    },
+    {
+      "Route": "Virtual/Media/index.html",
+      "AssetFile": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Virtual\\Media\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "157"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JhgAw0y7X5/O/wj3t8867JDd4Xb43jOPpPEO+lsaJs8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 31 Dec 2024 22:16:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JhgAw0y7X5/O/wj3t8867JDd4Xb43jOPpPEO+lsaJs8="
+        }
+      ]
+    },
+    {
+      "Route": "Virtual/Media/index.qoy5tr6jcg.html",
+      "AssetFile": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Virtual\\Media\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "157"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JhgAw0y7X5/O/wj3t8867JDd4Xb43jOPpPEO+lsaJs8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 31 Dec 2024 22:16:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qoy5tr6jcg"
+        },
+        {
+          "Name": "label",
+          "Value": "Virtual/Media/index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JhgAw0y7X5/O/wj3t8867JDd4Xb43jOPpPEO+lsaJs8="
         }
       ]
     },

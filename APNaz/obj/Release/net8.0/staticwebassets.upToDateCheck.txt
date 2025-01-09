@@ -147,6 +147,7 @@ wwwroot\Virtual\Face\index.html
 wwwroot\Virtual\Group\Index.html
 wwwroot\Virtual\Jon\index.html
 wwwroot\Virtual\Live\index.html
+wwwroot\Virtual\Media\index.html
 wwwroot\Virtual\Resources\ADULTDJF20234.pdf
 wwwroot\Virtual\Resources\ADULTJJA2023.pdf
 wwwroot\Virtual\Resources\ADULTMAM2023.pdf
