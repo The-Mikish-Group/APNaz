@@ -91,8 +91,12 @@ public class InfoController : Controller   {
         ViewBag.Message = "CaptchaEmail";
         return View();
     }
-    
 
+    public IActionResult Private()
+    {
+        ViewBag.Message = "Private";
+        return View();
+    }
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {

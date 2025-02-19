@@ -54,6 +54,8 @@ wwwroot\lib\svg\Buttons\OffsiteButtons\RequestPrayer.jpg
 wwwroot\lib\svg\Buttons\OffsiteButtons\SigninorRegister.jpg
 wwwroot\lib\svg\Buttons\Person.svg
 wwwroot\lib\svg\Buttons\Previous.svg
+wwwroot\lib\svg\Buttons\RightNowMediaButton.png
+wwwroot\lib\svg\Buttons\RightNowMediaButtonTemplate.ai
 wwwroot\lib\svg\Cards\APNazNewz2.jpg
 wwwroot\lib\svg\Cards\Blog-Black.svg
 wwwroot\lib\svg\Cards\Blog-White.svg

@@ -1,0 +1,43 @@
+﻿@{
+    ViewData["Title"] = ViewData["Private"];
+}
+
+<style>
+    #protectedContent {
+        display: none;
+    }
+</style>
+
+<div id="loginForm">
+    <h2>Enter Password</h2>
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="checkPassword()">Submit</button>
+</div>
+
+<!-- Private -->
+<div id="protectedContent">
+    <h1>Welcome!</h1>
+    <p>You have entered the correct password. 🎉</p>
+    <p>This is the promised land that was hidden before!</p>
+</div>
+
+<script>
+
+    function checkPassword() {
+        var userInput = document.getElementById("password").value;
+
+        var passArray = [74, 101, 115, 117, 115];
+        var correctPassword = passArray.map(function(c) {
+            return String.fromCharCode(c);
+        }).join('');
+
+        if (userInput === correctPassword) {
+            document.getElementById("loginForm").style.display = "none";
+            document.getElementById("protectedContent").style.display = "block";
+        } else {
+            alert("Incorrect password!");
+        }
+    }
+</script>
+
+

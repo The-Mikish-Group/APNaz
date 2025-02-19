@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "D:\\Projects\\Repos\\APNaz\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|d:\\projects\\repos\\apnaz\\apnaz\\views\\info\\private.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|solutionrelative:apnaz\\views\\info\\private.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|d:\\projects\\repos\\apnaz\\apnaz\\controllers\\infocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|solutionrelative:apnaz\\controllers\\infocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|d:\\projects\\repos\\apnaz\\apnaz\\wwwroot\\virtual\\media\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|solutionrelative:apnaz\\wwwroot\\virtual\\media\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -43,6 +51,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "InfoController.cs",
+              "DocumentMoniker": "D:\\Projects\\Repos\\APNaz\\APNaz\\Controllers\\InfoController.cs",
+              "RelativeDocumentMoniker": "APNaz\\Controllers\\InfoController.cs",
+              "ToolTip": "D:\\Projects\\Repos\\APNaz\\APNaz\\Controllers\\InfoController.cs",
+              "RelativeToolTip": "APNaz\\Controllers\\InfoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGAAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T22:41:14.896Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Private.cshtml",
+              "DocumentMoniker": "D:\\Projects\\Repos\\APNaz\\APNaz\\Views\\Info\\Private.cshtml",
+              "RelativeDocumentMoniker": "APNaz\\Views\\Info\\Private.cshtml",
+              "ToolTip": "D:\\Projects\\Repos\\APNaz\\APNaz\\Views\\Info\\Private.cshtml*",
+              "RelativeToolTip": "APNaz\\Views\\Info\\Private.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-19T22:34:29.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "index.html",
               "DocumentMoniker": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Virtual\\Arc\\index.html",
               "RelativeDocumentMoniker": "APNaz\\wwwroot\\Virtual\\Arc\\index.html",
@@ -50,25 +84,24 @@
               "RelativeToolTip": "APNaz\\wwwroot\\Virtual\\Arc\\index.html",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-12-31T22:19:15.39Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-31T22:19:15.39Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "index.html",
               "DocumentMoniker": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Virtual\\Media\\index.html",
               "RelativeDocumentMoniker": "APNaz\\wwwroot\\Virtual\\Media\\index.html",
               "ToolTip": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\Virtual\\Media\\index.html",
               "RelativeToolTip": "APNaz\\wwwroot\\Virtual\\Media\\index.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABhAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2024-12-31T22:10:20.725Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\Projects\\Repos\\APNaz\\APNaz\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "APNaz\\Views\\Shared\\_Layout.cshtml",
@@ -76,12 +109,11 @@
               "RelativeToolTip": "APNaz\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAF8BAAAAAAAAAADwv2QBAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-05T02:55:39.396Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-05T02:55:39.396Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Projects\\Repos\\APNaz\\APNaz\\Views\\Info\\Index.cshtml",
               "RelativeDocumentMoniker": "APNaz\\Views\\Info\\Index.cshtml",
@@ -89,8 +121,7 @@
               "RelativeToolTip": "APNaz\\Views\\Info\\Index.cshtml",
               "ViewState": "AgIAAEsAAAAAAAAAAAAAADsAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-05T02:49:37.153Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-05T02:49:37.153Z"
             }
           ]
         },

@@ -672,6 +672,30 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-v3SfcyLIeg9Dq9gE1cP6SjqUa2K7cXB\u002BszYxqSXCdgk="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"2229"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022v3SfcyLIeg9Dq9gE1cP6SjqUa2K7cXB\u002BszYxqSXCdgk=\u0022"},{"Name":"Last-Modified","Value":"Sun, 26 May 2024 14:35:09 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/APNaz/lib/svg/Buttons/RightNowMediaButton.nxs0l18zc0.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\svg\Buttons\RightNowMediaButton.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"nxs0l18zc0"},{"Name":"integrity","Value":"sha256-e6v88/Zs8SZEhce7iLhLcMUZd\u002BpAlnn1zKGPuztnEKA="},{"Name":"label","Value":"_content/APNaz/lib/svg/Buttons/RightNowMediaButton.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"192481"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022e6v88/Zs8SZEhce7iLhLcMUZd\u002BpAlnn1zKGPuztnEKA=\u0022"},{"Name":"Last-Modified","Value":"Tue, 31 Dec 2024 23:20:28 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/APNaz/lib/svg/Buttons/RightNowMediaButton.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\svg\Buttons\RightNowMediaButton.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-e6v88/Zs8SZEhce7iLhLcMUZd\u002BpAlnn1zKGPuztnEKA="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"192481"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022e6v88/Zs8SZEhce7iLhLcMUZd\u002BpAlnn1zKGPuztnEKA=\u0022"},{"Name":"Last-Modified","Value":"Tue, 31 Dec 2024 23:20:28 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/APNaz/lib/svg/Buttons/RightNowMediaButtonTemplate.ai">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\svg\Buttons\RightNowMediaButtonTemplate.ai'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-RTLl59a\u002BXucakaRgpjBQLcrfAfPjReCU7R53E73eIhM="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1592499"},{"Name":"Content-Type","Value":"application/postscript"},{"Name":"ETag","Value":"\u0022RTLl59a\u002BXucakaRgpjBQLcrfAfPjReCU7R53E73eIhM=\u0022"},{"Name":"Last-Modified","Value":"Tue, 31 Dec 2024 23:19:42 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/APNaz/lib/svg/Buttons/RightNowMediaButtonTemplate.hdyxihlun3.ai">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\svg\Buttons\RightNowMediaButtonTemplate.ai'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"hdyxihlun3"},{"Name":"integrity","Value":"sha256-RTLl59a\u002BXucakaRgpjBQLcrfAfPjReCU7R53E73eIhM="},{"Name":"label","Value":"_content/APNaz/lib/svg/Buttons/RightNowMediaButtonTemplate.ai"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1592499"},{"Name":"Content-Type","Value":"application/postscript"},{"Name":"ETag","Value":"\u0022RTLl59a\u002BXucakaRgpjBQLcrfAfPjReCU7R53E73eIhM=\u0022"},{"Name":"Last-Modified","Value":"Tue, 31 Dec 2024 23:19:42 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/APNaz/lib/svg/Cards/APNazNewz2.2gt2renyou.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\svg\Cards\APNazNewz2.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
