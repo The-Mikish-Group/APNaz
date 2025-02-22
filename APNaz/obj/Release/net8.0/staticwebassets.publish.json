@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "LyLMKWvIOsGdGsbJhUsURdEk3OTQbMybWIRbq1K1NeM=",
+  "Hash": "otMGWgXEqZrsz0gJZ/bUkepQ0XYTAb4d9gVRAgmcSAY=",
   "Source": "APNaz",
   "BasePath": "_content/APNaz",
   "Mode": "Default",
@@ -1191,6 +1191,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\svg\\Buttons\\Previous.svg"
+    },
+    {
+      "Identity": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\svg\\Buttons\\RightNowMediaButton.png",
+      "SourceId": "APNaz",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\",
+      "BasePath": "_content/APNaz",
+      "RelativePath": "lib/svg/Buttons/RightNowMediaButton#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "nxs0l18zc0",
+      "Integrity": "e6v88/Zs8SZEhce7iLhLcMUZd+pAlnn1zKGPuztnEKA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\svg\\Buttons\\RightNowMediaButton.png"
+    },
+    {
+      "Identity": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\svg\\Buttons\\RightNowMediaButtonTemplate.ai",
+      "SourceId": "APNaz",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\",
+      "BasePath": "_content/APNaz",
+      "RelativePath": "lib/svg/Buttons/RightNowMediaButtonTemplate#[.{fingerprint}]?.ai",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hdyxihlun3",
+      "Integrity": "RTLl59a+XucakaRgpjBQLcrfAfPjReCU7R53E73eIhM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\svg\\Buttons\\RightNowMediaButtonTemplate.ai"
     },
     {
       "Identity": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\svg\\Cards\\APNazNewz2.jpg",
@@ -9059,6 +9101,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-v3SfcyLIeg9Dq9gE1cP6SjqUa2K7cXB+szYxqSXCdgk="
+        }
+      ]
+    },
+    {
+      "Route": "lib/svg/Buttons/RightNowMediaButton.nxs0l18zc0.png",
+      "AssetFile": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\svg\\Buttons\\RightNowMediaButton.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "192481"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"e6v88/Zs8SZEhce7iLhLcMUZd+pAlnn1zKGPuztnEKA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 31 Dec 2024 23:20:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nxs0l18zc0"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/svg/Buttons/RightNowMediaButton.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-e6v88/Zs8SZEhce7iLhLcMUZd+pAlnn1zKGPuztnEKA="
+        }
+      ]
+    },
+    {
+      "Route": "lib/svg/Buttons/RightNowMediaButton.png",
+      "AssetFile": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\svg\\Buttons\\RightNowMediaButton.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "192481"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"e6v88/Zs8SZEhce7iLhLcMUZd+pAlnn1zKGPuztnEKA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 31 Dec 2024 23:20:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-e6v88/Zs8SZEhce7iLhLcMUZd+pAlnn1zKGPuztnEKA="
+        }
+      ]
+    },
+    {
+      "Route": "lib/svg/Buttons/RightNowMediaButtonTemplate.ai",
+      "AssetFile": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\svg\\Buttons\\RightNowMediaButtonTemplate.ai",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1592499"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/postscript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RTLl59a+XucakaRgpjBQLcrfAfPjReCU7R53E73eIhM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 31 Dec 2024 23:19:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RTLl59a+XucakaRgpjBQLcrfAfPjReCU7R53E73eIhM="
+        }
+      ]
+    },
+    {
+      "Route": "lib/svg/Buttons/RightNowMediaButtonTemplate.hdyxihlun3.ai",
+      "AssetFile": "D:\\Projects\\Repos\\APNaz\\APNaz\\wwwroot\\lib\\svg\\Buttons\\RightNowMediaButtonTemplate.ai",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1592499"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/postscript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RTLl59a+XucakaRgpjBQLcrfAfPjReCU7R53E73eIhM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 31 Dec 2024 23:19:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hdyxihlun3"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/svg/Buttons/RightNowMediaButtonTemplate.ai"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-RTLl59a+XucakaRgpjBQLcrfAfPjReCU7R53E73eIhM="
         }
       ]
     },

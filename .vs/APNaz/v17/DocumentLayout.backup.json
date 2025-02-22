@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\Projects\\Repos\\APNaz\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|d:\\projects\\repos\\apnaz\\apnaz\\views\\info\\private.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|solutionrelative:apnaz\\views\\info\\private.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|d:\\projects\\repos\\apnaz\\apnaz\\views\\info\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|solutionrelative:apnaz\\views\\info\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|d:\\projects\\repos\\apnaz\\apnaz\\controllers\\infocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|solutionrelative:apnaz\\controllers\\infocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|d:\\projects\\repos\\apnaz\\apnaz\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|solutionrelative:apnaz\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|d:\\projects\\repos\\apnaz\\apnaz\\wwwroot\\virtual\\media\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -19,12 +19,12 @@
       "RelativeMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|solutionrelative:apnaz\\wwwroot\\virtual\\arc\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|d:\\projects\\repos\\apnaz\\apnaz\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|solutionrelative:apnaz\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|d:\\projects\\repos\\apnaz\\apnaz\\views\\info\\private.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|solutionrelative:apnaz\\views\\info\\private.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|d:\\projects\\repos\\apnaz\\apnaz\\views\\info\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|solutionrelative:apnaz\\views\\info\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|d:\\projects\\repos\\apnaz\\apnaz\\controllers\\infocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E870E060-A24D-4E58-8215-CE283EB58877}|APNaz\\APNaz.csproj|solutionrelative:apnaz\\controllers\\infocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,7 +50,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "InfoController.cs",
               "DocumentMoniker": "D:\\Projects\\Repos\\APNaz\\APNaz\\Controllers\\InfoController.cs",
               "RelativeDocumentMoniker": "APNaz\\Controllers\\InfoController.cs",
@@ -63,13 +63,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Private.cshtml",
               "DocumentMoniker": "D:\\Projects\\Repos\\APNaz\\APNaz\\Views\\Info\\Private.cshtml",
               "RelativeDocumentMoniker": "APNaz\\Views\\Info\\Private.cshtml",
-              "ToolTip": "D:\\Projects\\Repos\\APNaz\\APNaz\\Views\\Info\\Private.cshtml*",
-              "RelativeToolTip": "APNaz\\Views\\Info\\Private.cshtml*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "ToolTip": "D:\\Projects\\Repos\\APNaz\\APNaz\\Views\\Info\\Private.cshtml",
+              "RelativeToolTip": "APNaz\\Views\\Info\\Private.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABEAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-02-19T22:34:29.492Z",
               "EditorCaption": ""
@@ -84,7 +84,8 @@
               "RelativeToolTip": "APNaz\\wwwroot\\Virtual\\Arc\\index.html",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-12-31T22:19:15.39Z"
+              "WhenOpened": "2024-12-31T22:19:15.39Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -101,7 +102,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\Projects\\Repos\\APNaz\\APNaz\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "APNaz\\Views\\Shared\\_Layout.cshtml",
@@ -109,11 +110,12 @@
               "RelativeToolTip": "APNaz\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAF8BAAAAAAAAAADwv2QBAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-05T02:55:39.396Z"
+              "WhenOpened": "2024-12-05T02:55:39.396Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Projects\\Repos\\APNaz\\APNaz\\Views\\Info\\Index.cshtml",
               "RelativeDocumentMoniker": "APNaz\\Views\\Info\\Index.cshtml",
@@ -121,7 +123,8 @@
               "RelativeToolTip": "APNaz\\Views\\Info\\Index.cshtml",
               "ViewState": "AgIAAEsAAAAAAAAAAAAAADsAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-05T02:49:37.153Z"
+              "WhenOpened": "2024-12-05T02:49:37.153Z",
+              "EditorCaption": ""
             }
           ]
         },
